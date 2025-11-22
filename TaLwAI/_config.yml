@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Teaching and Learning with AI
+title: Teaching with AI
 author: Dr. Leandro Nunes de Castro, Ph.D.
 logo: dendritic_logo.png
 
@@ -21,7 +21,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/lndecastro/Teaching_and_Learning_with_AI # Online location of your book
+  url: https://github.com/lndecastro/Teaching_with_AI # Online location of your book
   path_to_book: docs # Optional path to your book, relative to the repository root
   branch: main # Which branch of the repository should be used when creating links (optional)
 
