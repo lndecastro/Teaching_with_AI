@@ -124,7 +124,7 @@ Access CoGrader here: [https://www.cograder.com]
 EssayGrader.ai is an AI tool focused on evaluating academic writing and generating detailed, rubric-aligned feedback. Users can paste essays or upload files, define assessment criteria, and receive structured evaluations across areas such as organization, argument quality, grammar, and originality. EssayGrader.ai aims to support formative feedback and can assist in both summative grading and student revision. It emphasizes clarity, consistency, and transparency in AI-assisted writing assessment.
 Access EssayGrader.ai here: [https://www.essaygrader.ai]
 
-## 8. About Your Instructor – Dr. Leandro Nunes de Castro
+## 8. About the Instructor – Dr. Leandro Nunes de Castro
 
 - Professor in the **Department of Computing and Software Engineering**, U.A. Whitaker College of Engineering, FGCU.
 - Ph.D. in Computer Engineering with 30 years of experience in **Artificial Intelligence, Data Science, and Natural Computing**.
@@ -135,7 +135,7 @@ Access EssayGrader.ai here: [https://www.essaygrader.ai]
 
 ## 🧾 Acknowledgements
 
-Developed by **Dr. Leandro Nunes de Castro** for the **Dendritic Institute for Human-Centered AI & Data Science**, within the **U.A. Whitaker College of Engineering at Florida Gulf Coast University**.
+Developed by **Dr. Leandro Nunes de Castro**©️ for the **Dendritic Institute for Human-Centered AI & Data Science**, within the **U.A. Whitaker College of Engineering at Florida Gulf Coast University**.
 
 Content curated by the team, with support from large language models such as ChatGPT, Claude, Gemini, Perplexity, Gamma.ai, Napkin, and CoPilot, following ethical and pedagogical review.
 
