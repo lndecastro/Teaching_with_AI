@@ -17,7 +17,7 @@ For current FGCU policies on generative AI, please refer to:
 
 The goal of this program is to equip instructors with practical, immediately applicable skills for using GenAI across:
 
-- Strategic planning  
+- Strategic planning 
 - Class and course design  
 - Class delivery  
 - Assessment and feedback  
