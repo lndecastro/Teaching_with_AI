@@ -1,15 +1,8 @@
-# Welcome to the "Teaching and Learning with AI" Workshop
+# Teaching with AI
 
-This training focuses on integrating generative AI into the Teaching and Learning (TaL) process. It covers a comprehensive framework for TaL with AI, moving from strategic planning through delivery, assessment, support, and reflection. A key component is prompt engineering, the practice of crafting effective inputs for AI models. The training emphasizes strategic communication with AI systems to produce accurate, relevant, and useful outputs for educational purposes.
+Welcome to the **Teaching with AI Program**, part of the **FGCU AI Academy** led by the **Dendritic Institute for Human-Centered AI & Data Science** at Florida Gulf Coast University. This program is designed for **faculty and instructors seeking practical, hands-on methods for integrating Generative AI tools throughout the teaching and learning cycle**. Unlike pedagogical or learning-science programs, which are covered separately in the Academy, **this training focuses on the instrumental and operational use of AI**.
 
-## 1. About the Instructor
-
-Dr. Leandro Nunes de Castro (AI and Data Science Professor & Dendritic Program Director) <br>
-Dendritic: A Human-Centered Artificial Intelligence and Data Science Institute <br>
-U.A. Whitaker College of Engineering<br>
-Florida Gulf Coast University
-
-## 2. Disclaimer
+## Disclaimer
 This training is intended to demonstrate the capabilities of generative AI tools in educational contexts. It is not an endorsement of using AI-generated content without human expertise, oversight, or academic judgment, nor is it a prescriptive guide for its use. Faculty remain fully responsible for:
 - Curating and validating instructional content
 - Disclosing when and how AI tools are used
@@ -20,20 +13,25 @@ Academic content must always be aligned with the subject matter, learning object
 For current FGCU policies on generative AI, please refer to:
 🔗 https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai
 
-## 3. What You Will Learn
+## 1. Program Goals
 
-You will learn how to incorporate AI into various stages of the teaching process, including planning, class design, preparing assignments and exams, class delivery, student support, assessment, and reflection. A significant portion of the training is dedicated to understanding and applying prompt engineering techniques to guide AI models effectively. You will learn about different types of tools, prompts, how to structure them, and how to improve AI outputs through iteration. 
+The goal of this program is to equip instructors with practical, immediately applicable skills for using GenAI across:
 
-To start this discussion, let us have a look at Chegg's 2025 global student survey, which brings an overview of how college students across the globe are facing their academic life during this AI era.
-A Global Student Survey that includes GenAI: <br>
-https://claude.ai/public/artifacts/d8a00935-e738-481f-8102-2ee89ec12fa6
+- Strategic planning  
+- Class and course design  
+- Class delivery  
+- Assessment and feedback  
+- Student support  
+- Reflection and continuous improvement  
 
-## 4. Learning Objectives
+The the basic background necessary to use GenAI tools is presented in the AI Literacy program. If you need some introductory knowledge on prompt engineering and a general understanding of AI and its history, we invite you to take that program before proceeding with this one. 
 
-By the end of this training, participants should be able to:
+## 2. Learning Objectives
+
+By the end of this program, participants should be able to:
 
 - **Understand the comprehensive framework** for integrating generative AI into the teaching and learning process, recognizing its application across strategic planning, design, delivery, support, assessment, and reflection phases.
-- **Develop and apply effective prompt engineering strategies** to enhance teaching and learning with generative AI, crafting purposeful prompts, selecting appropriate design patterns, and leveraging AI tools to support pedagogical planning, content generation, and instructional decision-making.
+- **Organize your AI workspace and create personalized assistants** to enhance teaching and learning and leverage AI tools to support pedagogical planning, content generation, instructional decision-making, and student support.
 - **Design and develop class sessions and course materials** by breaking down content into modules, structuring sessions, finding relevant literature, generating content from sources, and creating learning activities with AI support.
 - **Prepare assignments and exams** by designing formative and summative assessments, creating authentic tasks (quizzes, case studies, projects), developing clear rubrics, and considering accessibility and academic integrity, utilizing AI as an assistant.
 - **Integrate generative AI tools and strategies into class delivery** to facilitate active and student-centered learning, employ various content delivery methods, monitor engagement and comprehension, and adapt instruction responsively.
@@ -41,16 +39,41 @@ By the end of this training, participants should be able to:
 - **Apply AI tools and techniques to assessment and feedback processes**, including conducting assessments with AI support, generating rubric-based constructive feedback, facilitating AI-assisted self- and peer-assessment, and exploring AI for grading and originality verification.
 - **Utilize generative AI for reflection and continuous improvement** of teaching practices, including identifying effective elements, revising materials and strategies, staying engaged with research, sharing experiences, and analyzing student feedback and data.
 
-## 5. Structure and Approach
+## 3. Structure and Approach
 
-Each session is structured around a short introduction, hands-on activity, and a reflection period. You will be encouraged to:
+Each session is structured around a short introduction, hands-on activities, and a reflection period. You will be encouraged to:
 
-- Experiment with AI prompts tailored to your professional context
+- Experiment with AI prompts and structures tailored to your professional context
 - Compare outputs across different tools
 - Share findings and discuss best practices
 - Develop your own AI-enhanced components
 
-## 6. GenAI Tools to be Studied
+## 4. Program Journey
+| Module | Theme | Focus |
+| --- | --- | --- |
+| 1 | Introduction to Teaching with AI | Framework, responsible use, FGCU policies |
+| 2 | AI for Course & Class Planning | Syllabi, schedules, modularization, activity design |
+| 3 | AI-Enhanced Class Design | Slides, examples, multimodal content |
+| 4 | Assignments & Exams with AI | Quiz generation, cases, rubrics, accessibility |
+| 5 | AI-Supported Class Delivery | Live adaptation, engagement strategies |
+| 6 | Student Support with AI | Study guides, hints, peer collaboration |
+| 7 | Assessment & Feedback with AI | Rubrics, formative comments, originality checks |
+| 8 | Reflection & Improvement | Analytics, feedback patterns, course redesign |
+| 9 | GenAI Tools for Teaching | Overview of all tools used in the program |
+
+## 5. How to Use This Jupyter Book
+- Navigate modules using the sidebar.
+- Download pages as `.md` or `.pdf` for reuse.
+- Look for **Examples**, **Hands-On Activities**, and **Further Reading**.
+- Many pages include ready-to-copy prompts for different models.
+
+## 6. Human-Centered Teaching with AI
+
+> AI supports teaching, it does not replace teachers.
+
+Educators maintain responsibility for content validity, rigor, transparency, and ethics.
+
+## 7. GenAI Tools to be Studied
 
 ### ChatGPT
 ChatGPT is a versatile AI language model developed by OpenAI, capable of interpreting natural language, performing various statistical analyses, coding in Python, and generating data visualizations such as bar charts, pie charts, scatter plots, and histograms. It supports data uploads in formats like CSV, XLSX, PDF, and JSON (up to 50MB) and can integrate with cloud storage like Google Drive and OneDrive. ChatGPT excels in broad AI capabilities including data analysis, summarization, and storytelling. It requires web browsing for real-time data updates.
@@ -100,3 +123,72 @@ Access CoGrader here: [https://www.cograder.com]
 ### EssayGrader.ai
 EssayGrader.ai is an AI tool focused on evaluating academic writing and generating detailed, rubric-aligned feedback. Users can paste essays or upload files, define assessment criteria, and receive structured evaluations across areas such as organization, argument quality, grammar, and originality. EssayGrader.ai aims to support formative feedback and can assist in both summative grading and student revision. It emphasizes clarity, consistency, and transparency in AI-assisted writing assessment.
 Access EssayGrader.ai here: [https://www.essaygrader.ai]
+
+## 8. About Your Instructor – Dr. Leandro Nunes de Castro
+
+- Professor in the **Department of Computing and Software Engineering**, U.A. Whitaker College of Engineering, FGCU.
+- Ph.D. in Computer Engineering with 30 years of experience in **Artificial Intelligence, Data Science, and Natural Computing**.
+- Director of the **Dendritic Institute for Artificial Intelligence and Data Science** at FGCU.
+- Author of various AI and Data Science books and papers, and recognized among the **Top 2% most influential researchers in Computer Science worldwide**.
+- Experienced entrepreneur, researcher, and educator with a focus on applying AI for innovation, business, and societal impact.
+- Active mentor and collaborator with international academic and industry partners.
+
+## 🧾 Acknowledgements
+
+Developed by **Dr. Leandro Nunes de Castro** for the **Dendritic Institute for Human-Centered AI & Data Science**, within the **U.A. Whitaker College of Engineering at Florida Gulf Coast University**.
+
+Content curated by the team, with support from large language models such as ChatGPT, Claude, Gemini, Perplexity, Gamma.ai, Napkin, and CoPilot, following ethical and pedagogical review.
+
+---
+
+```{note}
+*This Jupyter Book is part of the Dendritic AI Academy’s AI Literacy Track, aligning with FGCU’s AI-Aware Initiative to foster responsible, informed, and innovative engagement with artificial intelligence.*
+```
+
+---
+
+## GenAI Tools for Teaching
+### Core Multimodal LLMs
+- **ChatGPT (OpenAI)**
+- **Claude.ai (Anthropic)**
+- **Gemini (Google)**
+- **Copilot (Microsoft)**
+- **Perplexity.ai**
+- **Meta AI (Llama 4)**
+- **Grok (xAI)**
+
+### Teaching-Specific Tools
+- **CoGrader.com** – AI-supported grading & rubrics  
+- **EssayGrader.ai** – academic writing evaluation  
+- **Gradescope AI** – structured assignment evaluation  
+- **Turnitin AI Detection + Similarity** – academic integrity  
+
+### Research & Reading Tools
+- **SciSpace** – academic reading and concept explanation  
+- **ExplainPaper** – PDF simplification  
+- **Semantic Scholar AI** – literature review  
+
+### Content & Course Material Tools
+- **NotebookLM** – grounded summarization & FAQ generation  
+- **Gamma.app** – slide and document creation  
+- **Canva AI / Magic Studio** – design, diagrams, slides  
+- **Napkin.ai** – diagrams and visual storytelling  
+- **Notion AI** – knowledge bases, lesson planning, organization  
+- **Miro AI** – whiteboarding, brainstorming  
+- **Figma AI** – interface and diagram design  
+
+### Coding & Data Tools for Teaching STEM
+- **Kaggle Notebooks AI** – code, data analysis, explanations  
+- **Replit AI** – code generation and debugging  
+- **Wolfram Alpha + LLMs** – symbolic math, STEM assistance  
+
+
+
+## 3. What You Will Learn
+
+You will learn how to incorporate AI into various stages of the teaching process, including planning, class design, preparing assignments and exams, class delivery, student support, assessment, and reflection. A significant portion of the training is dedicated to understanding and applying prompt engineering techniques to guide AI models effectively. You will learn about different types of tools, prompts, how to structure them, and how to improve AI outputs through iteration. 
+
+To start this discussion, let us have a look at Chegg's 2025 global student survey, which brings an overview of how college students across the globe are facing their academic life during this AI era.
+A Global Student Survey that includes GenAI: <br>
+https://claude.ai/public/artifacts/d8a00935-e738-481f-8102-2ee89ec12fa6
+
