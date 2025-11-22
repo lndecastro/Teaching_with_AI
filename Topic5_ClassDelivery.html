@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5. Teaching the Class (Class Delivery) &#8212; Teaching with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Topic5_ClassDelivery';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Student Support" href="Topic6_StudentSupport.html" />
+    <link rel="prev" title="4. Preparation of Assignments and Exams" href="Topic4_Assignments.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Topic1_TLFramework.html">Topic 1: Teaching and Learning with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic2_PedagogicalPlanning.html">Topic 2: Pedagogical Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic3_ClassDesign.html">Topic 3: Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic4_Assignments.html">Topic 4: Preparation of Assignments and Exams</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Topic 5: Teaching the Class (Class Delivery)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic6_StudentSupport.html">Topic 6: Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic7_AssessmentFeedback.html">Topic 7: Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic8_ReflectionImprovement.html">Topic 8: Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_with_AI/edit/main/docs/Topic5_ClassDelivery.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Topic5_ClassDelivery.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>5. Teaching the Class (Class Delivery)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilitate-active-student-centered-learning">5.1 Facilitate Active, Student-Centered Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-storytelling-examples-demonstrations-and-socratic-questioning">5.2 Use Storytelling, Examples, Demonstrations, and Socratic Questioning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#employ-technology-and-ai-tools-for-content-delivery">5.3 Employ Technology and AI Tools for Content Delivery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-possibilities">Exploring Possibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-1-scispace">Tool 1: SciSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-2-notebooklm">Tool 2: NotebookLM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-engagement-and-comprehension-in-real-time">5.4 Monitor Engagement and Comprehension in Real Time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapt-pacing-and-methods-responsively">5.5 Adapt Pacing and Methods Responsively</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="teaching-the-class-class-delivery">
+<h1>5. Teaching the Class (Class Delivery)<a class="headerlink" href="#teaching-the-class-class-delivery" title="Link to this heading">#</a></h1>
+<p><em><em>Enacting the instructional plan with flexibility and engagement</em></em></p>
+<p>This phase is about enacting the instructional plan with flexibility and engagement. It focuses on delivering instruction dynamically and responsively while integrating generative AI tools to enhance engagement, learning, and personalization. Strategies covered include facilitating active, student-centered learning, using storytelling and examples, employing technology and AI tools for content delivery, monitoring engagement and comprehension in real time, and adapting pacing and methods responsively. The topics in this session include:</p>
+<ol class="arabic simple">
+<li><p>Facilitate active, student-centered learning (e.g., discussion, problem-solving)</p></li>
+<li><p>Use storytelling, examples, demonstrations, and Socratic questioning</p></li>
+<li><p>Employ tech and AI tools for content delivery (e.g., ChatGPT, simulations, visualizations)</p></li>
+<li><p>Monitor engagement and comprehension in real time</p></li>
+<li><p>Adapt pacing and methods responsively</p></li>
+</ol>
+<section id="facilitate-active-student-centered-learning">
+<h2>5.1 Facilitate Active, Student-Centered Learning<a class="headerlink" href="#facilitate-active-student-centered-learning" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Create interactive learning experiences where students engage through collaboration, problem-solving, and reflection.</p>
+<p><em>Instructional Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Suggest</span> <span class="n">three</span> <span class="n">active</span> <span class="n">learning</span> <span class="n">strategies</span> <span class="n">that</span> <span class="n">leverage</span> <span class="n">generative</span> <span class="n">AI</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="n">teaching</span> <span class="k">with</span> <span class="n">AI</span><span class="o">.</span> <span class="n">Include</span> <span class="n">how</span> <span class="n">tools</span> <span class="n">like</span> <span class="n">ChatGPT</span> <span class="ow">or</span> <span class="n">Perplexity</span> <span class="n">can</span> <span class="n">support</span> <span class="n">group</span> <span class="n">discussion</span> <span class="ow">or</span> <span class="n">collaborative</span> <span class="n">tasks</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Sample illustration:</strong> Diagram comparing passive vs. active learning with AI use cases (e.g., “AI as a peer in group discussion”).</p>
+</section>
+<section id="use-storytelling-examples-demonstrations-and-socratic-questioning">
+<h2>5.2 Use Storytelling, Examples, Demonstrations, and Socratic Questioning<a class="headerlink" href="#use-storytelling-examples-demonstrations-and-socratic-questioning" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Use GenAI to create open-ended questions that will allow you to deliver compelling instruction using narrative, examples, and critical questioning.</p>
+<p><em>Role-Based Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">educator</span> <span class="n">teaching</span> <span class="n">a</span> <span class="n">session</span> <span class="n">on</span> <span class="n">AI</span> <span class="ow">in</span> <span class="n">education</span><span class="o">.</span> <span class="n">Generate</span> <span class="n">a</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">story</span> <span class="ow">or</span> <span class="n">scenario</span> <span class="n">where</span> <span class="n">an</span> <span class="n">instructor</span> <span class="n">uses</span> <span class="n">AI</span> <span class="n">to</span> <span class="n">improve</span> <span class="n">student</span> <span class="n">engagement</span><span class="o">.</span> <span class="n">Then</span><span class="p">,</span> <span class="n">create</span> <span class="mi">3</span> <span class="n">Socratic</span> <span class="n">questions</span> <span class="n">based</span> <span class="n">on</span> <span class="n">this</span> <span class="n">scenario</span> <span class="n">to</span> <span class="n">stimulate</span> <span class="n">discussion</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Sample illustration:</strong> Storyboard of a mini-case and AI-enhanced dialogue with questions.</p>
+</section>
+<section id="employ-technology-and-ai-tools-for-content-delivery">
+<h2>5.3 Employ Technology and AI Tools for Content Delivery<a class="headerlink" href="#employ-technology-and-ai-tools-for-content-delivery" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Leverage academic generative AI tools to present, demonstrate, simulate or interact with course content in diverse formats.</p>
+<p>The paper titled <em>Feedback sources in essay writing: peer-generated or AI-generated feedback?</em> investigates the <strong>quality of feedback provided by ChatGPT compared to peer feedback</strong> on graduate students’ argumentative essays. The findings revealed that <strong>peer feedback was generally of higher quality</strong>, particularly in identifying specific issues within the essays, while <strong>ChatGPT provided more descriptive feedback</strong>.  The researchers found <strong>no significant overall correlation between essay quality and feedback quality</strong> from either source, suggesting a potential <strong>complementary role for both ChatGPT and peers</strong> in the feedback process, which could help reduce teacher workload.
+Download the paper here: <a class="reference download internal" download="" href="_downloads/fe46ddd9c796dc6e3e930d0ca6f3694a/Feedbacksourcesinessaywriting.pdf"><span class="xref download myst">Paper_Feedback_in_Essay_Writing</span></a> <br></p>
+<section id="exploring-possibilities">
+<h3>Exploring Possibilities<a class="headerlink" href="#exploring-possibilities" title="Link to this heading">#</a></h3>
+<p><em>Zero-Shot Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="n">five</span> <span class="n">ways</span> <span class="n">to</span> <span class="n">use</span> <span class="n">generative</span> <span class="n">AI</span> <span class="n">tools</span> <span class="k">for</span> <span class="n">content</span> <span class="n">delivery</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">teaching</span> <span class="n">session</span><span class="o">.</span> <span class="n">Include</span> <span class="n">one</span> <span class="n">example</span> <span class="n">each</span> <span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="ow">and</span> <span class="n">slide</span> <span class="n">generation</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="tool-1-scispace">
+<h3>Tool 1: SciSpace<a class="headerlink" href="#tool-1-scispace" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1:</strong> Using function <strong>Chat with PDF</strong> upload the paper about feedback in essay writing and start by asking the pre-defined general questions to the paper. Then evolve to some questions you may have around the topic. <br></p>
+<p><strong>Use Case 2:</strong> Using function <strong>PDF to Video</strong> in SciSpace, upload one of the the slide decks generated in <em>Topic 2.2 Class Design</em> and let SciSpace generate a video presentation of your content. As soon as the video presentation is ready, play it to see what was created. <br></p>
+<p><strong>Use Case 3:</strong> Now test functions <strong>Find Topics</strong>, <strong>Citation generator</strong>, and <strong>Extract data</strong>.</p>
+<p><strong>Use Case 4:</strong> Use function <strong>Paraphraser</strong> to write clear and original content out of the paper under study.</p>
+</section>
+<section id="tool-2-notebooklm">
+<h3>Tool 2: NotebookLM<a class="headerlink" href="#tool-2-notebooklm" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1:</strong> Using button <strong>FAQ</strong> generate a list of questions related with the paper. <br></p>
+<p><strong>Use Case 2:</strong> Using button <strong>Audio Overview</strong> create a podcast out of the paper. After created, use the button <strong>Interactive mode</strong> to join the conversation and ask some of the questions created in <strong>Use Case 1</strong>. <br></p>
+<p><strong>Use Case 3:</strong> Using button <strong>Mind Map</strong> create a mind map out of the paper. Navigate through the mind map and discuss how it helps to organize and structure the contents of the paper. <br></p>
+<p><strong>Use Case 4:</strong> Using button <strong>Study guide</strong> create some questions and answers related with the subject matter of the paper, and a glossary of terms. <br></p>
+<p><strong>Use Case 5:</strong> Upload the paper below that summarizes the history of Artificial Intelligence and create a timeline using button <strong>Timeline</strong>. Analyze the timeline created for consistency and have a look at the cast of characters generated. <br>
+<a class="reference download internal" download="" href="_downloads/15a93588181f3e457086ddbb4b5f653b/HistoryofAI.pdf"><span class="xref download myst">Paper_History_of_AI</span></a> <br></p>
+<p><strong>Sample illustration:</strong> Tool palette showing AI tools mapped to content types (text, image, code, slides).</p>
+</section>
+</section>
+<section id="monitor-engagement-and-comprehension-in-real-time">
+<h2>5.4 Monitor Engagement and Comprehension in Real Time<a class="headerlink" href="#monitor-engagement-and-comprehension-in-real-time" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Use GenAI to find ways to track student participation, attention, and understanding with the help of AI tools and quick feedback loops.</p>
+<p><em>Chain-of-Thought Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>How can generative AI assist instructors in monitoring student comprehension during a live class? Describe a step-by-step strategy using real-time tools or AI-supported questioning techniques.
+</pre></div>
+</div>
+<blockquote>
+<div><p>In groups discuss which of the strategies you are going to use and why.</p>
+</div></blockquote>
+<p><strong>Sample illustration:</strong> Live feedback loop with icons: Teach → Ask AI-generated poll → Visualize → Adapt.</p>
+</section>
+<hr class="docutils" />
+<section id="adapt-pacing-and-methods-responsively">
+<h2>5.5 Adapt Pacing and Methods Responsively<a class="headerlink" href="#adapt-pacing-and-methods-responsively" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Use AI feedback and intuition to adjust the delivery in real time or between sessions.</p>
+<p><em>Few-Shot Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Examples</span> <span class="n">of</span> <span class="n">how</span> <span class="n">instructors</span> <span class="n">adapt</span> <span class="n">teaching</span> <span class="n">pace</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Slowing</span> <span class="n">down</span> <span class="n">to</span> <span class="n">explain</span> <span class="n">misunderstood</span> <span class="n">content</span>
+<span class="mf">2.</span> <span class="n">Skipping</span> <span class="n">ahead</span> <span class="n">when</span> <span class="n">concepts</span> <span class="n">are</span> <span class="n">mastered</span> <span class="n">quickly</span>
+
+<span class="n">Now</span> <span class="n">generate</span> <span class="n">an</span> <span class="n">AI</span><span class="o">-</span><span class="n">assisted</span> <span class="n">strategy</span> <span class="k">for</span> <span class="n">adapting</span> <span class="n">pace</span> <span class="n">during</span> <span class="n">a</span> <span class="n">session</span> <span class="n">using</span> <span class="n">generative</span> <span class="n">AI</span> <span class="n">tools</span> <span class="ow">or</span> <span class="n">analytics</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Sample illustration</strong> Flowchart with “Observe → Analyze with AI → Adjust” model for pacing.</p>
+<hr class="docutils" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Topic4_Assignments.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">4. Preparation of Assignments and Exams</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Topic6_StudentSupport.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">6. Student Support</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilitate-active-student-centered-learning">5.1 Facilitate Active, Student-Centered Learning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-storytelling-examples-demonstrations-and-socratic-questioning">5.2 Use Storytelling, Examples, Demonstrations, and Socratic Questioning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#employ-technology-and-ai-tools-for-content-delivery">5.3 Employ Technology and AI Tools for Content Delivery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-possibilities">Exploring Possibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-1-scispace">Tool 1: SciSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-2-notebooklm">Tool 2: NotebookLM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-engagement-and-comprehension-in-real-time">5.4 Monitor Engagement and Comprehension in Real Time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapt-pacing-and-methods-responsively">5.5 Adapt Pacing and Methods Responsively</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

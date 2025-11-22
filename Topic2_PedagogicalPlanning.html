@@ -1,0 +1,746 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. Pedagogical-Didactic Planning &#8212; Teaching with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Topic2_PedagogicalPlanning';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Class Design and Development" href="Topic3_ClassDesign.html" />
+    <link rel="prev" title="1. Teaching and Learning Framework and Prompt Engineering" href="Topic1_TLFramework.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Topic1_TLFramework.html">Topic 1: Teaching and Learning with AI Framework</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Topic 2: Pedagogical Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic3_ClassDesign.html">Topic 3: Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic4_Assignments.html">Topic 4: Preparation of Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic5_ClassDelivery.html">Topic 5: Teaching the Class (Class Delivery)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic6_StudentSupport.html">Topic 6: Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic7_AssessmentFeedback.html">Topic 7: Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Topic8_ReflectionImprovement.html">Topic 8: Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_with_AI/edit/main/docs/Topic2_PedagogicalPlanning.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Topic2_PedagogicalPlanning.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2. Pedagogical-Didactic Planning</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-course-goals-and-learning-outcomes">2.1 Define Course Goals and Learning Outcomes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-audience-and-context">2.2 Identify Audience and Context</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-pedagogical-approach-es">2.3 Select Pedagogical Approach(es)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-tools-and-technologies">2.4 Choose Tools and Technologies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-with-institutional-and-ethical-guidelines">2.5 Align with Institutional and Ethical Guidelines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-course-syllabus">2.6 Create the Course Syllabus</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="pedagogical-didactic-planning">
+<h1>2. Pedagogical-Didactic Planning<a class="headerlink" href="#pedagogical-didactic-planning" title="Link to this heading">#</a></h1>
+<p><em>Strategic and intentional groundwork for teaching</em></p>
+<p>This topic focuses on the strategic and intentional groundwork for teaching. It involves defining course goals and learning outcomes, identifying the audience and context, selecting appropriate pedagogical approaches, choosing educational technologies and AI-enhanced tools, aligning with institutional and ethical guidelines, and creating the course syllabus. You will explore how generative AI can assist with tasks like drafting learning outcomes using frameworks such as Bloom’s Taxonomy and generating draft policies. The following topics will be covered here:</p>
+<ol class="arabic simple">
+<li><p>Define course goals and learning outcomes</p></li>
+<li><p>Identify audience and context</p></li>
+<li><p>Select pedagogical approaches (e.g., active learning, inquiry-based, project-based)</p></li>
+<li><p>Choose educational technologies and AI-enhanced tools</p></li>
+<li><p>Align with institutional and ethical guidelines</p></li>
+<li><p>Create the course Syllabus</p></li>
+</ol>
+<section id="define-course-goals-and-learning-outcomes">
+<h2>2.1 Define Course Goals and Learning Outcomes<a class="headerlink" href="#define-course-goals-and-learning-outcomes" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Clarify what learners should be able to know, do, or value by the end of the course.</p>
+<p><em>Instructional + Role-Based Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>I am a higher-education teacher designing a course titled &quot;Teaching and Learning with AI&quot;. The target audience is higher education faculty and students. Suggest 4–6 clear learning outcomes using Bloom’s taxonomy across different cognitive levels. Focus on skills related to using generative AI for teaching, learning, and assessment.
+</pre></div>
+</div>
+<blockquote>
+<div><p>Click on the link below to see the <em>Bloom’s Taxonomy &amp; GenAI Teaching Practices</em> artifact generated by <a class="reference external" href="http://Claude.ai">Claude.ai</a>. <br>
+<a class="reference external" href="https://claude.ai/public/artifacts/b64d5dd0-17b7-40b4-81c4-67041fbf8810">https://claude.ai/public/artifacts/b64d5dd0-17b7-40b4-81c4-67041fbf8810</a> <br></p>
+</div></blockquote>
+<p><em>Instructional Prompt Used in <a class="reference external" href="http://Claude.ai">Claude.ai</a> to create the Interactive Artifact</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Teaching and Learning with AI. Create a diagram of Bloom’s Taxonomy pyramid with example verbs for each level (Remember → Create), linking each level to potential GenAI teaching practices.
+</pre></div>
+</div>
+<p><img alt="Blooms_Taxonomy" src="_images/Blooms_Taxonomy.png" /></p>
+</section>
+<section id="identify-audience-and-context">
+<h2>2.2 Identify Audience and Context<a class="headerlink" href="#identify-audience-and-context" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Profile the expected learners (background, skills, attitudes) and delivery context (online, in-person, hybrid).</p>
+<p><em>Role-Based Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">instructional</span> <span class="n">designer</span> <span class="n">creating</span> <span class="n">faculty</span> <span class="n">development</span> <span class="n">programs</span><span class="o">.</span> <span class="n">Describe</span> <span class="n">the</span> <span class="n">learner</span> <span class="n">profile</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="s2">&quot;Teaching and Learning with AI&quot;</span> <span class="n">aimed</span> <span class="n">at</span> <span class="n">university</span> <span class="n">instructors</span> <span class="kn">from</span><span class="w"> </span><span class="nn">various</span> <span class="n">disciplines</span><span class="o">.</span> <span class="n">Include</span> <span class="n">background</span> <span class="n">knowledge</span><span class="p">,</span> <span class="n">teaching</span> <span class="n">experience</span><span class="p">,</span> <span class="n">tech</span> <span class="n">comfort</span><span class="p">,</span> <span class="ow">and</span> <span class="n">possible</span> <span class="n">challenges</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="select-pedagogical-approach-es">
+<h2>2.3 Select Pedagogical Approach(es)<a class="headerlink" href="#select-pedagogical-approach-es" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Decide how learning will happen: lecture, problem-based learning, flipped classroom, co-creation, etc. Choose teaching methods aligned with learning goals and context.</p>
+<p><em>Chain-of-Thought Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Given that the course aims to teach faculty how to use generative AI in teaching and learning, what are three most suitable pedagogical models (e.g., flipped classroom, problem-based learning)? For each, explain how it supports the learning goals, and how AI could enhance the model.
+</pre></div>
+</div>
+</section>
+<section id="choose-tools-and-technologies">
+<h2>2.4 Choose Tools and Technologies<a class="headerlink" href="#choose-tools-and-technologies" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Identify generative AI tools and explain their educational uses.</p>
+<p><em>Zero-Shot Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="mi">5</span> <span class="n">generative</span> <span class="n">AI</span> <span class="n">tools</span> <span class="n">suitable</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="n">teaching</span> <span class="k">with</span> <span class="n">AI</span><span class="o">.</span> <span class="n">For</span> <span class="n">each</span> <span class="n">tool</span><span class="p">,</span> <span class="n">describe</span> <span class="n">its</span> <span class="n">main</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">teaching</span> <span class="ow">or</span> <span class="n">learning</span><span class="p">,</span> <span class="ow">and</span> <span class="n">mention</span> <span class="n">one</span> <span class="n">risk</span> <span class="ow">or</span> <span class="n">limitation</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="align-with-institutional-and-ethical-guidelines">
+<h2>2.5 Align with Institutional and Ethical Guidelines<a class="headerlink" href="#align-with-institutional-and-ethical-guidelines" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Draft ethical and policy-aligned foundations for AI use by the students. The general FGCU AI use policies are available at the link below:
+<a class="reference external" href="https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai">https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai</a></p>
+<p>The following files contain the general FGCU policies for GenAI use. Download them and use as the institutional policies for GenAI use. <br>
+<a class="reference download internal" download="" href="_downloads/3f1f7b1b0979b4ca99e12e2fcc0dd8d4/Regulation4002_Student_Code_of_Conduct.pdf"><span class="xref download myst">Student_Code_of_Conduct</span></a> <br>
+<a class="reference download internal" download="" href="_downloads/4b17f0d19b5f108a283e62b9780fdc7e/GenerativeAIandFGCUTeachingandLearning.pdf"><span class="xref download myst">General_FGCU_GenAI_Policies</span></a> <br>
+<a class="reference download internal" download="" href="_downloads/9452435373e7aced23bdd693d3f7e2b3/CoreSyllabusPolicyStatements.pdf"><span class="xref download myst">Core_Syllabus_Policies_Statements</span></a> <br></p>
+<p><em>Few-Shot Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Below are examples of AI use policies for learning:
+
+1. Submitting the work of another person or entity as your own is not permitted. “Entity” includes Generative AI tools such as ChatGPT.
+2. Receiving assistance that has not been authorized by the course instructor is not permitted. This includes assistance from Generative AI tools.
+3. Students should not use of sources that go beyond those authorized by the instructor. This includes using Generative AI tools as a source.
+
+Based on these and the attached files with the university policies, generate a draft of an AI use policy for a course on [Course Name/Info] that incorporates transparency, accountability, and fairness.
+The &quot;AI Use Policies&quot; must contain: an introductory paragraph that explain what is AI and contextualize it for the course; a description of what is acceptable and unacceptable in terms of AI use for the course; citation requirements and procedures; list of prompts used; a summary table of all uses of AI in the course.
+</pre></div>
+</div>
+</section>
+<section id="create-the-course-syllabus">
+<h2>2.6 Create the Course Syllabus<a class="headerlink" href="#create-the-course-syllabus" title="Link to this heading">#</a></h2>
+<p><strong>Task:</strong>
+Based on a pre-specified syllabus format, let the AI model create a syllabus for our course.</p>
+<blockquote>
+<div><p>Note that the prompt below may contain sections that were previously prompted, e.g. Learning Objectives, and AI Use Policies. You can also attach your previous syllabus or the structure of your desired syllabus and prompt the model to use it as template.</p>
+</div></blockquote>
+<p><em>Instructional Prompt</em></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Syllabus Generator Prompt
+
+Please provide the following details to generate a syllabus for your course.
+Use the structure and style of the provided example syllabus, including sections for course information, professor information, course description, course program, bibliography, student learning outcomes, instructional method, evaluation and grade assignments, assignments, final exam, attendance policy, student contact information, notes, core syllabus policies, and a tentative weekly schedule.
+Fill in the placeholders with the relevant information for your course.
+
+## Course Information
+- Course Number: [Enter course number]
+- Course Title: [Enter course title]
+- Semester/Year: [Enter semester and year, e.g., Spring/2025]
+- Offering College/Department: [Enter college and department, e.g., U.A. Whitaker College of Engineering/Department of Computing and Software Engineering]
+- Credit Hours: [Enter credit hours, e.g., 3]
+- Meeting Times/Location: [Enter meeting times and location, e.g., M/W 13h30 - 14h45, Holmes Engineering 202]
+- Method of Delivery: [Enter delivery method, e.g., Face-to-face class]
+- Course URL: [Enter course URL, e.g., http://canvas.fgcu.edu]
+- Prerequisites: [Enter prerequisites, e.g., Not applicable]
+
+## Professor Information
+- Instructor: [Enter instructor name and title, e.g., Leandro Nunes de Castro, Ph.D., Professor, Department of Computing and Software Engineering at WCOE]
+- Office Address: [Enter office address, e.g., Holmes Hall 126D]
+- Office Phone: [Enter office phone, e.g., 239-590-1362]
+- E-mail Address: [Enter email address, e.g., ldecastrosilva@fgcu.edu]
+- Office Hours: [Enter office hours, e.g., MO WE 15:00-17:00]
+
+## Mandatory Confirmation of Attendance
+[Describe the attendance confirmation policy, e.g., All faculty members are required to use Canvas to confirm a student&#39;s attendance for each course by the end of the first week of classes. Failure to do so will result in a delay in the disbursement of your financial aid. The confirmation of attendance is required for all students, not only those receiving financial aid. Every student must complete a mandatory activity in Canvas during the first week.]
+
+## Course Description
+[Provide a brief description of the course.]
+
+## Course Program
+[List the main topics or modules, e.g.,
+1. Fundamentals of [Course Topic]
+   - [Subtopic 1]
+   - [Subtopic 2]
+2. [Topic 2]
+   - [Subtopic 1]
+   - [Subtopic 2]
+3. [Topic 3]
+   - [Subtopic 1]
+   - [Subtopic 2]
+4. [Topic 4]
+   - [Subtopic 1]
+   - [Subtopic 2]
+5. [Topic 5]
+   - [Subtopic 1]
+   - [Subtopic 2]]
+
+## Bibliography
+[List recommended or required texts, e.g.,
+1. [Author], [Title], [Edition], [Publisher], [Year].
+2. [Author], [Title], [Edition], [Publisher], [Year].
+3. [Author], [Title], [Publisher], [Year].
+4. [Author], [Title], [Publisher], [Year].
+5. Texts provided by the teacher.]
+
+## Student Learning Outcomes
+[Specify outcomes, e.g., Upon successful completion of this course, the student will be able to:
+1. [Outcome 1]
+2. [Outcome 2]
+3. [Outcome 3]
+4. [Outcome 4]]
+
+## Instructional Method
+[Describe the teaching approach]
+
+## Evaluation and Grade Assignments
+[Describe assessment instruments and grading policy, e.g.,
+The following instruments will be used:
+- IA: An individual assessment of the weekly lessons, which may consist of a quiz, a summary, a pre-class assessment or a problem/project-based participation assessment.
+- SE: Presentation of seminars (projects). The themes of the seminars will be defined based on the contents covered in the course.
+- PR: Final project.
+- EX: One or more individual exams.
+
+The grade and concept of the course will be defined from the following scheme:
+
+| Grading Policy | % |
+|--------------------|-----|
+| Individual Assessments | 20 |
+| Seminars | 20 |
+| Project | 40 |
+| Exams | 20 |
+| Total | 100 |
+
+| If | Grade |
+|--------|-------|
+| 93 ≤ Total ≤ 100 | A |
+| 90 ≤ Total &lt; 93 | A- |
+| 87 ≤ Total &lt; 90 | B+ |
+| 83 ≤ Total &lt; 87 | B |
+| 80 ≤ Total &lt; 83 | B- |
+| 77 ≤ Total &lt; 80 | C+ |
+| 73 ≤ Total &lt; 77 | C |
+| &lt;73 | F |]
+
+## Assignments
+[Describe assignment policies]
+
+## Final Exam
+[Describe final exam policy]
+
+## Attendance Policy
+[Describe attendance policy]
+
+## Student Contact Information
+[Describe communication policy]
+
+## Notes
+[Include additional notes, e.g.,
+1. [Note 1]
+2. [Note 2]
+3. [Note 3]
+4. [Note 4]]
+
+## GenAI Use Policies
+[Include core policies]
+
+## Tentative Weekly Schedule
+[Provide a tentative schedule, e.g.,
+| Week | Date | Topic | Chapter |
+|------|------|-------|---------|
+| 1 | [Date 1, Date 2] | [Topic 1] | [Chapter 1] |
+| 2 | [Date 1, Date 2] | [Topic 2] | [Chapter 2] |
+| 3 | [Date 1] | [Topic 3] | [Chapter 3] |
+| ... | ... | ... | ... |
+| 16 | [Date] | [Topic 16] | [Chapter 16] |
+
+* Subject to change with notice.]
+</pre></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Topic1_TLFramework.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1. Teaching and Learning Framework and Prompt Engineering</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Topic3_ClassDesign.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">3. Class Design and Development</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-course-goals-and-learning-outcomes">2.1 Define Course Goals and Learning Outcomes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-audience-and-context">2.2 Identify Audience and Context</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-pedagogical-approach-es">2.3 Select Pedagogical Approach(es)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-tools-and-technologies">2.4 Choose Tools and Technologies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-with-institutional-and-ethical-guidelines">2.5 Align with Institutional and Ethical Guidelines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-course-syllabus">2.6 Create the Course Syllabus</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
