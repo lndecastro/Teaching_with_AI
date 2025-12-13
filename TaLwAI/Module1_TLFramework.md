@@ -372,7 +372,7 @@ Then give me two practice questions to check my understanding.
 
 The Mind Map below was generated using NotebookLM and provides an overview of the Teaching with AI program. The program is broken down into seven sequential phases that structure how generative AI is applied across the entire teaching process. The other mind map branches detail the essential tools, foundational knowledge, and guiding principles that frame the entire AI-Integrated instructional cycle.
 
-![Program Overview](./Data/MM_Overview.png)
+![Program Overview](./Data/MM_OperationalIntegration.png)
 
 ## 1.6 Exercises
 
