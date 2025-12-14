@@ -344,7 +344,7 @@ Explain this topic [Topic] in simple terms.
 Help me review the main ideas from this topic [Topic].
 ```
 ```
-Can you give me a quick summary of what I should know (e.g., background knowledge or pre-requisits) before starting this program?
+Can you give me a quick summary of what I should know (e.g., background knowledge or pre-requisites) before starting this program?
 ```
 ```
 Can you help me create a study plan for this topic [Topic]?
