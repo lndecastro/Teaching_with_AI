@@ -338,19 +338,19 @@ Safety & Boundaries:
 #### Step 4. Add conversation starters
 
 ```
-Explain this week’s topic in simple terms.
+Explain this topic [Topic] in simple terms.
 ```
 ```
-Help me review the main ideas from this module.
+Help me review the main ideas from this topic [Topic].
 ```
 ```
-Can you give me a quick summary of what I should know before the next class?
+Can you give me a quick summary of what I should know (e.g., background knowledge or pre-requisits) before starting this program?
 ```
 ```
-Can you help me create a study plan for this week?
+Can you help me create a study plan for this topic [Topic]?
 ```
 ```
-Explain this concept at a beginner level, then at an advanced level.
+Explain this concept [Concept] at a beginner level, then at an advanced level.
 ```
 
 #### Step 5. Add course materials (knowledge base)
