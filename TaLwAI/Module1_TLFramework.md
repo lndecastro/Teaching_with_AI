@@ -108,12 +108,14 @@ To use AI instrumentally in education, instructors must understand:
 - Prompts = instructions to the model  
 - Structured prompting leads to predictable, high‑quality outputs  
 - Prompt patterns (e.g., instructional, role, chain-of-thought, few-shot)
+- **Anatomy of a Prompt**: Instruction, Context, Input Data, Output Format
+- **Meta-prompt**: prompts used to create, structure or refine other prompts
 
 ### Context Engineering 
 - Designing the *whole environment* around the prompt  
 - Roles, audience, tone, documents, constraints  
 - Retrieval-augmented workflows  
-- Essential for building AI Workspaces and Personalized Assistants
+- Essential for building **AI Workspaces** and **Personalized Assistants**
 
 ### Foundational Models & LLM Ecosystems 
 - Multimodal LLMs, such as, ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok 
