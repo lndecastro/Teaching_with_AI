@@ -238,13 +238,14 @@ Safety & Ethics:
 Begin using your workspace as a persistent and collaborative environment, trying prompts like:
 
 ```
-Map the course outcomes to weekly modules.
+I am beginning to design a new course/program on [Topic]. 
+Help me clarify the purpose and course outcomes for graduate students and researchers. 
 ```
 ```
-Generate three alternative syllabi structures.
+Based on the initial course idea, propose several possible structures or models for how this course could be organized. 
 ```
 ```
-Identify missing assessment types in my draft schedule.
+Help me identify the key decisions and information still required to begin formal course design. 
 ```
 
 ## 1.4 Creating Your Course Personalized Assistant  
