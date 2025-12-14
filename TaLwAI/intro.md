@@ -162,6 +162,71 @@ Every workflow explicitly distinguishes between:
 - Student tools (PA, NotebookLM)  
 - Prohibited uses (grading keys, exam answers, private notes in PA)  
 
+Generative AI expands what instructors can create, automate, and personalize, but it must be used responsibly. Ethical teaching with AI requires transparency, accuracy, respect for student agency, and alignment with institutional policies. In your Teaching with AI journey you should follow some guiding principles:
+
+**Transparency**
+
+- Disclose how you use AI to create instructional materials, assessments, or feedback.  
+- Inform students when AI is used in the course and under what conditions.  
+- Document prompts or workflows when required by policy or good practice.
+
+**Academic Integrity**
+
+- AI should support, *not complete*, assessments meant to measure student learning.  
+- Students must understand what forms of AI assistance are allowed, restricted, or prohibited.  
+- Instructor-facing AI tools must not be shared with students if they contain grading keys, instructor notes, or assessment logic.
+
+**Accuracy and Verification**
+
+AI outputs may contain:
+- factual errors  
+- hallucinated citations  
+- oversimplifications  
+- biased assumptions  
+
+*Good practice:*
+- Verify all AI-generated content before using it in class.  
+- Cross-check claims, examples, code, or datasets.  
+- Revise outputs to align with course standards and context.
+
+**Equity and Accessibility**
+
+AI can help:
+- produce multimodal formats  
+- translate content  
+- adapt readability  
+- generate alternative explanations  
+
+However:
+- Ensure that AI tools do not disadvantage students with limited access.  
+- Provide non-AI alternatives when appropriate.  
+- Protect student privacy and avoid requiring external accounts unless approved by the institution.
+
+**Human Judgment Leads**
+
+AI should enhance, not replace, your expertise. Responsible teaching with AI requires:
+- pedagogical decisions made by the instructor  
+- deliberate alignment with outcomes  
+- continuous monitoring of AI accuracy  
+- thoughtful design of assessments that preserve learning integrity  
+
+**Follow Institutional Policies**
+
+Institutional generative AI policies usually outline expectations for:
+- ethical use  
+- academic integrity  
+- student conduct  
+- instructor responsibilities  
+
+Always review these documents when designing AI-enhanced materials or policies.
+
+**Data Privacy and Protection**
+
+Using AI tools in teaching must align with privacy regulations and safeguard student information.
+
+- **Do not upload personally identifiable student information (PII)**—such as names, email addresses, student IDs, grades, demographic data, or identifiable excerpts of student work—into external AI tools unless they are institutionally approved and FERPA-compliant.  
+- When using AI for grading or feedback generation, **anonym**
+
 ### 3.6 Continuous Improvement & Versioning
 
 A distinctive component of the program is **longitudinal improvement**, supported through AI:
