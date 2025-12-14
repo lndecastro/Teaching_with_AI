@@ -147,7 +147,36 @@ This builds *critical AI literacy*, not just production skills.
 **4. Authentic, Product-Oriented Workflows**  
 Each module ends with concrete artifacts, such as syllabi, class plans, slide decks, assessments and rubrics, study guides, reflective memos, SPoI instruments, and improvement dashboards. These can be deployed directly in the participants’ actual courses.
 
-### 3.5 Ethical, Responsible, and Human-Centered Integration
+### 3.5 Continuous Improvement & Versioning
+
+A distinctive component of the program is **longitudinal improvement**, supported through AI:
+
+- Every version of the course is recorded in the Workspace.  
+- AI identifies recurring issues or patterns.  
+- Revised assessments, slides, and policies are iteratively generated.  
+- A reflective practice notebook grows over time.  
+
+This enables sustained teaching innovation, not just a one-time redesign.
+
+### 3.6 What Makes This Program Unique?
+
+- End-to-end workflow integration (planning → improvement)  
+- Two persistent AI systems built step-by-step  
+- Cross-tool literacy rather than platform dependence  
+- Multimodal content generation across the curriculum  
+- Evidence-based and research-aligned AI practices  
+- Real teaching artifacts produced in every module  
+- Explicit guardrails for academic integrity and responsible AI use
+
+This program is not a typical “how to use AI” workshop. It is a complete transformation of your teaching ecosystem, powered by structured, responsible, and human-centered AI.
+
+### 3.7 Operational Integration
+
+The contents of the concept map below was generated with NotebookLM and contains an overview of the seven steps of the teaching framework, the core operational tools proposed (AI Workspace and Course Personalized Assistant), the foundational knowledge necessary to navigate the course, and the program principles. The final Mind Map was drawn using Napkin.ai. 
+
+![Program Operational Integration](./Data/MM_OperationalIntegration.png)
+
+## 4. Responsible and Ethical AI Use in Teaching
 
 The program ensures that AI outputs are always:
 
@@ -164,19 +193,19 @@ Every workflow explicitly distinguishes between:
 
 Generative AI expands what instructors can create, automate, and personalize, but it must be used responsibly. Ethical teaching with AI requires transparency, accuracy, respect for student agency, and alignment with institutional policies. In your Teaching with AI journey you should follow some guiding principles:
 
-**Transparency**
+### 4.1 Transparency
 
 - Disclose how you use AI to create instructional materials, assessments, or feedback.  
 - Inform students when AI is used in the course and under what conditions.  
 - Document prompts or workflows when required by policy or good practice.
 
-**Academic Integrity**
+### 4.2 Academic Integrity
 
 - AI should support, *not complete*, assessments meant to measure student learning.  
 - Students must understand what forms of AI assistance are allowed, restricted, or prohibited.  
 - Instructor-facing AI tools must not be shared with students if they contain grading keys, instructor notes, or assessment logic.
 
-**Accuracy and Verification**
+### 4.3 Accuracy and Verification
 
 AI outputs may contain:
 - factual errors  
@@ -184,12 +213,12 @@ AI outputs may contain:
 - oversimplifications  
 - biased assumptions  
 
-*Good practice:*
+**Good practice:**
 - Verify all AI-generated content before using it in class.  
 - Cross-check claims, examples, code, or datasets.  
 - Revise outputs to align with course standards and context.
 
-**Equity and Accessibility**
+### 4.4 Equity and Accessibility
 
 AI can help:
 - produce multimodal formats  
@@ -202,7 +231,7 @@ However:
 - Provide non-AI alternatives when appropriate.  
 - Protect student privacy and avoid requiring external accounts unless approved by the institution.
 
-**Human Judgment Leads**
+### 4.5 Human Judgment Leads
 
 AI should enhance, not replace, your expertise. Responsible teaching with AI requires:
 - pedagogical decisions made by the instructor  
@@ -210,7 +239,7 @@ AI should enhance, not replace, your expertise. Responsible teaching with AI req
 - continuous monitoring of AI accuracy  
 - thoughtful design of assessments that preserve learning integrity  
 
-**Follow Institutional Policies**
+### 4.6 Follow Institutional Policies
 
 Institutional generative AI policies usually outline expectations for:
 - ethical use  
@@ -220,50 +249,21 @@ Institutional generative AI policies usually outline expectations for:
 
 Always review these documents when designing AI-enhanced materials or policies.
 
-**Data Privacy and Protection**
+### 4.7 Data Privacy and Protection
 
 Using AI tools in teaching must align with privacy regulations and safeguard student information.
 
 - **Do not upload personally identifiable student information (PII)**—such as names, email addresses, student IDs, grades, demographic data, or identifiable excerpts of student work—into external AI tools unless they are institutionally approved and FERPA-compliant.  
 - When using AI for grading or feedback generation, **anonym**
 
-### 3.6 Continuous Improvement & Versioning
-
-A distinctive component of the program is **longitudinal improvement**, supported through AI:
-
-- Every version of the course is recorded in the Workspace.  
-- AI identifies recurring issues or patterns.  
-- Revised assessments, slides, and policies are iteratively generated.  
-- A reflective practice notebook grows over time.  
-
-This enables sustained teaching innovation, not just a one-time redesign.
-
-### 3.7 What Makes This Program Unique?
-
-- End-to-end workflow integration (planning → improvement)  
-- Two persistent AI systems built step-by-step  
-- Cross-tool literacy rather than platform dependence  
-- Multimodal content generation across the curriculum  
-- Evidence-based and research-aligned AI practices  
-- Real teaching artifacts produced in every module  
-- Explicit guardrails for academic integrity and responsible AI use
-
-This program is not a typical “how to use AI” workshop. It is a complete transformation of your teaching ecosystem, powered by structured, responsible, and human-centered AI.
-
-### 3.8 Operational Integration
-
-The contents of the concept map below was generated with NotebookLM and contains an overview of the seven steps of the teaching framework, the core operational tools proposed (AI Workspace and Course Personalized Assistant), the foundational knowledge necessary to navigate the course, and the program principles. The final Mind Map was drawn using Napkin.ai. 
-
-![Program Operational Integration](./Data/MM_OperationalIntegration.png)
-
-## 4. How to Use This Jupyter Book
+## 5. How to Use This Jupyter Book
 *A workflow-oriented guide for navigating the Teaching with AI program*
 
 This Jupyter Book is designed not as a linear textbook, but as an **interactive, modular, and artifact-generating environment** that accompanies the Teaching with AI program. It functions as your reference manual, prompt library, workspace guide, and teaching-development companion throughout Modules 1–8.
 
 To help you get the most out of it, this section explains how to navigate the book, how to integrate it with your AI Workspace and Personalized Assistant, and how to use it as part of your ongoing teaching practice.
 
-### 4.1 The Jupyter Book as a Living Reference  
+### 5.1 The Jupyter Book as a Living Reference  
 This book is intentionally structured to be:
 
 - **Modular** – each chapter (module) mirrors one phase of the AI-Enhanced Teaching Process Framework.  
@@ -283,7 +283,7 @@ Each module includes:
 
 This allows you to move seamlessly from **learning → doing → integrating → improving**.
 
-### 4.2 How to Navigate the Book  
+### 5.2 How to Navigate the Book  
 Use the **sidebar** to jump between modules:
 
 - **Modules 1–8** cover the core workflow (planning to reflection).  
@@ -296,7 +296,7 @@ At the top of each page, look for:
 - **Section headings** → each major workflow task is marked with a clear subsection.  
 - **Prompt Blocks** → all prompts are copy-ready for use in any LLM.  
 
-### 4.3 How to Integrate the Book With Your AI Workspace and PA 
+### 5.3 How to Integrate the Book With Your AI Workspace and PA 
 The Jupyter Book works best when paired with your **AI Workspace (Project)** to be created in Module 1. The book contains numerous **student-facing prompts** designed specifically for your PA. Whenever you see simplified rubrics, assignment explanations, study strategies, self-assessment checklists, flashcards, and FAQs, these can be copy-pasted into your PA’s instruction block or provided directly to students.
 
 **Important:**  
@@ -304,7 +304,7 @@ Workspace = instructor-facing design space
 PA = student-facing guidance tool  
 Never upload instructor-only materials into the PA. The Jupyter Book points out exactly which components can safely be shared with students.
 
-### 4.4 Using the Prompts Effectively  
+### 5.4 Using the Prompts Effectively  
 Each module includes a set of prompts which requires some best practices:
 
 - Always adapt placeholders (e.g., [Course Title], [Topic], [Paste Assignment]).  
@@ -312,7 +312,7 @@ Each module includes a set of prompts which requires some best practices:
 - Ask for variations to compare outputs.  
 - Use revision loops: draft → audit → improve → finalize.
 
-### 4.5 Using the Exercises as Production Tasks  
+### 5.5 Using the Exercises as Production Tasks  
 Every module ends with production-oriented exercises. These are not generic activities—they are **designed to produce real components** for your actual course.
 
 Examples:
@@ -325,13 +325,13 @@ Examples:
 - Module 7 → generate rubric-based assessments and feedback  
 - Module 8 → design SPoI forms and reflective improvement plans  
 
-## 5. Human-Centered Teaching with AI
+## 6. Human-Centered Teaching with AI
 
 > AI supports teaching, it does not replace teachers.
 
 Educators maintain responsibility for content validity, rigor, transparency, and ethics.
 
-## 6. GenAI Tools to be Studied
+## 7. GenAI Tools to be Studied
 
 ### ChatGPT
 ChatGPT is a versatile AI language model developed by OpenAI, capable of interpreting natural language, performing various statistical analyses, coding in Python, and generating data visualizations such as bar charts, pie charts, scatter plots, and histograms. It supports data uploads in formats like CSV, XLSX, PDF, and JSON (up to 50MB) and can integrate with cloud storage like Google Drive and OneDrive. ChatGPT excels in broad AI capabilities including data analysis, summarization, and storytelling. It requires web browsing for real-time data updates.
@@ -443,7 +443,7 @@ Access Scite here: [https://scite.ai/]
 Research Rabbit is a visual research discovery tool that maps relationships between papers, authors, and research clusters. It generates interactive citation networks, co-authorship graphs, and thematic maps, enabling users to explore scientific domains visually. It is particularly helpful for literature reviews, identifying research gaps, and building reading lists.
 Access Research Rabbit here: [https://www.researchrabbit.ai/]
 
-## 7. About the Instructor – Dr. Leandro Nunes de Castro
+## 8. About the Instructor – Dr. Leandro Nunes de Castro
 
 - Professor in the **Department of Computing and Software Engineering**, U.A. Whitaker College of Engineering, FGCU.
 - Ph.D. in Computer Engineering with 30 years of experience in **Artificial Intelligence, Data Science, and Natural Computing**.
