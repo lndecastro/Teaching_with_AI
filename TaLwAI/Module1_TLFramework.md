@@ -2,10 +2,9 @@
 
 The **Teaching with AI Framework** provides a structured, operational view of how generative AI can be integrated into each phase of the teaching process. Rather than altering pedagogy, it highlights where AI can add efficiency, creativity, and support across planning, design, delivery, assessment, student support, and reflection.
 
-This module provides the foundation for the instrumental use of Generative AI (GenAI) across the entire teaching workflow.  
-It is built upon the background knowledge from the **AI Literacy Program** (Prompt Engineering, Context Engineering, and Foundational Models).  
+This module provides the foundation for the instrumental use of Generative AI (GenAI) across the entire teaching workflow. It is built upon the background knowledge from the **AI Literacy Program** (Prompt Engineering, Context Engineering, and Foundational Models).  
 
-Unlike pedagogical programs, this module focuses **not** on pedagogy or teaching theory, but on **how to operationally integrate GenAI tools** to plan, design, deliver, assess, support, and improve your course. In this module you will create your course workspace and personalized assistant.
+Unlike pedagogical programs, this module focuses **not** on pedagogy or teaching theory, but on **how to operationally integrate GenAI tools** to plan, design, deliver, assess, support, and improve your course. In this module you will learn the seven steps of the framework, create your course workspace and personalized assistant.
 
 ## Learning Objectives
 
