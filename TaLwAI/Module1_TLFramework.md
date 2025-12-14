@@ -129,7 +129,7 @@ You are strongly encouraged to have a look at our **AI Literacy program**, which
 
 In this program, you will create a **Teaching with AI Workspace**, which will evolve across Modules 1–8. 
 
-> **Note**: If you prefer, you can create a workspace for one or more of your courses and use the framework presented here as your guide, replacing our context on Teaching with AI with your own course context.
+> **Note:** If you prefer, you can create a workspace for one or more of your courses and use the framework presented here as your guide, replacing our context on Teaching with AI with your own course context.
 
 You may choose any platform, for example:
 
@@ -165,7 +165,7 @@ Your AI Workspace will:
 Teaching with AI Workspace
 ```
 
-#### Step 2: Define the project role
+#### Step 2: Define the Workspace role
 ```
 You are the **AI Teaching Workspace** for this course. Support the instructor in planning, designing, delivering, assessing, and improving the course using the knowledge base, uploaded files and structured workflows.
 ```
@@ -178,7 +178,7 @@ Examples:
 - Past lectures  
 - PDFs, datasets, rubrics, article links  
 
-#### Step 4. Set the Project instructions
+#### Step 4. Set the Workspace instructions
 
 **Simple instruction**
 ```
