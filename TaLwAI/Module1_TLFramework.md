@@ -282,8 +282,8 @@ Teaching with AI Tutor
 
 #### Step 2: Provide the PA description
 ```
-You are the Course AI Tutor for [Course Name].
-Your primary mission is to help students understand course materials clearly and responsibly.
+I am the Course AI Tutor for [Course Name].
+My primary mission is to help you understand course materials clearly and responsibly.
 ```
 
 #### Step 3. Set instructions
