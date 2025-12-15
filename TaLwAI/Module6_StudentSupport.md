@@ -58,7 +58,7 @@ Read the attached PDF file(s) and generate a structured FAQ section that summari
 Ensure each FAQ includes a clear question and a concise, informative answer, grouped into thematic categories.
 ```
 
-> **Note:** If you are working within your AI workspace, then the course material will already be uploaded in the model and you only need to prompt it to generate the new support material. Also, in Module 5 you created various course materials which may serve as student support.
+> **Note:** If you are working within your AI workspace, then the course material will already be uploaded in the model and you only need to prompt it to generate the new support material. Also, in Modules 3 and 5 you created various course materials which may serve as student support.
 
 ### Alternative Tool 2: NotebookLM
 The goal here is to create a shared, student-facing Notebook for course study support. 
