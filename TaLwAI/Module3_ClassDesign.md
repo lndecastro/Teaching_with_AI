@@ -65,8 +65,6 @@ Generate a visually-engaging slide deck for a 90-minute class titled [Class Titl
 Include objectives, diagrams, examples, teaching steps, risks, and interactive elements.
 ```
 
-> **Note:** As an alternative, instead of prompting the slide generator tool, you could prompt an LLM to generate the slides' contents for you and then copy-paste this content into a tool that designs and formats the slides, such as Gamma.app. 
-
 **Prompt Template for Claude.ai**
 ```
 Generate a visually-engaging slide deck for a 90-minute class titled [Class Title].
@@ -82,7 +80,7 @@ Ground class content in peer‑reviewed research and provide academically reliab
 - **SciSpace Literature Review** (https://scispace.com/search)
 - **Perplexity Academic** (https://www.perplexity.ai/academic)
 - **Consensus.app** (https://consensus.app/)
-- **Google Scholar Labs** (https://scholar.google.com/scholar_labs)
+- **Google Scholar Labs** (https://scholar.google.com/scholar_labs/search)
 
 > **Note 1:** Other relevant tools for this task include Elicit (elicit.com), Scite (scite.ai), and Research Rabbit (researchrabitt.ai). <p>
 > **Note 2:** There are various search engines focused on technical or scientific content, such as **Semantic Scholar** and the standard **Google Scholar**, which are useful but do not offer the AI prompt capabilities of the tools presented above.
