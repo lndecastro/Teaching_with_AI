@@ -26,7 +26,7 @@ Use AI to generate, refine, align, and audit learning outcomes across cognitive 
 **Prompt Template — Instructional + Role-Based**
 ```
 You are a higher-education instructional designer. 
-Generate 4–6 measurable learning outcomes for a course titled [Course Name].
+Propose the course goals and generate 4–6 measurable learning outcomes for a course titled [Course Name].
 Use Bloom’s taxonomy across different levels and focus on skills related to [insert skills].
 Present results in a table: Outcome | Bloom Level | Example Assessment.
 ```
@@ -65,7 +65,7 @@ Present in a table.
 
 **Additional Prompt Variant — Multiple Profiles**
 ```
-Create three learner personas: beginner, mixed-background, and advanced.
+Create three learner personas for a course on [Course Topic]: beginner, mixed-background, and advanced.
 Describe needs, risks, and recommended adaptations for each.
 ```
 
