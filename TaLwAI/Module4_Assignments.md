@@ -31,7 +31,8 @@ Based on the learning outcomes presented below, suggest one formative and one su
 [Learning Outcomes]
 ```
 
-> **Note 1:** You can use the same or a similar prompt for each learning outcome.
+> **Note 1:** You can use the same or a similar prompt for each learning outcome. <p>
+
 > **Note 2:** If you know the type of assignment you want to create, you can prompt the model to create exactly that type of assignment.
 
 ## 4.2 Create Authentic Tasks (Quizzes, Exams, Case Studies, Projects, Multimodal Assignments)
