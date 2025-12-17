@@ -216,8 +216,8 @@ NotebookLM can generate grounded resources that can be later distributed:
 - step‑by‑step walkthroughs of prerequisite topics
 - mindmaps
 
-> **Note 1:** Use NotebookLM to produce structured learning aids *based solely on your uploaded readings*, then make them available for student support.
-> **Note 2:** If you have created the shared Student Notebook, then the students will be able to use it also as their **assignment assistant environment**.
+> **Note 1:** Use NotebookLM to produce structured learning aids *based solely on your uploaded readings*, then make them available for student support. <p>
+> **Note 2:** If you have created the shared Student Notebook, then the students will be able to use it also as their *assignment assistant environment*.
 
 ## 6.4 Monitor Student Success
 
@@ -244,6 +244,7 @@ The goal is to use the data to calculate a "Student Success Score".
 
 **Additional Prompt Variant - Using a Pre-Specified Score Matrix**
 Provide the following details to create a matrix or table for collecting student information and calculating a success score.
+
 ```
 Create a table for calculating anonymized student success indicators.  
 Do NOT use or request any personally identifiable information (PII).  
@@ -252,7 +253,7 @@ Use anonymous labels such as **Student 01, Student 02**, etc.
 ### Learning Indicators (All Non-PII)
 Use only the following non-identifying metrics:
 
-- Anonymous Learner ID  
+- Anonymous Student ID  
 - Attendance Rate (%)  
 - Assignment Completion Rate (%)  
 - Quiz Average Score (%)  
@@ -295,7 +296,7 @@ Success Score =
 Additional Notes:
 - Ensure all percentages are on a 0-100 scale for consistency.
 - The Success Score should range from 0 to 100, with higher scores indicating greater likelihood of success.
-- Include a brief explanation of how to interpret the score (e.g., “Scores above 80 indicate strong performance, 60-80 suggest moderate success with room for improvement, below 60 indicate a need for intervention”).
+- Include a brief explanation of how to interpret the score (e.g., “Scores above 80 indicate strong performance, 60-79 suggest moderate success with room for improvement, below 60 indicate a need for intervention”).
 
 ## Output Requirements
 1. Generate the anonymized table  
