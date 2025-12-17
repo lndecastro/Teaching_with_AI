@@ -90,12 +90,14 @@ NotebookLM supports learning through **multimodal, source-grounded interactions*
 
 - **Document-based accuracy** — All answers come only from uploaded course materials.  
 - **Multimodal sources** — Students learn from text, PDFs, images, URLs, and video content.  
-- **Flashcards** — Automatic retrieval practice for key concepts.  
-- **Study guides** — Summaries generated from selected documents.  
-- **Audio podcasts** — AI-generated audio explanations students can listen to.
+- **Audio Overviews (Podcasts)** — AI-generated audio explanations students can listen to.
 - **Video Overviews** — Narrated AI-generated presentations students can watch.
 - **Mind maps** — Visual connections extracted across multiple documents.  
-- **Comparative synthesis** — Helps students relate ideas from different sources.
+- **Reports** — Customizable document that synthesizes information from uploaded sources.
+- **Flashcards** — Automatic retrieval practice for key concepts.
+- **Quiz** — Test to check knowledge acquisition.  
+- **Infographics** — Helps students with a visual summary of uploaded sources.
+- **Slide deck** — Set of slides summarizing the content of the uploaded sources.
 
 This creates a transparent, student-owned workspace for meaningful engagement with the course content.
 
