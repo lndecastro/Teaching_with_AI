@@ -168,6 +168,8 @@ These strategies help you:
 
 AI accelerates the creation of these elements while allowing you to customize them for different audiences, difficulty levels, or class modalities.
 
+> **Note:** All foundational models' apps and general purpose models should be capable of creating the assets described here. We sampled some just to help guiding you through this process.
+
 ### A. Storytelling With AI Tools
 
 Storytelling supports attention, memory, and emotional connection. AI enables you to generate rich, contextualized stories that illustrate course concepts.
@@ -177,12 +179,13 @@ Storytelling supports attention, memory, and emotional connection. AI enables yo
 - **Claude** – nuanced stories, role-play, ethical dilemmas, branching scenarios  
 - **Gemini** – multimodal stories (text + images + diagrams)  
 - **NotebookLM** – stories grounded in your own course documents  
-- **Perplexity** – evidence-based narratives with citations  
+- **Perplexity** – evidence-based narratives with citations
+- **Copilot -> Create -> Create a story** – visually engaging narratives
 - **SciSpace / ExplainPaper** – stories grounded in scientific literature  
 
 **Ready-to-Use Prompt**
 ```
-Create a short story (150–200 words) that illustrates [Concept]. 
+Create a short story (250–500 words) that illustrates [Concept]. 
 Then provide: 
 1) A simple explanation for beginners, 
 2) A technical explanation for advanced students, 
@@ -254,10 +257,10 @@ Questions should increase in difficulty.
 ## 5.3 Employ Technology and AI Tools for Content Delivery
 
 ### Purpose
-Leverage (academic) generative AI tools to present, demonstrate, simulate or interact with course content in diverse formats. This section focuses on some GenAI tools and workflows that support content delivery, multimodal presentation, visualization, and real-time interaction.
+Leverage (academic) generative AI tools to present, demonstrate, simulate or interact with course content in diverse formats. This section focuses on some GenAI tools and workflows that support content delivery, multimodal presentation, visualization, and real-time interaction. We present here some sample tools and use cases to illustrate different possibilities.
 
 ### Illustrative Case Study
-The paper titled *Feedback sources in essay writing: peer-generated or AI-generated feedback?* investigates the **quality of feedback provided by ChatGPT compared to peer feedback** on graduate students' argumentative essays. The findings revealed that peer feedback was generally of higher quality, particularly in identifying specific issues within the essays, while ChatGPT provided more descriptive feedback.  The researchers found no significant overall correlation between essay quality and feedback quality from either source, suggesting a potential complementary role for both ChatGPT and peers in the feedback process, which could help reduce teacher workload.
+The open-access paper titled *Feedback sources in essay writing: peer-generated or AI-generated feedback?* investigates the **quality of feedback provided by ChatGPT compared to peer feedback** on graduate students' argumentative essays. The findings revealed that peer feedback was generally of higher quality, particularly in identifying specific issues within the essays, while ChatGPT provided more descriptive feedback.  The researchers found no significant overall correlation between essay quality and feedback quality from either source, suggesting a potential complementary role for both ChatGPT and peers in the feedback process, which could help reduce teacher workload.
 
 ➡️ Download the paper here: [Paper_Feedback_in_Essay_Writing](./Data/Feedbacksourcesinessaywriting.pdf) <br>
 
@@ -280,7 +283,7 @@ Transform any slide deck into a narrated video.
 Automatically extract themes, citations, or key tables.
 
 **Use Case 4 — Paraphraser**
-Produce student-friendly explanations of research papers.
+Rewrite, shortens, or expand academic texts.
 
 ### Tool 2: NotebookLM
 
@@ -297,7 +300,7 @@ Visualize relationships across sections of a paper.
 Produce Q&A for the subject of the paper.
 
 **Use Case 5 — Video Overview**
-Create a video overview of the paper below that summarizes the history of AI and analyze for consistency and timeline accuracy.
+Create a video overview of one or more documents. Example: the paper below summarizes the history of AI. Create a video overview using NotebookLM and analyze for consistency and timeline accuracy.
 [Paper_History_of_AI](./Data/HistoryofAI.pdf) <br>
 
 ### Tool 3: ChatGPT
@@ -315,7 +318,7 @@ Upload a dataset to generate graphs, analysis, or simulations.
 Translate content into multiple languages or reading levels.
 
 **Use Case 4 — Micro-Lecture**
-Produce a concise 2-minute explanation of any topic.
+Produce a concise explanation of any topic.
 
 **Use Case 5 — Interactive Walkthrough**
 Deliver content step-by-step with comprehension checks.
@@ -429,6 +432,23 @@ Produce dialogues using multiple AI-generated characters to illustrate contrasti
 
 **Advanced Option — Instructor Voice Cloning**
 Create a private cloned voice for consistent instructor presence in audio materials.
+
+### Tool 11: Microsoft Copilot —> Create
+
+**Use Case 1 — Create an Image**
+Generate custom images from text prompts for slides, handouts, LMS pages, or presentations.
+
+**Use Case 2 — Create a Video**
+Produce short AI-generated videos combining visuals, transitions, and optional narration.
+
+**Use Case 3 — Design an Infographic**
+Transform text, bullet points, or structured data into visually organized infographics.
+
+**Use Case 4 — Create a Story**
+Generate short stories, narratives, or scenarios to contextualize concepts.
+
+**Use Case 5 — Design a Poster**
+Produce polished posters with headlines, visuals, and concise explanatory text.
 
 ## 5.4 Monitor Engagement and Comprehension in Real Time
 
