@@ -72,7 +72,8 @@ Include objectives, diagrams, examples, teaching steps, risks, and interactive e
 Create an interactive artifact.
 ```
 
-> **Note:** In Claude.ai you could have chosen *Artifact -> New Artifact* and selected one specific type, for example, *Apps and websites* to have an online presentation available for the students.
+> **Note 1:** In Claude.ai you could have chosen *Artifact -> New Artifact* and selected one specific type, for example, *Apps and websites* to have an online presentation available for the students. <p>
+> **Note 2:** In Copilot you can use menu *Create -> Create a presentation*.
 
 ### C. Integrating Scientific Literature
 **Task:**
@@ -184,11 +185,13 @@ Include: summary, benefits, risks, best practices, and citation-backed recommend
 Use a generative model like **Perplexity, NotebookLM, or SciSpace**, to analyze some pre-selected sources of reference and create content from them. As example, you can use the papers below as your source material if needed or some of the papers you saved from your previous searches. <br>
 
 Example contents (papers) for a [Course on Teaching with AI] and the topic of [AI for Assessment and Feedback]: <p>
-[Paper_1:](./Data/AIforAssessmentandFeedback.pdf) Artificial intelligence for assessment and feedback to enhance student success in higher education. <br>
-[Paper_2:](./Data/Feedbacksourcesinessaywriting.pdf) Feedback sources in essay writing: peer-generated or AI-generated feedback? <br>
+[Paper_1:](./Data/AIforAssessmentandFeedback.pdf) Artificial intelligence for assessment and feedback to enhance student success in higher education. (*Open Access*) <br>
+[Paper_2:](./Data/Feedbacksourcesinessaywriting.pdf) Feedback sources in essay writing: peer-generated or AI-generated feedback? (*Open Access*) <br>
+<!--
 [Paper_3:](./Data/Assessingstudentperceptions.pdf) Assessing student perceptions and use of instructor versus AI‐generated feedback. <br>
+-->
 
-*Step 1:* Create a new Space in Perplexity, Notebook in NotebookLM, or Library in SciSpace and title it "AI for Assessment and Feedback". <br>
+*Step 1:* Preferably upload this material in your AI Workspace, but you can also create a new Notebook in NotebookLM or Library in SciSpace and title it "AI for Assessment and Feedback". <br>
 *Step 2:* Upload your sources of reference (see files above) into the LLM. <br>
 *Step 3:* Prompt the LLM. <br>
 
