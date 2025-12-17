@@ -137,7 +137,6 @@ You may choose any platform, for example:
 - Claude Projects  
 - Perplexity Spaces  
 - Gemini + NotebookLM hybrid workspace  
-- Microsoft Copilot Pages  
 - xAI Grok Projects
 
 ### Purpose of the Workspace
