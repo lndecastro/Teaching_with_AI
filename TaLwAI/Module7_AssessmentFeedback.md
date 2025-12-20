@@ -378,7 +378,7 @@ Upload anonymized samples and run the reasoning-consistency analysis prompts.
 ### Exercise 5 — Classwide Insights  
 Upload a batch of student answers and generate a misconception matrix and reteaching plan.
 
-# 7.7 Reflection
+## 7.7 Reflection
 
 - How did AI enhance clarity, efficiency, or depth in your assessment processes?  
 - Which feedback or grading tasks still require full human oversight?  
