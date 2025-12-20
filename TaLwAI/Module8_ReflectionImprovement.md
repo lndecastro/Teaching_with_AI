@@ -180,7 +180,7 @@ Generate:
 - A short narrative interpreting results
 ```
 
-# 8.6 Updates to Your AI Workspace and Personalized Assistant  
+## 8.6 Updates to Your AI Workspace and Personalized Assistant  
 
 Minimal updates are needed beyond uploading new reflection materials.
 
