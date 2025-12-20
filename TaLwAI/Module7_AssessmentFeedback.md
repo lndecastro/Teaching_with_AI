@@ -37,7 +37,6 @@ Include one example AI-supported workflow for each assignment type.
 | Project | Provide milestone feedback, structure mapping | “List 5 risks or gaps in this project proposal.” |
 
 ### Additional Recommended Tools
-- **Specialized tools like Gradescope (gradescope.com) and Stargrader (stargrader.com)** – structured rubric-based auto-grading  
 - **NotebookLM or Claude Quiz Generator** – grounded MCQs from course materials  
 - **AI Workspaces** – persistent assignment evaluators  
 
@@ -134,7 +133,8 @@ Include benefits and limitations, and provide a table comparing them.
 ```
 
 #### Sample Tools
-- **CoGrader** (cograder.com)  
+- **CoGrader** (cograder.com)
+- **Stargrader** (stargrader.com)  
 - **EssayGrader** (essaygrader.ai) 
 - **Gradescope** (gradescope.com)  
 - **Turnitin Academic Integrity** (turnitin.com/solutions/academic-integrity)
