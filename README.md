@@ -3,4 +3,4 @@
 
 **You can view the live book here:**
 
-👉 [**View the Published Book**](https://lndecastro.github.io/Teaching_and_Learning_with_AI/intro.html)
+👉 [**View the Published Book**](https://lndecastro.github.io/Teaching_with_AI/intro.html)
