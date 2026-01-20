@@ -253,8 +253,12 @@ Always review these documents when designing AI-enhanced materials or policies.
 
 Using AI tools in teaching must align with privacy regulations and safeguard student information.
 
-- **Do not upload personally identifiable student information (PII)**—such as names, email addresses, student IDs, grades, demographic data, or identifiable excerpts of student work—into external AI tools unless they are institutionally approved and FERPA-compliant.  
-- When using AI for grading or feedback generation, **anonym**
+- **Do not upload personally identifiable student information (PII)**, such as names, email addresses, student IDs, grades, demographic data, or identifiable excerpts of student work, into external AI tools unless they are institutionally approved and FERPA-compliant.
+- When using AI for grading or feedback generation, **anonymize all student work**, removing names, references, metadata, or contextual details that could reveal identity.
+- **Prefer institutionally licensed AI platforms** when handling any content related to student learning or performance.
+- Inform students if any of their anonymized work will be used with AI tools, and provide alternatives for those who prefer not to engage with third-party systems.
+- Avoid requiring students to create accounts on external AI platforms unless approved by the institution.
+- Always follow the institutional policies and legal guidelines on data protection when integrating AI into your teaching workflow.
 
 ## 5. How to Use This Jupyter Book
 *A workflow-oriented guide for navigating the Teaching with AI program*
