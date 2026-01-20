@@ -1,0 +1,1711 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5. AI-Enabled Class Delivery &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module5_ClassDelivery';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. AI‑Powered Student Support" href="Module6_StudentSupport.html" />
+    <link rel="prev" title="4. AI-Enhanced Assignments and Exam Preparation" href="Module4_Assignments.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module5_ClassDelivery.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module5_ClassDelivery.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>5. AI-Enabled Class Delivery</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilitate-active-student-centered-learning">5.1 Facilitate Active, Student-Centered Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-1-aiaugmented-thinkpairshare">Example Activity 1. AI‑Augmented Think–Pair–Share</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stepbystep">Step‑by‑Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-outcomes">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-2-ai-debate-partner">Example Activity 2. AI Debate Partner</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#debrief-questions">Debrief Questions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-led-group-exchange">Instructor-Led Group Exchange</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-3-ai-error-analysis">Example Activity 3. AI Error Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#student-task">Student Task</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-4-multi-tool-comparison-challenge">Example Activity 4. Multi-Tool Comparison Challenge</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-instructions">Activity Instructions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-table-students-complete">Analysis Table (Students Complete)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable">Deliverable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-storytelling-examples-demonstrations-and-socratic-questioning">5.2 Use Storytelling, Examples, Demonstrations, and Socratic Questioning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#focus">Focus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-storytelling-with-ai-tools">A. Storytelling With AI Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools-for-storytelling">Sample Tools for Storytelling</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-creating-examples-with-ai">B. Creating Examples With AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools-to-create-examples">Sample Tools to Create Examples</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-demonstrations-with-ai">C. Demonstrations With AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools-to-create-demos">Sample Tools to Create Demos</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-socratic-questioning-with-ai">D. Socratic Questioning With AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools">Sample Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#employ-technology-and-ai-tools-for-content-delivery">5.3 Employ Technology and AI Tools for Content Delivery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#illustrative-case-study">Illustrative Case Study</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-possibilities">Exploring Possibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-1-scispace">Tool 1: SciSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-2-notebooklm">Tool 2: NotebookLM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-3-chatgpt">Tool 3: ChatGPT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-4-claude-ai-artifacts-long-form-content">Tool 4: Claude.ai (Artifacts + Long-Form Content)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-5-gemini-multimodal-images-diagrams-voice">Tool 5: Gemini (Multimodal: Images + Diagrams + Voice)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-6-gamma-app-slide-deck-generator">Tool 6: Gamma App (Slide Deck Generator)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-7-canva-magic-studio">Tool 7: Canva Magic Studio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-8-napkin-ai">Tool 8: Napkin.ai</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-9-heygen-synthesia-ai-video-presentation">Tool 9: HeyGen / Synthesia (AI Video Presentation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-10-elevenlabs-ai-voice-narration-audio-delivery">Tool 10: ElevenLabs (AI Voice, Narration &amp; Audio Delivery)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-11-microsoft-copilot-create">Tool 11: Microsoft Copilot —&gt; Create</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-engagement-and-comprehension-in-real-time">5.4 Monitor Engagement and Comprehension in Real Time</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Focus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-1-ai-generated-micro-polls">Example Activity 1. AI-Generated Micro-Polls</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-2-ai-generated-real-time-misconception-probe">Example Activity 2. AI-Generated Real-Time Misconception Probe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-preparation-prompt">Instructor Preparation Prompt</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-steps">Activity Steps</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-questions">Reflection Questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-3-ai-assisted-knowledge-check-carousel">Example Activity 3. AI-Assisted Knowledge Check Carousel</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-4-ai-augmented-real-time-summary-wall">Example Activity 4. AI-Augmented Real-Time Summary Wall</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-5-real-time-adaptive-questioning-sequence">Example Activity 5. Real-Time Adaptive Questioning Sequence</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Activity Steps</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-6-ai-generated-minute-paper-feedback-loop">Example Activity 6. AI-Generated Minute Paper Feedback Loop</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Overview</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Learning Outcomes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-7-live-data-interpretation-with-ai">Example Activity 7. Live Data Interpretation with AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Learning Outcomes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapt-pacing-and-methods-responsively">5.5 Adapt Pacing and Methods Responsively</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-personalized-assistant">5.6 Updates to Your AI Workspace &amp; Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workspace-project-updates">Workspace (Project) Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#personalized-assistant-pa-updates">Personalized Assistant (PA) Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">5.7 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-design-an-aiaugmented-active-learning-activity">Exercise 1 — Design an AI‑Augmented Active Learning Activity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-create-a-story-example-demo-or-socratic-sequence">Exercise 2 — Create a Story, Example, Demo, or Socratic Sequence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-produce-a-multimodal-content-delivery-asset">Exercise 3 — Produce a Multimodal Content Delivery Asset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-run-a-realtime-engagement-comprehension-check">Exercise 4 — Run a Real‑Time Engagement &amp; Comprehension Check</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-integrate-ai-outputs-into-lesson-pacing-adjustments">Exercise 5 — Integrate AI Outputs Into Lesson Pacing Adjustments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-reflection-your-ai-enhanced-teaching-persona">Exercise 6 — Reflection: Your AI-Enhanced Teaching Persona</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">5.8 Reflection</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ai-enabled-class-delivery">
+<h1>5. AI-Enabled Class Delivery<a class="headerlink" href="#ai-enabled-class-delivery" title="Link to this heading">#</a></h1>
+<p><em>Enacting the instructional plan with flexibility, engagement, and real-time AI support</em></p>
+<p>This phase is about enacting the instructional plan with flexibility and engagement. It focuses on delivering instruction dynamically and responsively while integrating generative AI tools to enhance engagement, learning, and personalization. Strategies covered include facilitating active, student-centered learning, using storytelling and examples, employing technology and AI tools for content delivery, monitoring engagement and comprehension in real time, and adapting pacing and methods responsively.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Facilitate active, student-centered learning using generative AI tools.</p></li>
+<li><p>Employ storytelling, demonstrations, examples, and Socratic questioning powered by AI.</p></li>
+<li><p>Use AI to deliver content through multimodal explanations, simulations, and visualizations.</p></li>
+<li><p>Monitor student engagement, participation, and comprehension in real time.</p></li>
+<li><p>Adapt pacing, scaffolding, and teaching methods based on AI insights.</p></li>
+<li><p>Integrate live co-teaching AI methods for enhanced delivery.</p></li>
+</ul>
+<p><img alt="Learning Objectives" src="_images/M5LO.png" /></p>
+</section>
+<section id="facilitate-active-student-centered-learning">
+<h2>5.1 Facilitate Active, Student-Centered Learning<a class="headerlink" href="#facilitate-active-student-centered-learning" title="Link to this heading">#</a></h2>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>Use GenAI to design collaborative and interactive activities that foster engagement and critical thinking.</p>
+<p><strong>Prompt Template - Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Suggest</span> <span class="n">three</span> <span class="n">learning</span> <span class="n">strategies</span> <span class="n">that</span> <span class="n">leverage</span> <span class="n">generative</span> <span class="n">AI</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Explain</span> <span class="n">how</span> <span class="n">tools</span> <span class="n">like</span> <span class="n">ChatGPT</span><span class="p">,</span> <span class="n">Claude</span> <span class="ow">or</span> <span class="n">Perplexity</span> <span class="n">support</span> <span class="n">group</span> <span class="n">work</span> <span class="ow">or</span> <span class="n">collaborative</span> <span class="n">tasks</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">timing</span> <span class="ow">and</span> <span class="n">instructions</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="example-activity-1-aiaugmented-thinkpairshare">
+<h3>Example Activity 1. AI‑Augmented Think–Pair–Share<a class="headerlink" href="#example-activity-1-aiaugmented-thinkpairshare" title="Link to this heading">#</a></h3>
+<section id="overview">
+<h4>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h4>
+<p>Students individually explore a question with an AI assistant, then pair to compare and critique their AI‑assisted reasoning, and finally share insights with the class.</p>
+</section>
+<section id="stepbystep">
+<h4>Step‑by‑Step<a class="headerlink" href="#stepbystep" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p><strong>Think (5 minutes)</strong><br />
+Students ask an AI tool the following prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="n">the</span> <span class="n">concept</span> <span class="n">of</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]</span> <span class="ow">in</span> <span class="n">simple</span> <span class="n">terms</span><span class="o">.</span> 
+<span class="n">Then</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">example</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">misconception</span> <span class="n">students</span> <span class="n">often</span> <span class="n">have</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Students review the AI output and annotate:</p>
+<ul class="simple">
+<li><p>What parts are clear?</p></li>
+<li><p>What parts need correction?</p></li>
+<li><p>What would <em>you</em> add?</p></li>
+</ul>
+</li>
+<li><p><strong>Pair (5 minutes)</strong><br />
+Students compare their annotated answers.<br />
+They must identify:</p>
+<ul class="simple">
+<li><p>One difference in explanations</p></li>
+<li><p>One misconception flagged by AI</p></li>
+<li><p>One improvement they propose together</p></li>
+</ul>
+</li>
+<li><p><strong>Share (5–10 minutes)</strong><br />
+Pairs report to the class:</p>
+<ul class="simple">
+<li><p>How the AI helped</p></li>
+<li><p>Where the AI struggled</p></li>
+<li><p>What they learned by comparing explanations</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="learning-outcomes">
+<h4>Learning Outcomes<a class="headerlink" href="#learning-outcomes" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Improve conceptual clarity</p></li>
+<li><p>Practice evaluating AI-generated content</p></li>
+<li><p>Strengthen metacognitive skills</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-2-ai-debate-partner">
+<h3>Example Activity 2. AI Debate Partner<a class="headerlink" href="#example-activity-2-ai-debate-partner" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>Overview<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>Students debate an issue where the AI acts as a <strong>role-based debating partner</strong>, allowing students to practice argumentation, critique, and evidence use.</p>
+<p><strong>Prompt for Students</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">expert</span> <span class="n">who</span> <span class="n">argues</span> <span class="o">*</span><span class="ow">in</span> <span class="n">favor</span><span class="o">*</span> <span class="n">of</span> <span class="n">the</span> <span class="n">position</span><span class="p">:</span>
+<span class="p">[</span><span class="n">Insert</span> <span class="n">debate</span> <span class="n">statement</span><span class="p">]</span>
+
+<span class="n">Provide</span><span class="p">:</span>
+<span class="mi">1</span><span class="p">)</span> <span class="n">A</span> <span class="n">clear</span> <span class="n">argument</span><span class="p">,</span>
+<span class="mi">2</span><span class="p">)</span> <span class="n">Evidence</span><span class="o">-</span><span class="n">based</span> <span class="n">support</span><span class="p">,</span>
+<span class="mi">3</span><span class="p">)</span> <span class="n">One</span> <span class="n">counterargument</span> <span class="n">you</span> <span class="n">expect</span> <span class="kn">from</span><span class="w"> </span><span class="nn">the</span> <span class="n">opposing</span> <span class="n">side</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Then students ask:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Now</span> <span class="n">switch</span> <span class="n">roles</span> <span class="ow">and</span> <span class="n">argue</span> <span class="o">*</span><span class="n">against</span><span class="o">*</span> <span class="n">the</span> <span class="n">same</span> <span class="n">statement</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="debrief-questions">
+<h4>Debrief Questions<a class="headerlink" href="#debrief-questions" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Which side did AI argue more convincingly?</p></li>
+<li><p>Did the AI hallucinate evidence?</p></li>
+<li><p>How would you strengthen or refute its claims?</p></li>
+</ul>
+</section>
+<section id="instructor-led-group-exchange">
+<h4>Instructor-Led Group Exchange<a class="headerlink" href="#instructor-led-group-exchange" title="Link to this heading">#</a></h4>
+<p>Students form groups of three:</p>
+<ul class="simple">
+<li><p>Student A: presents one side</p></li>
+<li><p>Student B: presents the opposing side</p></li>
+<li><p>Student C: acts as the evaluator/referee</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-3-ai-error-analysis">
+<h3>Example Activity 3. AI Error Analysis<a class="headerlink" href="#example-activity-3-ai-error-analysis" title="Link to this heading">#</a></h3>
+<section id="id2">
+<h4>Overview<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p>Students analyze AI-generated mistakes to deepen understanding and improve critical evaluation. This is powerful for math, programming, statistics, logic, or technical writing.</p>
+<p><strong>Instructor Preparation Prompt</strong>
+Use this to generate deliberate AI mistakes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Produce</span> <span class="n">a</span> <span class="n">partially</span> <span class="n">incorrect</span> <span class="n">explanation</span> <span class="n">of</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Include</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">One</span> <span class="n">factual</span> <span class="n">error</span><span class="p">,</span>
+<span class="o">-</span> <span class="n">One</span> <span class="n">reasoning</span> <span class="n">error</span><span class="p">,</span>
+<span class="o">-</span> <span class="n">One</span> <span class="n">ambiguous</span> <span class="ow">or</span> <span class="n">vague</span> <span class="n">statement</span><span class="o">.</span>
+<span class="n">Do</span> <span class="n">NOT</span> <span class="n">label</span> <span class="n">the</span> <span class="n">errors</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="student-task">
+<h4>Student Task<a class="headerlink" href="#student-task" title="Link to this heading">#</a></h4>
+<p>Students must:</p>
+<ol class="arabic simple">
+<li><p>Identify each type of error</p></li>
+<li><p>Correct them</p></li>
+<li><p>Rewrite the explanation with improved clarity</p></li>
+</ol>
+</section>
+<section id="reflection">
+<h4>Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Why do these errors occur?</p></li>
+<li><p>Which error type is hardest to detect?</p></li>
+<li><p>How can students avoid incorporating AI mistakes into their own work?</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-4-multi-tool-comparison-challenge">
+<h3>Example Activity 4. Multi-Tool Comparison Challenge<a class="headerlink" href="#example-activity-4-multi-tool-comparison-challenge" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h4>Overview<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p>Students compare outputs from multiple AI tools to evaluate reasoning quality, evidence, clarity, and limitations.</p>
+</section>
+<section id="activity-instructions">
+<h4>Activity Instructions<a class="headerlink" href="#activity-instructions" title="Link to this heading">#</a></h4>
+<p>Students run the same prompt in each tool (select any set of tools you want to compare):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]</span> <span class="ow">in</span> <span class="mi">3</span> <span class="n">levels</span><span class="p">:</span> <span class="n">beginner</span><span class="p">,</span> <span class="n">intermediate</span><span class="p">,</span> <span class="n">advanced</span><span class="o">.</span>
+<span class="n">Include</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">One</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">example</span><span class="p">,</span>
+<span class="o">-</span> <span class="n">One</span> <span class="n">misconception</span><span class="p">,</span>
+<span class="o">-</span> <span class="n">One</span> <span class="n">analogy</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="analysis-table-students-complete">
+<h4>Analysis Table (Students Complete)<a class="headerlink" href="#analysis-table-students-complete" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criteria</p></th>
+<th class="head"><p>Tool 1</p></th>
+<th class="head"><p>Tool 2</p></th>
+<th class="head"><p>Tool 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Clarity</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Accuracy</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Depth</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use of Evidence</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Misconceptions</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Creativity</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="deliverable">
+<h4>Deliverable<a class="headerlink" href="#deliverable" title="Link to this heading">#</a></h4>
+<p>Students present:</p>
+<ul class="simple">
+<li><p>Which tool performed best in which category</p></li>
+<li><p>One improvement each tool needs</p></li>
+<li><p>Whether the results were consistent with expectations</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="use-storytelling-examples-demonstrations-and-socratic-questioning">
+<h2>5.2 Use Storytelling, Examples, Demonstrations, and Socratic Questioning<a class="headerlink" href="#use-storytelling-examples-demonstrations-and-socratic-questioning" title="Link to this heading">#</a></h2>
+<section id="focus">
+<h3>Focus<a class="headerlink" href="#focus" title="Link to this heading">#</a></h3>
+<p>This section focuses on <strong>teaching strategies</strong>, such as storytelling, examples, demonstrations, and Socratic questioning, as methods for fostering deeper understanding, curiosity, and critical thinking during class delivery. Generative AI tools are referenced only as <strong>supports for implementing these pedagogical techniques</strong>, not as standalone content-delivery systems (which is the focus of Section 5.3).</p>
+</section>
+<section id="id4">
+<h3>Purpose<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Use generative AI to create engaging narratives, structured examples, conceptual demonstrations, and Socratic questioning sequences that enhance teaching clarity and stimulate higher-order thinking.</p>
+<p>These strategies help you:</p>
+<ul class="simple">
+<li><p>contextualize abstract ideas through stories</p></li>
+<li><p>scaffold understanding with multi-tiered examples</p></li>
+<li><p>visualize processes through demonstrations</p></li>
+<li><p>guide reasoning through inquiry-based dialogue</p></li>
+</ul>
+<p>AI accelerates the creation of these elements while allowing you to customize them for different audiences, difficulty levels, or class modalities.</p>
+<blockquote>
+<div><p><strong>Note:</strong> All foundational models’ apps and general purpose models should be capable of creating the assets described here. We sampled some just to help guiding you through this process.</p>
+</div></blockquote>
+</section>
+<section id="a-storytelling-with-ai-tools">
+<h3>A. Storytelling With AI Tools<a class="headerlink" href="#a-storytelling-with-ai-tools" title="Link to this heading">#</a></h3>
+<p>Storytelling supports attention, memory, and emotional connection. AI enables you to generate rich, contextualized stories that illustrate course concepts.</p>
+<section id="sample-tools-for-storytelling">
+<h4>Sample Tools for Storytelling<a class="headerlink" href="#sample-tools-for-storytelling" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>ChatGPT</strong> – concise narratives, analogies, cross-cultural versions</p></li>
+<li><p><strong>Claude</strong> – nuanced stories, role-play, ethical dilemmas, branching scenarios</p></li>
+<li><p><strong>Gemini</strong> – multimodal stories (text + images + diagrams)</p></li>
+<li><p><strong>NotebookLM</strong> – stories grounded in your own course documents</p></li>
+<li><p><strong>Perplexity</strong> – evidence-based narratives with citations</p></li>
+<li><p><strong>Copilot -&gt; Create -&gt; Create a story</strong> – visually engaging narratives</p></li>
+<li><p><strong>SciSpace / ExplainPaper</strong> – stories grounded in scientific literature</p></li>
+</ul>
+<p><strong>Ready-to-Use Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Create a short story (250–500 words) that illustrates [Concept]. 
+Then provide: 
+1) A simple explanation for beginners, 
+2) A technical explanation for advanced students, 
+3) One real-world application.
+</pre></div>
+</div>
+</section>
+</section>
+<section id="b-creating-examples-with-ai">
+<h3>B. Creating Examples With AI<a class="headerlink" href="#b-creating-examples-with-ai" title="Link to this heading">#</a></h3>
+<p>Examples make abstract ideas actionable. AI helps produce:</p>
+<ul class="simple">
+<li><p>examples with varying levels of complexity</p></li>
+<li><p>domain-specific scenarios</p></li>
+<li><p>multimodal examples</p></li>
+<li><p>incorrect examples for error analysis</p></li>
+</ul>
+<section id="sample-tools-to-create-examples">
+<h4>Sample Tools to Create Examples<a class="headerlink" href="#sample-tools-to-create-examples" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>ChatGPT</strong> – code examples, logic examples, structured scenarios</p></li>
+<li><p><strong>Gemini</strong> – diagrams, concept maps, multimodal examples</p></li>
+<li><p><strong>Claude</strong> – written/narrative examples with strong coherence</p></li>
+<li><p><strong>NotebookLM</strong> – mindmaps, flashcards, infographics</p></li>
+</ul>
+<p><strong>Ready-to-Use Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">three</span> <span class="n">examples</span> <span class="n">of</span> <span class="p">[</span><span class="n">Concept</span><span class="p">]:</span>
+<span class="mi">1</span><span class="p">)</span> <span class="n">Beginner</span><span class="o">-</span><span class="n">friendly</span>
+<span class="mi">2</span><span class="p">)</span> <span class="n">Real</span><span class="o">-</span><span class="n">world</span> <span class="n">professional</span>
+<span class="mi">3</span><span class="p">)</span> <span class="n">Advanced</span> <span class="n">analytical</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="c-demonstrations-with-ai">
+<h3>C. Demonstrations With AI<a class="headerlink" href="#c-demonstrations-with-ai" title="Link to this heading">#</a></h3>
+<p>Demonstrations show how something works. AI can support:</p>
+<ul class="simple">
+<li><p>step-by-step walkthroughs</p></li>
+<li><p>visual demonstrations</p></li>
+<li><p>simplified vs. expanded demonstrations</p></li>
+<li><p>simulated reasoning processes</p></li>
+</ul>
+<section id="sample-tools-to-create-demos">
+<h4>Sample Tools to Create Demos<a class="headerlink" href="#sample-tools-to-create-demos" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>ChatGPT</strong> – data, algorithms, math</p></li>
+<li><p><strong>Gemini</strong> – visual demonstrations</p></li>
+<li><p><strong>Perplexity</strong> – demonstrations grounded in current research</p></li>
+</ul>
+<p><strong>Ready-to-Use Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Demonstrate</span> <span class="n">how</span> <span class="p">[</span><span class="n">Process</span><span class="p">]</span> <span class="n">works</span> <span class="n">using</span> <span class="n">a</span> <span class="n">step</span><span class="o">-</span><span class="n">by</span><span class="o">-</span><span class="n">step</span> <span class="n">explanation</span> <span class="ow">and</span> <span class="p">(</span><span class="k">if</span> <span class="n">appropriate</span><span class="p">)</span> <span class="n">a</span> <span class="n">diagram</span> <span class="ow">or</span> <span class="n">code</span> <span class="n">example</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="d-socratic-questioning-with-ai">
+<h3>D. Socratic Questioning With AI<a class="headerlink" href="#d-socratic-questioning-with-ai" title="Link to this heading">#</a></h3>
+<p>Socratic questioning promotes reflective and analytical thinking.</p>
+<p>AI allows you to generate:</p>
+<ul class="simple">
+<li><p>progressive question ladders</p></li>
+<li><p>adaptive questioning sequences</p></li>
+<li><p>misconception-focused questions</p></li>
+<li><p>document-grounded questions</p></li>
+</ul>
+<section id="sample-tools">
+<h4>Sample Tools<a class="headerlink" href="#sample-tools" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Claude</strong> – natural Socratic style</p></li>
+<li><p><strong>ChatGPT</strong> – adaptive questioning</p></li>
+<li><p><strong>NotebookLM</strong> – grounded in your readings</p></li>
+<li><p><strong>Gemini</strong> – image-based questioning</p></li>
+</ul>
+<p><strong>Ready-to-Use Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">a</span> <span class="n">Socratic</span> <span class="n">questioning</span> <span class="n">sequence</span> <span class="p">(</span><span class="mi">8</span> <span class="n">questions</span><span class="p">)</span> <span class="n">that</span> <span class="n">helps</span> <span class="n">a</span> <span class="n">student</span> <span class="n">uncover</span> <span class="n">why</span> <span class="p">[</span><span class="n">Misconception</span><span class="p">]</span> <span class="ow">is</span> <span class="n">incorrect</span><span class="o">.</span>
+<span class="n">Questions</span> <span class="n">should</span> <span class="n">increase</span> <span class="ow">in</span> <span class="n">difficulty</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="employ-technology-and-ai-tools-for-content-delivery">
+<h2>5.3 Employ Technology and AI Tools for Content Delivery<a class="headerlink" href="#employ-technology-and-ai-tools-for-content-delivery" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Purpose<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Leverage (academic) generative AI tools to present, demonstrate, simulate or interact with course content in diverse formats. This section focuses on some GenAI tools and workflows that support content delivery, multimodal presentation, visualization, and real-time interaction. We present here some sample tools and use cases to illustrate different possibilities.</p>
+</section>
+<section id="illustrative-case-study">
+<h3>Illustrative Case Study<a class="headerlink" href="#illustrative-case-study" title="Link to this heading">#</a></h3>
+<p>The open-access paper titled <em>Feedback sources in essay writing: peer-generated or AI-generated feedback?</em> investigates the <strong>quality of feedback provided by ChatGPT compared to peer feedback</strong> on graduate students’ argumentative essays. The findings revealed that peer feedback was generally of higher quality, particularly in identifying specific issues within the essays, while ChatGPT provided more descriptive feedback.  The researchers found no significant overall correlation between essay quality and feedback quality from either source, suggesting a potential complementary role for both ChatGPT and peers in the feedback process, which could help reduce teacher workload.</p>
+<p>➡️ Download the paper here: <a class="reference download internal" download="" href="_downloads/fe46ddd9c796dc6e3e930d0ca6f3694a/Feedbacksourcesinessaywriting.pdf"><span class="xref download myst">Paper_Feedback_in_Essay_Writing</span></a> <br></p>
+</section>
+<section id="exploring-possibilities">
+<h3>Exploring Possibilities<a class="headerlink" href="#exploring-possibilities" title="Link to this heading">#</a></h3>
+<p><strong>Prompt Template - Zero-Shot</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="n">five</span> <span class="n">ways</span> <span class="n">to</span> <span class="n">use</span> <span class="n">generative</span> <span class="n">AI</span> <span class="n">tools</span> <span class="k">for</span> <span class="n">content</span> <span class="n">delivery</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">teaching</span> <span class="n">session</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">one</span> <span class="n">example</span> <span class="n">each</span> <span class="k">for</span> <span class="n">text</span><span class="p">,</span> <span class="n">visual</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">interactive</span> <span class="n">elements</span><span class="p">,</span> <span class="ow">and</span> <span class="n">slide</span> <span class="n">generation</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="tool-1-scispace">
+<h3>Tool 1: SciSpace<a class="headerlink" href="#tool-1-scispace" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Chat with PDF</strong>
+Upload the PDF and ask pre-loaded questions, then follow up with your own.</p>
+<p><strong>Use Case 2 — PDF → Video</strong>
+Transform any slide deck into a narrated video.</p>
+<p><strong>Use Case 3 — Topic Finder, Citation Generator, Extract Data</strong>
+Automatically extract themes, citations, or key tables.</p>
+<p><strong>Use Case 4 — Paraphraser</strong>
+Rewrite, shortens, or expand academic texts.</p>
+</section>
+<section id="tool-2-notebooklm">
+<h3>Tool 2: NotebookLM<a class="headerlink" href="#tool-2-notebooklm" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Quiz Generation</strong>
+Create question sets from uploaded PDFs.</p>
+<p><strong>Use Case 2 — AI Podcast</strong>
+Generate an audio overview and interrogate it interactively.</p>
+<p><strong>Use Case 3 — Mind Map</strong>
+Visualize relationships across sections of a paper.</p>
+<p><strong>Use Case 4 — Flashcards</strong>
+Produce Q&amp;A for the subject of the paper.</p>
+<p><strong>Use Case 5 — Video Overview</strong>
+Create a video overview of one or more documents. Example: the paper below summarizes the history of AI. Create a video overview using NotebookLM and analyze for consistency and timeline accuracy.
+<a class="reference download internal" download="" href="_downloads/15a93588181f3e457086ddbb4b5f653b/HistoryofAI.pdf"><span class="xref download myst">Paper_History_of_AI</span></a> <br></p>
+</section>
+<section id="tool-3-chatgpt">
+<h3>Tool 3: ChatGPT<a class="headerlink" href="#tool-3-chatgpt" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Diagram &amp; Visualization</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">a</span> <span class="n">labeled</span> <span class="n">diagram</span> <span class="n">explaining</span> <span class="p">[</span><span class="n">Concept</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Add</span> <span class="n">a</span> <span class="n">short</span> <span class="n">description</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Use Case 2 — Data Demonstrations</strong>
+Upload a dataset to generate graphs, analysis, or simulations.</p>
+<p><strong>Use Case 3 — Accessibility Formats</strong>
+Translate content into multiple languages or reading levels.</p>
+<p><strong>Use Case 4 — Micro-Lecture</strong>
+Produce a concise explanation of any topic.</p>
+<p><strong>Use Case 5 — Interactive Walkthrough</strong>
+Deliver content step-by-step with comprehension checks.</p>
+</section>
+<section id="tool-4-claude-ai-artifacts-long-form-content">
+<h3>Tool 4: <a class="reference external" href="http://Claude.ai">Claude.ai</a> (Artifacts + Long-Form Content)<a class="headerlink" href="#tool-4-claude-ai-artifacts-long-form-content" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Interactive Artifacts</strong>
+Generate a clickable explainer, mini-app, or quiz.</p>
+<p><strong>Use Case 2 — Multi-Level Explanation</strong>
+Explain any concept at three difficulty levels.</p>
+<p><strong>Use Case 3 — Ethical Scenarios</strong>
+Build realistic case studies with branching options.</p>
+<p><strong>Use Case 4 — Document Synthesis</strong>
+Upload PDFs and generate lecture-ready summaries.</p>
+<p><strong>Use Case 5 — Dialogues &amp; Role Plays</strong>
+Create Socratic sequences or conversational examples.</p>
+</section>
+<section id="tool-5-gemini-multimodal-images-diagrams-voice">
+<h3>Tool 5: Gemini (Multimodal: Images + Diagrams + Voice)<a class="headerlink" href="#tool-5-gemini-multimodal-images-diagrams-voice" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Visual Diagrams</strong>
+Produce conceptual diagrams or annotated images.</p>
+<p><strong>Use Case 2 — Image Interpretation</strong>
+Upload diagrams or figures for explanation.</p>
+<p><strong>Use Case 3 — Audio Lectures</strong>
+Generate short narrated explanations.</p>
+<p><strong>Use Case 4 — Multimodal Comparison</strong>
+Interpret relationships across text + image inputs.</p>
+<p><strong>Use Case 5 — Visualizations from Text</strong>
+Convert conceptual descriptions into visual assets.</p>
+</section>
+<section id="tool-6-gamma-app-slide-deck-generator">
+<h3>Tool 6: Gamma App (Slide Deck Generator)<a class="headerlink" href="#tool-6-gamma-app-slide-deck-generator" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Generate Slide Decks</strong>
+Transform structured text into professional presentations.</p>
+<p><strong>Use Case 2 — Visual Storytelling</strong>
+Integrate images, icons, and dynamic layouts.</p>
+<p><strong>Use Case 3 — Content Conversion</strong>
+Convert notes into scrollable, visual presentations.</p>
+</section>
+<section id="tool-7-canva-magic-studio">
+<h3>Tool 7: Canva Magic Studio<a class="headerlink" href="#tool-7-canva-magic-studio" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — AI Diagrams &amp; Infographics</strong>
+Turn complex ideas into clear visual artifacts.</p>
+<p><strong>Use Case 2 — Short Video Clips</strong>
+Generate 30–60 second animations or explainers.</p>
+<p><strong>Use Case 3 — One-Pagers &amp; Visual Notes</strong>
+Create infographics summarizing main concepts.</p>
+<p><strong>Use Case 4 — Collaborative Whiteboarding</strong>
+Enable interactive, multi-user content creation.</p>
+</section>
+<section id="tool-8-napkin-ai">
+<h3>Tool 8: <a class="reference external" href="http://Napkin.ai">Napkin.ai</a><a class="headerlink" href="#tool-8-napkin-ai" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Concept Maps</strong>
+Generate diagrams from pasted text.</p>
+<p><strong>Use Case 2 — Workflow Visualization</strong>
+Produce flowcharts of processes or algorithms.</p>
+<p><strong>Use Case 3 — Comparative Diagrams</strong>
+Visually compare theories or models.</p>
+<p><strong>Use Case 4 — Annotated Explanations</strong>
+Add labels and arrows to illustrate relationships.</p>
+<p><strong>Use Case 5 — Export for Teaching</strong>
+Download diagrams into PNG, PDF, or SVG.</p>
+</section>
+<section id="tool-9-heygen-synthesia-ai-video-presentation">
+<h3>Tool 9: HeyGen / Synthesia (AI Video Presentation)<a class="headerlink" href="#tool-9-heygen-synthesia-ai-video-presentation" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Avatar Lectures</strong>
+Convert scripts into short, instructor-style videos.</p>
+<p><strong>Use Case 2 — Summary Videos</strong>
+Produce concise content recaps.</p>
+<p><strong>Use Case 3 — Multilingual Delivery</strong>
+Generate videos in multiple languages.</p>
+<p><strong>Use Case 4 — Demonstration Videos</strong>
+Use animated characters to explain concepts.</p>
+<p><strong>Use Case 5 — Accessibility Support</strong>
+Deliver captioned and audio-described content.</p>
+</section>
+<section id="tool-10-elevenlabs-ai-voice-narration-audio-delivery">
+<h3>Tool 10: ElevenLabs (AI Voice, Narration &amp; Audio Delivery)<a class="headerlink" href="#tool-10-elevenlabs-ai-voice-narration-audio-delivery" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Narrated Class Summaries</strong>
+Convert lecture notes, readings, or summaries into natural-sounding audio.</p>
+<p><strong>Use Case 2 — Audio Versions of Scientific Papers</strong>
+Create spoken-word versions of research articles for flexible/asynchronous learning.</p>
+<p><strong>Use Case 3 — Multilingual Audio Lectures</strong>
+Generate translated audio lectures in Portuguese, Spanish, Mandarin, Arabic, and more.</p>
+<p><strong>Use Case 4 — Character Voices for Demonstrations</strong>
+Produce dialogues using multiple AI-generated characters to illustrate contrasting perspectives.</p>
+<p><strong>Advanced Option — Instructor Voice Cloning</strong>
+Create a private cloned voice for consistent instructor presence in audio materials.</p>
+</section>
+<section id="tool-11-microsoft-copilot-create">
+<h3>Tool 11: Microsoft Copilot —&gt; Create<a class="headerlink" href="#tool-11-microsoft-copilot-create" title="Link to this heading">#</a></h3>
+<p><strong>Use Case 1 — Create an Image</strong>
+Generate custom images from text prompts for slides, handouts, LMS pages, or presentations.</p>
+<p><strong>Use Case 2 — Create a Video</strong>
+Produce short AI-generated videos combining visuals, transitions, and optional narration.</p>
+<p><strong>Use Case 3 — Design an Infographic</strong>
+Transform text, bullet points, or structured data into visually organized infographics.</p>
+<p><strong>Use Case 4 — Create a Story</strong>
+Generate short stories, narratives, or scenarios to contextualize concepts.</p>
+<p><strong>Use Case 5 — Design a Poster</strong>
+Produce polished posters with headlines, visuals, and concise explanatory text.</p>
+</section>
+</section>
+<section id="monitor-engagement-and-comprehension-in-real-time">
+<h2>5.4 Monitor Engagement and Comprehension in Real Time<a class="headerlink" href="#monitor-engagement-and-comprehension-in-real-time" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h3>Focus<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>This section focuses on <strong>monitoring strategies</strong> that help instructors track student engagement, comprehension, and misconceptions during class. Generative AI tools can support dynamic feedback loops by generating polls, micro-quizzes, summaries, misconception probes, adaptive questioning based on student responses, and more.</p>
+</section>
+<section id="id7">
+<h3>Purpose<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Use generative AI to create rapid feedback mechanisms, such as polls, quizzes, summaries, heat maps, and comprehension checks, to detect student understanding in real time and adjust teaching accordingly.</p>
+<p>These strategies allow you to:</p>
+<ul class="simple">
+<li><p>gauge learning progress continuously</p></li>
+<li><p>identify misconceptions early</p></li>
+<li><p>engage students interactively</p></li>
+<li><p>adapt pace and depth responsively</p></li>
+<li><p>enhance participation and inclusivity</p></li>
+</ul>
+<p><strong>Prompt Template – Chain-of-Thought</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>How can generative AI assist instructors in monitoring student comprehension during a class?
+Provide a step-by-step strategy, including at least one AI tool, one feedback mechanism, and one adaptation based on results.
+</pre></div>
+</div>
+</section>
+<section id="example-activity-1-ai-generated-micro-polls">
+<h3>Example Activity 1. AI-Generated Micro-Polls<a class="headerlink" href="#example-activity-1-ai-generated-micro-polls" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h4>Overview<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<p>Instructors use AI to generate quick polls that assess comprehension, opinions, or predictions. Students respond in real time using polling platforms, and AI summarizes insights instantly.</p>
+</section>
+<section id="step-by-step">
+<h4>Step-by-Step<a class="headerlink" href="#step-by-step" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p><strong>Poll Creation</strong><br />
+Instructor asks ChatGPT or Claude:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="mi">3</span> <span class="n">multiple</span><span class="o">-</span><span class="n">choice</span> <span class="n">comprehension</span> <span class="n">questions</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span> <span class="n">suitable</span> <span class="k">for</span> <span class="n">live</span> <span class="n">polling</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">one</span> <span class="n">misconception</span><span class="o">-</span><span class="n">based</span> <span class="n">distractor</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Live Poll</strong><br />
+Sample poll tools: <strong>Poll Everywhere</strong>, <strong>Mentimeter</strong>, or <strong>Canvas Polls</strong>.<br />
+Students vote anonymously.</p></li>
+<li><p><strong>AI Summary</strong><br />
+Paste results into ChatGPT:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Summarize</span> <span class="n">these</span> <span class="n">poll</span> <span class="n">results</span><span class="o">.</span>
+<span class="n">Identify</span> <span class="n">misconceptions</span> <span class="ow">and</span> <span class="n">recommend</span> <span class="n">one</span> <span class="n">teaching</span> <span class="n">adjustment</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">pattern</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Instructor Response</strong><br />
+Re-teach a concept, provide examples, or move ahead based on the summary.</p></li>
+</ol>
+</section>
+<section id="id9">
+<h4>Learning Outcomes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Identify classwide misconceptions quickly</p></li>
+<li><p>Improve alignment between instruction and student understanding</p></li>
+<li><p>Promote active participation</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-2-ai-generated-real-time-misconception-probe">
+<h3>Example Activity 2. AI-Generated Real-Time Misconception Probe<a class="headerlink" href="#example-activity-2-ai-generated-real-time-misconception-probe" title="Link to this heading">#</a></h3>
+<section id="id10">
+<h4>Overview<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<p>Students confront common misconceptions through an AI-generated diagnostic question. They respond individually, then compare with an AI explanation to deepen understanding.</p>
+</section>
+<section id="instructor-preparation-prompt">
+<h4>Instructor Preparation Prompt<a class="headerlink" href="#instructor-preparation-prompt" title="Link to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">a</span> <span class="n">misconception</span> <span class="n">probe</span> <span class="n">question</span> <span class="k">for</span> <span class="p">[</span><span class="n">Concept</span><span class="p">]</span><span class="o">.</span> 
+<span class="n">Include</span><span class="p">:</span>
+<span class="mi">1</span><span class="p">)</span> <span class="n">A</span> <span class="n">plausible</span> <span class="n">but</span> <span class="n">incorrect</span> <span class="n">answer</span><span class="p">,</span>
+<span class="mi">2</span><span class="p">)</span> <span class="n">A</span> <span class="n">partially</span> <span class="n">correct</span> <span class="n">answer</span><span class="p">,</span>
+<span class="mi">3</span><span class="p">)</span> <span class="n">A</span> <span class="n">correct</span> <span class="n">answer</span><span class="p">,</span>
+<span class="n">but</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">label</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">which</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="activity-steps">
+<h4>Activity Steps<a class="headerlink" href="#activity-steps" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Students answer individually.</p></li>
+<li><p>Instructor reveals AI’s explanation and asks students to compare their reasoning.</p></li>
+<li><p>AI creates an improved explanation based on the misconception revealed in class.</p></li>
+</ol>
+</section>
+</section>
+<section id="reflection-questions">
+<h3>Reflection Questions<a class="headerlink" href="#reflection-questions" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Which answer did you choose and why?</p></li>
+<li><p>How did the misconception arise?</p></li>
+<li><p>What reasoning shift corrected it?</p></li>
+</ul>
+</section>
+<section id="example-activity-3-ai-assisted-knowledge-check-carousel">
+<h3>Example Activity 3. AI-Assisted Knowledge Check Carousel<a class="headerlink" href="#example-activity-3-ai-assisted-knowledge-check-carousel" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h4>Overview<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<p>Students rotate through 3 AI-generated quick comprehension checks: definition, application, and critique.</p>
+</section>
+<section id="id12">
+<h4>Step-by-Step<a class="headerlink" href="#id12" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p>The LLM generates:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">A</span> <span class="n">definition</span> <span class="n">check</span>
+<span class="o">-</span> <span class="n">An</span> <span class="n">application</span> <span class="n">question</span>
+<span class="o">-</span> <span class="n">A</span> <span class="n">critique</span> <span class="n">question</span>
+<span class="k">for</span> <span class="n">the</span> <span class="n">topic</span> <span class="p">[</span><span class="n">Concept</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p>Post each question in a different station/slide.</p></li>
+<li><p>Students rotate every 2 minutes.</p></li>
+<li><p>AI summarizes patterns in student responses at the end.</p></li>
+</ol>
+</section>
+<section id="id13">
+<h4>Learning Outcomes<a class="headerlink" href="#id13" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Reinforce learning through multiple cognitive levels</p></li>
+<li><p>Encourage movement, energy, and varied thinking</p></li>
+<li><p>Help the instructor diagnose learning gaps</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-4-ai-augmented-real-time-summary-wall">
+<h3>Example Activity 4. AI-Augmented Real-Time Summary Wall<a class="headerlink" href="#example-activity-4-ai-augmented-real-time-summary-wall" title="Link to this heading">#</a></h3>
+<section id="id14">
+<h4>Overview<a class="headerlink" href="#id14" title="Link to this heading">#</a></h4>
+<p>Students post short reflections or questions. AI clusters themes and identifies areas requiring review.</p>
+</section>
+<section id="tools">
+<h4>Tools<a class="headerlink" href="#tools" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Foundational and General-Purpose Models</p></li>
+<li><p>Sample specific tools: Padlet (<a class="reference external" href="http://padlet.com">padlet.com</a>), Miro (<a class="reference external" href="http://miro.com">miro.com</a>), Canvas Discussion Board</p></li>
+</ul>
+</section>
+<section id="id15">
+<h4>Step-by-Step<a class="headerlink" href="#id15" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p>Students post: <em>One thing I learned / One thing I’m confused about.</em></p></li>
+<li><p>Instructor copies the board into the LLM with the prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cluster</span> <span class="n">these</span> <span class="n">reflections</span> <span class="n">into</span> <span class="n">themes</span><span class="o">.</span> 
+<span class="n">Identify</span> <span class="n">common</span> <span class="n">confusions</span> <span class="ow">and</span> <span class="n">recommend</span> <span class="nb">next</span> <span class="n">teaching</span> <span class="n">steps</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p>Instructor adjusts pacing or re-explains items based on AI clustering.</p></li>
+</ol>
+</section>
+<section id="id16">
+<h4>Learning Outcomes<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Capture classwide cognitive patterns instantly</p></li>
+<li><p>Support metacognition</p></li>
+<li><p>Facilitate agile teaching</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-5-real-time-adaptive-questioning-sequence">
+<h3>Example Activity 5. Real-Time Adaptive Questioning Sequence<a class="headerlink" href="#example-activity-5-real-time-adaptive-questioning-sequence" title="Link to this heading">#</a></h3>
+<section id="id17">
+<h4>Overview<a class="headerlink" href="#id17" title="Link to this heading">#</a></h4>
+<p>Instructors use AI to generate a progressive question ladder that adapts based on student responses.</p>
+<p><strong>Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Create a real-time adaptive questioning sequence (5–7 questions) that assesses comprehension of [Topic].
+Questions should progress from basic recall to applied reasoning.
+</pre></div>
+</div>
+</section>
+<section id="id18">
+<h4>Activity Steps<a class="headerlink" href="#id18" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p>Ask Question 1 → If &gt;70% answer correctly, move to Q2.</p></li>
+<li><p>If &lt;70% answer correctly, ask the LLM:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Provide</span> <span class="n">a</span> <span class="n">simpler</span> <span class="n">scaffolded</span> <span class="n">version</span> <span class="n">of</span> <span class="n">this</span> <span class="n">question</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p>Instructor continues adjusting depth dynamically.</p></li>
+</ol>
+</section>
+<section id="id19">
+<h4>Learning Outcomes<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Differentiate instruction on the fly</p></li>
+<li><p>Provide tailored scaffolding</p></li>
+<li><p>Measure not just accuracy but depth of understanding</p></li>
+</ul>
+</section>
+</section>
+<section id="example-activity-6-ai-generated-minute-paper-feedback-loop">
+<h3>Example Activity 6. AI-Generated Minute Paper Feedback Loop<a class="headerlink" href="#example-activity-6-ai-generated-minute-paper-feedback-loop" title="Link to this heading">#</a></h3>
+<section id="id20">
+<h4>Overview<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
+<p>AI transforms the classic “Minute Paper” into a structured, actionable feedback tool.</p>
+<p><strong>Prompt (in class)</strong>
+Students answer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>What is the most important thing you learned today?
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>What remains unclear?
+</pre></div>
+</div>
+<p><strong>Instructor Step</strong>
+Paste student answers into the LLM:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Summarize</span> <span class="n">key</span> <span class="n">insights</span><span class="p">,</span> <span class="n">identify</span> <span class="n">top</span> <span class="mi">3</span> <span class="n">areas</span> <span class="n">of</span> <span class="n">confusion</span><span class="p">,</span> 
+<span class="ow">and</span> <span class="n">propose</span> <span class="n">targeted</span> <span class="n">follow</span><span class="o">-</span><span class="n">up</span> <span class="n">explanations</span> <span class="k">for</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">class</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id21">
+<h3>Learning Outcomes<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Rapid synthesis of student reflections</p></li>
+<li><p>Improved next-day planning</p></li>
+<li><p>Increased student voice in pacing decisions</p></li>
+</ul>
+</section>
+<section id="example-activity-7-live-data-interpretation-with-ai">
+<h3>Example Activity 7. Live Data Interpretation with AI<a class="headerlink" href="#example-activity-7-live-data-interpretation-with-ai" title="Link to this heading">#</a></h3>
+<section id="id22">
+<h4>Overview<a class="headerlink" href="#id22" title="Link to this heading">#</a></h4>
+<p>Instructor collects in-class responses (from chat, polls, activities) and asks AI to interpret trends.</p>
+</section>
+<section id="id23">
+<h4>Step-by-Step<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p>Export answers from the poll tool.</p></li>
+<li><p>Send them to the LLM with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Interpret</span> <span class="n">these</span> <span class="n">responses</span><span class="o">.</span> 
+<span class="n">Identify</span> <span class="n">patterns</span> <span class="n">of</span> <span class="n">understanding</span> <span class="ow">and</span> <span class="n">confusion</span><span class="o">.</span> 
+<span class="n">Suggest</span> <span class="n">one</span> <span class="n">re</span><span class="o">-</span><span class="n">teaching</span> <span class="n">strategy</span> <span class="ow">and</span> <span class="n">one</span> <span class="n">enrichment</span> <span class="n">activity</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p>Instructor adjusts the lesson in real time.</p></li>
+</ol>
+</section>
+<section id="id24">
+<h4>Learning Outcomes<a class="headerlink" href="#id24" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Use classroom analytics for immediate pedagogical decisions</p></li>
+<li><p>Empower data-driven teaching</p></li>
+<li><p>Make student thinking visible</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="adapt-pacing-and-methods-responsively">
+<h2>5.5 Adapt Pacing and Methods Responsively<a class="headerlink" href="#adapt-pacing-and-methods-responsively" title="Link to this heading">#</a></h2>
+<section id="id25">
+<h3>Purpose<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<p>Use AI insights to adjust scaffolding, depth, and pacing on the fly.</p>
+<p><strong>Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Examples</span> <span class="n">of</span> <span class="n">adapting</span> <span class="n">pace</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Slowing</span> <span class="n">down</span> <span class="k">for</span> <span class="n">misunderstood</span> <span class="n">content</span>
+<span class="mf">2.</span> <span class="n">Skipping</span> <span class="n">ahead</span> <span class="n">when</span> <span class="n">concepts</span> <span class="n">are</span> <span class="n">mastered</span>
+
+<span class="n">Generate</span> <span class="n">an</span> <span class="n">AI</span><span class="o">-</span><span class="n">assisted</span> <span class="n">strategy</span> <span class="k">for</span> <span class="n">adapting</span> <span class="n">pace</span> <span class="n">during</span> <span class="n">class</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="updates-to-your-ai-workspace-personalized-assistant">
+<h2>5.6 Updates to Your AI Workspace &amp; Personalized Assistant<a class="headerlink" href="#updates-to-your-ai-workspace-personalized-assistant" title="Link to this heading">#</a></h2>
+<section id="workspace-project-updates">
+<h3>Workspace (Project) Updates<a class="headerlink" href="#workspace-project-updates" title="Link to this heading">#</a></h3>
+<p><strong>Add Capabilities:</strong></p>
+<ul class="simple">
+<li><p>Generate real-time examples and explanations</p></li>
+<li><p>Produce multimodal teaching assets</p></li>
+<li><p>Summarize live transcripts</p></li>
+</ul>
+<p><strong>Add Behaviors:</strong></p>
+<ul class="simple">
+<li><p>Offer multiple difficulty levels for explanations</p></li>
+<li><p>Flag unclear content</p></li>
+<li><p>Suggest differentiation strategies</p></li>
+</ul>
+</section>
+<section id="personalized-assistant-pa-updates">
+<h3>Personalized Assistant (PA) Updates<a class="headerlink" href="#personalized-assistant-pa-updates" title="Link to this heading">#</a></h3>
+<p><strong>Add Capabilities:</strong></p>
+<ul class="simple">
+<li><p>Provide class summaries</p></li>
+<li><p>Generate practice questions</p></li>
+<li><p>Offer alternate explanations</p></li>
+</ul>
+<p><strong>Add Safety Constraints:</strong></p>
+<ul class="simple">
+<li><p>Never provide answers to graded in-class activities</p></li>
+<li><p>Encourage self-assessment before requesting simplified explanations</p></li>
+</ul>
+</section>
+</section>
+<section id="exercises">
+<h2>5.7 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-design-an-aiaugmented-active-learning-activity">
+<h3>Exercise 1 — Design an AI‑Augmented Active Learning Activity<a class="headerlink" href="#exercise-1-design-an-aiaugmented-active-learning-activity" title="Link to this heading">#</a></h3>
+<p><strong>Objective:</strong> Apply Section 5.1 by designing an active‑learning strategy enhanced with generative AI.</p>
+<p><strong>Task:</strong><br />
+Choose a topic from your course and design one learning activity (Think‑Pair‑Share, Debate Partner, Error Analysis, or Multi‑Tool Comparison).</p>
+<p><strong>AI Prompt Template:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">me</span> <span class="n">design</span> <span class="n">an</span> <span class="n">active</span> <span class="n">learning</span> <span class="n">activity</span> <span class="k">for</span> <span class="n">my</span> <span class="n">course</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span> <span class="n">about</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span><span class="o">.</span>  
+<span class="n">Recommend</span> <span class="n">timing</span><span class="p">,</span> <span class="n">instructions</span><span class="p">,</span> <span class="ow">and</span> <span class="n">how</span> <span class="n">AI</span> <span class="n">tools</span> <span class="n">can</span> <span class="n">support</span> <span class="n">collaboration</span> <span class="ow">or</span> <span class="n">critical</span> <span class="n">thinking</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Expected Output:</strong><br />
+A structured activity including overview, steps, timing, and learning outcomes.</p>
+<p><strong>Extension:</strong><br />
+Generate a student‑facing version of the activity.</p>
+</section>
+<section id="exercise-2-create-a-story-example-demo-or-socratic-sequence">
+<h3>Exercise 2 — Create a Story, Example, Demo, or Socratic Sequence<a class="headerlink" href="#exercise-2-create-a-story-example-demo-or-socratic-sequence" title="Link to this heading">#</a></h3>
+<p><strong>Objective:</strong> Use Section 5.2 strategies to generate pedagogically aligned teaching artifacts.</p>
+<p><strong>Task:</strong><br />
+Select ONE of the following to generate with AI:</p>
+<ul class="simple">
+<li><p>a short story</p></li>
+<li><p>3 levels of examples</p></li>
+<li><p>a conceptual demonstration</p></li>
+<li><p>a Socratic question ladder</p></li>
+</ul>
+<p><strong>AI Prompt Template:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">a</span> <span class="p">[</span><span class="n">story</span><span class="o">/</span><span class="n">example</span><span class="o">/</span><span class="n">demo</span><span class="o">/</span><span class="n">Socratic</span> <span class="n">sequence</span><span class="p">]</span> <span class="n">to</span> <span class="n">teach</span> <span class="p">[</span><span class="n">Concept</span><span class="p">]</span> <span class="n">to</span> <span class="p">[</span><span class="n">Audience</span><span class="p">]</span><span class="o">.</span>  
+<span class="n">Include</span><span class="p">:</span> <span class="n">beginner</span> <span class="ow">and</span> <span class="n">advanced</span> <span class="n">versions</span><span class="p">,</span> <span class="ow">and</span> <span class="n">one</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">application</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Expected Output:</strong><br />
+A coherent artifact ready for instructional use (story, examples, steps, or questions).</p>
+<p><strong>Extension:</strong><br />
+Ask AI to produce a <strong>visual version</strong> (diagram, image, or flowchart).</p>
+</section>
+<section id="exercise-3-produce-a-multimodal-content-delivery-asset">
+<h3>Exercise 3 — Produce a Multimodal Content Delivery Asset<a class="headerlink" href="#exercise-3-produce-a-multimodal-content-delivery-asset" title="Link to this heading">#</a></h3>
+<p><strong>Objective:</strong> Apply Section 5.3 by using an AI tool to generate multimodal content.</p>
+<p><strong>Task:</strong><br />
+Choose one tool and produce a multimodal asset (slide deck, video, diagram, mind map, FAQ, etc.).</p>
+<p><strong>AI Prompt Template:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="p">[</span><span class="n">Tool</span> <span class="n">Name</span><span class="p">],</span> <span class="n">generate</span> <span class="n">a</span> <span class="p">[</span><span class="n">slide</span> <span class="n">deck</span> <span class="o">/</span> <span class="n">diagram</span> <span class="o">/</span> <span class="n">video</span> <span class="n">script</span> <span class="o">/</span> <span class="n">mind</span> <span class="nb">map</span> <span class="o">/</span> <span class="n">FAQ</span><span class="p">]</span> <span class="n">explaining</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span><span class="o">.</span>  
+<span class="n">Ensure</span> <span class="n">the</span> <span class="n">content</span> <span class="ow">is</span> <span class="n">accurate</span><span class="p">,</span> <span class="n">structured</span><span class="p">,</span> <span class="ow">and</span> <span class="n">appropriate</span> <span class="k">for</span> <span class="p">[</span><span class="n">Audience</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Expected Output:</strong><br />
+A multimodal digital asset (PDF, PNG, HTML, slides, etc.).</p>
+<p><strong>Extension:</strong><br />
+Compare the same asset created by TWO different tools and summarize differences.</p>
+</section>
+<section id="exercise-4-run-a-realtime-engagement-comprehension-check">
+<h3>Exercise 4 — Run a Real‑Time Engagement &amp; Comprehension Check<a class="headerlink" href="#exercise-4-run-a-realtime-engagement-comprehension-check" title="Link to this heading">#</a></h3>
+<p><strong>Objective:</strong> Apply Section 5.4 by designing a real‑time monitoring activity for an upcoming class session.</p>
+<p><strong>Task:</strong><br />
+Choose one method from Section 5.4 (polls, misconception probes, summary wall, adaptive questions, minute paper, etc.) and prepare a class‑ready version.</p>
+<p><strong>AI Prompt Template:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">a</span> <span class="n">real</span><span class="o">-</span><span class="n">time</span> <span class="n">comprehension</span> <span class="n">check</span> <span class="k">for</span> <span class="n">my</span> <span class="n">lesson</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span><span class="o">.</span>  
+<span class="n">Include</span><span class="p">:</span> <span class="n">one</span> <span class="n">poll</span> <span class="n">OR</span> <span class="n">one</span> <span class="n">misconception</span> <span class="n">probe</span> <span class="n">OR</span> <span class="n">a</span> <span class="mi">5</span><span class="o">-</span><span class="n">question</span> <span class="n">adaptive</span> <span class="n">sequence</span><span class="o">.</span>  
+<span class="n">Also</span> <span class="n">describe</span> <span class="n">how</span> <span class="n">I</span> <span class="n">should</span> <span class="n">interpret</span> <span class="n">results</span> <span class="ow">and</span> <span class="n">adjust</span> <span class="n">instruction</span> <span class="ow">in</span> <span class="n">real</span> <span class="n">time</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Expected Output:</strong><br />
+A ready-to-use comprehension tool and a short interpretation guide.</p>
+<p><strong>Extension:</strong><br />
+Ask AI to generate a “before class” and “after class” version for learning gain comparison.</p>
+</section>
+<section id="exercise-5-integrate-ai-outputs-into-lesson-pacing-adjustments">
+<h3>Exercise 5 — Integrate AI Outputs Into Lesson Pacing Adjustments<a class="headerlink" href="#exercise-5-integrate-ai-outputs-into-lesson-pacing-adjustments" title="Link to this heading">#</a></h3>
+<p><strong>Objective:</strong> Practice adapting instructional pacing in response to real-time data.</p>
+<p><strong>Task:</strong><br />
+Using outputs from the previous exercise, design a micro‑plan describing how you would slow down, re-explain, enrich, or accelerate based on student responses.</p>
+<p><strong>AI Prompt Template:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Based</span> <span class="n">on</span> <span class="n">this</span> <span class="n">real</span><span class="o">-</span><span class="n">time</span> <span class="n">feedback</span> <span class="n">data</span><span class="p">:</span> <span class="p">[</span><span class="n">paste</span> <span class="n">student</span> <span class="n">results</span> <span class="ow">or</span> <span class="n">summary</span><span class="p">],</span>  
+<span class="n">Generate</span> <span class="n">a</span> <span class="n">pacing</span> <span class="n">adjustment</span> <span class="n">plan</span> <span class="n">including</span><span class="p">:</span>  
+<span class="o">-</span> <span class="n">one</span> <span class="n">reteaching</span> <span class="n">action</span><span class="p">,</span>  
+<span class="o">-</span> <span class="n">one</span> <span class="n">enrichment</span> <span class="n">action</span><span class="p">,</span>  
+<span class="o">-</span> <span class="n">one</span> <span class="n">pacing</span> <span class="n">decision</span> <span class="p">(</span><span class="n">slow</span><span class="o">/</span><span class="n">maintain</span><span class="o">/</span><span class="n">speed</span> <span class="n">up</span><span class="p">),</span>  
+<span class="o">-</span> <span class="ow">and</span> <span class="n">an</span> <span class="n">explanation</span> <span class="n">of</span> <span class="n">why</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Expected Output:</strong><br />
+A short adaptive teaching plan (5–8 sentences).</p>
+<p><strong>Extension:</strong><br />
+Ask AI to produce a student-friendly explanation of the pacing change.</p>
+</section>
+<section id="exercise-6-reflection-your-ai-enhanced-teaching-persona">
+<h3>Exercise 6 — Reflection: Your AI-Enhanced Teaching Persona<a class="headerlink" href="#exercise-6-reflection-your-ai-enhanced-teaching-persona" title="Link to this heading">#</a></h3>
+<p><strong>Objective:</strong> Synthesize the module by defining your unique approach to AI-enhanced class delivery.</p>
+<p><strong>Task:</strong><br />
+Write a reflection describing how AI will support:</p>
+<ul class="simple">
+<li><p>your instructional style</p></li>
+<li><p>your real-time decisions</p></li>
+<li><p>your classroom engagement practices</p></li>
+<li><p>your accessibility and multimodal delivery choices</p></li>
+</ul>
+<p><strong>AI Prompt Template:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Help me reflect on my AI-enhanced teaching style.  
+Based on these strategies I plan to use: [list],  
+Describe my teaching persona in 150–200 words, emphasizing strengths, intentions, and student experience.
+</pre></div>
+</div>
+<p><strong>Expected Output:</strong><br />
+A short reflective statement for inclusion in your AI workspace or teaching philosophy.</p>
+<p><strong>Extension:</strong><br />
+Generate a version written <strong>for students</strong>, explaining your approach to AI in the classroom.</p>
+</section>
+</section>
+<section id="id26">
+<h2>5.8 Reflection<a class="headerlink" href="#id26" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>How did AI tools support your ability to deliver instruction dynamically and responsively during class?</p></li>
+<li><p>Which aspects of real-time engagement (polls, summaries, adaptive questioning) benefited most from AI assistance—and which still require human facilitation?</p></li>
+<li><p>How did AI-generated stories, examples, demonstrations, or Socratic questions influence student understanding or participation?</p></li>
+<li><p>What opportunities do you see for integrating multimodal content (audio, diagrams, videos, slides) into your class delivery moving forward?</p></li>
+<li><p>Where will you intentionally limit AI use during live teaching to preserve human connection, nuance, or classroom presence?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module4_Assignments.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">4. AI-Enhanced Assignments and Exam Preparation</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module6_StudentSupport.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">6. AI‑Powered Student Support</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facilitate-active-student-centered-learning">5.1 Facilitate Active, Student-Centered Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-1-aiaugmented-thinkpairshare">Example Activity 1. AI‑Augmented Think–Pair–Share</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stepbystep">Step‑by‑Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-outcomes">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-2-ai-debate-partner">Example Activity 2. AI Debate Partner</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#debrief-questions">Debrief Questions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-led-group-exchange">Instructor-Led Group Exchange</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-3-ai-error-analysis">Example Activity 3. AI Error Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#student-task">Student Task</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">Reflection</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-4-multi-tool-comparison-challenge">Example Activity 4. Multi-Tool Comparison Challenge</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-instructions">Activity Instructions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-table-students-complete">Analysis Table (Students Complete)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverable">Deliverable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-storytelling-examples-demonstrations-and-socratic-questioning">5.2 Use Storytelling, Examples, Demonstrations, and Socratic Questioning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#focus">Focus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-storytelling-with-ai-tools">A. Storytelling With AI Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools-for-storytelling">Sample Tools for Storytelling</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-creating-examples-with-ai">B. Creating Examples With AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools-to-create-examples">Sample Tools to Create Examples</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-demonstrations-with-ai">C. Demonstrations With AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools-to-create-demos">Sample Tools to Create Demos</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-socratic-questioning-with-ai">D. Socratic Questioning With AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools">Sample Tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#employ-technology-and-ai-tools-for-content-delivery">5.3 Employ Technology and AI Tools for Content Delivery</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#illustrative-case-study">Illustrative Case Study</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploring-possibilities">Exploring Possibilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-1-scispace">Tool 1: SciSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-2-notebooklm">Tool 2: NotebookLM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-3-chatgpt">Tool 3: ChatGPT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-4-claude-ai-artifacts-long-form-content">Tool 4: Claude.ai (Artifacts + Long-Form Content)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-5-gemini-multimodal-images-diagrams-voice">Tool 5: Gemini (Multimodal: Images + Diagrams + Voice)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-6-gamma-app-slide-deck-generator">Tool 6: Gamma App (Slide Deck Generator)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-7-canva-magic-studio">Tool 7: Canva Magic Studio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-8-napkin-ai">Tool 8: Napkin.ai</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-9-heygen-synthesia-ai-video-presentation">Tool 9: HeyGen / Synthesia (AI Video Presentation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-10-elevenlabs-ai-voice-narration-audio-delivery">Tool 10: ElevenLabs (AI Voice, Narration &amp; Audio Delivery)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-11-microsoft-copilot-create">Tool 11: Microsoft Copilot —&gt; Create</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-engagement-and-comprehension-in-real-time">5.4 Monitor Engagement and Comprehension in Real Time</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Focus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-1-ai-generated-micro-polls">Example Activity 1. AI-Generated Micro-Polls</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-2-ai-generated-real-time-misconception-probe">Example Activity 2. AI-Generated Real-Time Misconception Probe</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#instructor-preparation-prompt">Instructor Preparation Prompt</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#activity-steps">Activity Steps</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-questions">Reflection Questions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-3-ai-assisted-knowledge-check-carousel">Example Activity 3. AI-Assisted Knowledge Check Carousel</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-4-ai-augmented-real-time-summary-wall">Example Activity 4. AI-Augmented Real-Time Summary Wall</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-5-real-time-adaptive-questioning-sequence">Example Activity 5. Real-Time Adaptive Questioning Sequence</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Activity Steps</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Learning Outcomes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-6-ai-generated-minute-paper-feedback-loop">Example Activity 6. AI-Generated Minute Paper Feedback Loop</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Overview</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Learning Outcomes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-activity-7-live-data-interpretation-with-ai">Example Activity 7. Live Data Interpretation with AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Overview</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Step-by-Step</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Learning Outcomes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapt-pacing-and-methods-responsively">5.5 Adapt Pacing and Methods Responsively</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-personalized-assistant">5.6 Updates to Your AI Workspace &amp; Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workspace-project-updates">Workspace (Project) Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#personalized-assistant-pa-updates">Personalized Assistant (PA) Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">5.7 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-design-an-aiaugmented-active-learning-activity">Exercise 1 — Design an AI‑Augmented Active Learning Activity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-create-a-story-example-demo-or-socratic-sequence">Exercise 2 — Create a Story, Example, Demo, or Socratic Sequence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-produce-a-multimodal-content-delivery-asset">Exercise 3 — Produce a Multimodal Content Delivery Asset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-run-a-realtime-engagement-comprehension-check">Exercise 4 — Run a Real‑Time Engagement &amp; Comprehension Check</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-integrate-ai-outputs-into-lesson-pacing-adjustments">Exercise 5 — Integrate AI Outputs Into Lesson Pacing Adjustments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-reflection-your-ai-enhanced-teaching-persona">Exercise 6 — Reflection: Your AI-Enhanced Teaching Persona</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">5.8 Reflection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

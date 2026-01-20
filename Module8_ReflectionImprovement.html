@@ -1,0 +1,869 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8. AI-Supported Reflection and Improvement &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module8_ReflectionImprovement';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="7. AI in Assessment and Feedback" href="Module7_AssessmentFeedback.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module8_ReflectionImprovement.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module8_ReflectionImprovement.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>8. AI-Supported Reflection and Improvement</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-what-worked-what-did-not-and-why">8.1 Identify What Worked, What Did Not, and Why</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-template-instructional-role-based">Prompt Template — Instructional + Role-Based</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revise-materials-strategies-and-assessments-for-future-iterations">8.2 Revise Materials, Strategies, and Assessments for Future Iterations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Task</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Prompt Template — Instructional + Role-Based</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stay-engaged-with-research-and-innovations">8.3 Stay Engaged with Research and Innovations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools">Sample Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#share-experiences-to-foster-reflective-practice">8.4 Share Experiences to Foster Reflective Practice</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Task</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-template-few-shot">Prompt Template — Few-Shot</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflect-on-teaching-effectiveness-using-feedback-and-data">8.5 Reflect on Teaching Effectiveness Using Feedback and Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Purpose</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-1-create-a-student-perception-of-instruction-form-spoi">Use Case 1: Create a Student Perception of Instruction Form (SPoI)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-2-use-genai-to-analyze-the-students-feedback-data">Use Case 2: Use GenAI to analyze the students feedback data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">8.6 Updates to Your AI Workspace and Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-workspace-project-updates">A. Workspace (Project) Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-personalized-assistant-pa-updates">B. Personalized Assistant (PA) Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">8.7 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-pattern-analysis">Exercise 1 — Pattern Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-redesign-assignment">Exercise 2 — Redesign Assignment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-research-sprint">Exercise 3 — Research Sprint</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-peer-reflection-post">Exercise 4 — Peer-Reflection Post</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-spoi-data-synthesis">Exercise 5 — SPoI Data Synthesis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">8.9 Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thank-you">Thank you!</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ai-supported-reflection-and-improvement">
+<h1>8. AI-Supported Reflection and Improvement<a class="headerlink" href="#ai-supported-reflection-and-improvement" title="Link to this heading">#</a></h1>
+<p><em>Closing the loop through critical self-analysis and iteration</em></p>
+<p>Generative AI enhances your ability to evaluate, reflect on, and iteratively improve your teaching. In this final module, you will use GenAI to identify what worked and what did not, revise materials and strategies, stay updated with research and innovations, share reflective practices, and analyze student feedback using AI-assisted analytics. Across the Teaching with AI program, you have progressively built an AI Workspace and a Course Personalized Assistant. This module focuses on using these tools, and additional GenAI tools, to drive <strong>evidence-based improvement</strong>.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Use GenAI to analyze patterns in student engagement, performance, and feedback.</p></li>
+<li><p>Identify effective strategies and areas for improvement across a full course cycle.</p></li>
+<li><p>Revise course materials, assessments, and teaching strategies using AI recommendations.</p></li>
+<li><p>Stay updated on advances in AI pedagogy and EdTech tools.</p></li>
+<li><p>Share experiences through reflective AI-crafted narratives and faculty-learning communities.</p></li>
+<li><p>Use AI to generate SPoI forms and analyze qualitative and quantitative student feedback.</p></li>
+<li><p>Update their AI Workspace and Personalized Assistant where appropriate.</p></li>
+</ul>
+<p><img alt="Learning Objectives" src="_images/M8LO.png" /></p>
+</section>
+<section id="identify-what-worked-what-did-not-and-why">
+<h2>8.1 Identify What Worked, What Did Not, and Why<a class="headerlink" href="#identify-what-worked-what-did-not-and-why" title="Link to this heading">#</a></h2>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>Use GenAI to analyze course artifacts, such as quizzes, assignments, participation data, notes and reflections, and identify the elements that most influenced learning.</p>
+</section>
+<section id="task">
+<h3>Task<a class="headerlink" href="#task" title="Link to this heading">#</a></h3>
+<p>Upload course data (or paste key excerpts) into your AI Workspace and request a deep-pattern analysis.</p>
+</section>
+<section id="prompt-template-instructional-role-based">
+<h3>Prompt Template — Instructional + Role-Based<a class="headerlink" href="#prompt-template-instructional-role-based" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">a</span> <span class="n">course</span> <span class="n">evaluator</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Analyze</span> <span class="n">the</span> <span class="n">outcomes</span> <span class="kn">from</span><span class="w"> </span><span class="nn">the</span> <span class="n">attached</span> <span class="n">resources</span><span class="o">.</span>
+<span class="n">Identify</span> <span class="n">patterns</span> <span class="n">indicating</span> <span class="n">which</span> <span class="n">instructional</span> <span class="n">elements</span> <span class="n">contributed</span> <span class="n">most</span> <span class="n">to</span> <span class="n">student</span> <span class="n">learning</span><span class="o">.</span>
+<span class="n">Explain</span> <span class="n">WHY</span> <span class="n">certain</span> <span class="n">strategies</span> <span class="n">were</span> <span class="n">more</span> <span class="ow">or</span> <span class="n">less</span> <span class="n">effective</span><span class="o">.</span>
+<span class="n">Include</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Key</span> <span class="n">strengths</span>
+<span class="o">-</span> <span class="n">Weaknesses</span> <span class="ow">or</span> <span class="n">gaps</span>
+<span class="o">-</span> <span class="n">Likely</span> <span class="n">underlying</span> <span class="n">causes</span>
+<span class="o">-</span> <span class="n">Evidence</span> <span class="n">supporting</span> <span class="n">each</span> <span class="n">insight</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="revise-materials-strategies-and-assessments-for-future-iterations">
+<h2>8.2 Revise Materials, Strategies, and Assessments for Future Iterations<a class="headerlink" href="#revise-materials-strategies-and-assessments-for-future-iterations" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Purpose<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Use AI to propose targeted revisions based on the findings above.</p>
+</section>
+<section id="id2">
+<h3>Task<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Prompt AI to recommend changes to worksheets, slides, assignments, rubrics, or course structure.</p>
+</section>
+<section id="id3">
+<h3>Prompt Template — Instructional + Role-Based<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">a</span> <span class="n">curriculum</span> <span class="n">revision</span> <span class="n">assistant</span><span class="o">.</span>
+<span class="n">Based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">course</span> <span class="n">performance</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">feedback</span> <span class="n">excerpts</span> <span class="n">below</span><span class="p">,</span>
+<span class="n">recommend</span> <span class="n">revisions</span> <span class="n">to</span> <span class="n">assignments</span><span class="p">,</span> <span class="k">class</span><span class="w"> </span><span class="nc">materials</span><span class="p">,</span> <span class="ow">and</span> <span class="n">instructional</span> <span class="n">strategies</span><span class="o">.</span>
+<span class="n">Your</span> <span class="n">suggestions</span> <span class="n">must</span> <span class="n">improve</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">clarity</span>
+<span class="o">-</span> <span class="n">engagement</span>
+<span class="o">-</span> <span class="n">workload</span> <span class="n">balance</span>
+<span class="o">-</span> <span class="n">alignment</span> <span class="k">with</span> <span class="n">learning</span> <span class="n">outcomes</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="stay-engaged-with-research-and-innovations">
+<h2>8.3 Stay Engaged with Research and Innovations<a class="headerlink" href="#stay-engaged-with-research-and-innovations" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Purpose<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Use AI research tools to track pedagogical innovations, new AI capabilities, and emerging teaching practices.</p>
+</section>
+<section id="sample-tools">
+<h3>Sample Tools<a class="headerlink" href="#sample-tools" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Consensus.app</strong> – evidence-based conclusions directly from research</p></li>
+<li><p><strong>Perplexity Academic</strong> – literature synthesis with citations</p></li>
+<li><p><strong>SciSpace</strong> – grounded summaries and concept maps</p></li>
+<li><p><strong>Google Scholar Labs</strong> – trend detection</p></li>
+<li><p><strong>NotebookLM</strong> – build a living “AI Pedagogy Research Notebook”</p></li>
+</ul>
+<p><strong>Prompt Template — Zero-Shot</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Provide</span> <span class="n">a</span> <span class="n">curated</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">the</span> <span class="n">top</span> <span class="mi">5</span> <span class="n">recent</span> <span class="n">articles</span><span class="p">,</span> <span class="n">reports</span><span class="p">,</span> <span class="ow">or</span> <span class="n">tools</span> <span class="n">related</span> <span class="n">to</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Summarize</span> <span class="n">each</span> <span class="n">item</span><span class="p">,</span> <span class="n">include</span> <span class="n">citations</span><span class="p">,</span> <span class="ow">and</span> <span class="n">propose</span> <span class="n">one</span> <span class="n">way</span> <span class="n">it</span> <span class="n">could</span> <span class="n">influence</span> <span class="n">future</span> <span class="n">course</span> <span class="n">iterations</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="share-experiences-to-foster-reflective-practice">
+<h2>8.4 Share Experiences to Foster Reflective Practice<a class="headerlink" href="#share-experiences-to-foster-reflective-practice" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Purpose<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Use AI to reflect on your teaching journey and share insights with colleagues, teaching centers, or communities of practice.</p>
+</section>
+<section id="id6">
+<h3>Task<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Generate narratives, blog posts, discussion prompts, and reflective statements.</p>
+</section>
+<section id="prompt-template-few-shot">
+<h3>Prompt Template — Few-Shot<a class="headerlink" href="#prompt-template-few-shot" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Examples of reflective statements:
+1. “I found that using generative AI to co-create rubrics gave students clearer expectations.”
+2. “Next time, I will scaffold AI tool use earlier to minimize overload.”
+
+Based on my course [Course Name], generate a reflective blog post or discussion prompt 
+capturing my key insights, challenges, and improvements for next year.
+</pre></div>
+</div>
+</section>
+</section>
+<section id="reflect-on-teaching-effectiveness-using-feedback-and-data">
+<h2>8.5 Reflect on Teaching Effectiveness Using Feedback and Data<a class="headerlink" href="#reflect-on-teaching-effectiveness-using-feedback-and-data" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>Purpose<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Use AI to synthesize quantitative and qualitative student feedback, combining SPoI data, assignment outcomes, and reflection notes.</p>
+<section id="use-case-1-create-a-student-perception-of-instruction-form-spoi">
+<h4>Use Case 1: Create a Student Perception of Instruction Form (SPoI)<a class="headerlink" href="#use-case-1-create-a-student-perception-of-instruction-form-spoi" title="Link to this heading">#</a></h4>
+<p><strong>Prompt Template — Role-Based with Embedded Instructional Structure</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are an instructional designer tasked with creating a course evaluation form titled &quot;Student Perception of Instruction (SPoI)&quot; for the course [Course Name].
+Use the set of questions and structure proposed below.
+
+## Instructions:
+1. Group the questions into quantitative (Likert scale) and qualitative (open-ended) sections.
+2. For each **quantitative question**, provide a 5-point Likert scale with the following response options (unless otherwise specified):
+   - Strongly Agree
+   - Agree
+   - Neutral
+   - Disagree
+   - Strongly Disagree
+   - Not Applicable (optional where relevant)
+3. For each **qualitative question**, provide a space for open-ended feedback.
+4. Maintain the order, labeling, and clarity of the original items.
+5. Return the output in a markdown format suitable for use in an online survey or printed form.
+
+## Open-Ended Questions (Qualitative):
+1. How many hours per week did you spend on this course outside of class time?
+2. Describe the instructor’s overall presentation and explanation of content.
+3. What instructional methods helped you learn the material?
+4. Which course materials were most useful? Please explain.
+5. Which course materials were least useful? Please explain.
+6. Which assignments best supported your learning? Please explain.
+7. Which assignments were most troublesome? Please explain.
+8. Would you recommend this class to others? Why or why not?
+
+## Likert Scale Questions (Quantitative):
+9. The instructor seems concerned with whether I learned the course content.
+10. The instructor helped me understand the course content.
+11. The instructor generated interest in the course.
+12. The learning environment was positive and engaging.
+13. Course activities and assignments facilitated my ability to analyze, solve problems, and/or think critically.
+14. The following helped with my learning in the course:
+   a. How the course was organized  
+   b. How the course content was delivered  
+   c. Interactions between the instructor and the students  
+   d. Availability of the instructor outside of class  
+   e. Required materials (e.g., books, publications)
+15. Overall, this course was effective in improving my knowledge of course content.
+16. Overall, this course was a valuable educational experience.
+17. (If applicable) For service-learning courses: Were the service-learning activities related to the content of the course? Please explain.
+
+## Output Format:
+Please return the form formatted in a DOCX file ready to be imported by a Google or Microsoft Form.
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Role-Based without Structure</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">instructional</span> <span class="n">designer</span> <span class="n">tasked</span> <span class="k">with</span> <span class="n">creating</span> <span class="n">a</span> <span class="n">Student</span> <span class="n">Perception</span> <span class="n">of</span> <span class="n">Instruction</span> <span class="p">(</span><span class="n">SPoI</span><span class="p">)</span> <span class="n">form</span> <span class="k">for</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+
+<span class="n">Follow</span> <span class="n">the</span> <span class="n">structure</span> <span class="n">below</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Group</span> <span class="n">questions</span> <span class="n">into</span> <span class="n">quantitative</span> <span class="p">(</span><span class="n">Likert</span><span class="p">)</span> <span class="ow">and</span> <span class="n">qualitative</span> <span class="p">(</span><span class="nb">open</span><span class="o">-</span><span class="n">ended</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">Provide</span> <span class="n">a</span> <span class="mi">5</span><span class="o">-</span><span class="n">point</span> <span class="n">Likert</span> <span class="n">scale</span>
+<span class="o">-</span> <span class="n">Maintain</span> <span class="n">clarity</span><span class="p">,</span> <span class="n">order</span><span class="p">,</span> <span class="ow">and</span> <span class="n">labeling</span>
+
+<span class="p">[</span><span class="n">Insert</span> <span class="n">SPoI</span> <span class="n">questions</span> <span class="n">here</span><span class="p">]</span>
+
+<span class="n">Return</span> <span class="n">full</span> <span class="n">SPoI</span> <span class="n">instrument</span> <span class="n">ready</span> <span class="k">for</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">Microsoft</span><span class="o">/</span><span class="n">Google</span> <span class="n">Forms</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="use-case-2-use-genai-to-analyze-the-students-feedback-data">
+<h4>Use Case 2: Use GenAI to analyze the students feedback data<a class="headerlink" href="#use-case-2-use-genai-to-analyze-the-students-feedback-data" title="Link to this heading">#</a></h4>
+<p><strong>Prompt Template — Instructional Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Given</span> <span class="n">the</span> <span class="n">student</span> <span class="n">feedback</span> <span class="n">provided</span><span class="p">,</span> <span class="n">summarize</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Key</span> <span class="n">strengths</span>
+<span class="o">-</span> <span class="n">Key</span> <span class="n">weaknesses</span>
+<span class="o">-</span> <span class="n">Patterns</span> <span class="n">across</span> <span class="n">comments</span>
+<span class="o">-</span> <span class="n">Teaching</span> <span class="n">strategies</span> <span class="n">that</span> <span class="n">worked</span> <span class="n">well</span>
+<span class="o">-</span> <span class="n">Areas</span> <span class="n">needing</span> <span class="n">improvement</span>
+
+<span class="n">Generate</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Charts</span> <span class="ow">or</span> <span class="n">graphs</span>
+<span class="o">-</span> <span class="n">Key</span> <span class="n">performance</span> <span class="n">indicators</span> <span class="p">(</span><span class="n">KPIs</span><span class="p">)</span>
+<span class="o">-</span> <span class="n">A</span> <span class="n">short</span> <span class="n">narrative</span> <span class="n">interpreting</span> <span class="n">results</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="updates-to-your-ai-workspace-and-personalized-assistant">
+<h2>8.6 Updates to Your AI Workspace and Personalized Assistant<a class="headerlink" href="#updates-to-your-ai-workspace-and-personalized-assistant" title="Link to this heading">#</a></h2>
+<p>Minimal updates are needed beyond uploading new reflection materials.</p>
+<section id="a-workspace-project-updates">
+<h3>A. Workspace (Project) Updates<a class="headerlink" href="#a-workspace-project-updates" title="Link to this heading">#</a></h3>
+<p>Upload:</p>
+<ul class="simple">
+<li><p>SPoI form</p></li>
+<li><p>Summary dashboards and KPIs</p></li>
+<li><p>Revised versions of assignments or materials</p></li>
+<li><p>Teaching reflections or revisions</p></li>
+</ul>
+<p>Add under <strong>Capabilities</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Generate</span> <span class="n">improvement</span> <span class="n">recommendations</span> <span class="n">based</span> <span class="n">on</span> <span class="n">performance</span> <span class="n">data</span>
+<span class="o">-</span> <span class="n">Track</span> <span class="n">version</span> <span class="n">changes</span> <span class="n">across</span> <span class="n">course</span> <span class="n">iterations</span>
+</pre></div>
+</div>
+<p>Add under <strong>Behaviors</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Flag</span> <span class="n">recurring</span> <span class="n">issues</span> <span class="n">across</span> <span class="n">course</span> <span class="n">versions</span>
+<span class="o">-</span> <span class="n">Suggest</span> <span class="n">evidence</span><span class="o">-</span><span class="n">based</span> <span class="n">improvements</span> <span class="n">using</span> <span class="n">research</span> <span class="n">insights</span>
+</pre></div>
+</div>
+</section>
+<section id="b-personalized-assistant-pa-updates">
+<h3>B. Personalized Assistant (PA) Updates<a class="headerlink" href="#b-personalized-assistant-pa-updates" title="Link to this heading">#</a></h3>
+<p>Only add <em>student-facing</em> improvements where relevant. No structural expansion is needed.</p>
+<p>Upload to PA:</p>
+<ul class="simple">
+<li><p>simplified SPoI instructions (if you want students to complete them)</p></li>
+<li><p>reflection prompts for metacognition (if used as part of course activities)</p></li>
+</ul>
+</section>
+</section>
+<section id="exercises">
+<h2>8.7 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-pattern-analysis">
+<h3>Exercise 1 — Pattern Analysis<a class="headerlink" href="#exercise-1-pattern-analysis" title="Link to this heading">#</a></h3>
+<p>Upload graded work and ask AI to identify learning patterns.</p>
+</section>
+<section id="exercise-2-redesign-assignment">
+<h3>Exercise 2 — Redesign Assignment<a class="headerlink" href="#exercise-2-redesign-assignment" title="Link to this heading">#</a></h3>
+<p>Select an assignment and ask AI for a revised version addressing identified gaps.</p>
+</section>
+<section id="exercise-3-research-sprint">
+<h3>Exercise 3 — Research Sprint<a class="headerlink" href="#exercise-3-research-sprint" title="Link to this heading">#</a></h3>
+<p>Use Consensus or Perplexity Academic to gather new evidence for course design.</p>
+</section>
+<section id="exercise-4-peer-reflection-post">
+<h3>Exercise 4 — Peer-Reflection Post<a class="headerlink" href="#exercise-4-peer-reflection-post" title="Link to this heading">#</a></h3>
+<p>Generate a short reflection and share it with a faculty community.</p>
+</section>
+<section id="exercise-5-spoi-data-synthesis">
+<h3>Exercise 5 — SPoI Data Synthesis<a class="headerlink" href="#exercise-5-spoi-data-synthesis" title="Link to this heading">#</a></h3>
+<p>Upload past SPoI results and generate a dashboard.</p>
+</section>
+</section>
+<section id="reflection">
+<h2>8.9 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What teaching strategies were most effective, according to AI-assisted analysis?</p></li>
+<li><p>Which parts of your course need redesign in the next iteration?</p></li>
+<li><p>How can AI help you maintain a living, iterative improvement cycle?</p></li>
+<li><p>What new research or tools will you adopt for your next teaching cycle?</p></li>
+<li><p>How will your AI Workspace evolve next semester as a teaching partner?</p></li>
+</ul>
+</section>
+<section id="thank-you">
+<h2>Thank you!<a class="headerlink" href="#thank-you" title="Link to this heading">#</a></h2>
+<p>Thank you for your engagement throughout this training. We encourage you to experiment, reflect, and share your insights as you move forward in teaching and learning with AI.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module7_AssessmentFeedback.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">7. AI in Assessment and Feedback</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-what-worked-what-did-not-and-why">8.1 Identify What Worked, What Did Not, and Why</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task">Task</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-template-instructional-role-based">Prompt Template — Instructional + Role-Based</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revise-materials-strategies-and-assessments-for-future-iterations">8.2 Revise Materials, Strategies, and Assessments for Future Iterations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Task</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Prompt Template — Instructional + Role-Based</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stay-engaged-with-research-and-innovations">8.3 Stay Engaged with Research and Innovations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools">Sample Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#share-experiences-to-foster-reflective-practice">8.4 Share Experiences to Foster Reflective Practice</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Task</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-template-few-shot">Prompt Template — Few-Shot</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflect-on-teaching-effectiveness-using-feedback-and-data">8.5 Reflect on Teaching Effectiveness Using Feedback and Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Purpose</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-1-create-a-student-perception-of-instruction-form-spoi">Use Case 1: Create a Student Perception of Instruction Form (SPoI)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-2-use-genai-to-analyze-the-students-feedback-data">Use Case 2: Use GenAI to analyze the students feedback data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">8.6 Updates to Your AI Workspace and Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-workspace-project-updates">A. Workspace (Project) Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-personalized-assistant-pa-updates">B. Personalized Assistant (PA) Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">8.7 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-pattern-analysis">Exercise 1 — Pattern Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-redesign-assignment">Exercise 2 — Redesign Assignment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-research-sprint">Exercise 3 — Research Sprint</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-peer-reflection-post">Exercise 4 — Peer-Reflection Post</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-spoi-data-synthesis">Exercise 5 — SPoI Data Synthesis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">8.9 Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thank-you">Thank you!</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

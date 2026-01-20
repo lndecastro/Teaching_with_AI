@@ -1,0 +1,1220 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Teaching with AI &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. The Teaching with AI Framework" href="Module1_TLFramework.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/intro.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Teaching with AI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disclaimer">Disclaimer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-goals">1. Program Goals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">2. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-and-approach">3. Structure and Approach</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-process-based-end-to-end-framework">3.1 A Process-Based, End-to-End Framework</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-multimodal-multi-tool-ecosystem-approach">3.2 A Multimodal, Multi-Tool Ecosystem Approach</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#progressive-building-of-two-core-ai-systems">3.3 Progressive Building of Two Core AI Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-the-ai-workspace-project"><strong>A. The AI Workspace (Project)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-the-personalized-assistant-pa"><strong>B. The Personalized Assistant (PA)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-programs-instructional-approach">3.4 The Program’s Instructional Approach</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-versioning">3.5 Continuous Improvement &amp; Versioning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-this-program-unique">3.6 What Makes This Program Unique?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operational-integration">3.7 Operational Integration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsible-and-ethical-ai-use-in-teaching">4. Responsible and Ethical AI Use in Teaching</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transparency">4.1 Transparency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-integrity">4.2 Academic Integrity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-and-verification">4.3 Accuracy and Verification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equity-and-accessibility">4.4 Equity and Accessibility</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#human-judgment-leads">4.5 Human Judgment Leads</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#follow-institutional-policies">4.6 Follow Institutional Policies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-privacy-and-protection">4.7 Data Privacy and Protection</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-jupyter-book">5. How to Use This Jupyter Book</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-jupyter-book-as-a-living-reference">5.1 The Jupyter Book as a Living Reference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-navigate-the-book">5.2 How to Navigate the Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-integrate-the-book-with-your-ai-workspace-and-pa">5.3 How to Integrate the Book With Your AI Workspace and PA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-prompts-effectively">5.4 Using the Prompts Effectively</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-exercises-as-production-tasks">5.5 Using the Exercises as Production Tasks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#human-centered-teaching-with-ai">6. Human-Centered Teaching with AI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genai-tools-to-be-studied">7. GenAI Tools to be Studied</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt">ChatGPT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#claude">Claude</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perplexity">Perplexity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grok">Grok</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-ai">Meta AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot">Copilot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gemini">Gemini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooklm">NotebookLM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#napkin">Napkin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gamma">Gamma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-studio">AI Studio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scispace">SciSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cograder">CoGrader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essaygrader">EssayGrader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gradescope">Gradescope</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turnitin">Turnitin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stargrader">Stargrader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#canva-magic-studio">Canva Magic Studio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elevenlabs">ElevenLabs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heygen">HeyGen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synthesia">Synthesia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consensus">Consensus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semantic-scholar-ai">Semantic Scholar AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explainpaper">ExplainPaper</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eduaide">Eduaide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#khanmigo">Khanmigo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elicit">Elicit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scite">Scite</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-rabbit">Research Rabbit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-instructor-dr-leandro-nunes-de-castro">8. About the Instructor – Dr. Leandro Nunes de Castro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">🧾 Acknowledgements</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="teaching-with-ai">
+<h1>Teaching with AI<a class="headerlink" href="#teaching-with-ai" title="Link to this heading">#</a></h1>
+<p>Welcome to the <strong>Teaching with AI Program</strong>, part of the FGCU AI Academy led by the Dendritic Institute for Human-Centered AI &amp; Data Science at Florida Gulf Coast University. This program is designed for faculty and instructors seeking <strong>practical, hands-on methods for integrating Generative AI tools throughout the teaching and learning cycle</strong>. Unlike pedagogical or learning-science programs, which are covered separately in the Academy, <strong>this training focuses on the instrumental and operational use of AI</strong>.</p>
+<section id="disclaimer">
+<h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Link to this heading">#</a></h2>
+<p>This training is intended to demonstrate the capabilities of generative AI tools in educational contexts. It is not an endorsement of using AI-generated content without human expertise, oversight, or academic judgment, nor is it a prescriptive guide for its use. Instructors remain fully responsible for:</p>
+<ul class="simple">
+<li><p>Curating and validating instructional content</p></li>
+<li><p>Disclosing when and how AI tools are used</p></li>
+<li><p>Choosing the specific tools and models they want to use</p></li>
+<li><p>Ensuring the ethical, responsible, and context-appropriate integration of AI into teaching and learning</p></li>
+</ul>
+<p>Academic content must always be aligned with the subject matter, learning objectives, institutional context and policies, and professional standards. While AI can assist in content creation and instructional design (AI-assisted), it should not replace the critical role of educators (not AI-driven).</p>
+<p><strong>Model and Tool Neutrality</strong></p>
+<p>Throughout this program, we present a variety of foundational models, general-purpose LLMs, and specialized AI tools designed to support teaching and learning.
+We do not endorse or receive sponsorship from any of the vendors, platforms, or products mentioned. Our emphasis on foundational and general-purpose models is intentional: it ensures that instructors develop transferable skills and learn how to use AI for teaching independently of any specific vendor, interface, or model-specific feature.</p>
+<p>Participants are free and encouraged to use any AI model or tool of their preference, including alternatives not mentioned here, so long as they meet instructional needs and comply with institutional policies.</p>
+<p><strong>How This Program and Jupyter Book Were Created</strong></p>
+<p>This program and Jupyter Book were created through a rigorous, human-led process in which generative AI served as an assistive tool for drafting, ideation, and organization. All content was curated, complemented, reviewed, revised, and validated by the instructor to ensure pedagogical integrity, accuracy, and alignment with institutional policies. This iterative co-development process models the responsible, transparent, and human-centered use of AI advocated throughout this training.</p>
+<p>For current FGCU policies on generative AI, please refer to:
+🔗 <a class="reference external" href="https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai">https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai</a></p>
+</section>
+<section id="program-goals">
+<h2>1. Program Goals<a class="headerlink" href="#program-goals" title="Link to this heading">#</a></h2>
+<p>The goal of this program is to equip instructors with practical, immediately applicable skills for using GenAI across:</p>
+<ul class="simple">
+<li><p>Strategic planning</p></li>
+<li><p>Class and course design</p></li>
+<li><p>Class delivery</p></li>
+<li><p>Assessment and feedback</p></li>
+<li><p>Student support</p></li>
+<li><p>Reflection and continuous improvement</p></li>
+</ul>
+<p>The the basic background necessary to use GenAI tools is presented in the AI Literacy program. If you need some introductory knowledge on prompt engineering and a general understanding of AI and its history, we invite you to take that program before proceeding with this one.</p>
+</section>
+<section id="learning-objectives">
+<h2>2. Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>By the end of this program, participants should be able to:</p>
+<ul class="simple">
+<li><p><strong>Understand the comprehensive framework</strong> for integrating generative AI into the teaching and learning process, recognizing its application across strategic planning, design, delivery, support, assessment, and reflection phases.</p></li>
+<li><p><strong>Organize your AI workspace and create personalized assistants</strong> to enhance teaching and learning and leverage AI tools to support pedagogical planning, content generation, instructional decision-making, and student support.</p></li>
+<li><p><strong>Design and develop class sessions and course materials</strong> by breaking down content into modules, structuring sessions, finding relevant literature, generating content from sources, and creating learning activities with AI support.</p></li>
+<li><p><strong>Prepare assignments and exams</strong> by designing formative and summative assessments, creating authentic tasks (quizzes, case studies, projects), developing clear rubrics, and considering accessibility and academic integrity, utilizing AI as an assistant.</p></li>
+<li><p><strong>Integrate generative AI tools and strategies into class delivery</strong> to facilitate active and student-centered learning, employ various content delivery methods, monitor engagement and comprehension, and adapt instruction responsively.</p></li>
+<li><p><strong>Enhance student support structures</strong> by using AI to supplement office hours and respond to inquiries, offer guidance on assignments and study strategies, monitor student success, provide AI-curated resources, encourage peer collaboration, and explore the introduction of AI tutors.</p></li>
+<li><p><strong>Apply AI tools and techniques to assessment and feedback processes</strong>, including conducting assessments with AI support, generating rubric-based constructive feedback, facilitating AI-assisted self- and peer-assessment, and exploring AI for grading and originality verification.</p></li>
+<li><p><strong>Utilize generative AI for reflection and continuous improvement</strong> of teaching practices, including identifying effective elements, revising materials and strategies, staying engaged with research, sharing experiences, and analyzing student feedback and data.</p></li>
+</ul>
+<p><img alt="Teaching with AI Learning Objectives" src="_images/TwAILO.png" /></p>
+</section>
+<section id="structure-and-approach">
+<h2>3. Structure and Approach<a class="headerlink" href="#structure-and-approach" title="Link to this heading">#</a></h2>
+<p><em>A multi-layered, workflow-driven program for operational AI integration in higher education</em></p>
+<p>The <strong>Teaching with AI Program</strong> is built as a <em>practical, operational, and iterative system</em> for integrating generative AI into every phase of the teaching and learning cycle. Unlike pedagogical theory–oriented programs, this course focuses on how instructors actually use AI tools systematically, responsibly, and efficiently within real teaching workflows.</p>
+<p>Across eight modules, instructors progressively build two persistent tools:</p>
+<ul class="simple">
+<li><p><strong>The AI Workspace (Project)</strong> – your <em>design and development environment</em> for planning, creating, auditing, and improving course materials. The main platforms to be used to create AI workspaces are ChatGPT, Perplexity, Claude, and Grok).</p></li>
+<li><p><strong>The Course Personalized Assistant (PA)</strong> – your <em>student-facing AI tutor</em> for explanations, study support, and assignment clarification (without solving graded tasks). The main platforms to be used to create PAs are Custom GPTs, Claude Artifacts, Gemini Gems, and CoPilot Agents.</p></li>
+</ul>
+<p><img alt="Core Operational Tools" src="_images/MM_Assets.png" /></p>
+<p>The entire program is structured as a <strong>guided transformation of your teaching practice</strong>, with each module updating, refining, and expanding these tools.</p>
+<section id="a-process-based-end-to-end-framework">
+<h3>3.1 A Process-Based, End-to-End Framework<a class="headerlink" href="#a-process-based-end-to-end-framework" title="Link to this heading">#</a></h3>
+<p>The program is structured around the <strong>AI-Enhanced Teaching Workflow</strong> containing seven phases, enabling instructors to gradually integrate AI across the entire course cycle while maintaining pedagogical integrity and institutional alignment.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>AI-Enhanced Teaching Phase</p></th>
+<th class="head"><p>Main Instructional Focus</p></th>
+<th class="head"><p>Core Artifacts Produced</p></th>
+<th class="head"><p>Workspace / PA Updates</p></th>
+<th class="head"><p>Key GenAI Tools</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>1. Introduction to Teaching with AI</strong></p></td>
+<td><p>Foundations for AI-Enhanced Teaching</p></td>
+<td><p>Framework, responsible use, institutional policies, prompt &amp; context engineering</p></td>
+<td><p>AI Workspace created; PA created; initial instructions &amp; guardrails</p></td>
+<td><p>Initialize Workspace/PA; upload policies; set core capabilities &amp; boundaries</p></td>
+<td><p>ChatGPT Projects, Claude Projects, Perplexity Spaces, NotebookLM, Gemini</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>2. AI-Enhanced Pedagogical &amp; Didactic Planning</strong></p></td>
+<td><p><strong>Phase A — Planning</strong></p></td>
+<td><p>Learning outcomes, audience analysis, pedagogical models, syllabus creation, AI use policies</p></td>
+<td><p>LO table, learner personas, pedagogy map, syllabus drafts, AI policy</p></td>
+<td><p>Upload syllabus, policies, LO; add alignment &amp; auditing behaviors</p></td>
+<td><p>Perplexity Academic, Consensus, SciSpace, Google Scholar Labs, Elicit, Scite</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>3. AI-Assisted Class Design &amp; Development</strong></p></td>
+<td><p><strong>Phase B — Class Design</strong></p></td>
+<td><p>Session planning, slide decks, examples, literature grounding, multimodal content</p></td>
+<td><p>90-min plans, slides, readings, activities, diagrams, concept maps</p></td>
+<td><p>Upload class materials; add content-generation &amp; literature-grounding capabilities</p></td>
+<td><p>Gamma, Canva Magic Studio, Claude Artifacts, <a class="reference external" href="http://Napkin.ai">Napkin.ai</a>, NotebookLM</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>4. AI-Enhanced Assignment &amp; Exam Preparation</strong></p></td>
+<td><p><strong>Phase C — Assignment Design</strong></p></td>
+<td><p>Formative/summative assessments, multimodal tasks, rubrics, integrity &amp; accessibility</p></td>
+<td><p>Quizzes, case studies, projects, rubrics, assignment variants</p></td>
+<td><p>Upload assessments; add rubric &amp; integrity audit features</p></td>
+<td><p>ChatGPT, Gemini, Synthesia, HeyGen, Canva, Eduaide</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>5. AI-Enabled Class Delivery</strong></p></td>
+<td><p><strong>Phase D — Delivery</strong></p></td>
+<td><p>Active learning with AI, storytelling, Socratic questioning, live adaptation</p></td>
+<td><p>AI-augmented activities, polls, misconception probes, live summaries</p></td>
+<td><p>Add real-time explanation &amp; pacing support; upload teaching materials</p></td>
+<td><p>Poll Everywhere + AI, Gamma, Claude Artifacts, ChatGPT</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>6. AI-Powered Student Support</strong></p></td>
+<td><p><strong>Phase E — Student Support</strong></p></td>
+<td><p>PA-guided study support, scaffolding, peer instruction, NotebookLM workspaces</p></td>
+<td><p>Study guides, flashcards, FAQs, diagrams, peer-learning prompts</p></td>
+<td><p>Add student-safe materials to PA; refine boundaries; expand explanation levels</p></td>
+<td><p>Course PA, NotebookLM, ChatGPT, Gemini, Claude</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>7. AI in Assessment &amp; Feedback</strong></p></td>
+<td><p><strong>Phase F — Assessment &amp; Feedback</strong></p></td>
+<td><p>Rubric-based feedback, self/peer assessment, reasoning checks, academic integrity</p></td>
+<td><p>Feedback templates, misconception matrices, checklists, grading matrices</p></td>
+<td><p>Upload student-safe materials; integrate feedback behaviors</p></td>
+<td><p>Gradescope, CoGrader, EssayGrader, Turnitin, Stargrader</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>8. AI-Supported Reflection &amp; Improvement</strong></p></td>
+<td><p><strong>Phase G — Reflection &amp; Improvement</strong></p></td>
+<td><p>Analytics, SPoI creation, feedback synthesis, course revision cycles</p></td>
+<td><p>SPoI forms, dashboards, summaries, revision memos, next-iteration plan</p></td>
+<td><p>Upload reflective artifacts; add version-tracking capabilities</p></td>
+<td><p>Perplexity Academic, SciSpace, NotebookLM, ChatGPT</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="a-multimodal-multi-tool-ecosystem-approach">
+<h3>3.2 A Multimodal, Multi-Tool Ecosystem Approach<a class="headerlink" href="#a-multimodal-multi-tool-ecosystem-approach" title="Link to this heading">#</a></h3>
+<p>Throughout the program, participants develop fluency with multiple LLM ecosystems, including ChatGPT, Claude, Gemini, Perplexity, NotebookLM, SciSpace, Gamma, Canva, Grok, and much more.</p>
+<p>The logic behind this approach is:</p>
+<ul class="simple">
+<li><p>Different tools have different strengths (e.g., Claude for artifacts, Gemini for images, Perplexity for cited research, NotebookLM for grounded synthesis).</p></li>
+<li><p>Instructors learn to select suitable tools for each stage of their teaching workflow.</p></li>
+<li><p>The program models a platform-agnostic AI practice, reflecting real academic and industry environments.</p></li>
+</ul>
+<p>In each module, tool usage is contextualized:</p>
+<ul class="simple">
+<li><p>Design/development tasks occur in the Workspace.</p></li>
+<li><p>Student explanations and scaffolding occur through the PA.</p></li>
+<li><p>Research synthesis is handled by tools like Perplexity Academic, Consensus, SciSpace.</p></li>
+<li><p>Multimodal production uses tools like Gamma, Canva Magic Studio, or Claude Artifacts.</p></li>
+</ul>
+</section>
+<section id="progressive-building-of-two-core-ai-systems">
+<h3>3.3 Progressive Building of Two Core AI Systems<a class="headerlink" href="#progressive-building-of-two-core-ai-systems" title="Link to this heading">#</a></h3>
+<section id="a-the-ai-workspace-project">
+<h4><strong>A. The AI Workspace (Project)</strong><a class="headerlink" href="#a-the-ai-workspace-project" title="Link to this heading">#</a></h4>
+<p>A persistent, memory-enabled environment that stores:</p>
+<ul class="simple">
+<li><p>syllabus, schedule, policies</p></li>
+<li><p>assignments, rubrics, templates</p></li>
+<li><p>slides, notes, readings</p></li>
+<li><p>datasets and sample materials</p></li>
+</ul>
+<p>It becomes the <em>hub</em> for:</p>
+<ul class="simple">
+<li><p>consistent document-grounded content creation</p></li>
+<li><p>mapping learning outcomes to activities and assessments</p></li>
+<li><p>generating variants, versions, improvements</p></li>
+<li><p>auditing alignment, accessibility, and integrity</p></li>
+<li><p>tracking revisions across course iterations</p></li>
+</ul>
+</section>
+<section id="b-the-personalized-assistant-pa">
+<h4><strong>B. The Personalized Assistant (PA)</strong><a class="headerlink" href="#b-the-personalized-assistant-pa" title="Link to this heading">#</a></h4>
+<p>Your course’s “AI tutor”, designed with:</p>
+<ul class="simple">
+<li><p>explicit safety and academic integrity rules</p></li>
+<li><p>multi-level explanation capabilities</p></li>
+<li><p>ability to reference syllabus and course files</p></li>
+<li><p>structured guidance for assignments, without completing them</p></li>
+<li><p>weekly study plans, flashcards, glossaries, FAQs, diagrams</p></li>
+</ul>
+<p>The PA grows each module as student-facing materials are created.</p>
+</section>
+</section>
+<section id="the-programs-instructional-approach">
+<h3>3.4 The Program’s Instructional Approach<a class="headerlink" href="#the-programs-instructional-approach" title="Link to this heading">#</a></h3>
+<p><strong>1. Short theory → hands-on practice</strong><br />
+Each module begins with a concise conceptual introduction, followed by intensive practice using real course materials.</p>
+<p><strong>2. Prompt Templates, Patterns &amp; Meta-Prompting</strong><br />
+Each module offers different types of prompt engineering techniques, enabling instructors to adapt workflows to various LLMs.</p>
+<p><strong>3. Cross-Model Comparison &amp; Verification</strong><br />
+Participants:</p>
+<ul class="simple">
+<li><p>compare AI outputs from multiple tools</p></li>
+<li><p>annotate differences</p></li>
+<li><p>use Workspace or PA to diagnose errors</p></li>
+<li><p>refine outputs with iterative prompting</p></li>
+</ul>
+<p>This builds <em>critical AI literacy</em>, not just production skills.</p>
+<p><strong>4. Authentic, Product-Oriented Workflows</strong><br />
+Each module ends with concrete artifacts, such as syllabi, class plans, slide decks, assessments and rubrics, study guides, reflective memos, SPoI instruments, and improvement dashboards. These can be deployed directly in the participants’ actual courses.</p>
+</section>
+<section id="continuous-improvement-versioning">
+<h3>3.5 Continuous Improvement &amp; Versioning<a class="headerlink" href="#continuous-improvement-versioning" title="Link to this heading">#</a></h3>
+<p>A distinctive component of the program is <strong>longitudinal improvement</strong>, supported through AI:</p>
+<ul class="simple">
+<li><p>Every version of the course is recorded in the Workspace.</p></li>
+<li><p>AI identifies recurring issues or patterns.</p></li>
+<li><p>Revised assessments, slides, and policies are iteratively generated.</p></li>
+<li><p>A reflective practice notebook grows over time.</p></li>
+</ul>
+<p>This enables sustained teaching innovation, not just a one-time redesign.</p>
+</section>
+<section id="what-makes-this-program-unique">
+<h3>3.6 What Makes This Program Unique?<a class="headerlink" href="#what-makes-this-program-unique" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>End-to-end workflow integration (planning → improvement)</p></li>
+<li><p>Two persistent AI systems built step-by-step</p></li>
+<li><p>Cross-tool literacy rather than platform dependence</p></li>
+<li><p>Multimodal content generation across the curriculum</p></li>
+<li><p>Evidence-based and research-aligned AI practices</p></li>
+<li><p>Real teaching artifacts produced in every module</p></li>
+<li><p>Explicit guardrails for academic integrity and responsible AI use</p></li>
+</ul>
+<p>This program is not a typical “how to use AI” workshop. It is a complete transformation of your teaching ecosystem, powered by structured, responsible, and human-centered AI.</p>
+</section>
+<section id="operational-integration">
+<h3>3.7 Operational Integration<a class="headerlink" href="#operational-integration" title="Link to this heading">#</a></h3>
+<p>The contents of the concept map below was generated with NotebookLM and contains an overview of the seven steps of the teaching framework, the core operational tools proposed (AI Workspace and Course Personalized Assistant), the foundational knowledge necessary to navigate the course, and the program principles. The final Mind Map was drawn using <a class="reference external" href="http://Napkin.ai">Napkin.ai</a>.</p>
+<p><img alt="Program Operational Integration" src="_images/MM_OperationalIntegration.png" /></p>
+</section>
+</section>
+<section id="responsible-and-ethical-ai-use-in-teaching">
+<h2>4. Responsible and Ethical AI Use in Teaching<a class="headerlink" href="#responsible-and-ethical-ai-use-in-teaching" title="Link to this heading">#</a></h2>
+<p>The program ensures that AI outputs are always:</p>
+<ul class="simple">
+<li><p>aligned with institutional policies and student code of conduct</p></li>
+<li><p>used with transparency and citation</p></li>
+<li><p>designed to <em>support</em>, not replace, human expertise</p></li>
+<li><p>compliant with integrity and accessibility requirements</p></li>
+</ul>
+<p>Every workflow explicitly distinguishes between:</p>
+<ul class="simple">
+<li><p>Instructor tools (Workspace)</p></li>
+<li><p>Student tools (PA, NotebookLM)</p></li>
+<li><p>Prohibited uses (grading keys, exam answers, private notes in PA)</p></li>
+</ul>
+<p>Generative AI expands what instructors can create, automate, and personalize, but it must be used responsibly. Ethical teaching with AI requires transparency, accuracy, respect for student agency, and alignment with institutional policies. In your Teaching with AI journey you should follow some guiding principles:</p>
+<section id="transparency">
+<h3>4.1 Transparency<a class="headerlink" href="#transparency" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Disclose how you use AI to create instructional materials, assessments, or feedback.</p></li>
+<li><p>Inform students when AI is used in the course and under what conditions.</p></li>
+<li><p>Document prompts or workflows when required by policy or good practice.</p></li>
+</ul>
+</section>
+<section id="academic-integrity">
+<h3>4.2 Academic Integrity<a class="headerlink" href="#academic-integrity" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>AI should support, <em>not complete</em>, assessments meant to measure student learning.</p></li>
+<li><p>Students must understand what forms of AI assistance are allowed, restricted, or prohibited.</p></li>
+<li><p>Instructor-facing AI tools must not be shared with students if they contain grading keys, instructor notes, or assessment logic.</p></li>
+</ul>
+</section>
+<section id="accuracy-and-verification">
+<h3>4.3 Accuracy and Verification<a class="headerlink" href="#accuracy-and-verification" title="Link to this heading">#</a></h3>
+<p>AI outputs may contain:</p>
+<ul class="simple">
+<li><p>factual errors</p></li>
+<li><p>hallucinated citations</p></li>
+<li><p>oversimplifications</p></li>
+<li><p>biased assumptions</p></li>
+</ul>
+<p><strong>Good practice:</strong></p>
+<ul class="simple">
+<li><p>Verify all AI-generated content before using it in class.</p></li>
+<li><p>Cross-check claims, examples, code, or datasets.</p></li>
+<li><p>Revise outputs to align with course standards and context.</p></li>
+</ul>
+</section>
+<section id="equity-and-accessibility">
+<h3>4.4 Equity and Accessibility<a class="headerlink" href="#equity-and-accessibility" title="Link to this heading">#</a></h3>
+<p>AI can help:</p>
+<ul class="simple">
+<li><p>produce multimodal formats</p></li>
+<li><p>translate content</p></li>
+<li><p>adapt readability</p></li>
+<li><p>generate alternative explanations</p></li>
+</ul>
+<p>However:</p>
+<ul class="simple">
+<li><p>Ensure that AI tools do not disadvantage students with limited access.</p></li>
+<li><p>Provide non-AI alternatives when appropriate.</p></li>
+<li><p>Protect student privacy and avoid requiring external accounts unless approved by the institution.</p></li>
+</ul>
+</section>
+<section id="human-judgment-leads">
+<h3>4.5 Human Judgment Leads<a class="headerlink" href="#human-judgment-leads" title="Link to this heading">#</a></h3>
+<p>AI should enhance, not replace, your expertise. Responsible teaching with AI requires:</p>
+<ul class="simple">
+<li><p>pedagogical decisions made by the instructor</p></li>
+<li><p>deliberate alignment with outcomes</p></li>
+<li><p>continuous monitoring of AI accuracy</p></li>
+<li><p>thoughtful design of assessments that preserve learning integrity</p></li>
+</ul>
+</section>
+<section id="follow-institutional-policies">
+<h3>4.6 Follow Institutional Policies<a class="headerlink" href="#follow-institutional-policies" title="Link to this heading">#</a></h3>
+<p>Institutional generative AI policies usually outline expectations for:</p>
+<ul class="simple">
+<li><p>ethical use</p></li>
+<li><p>academic integrity</p></li>
+<li><p>student conduct</p></li>
+<li><p>instructor responsibilities</p></li>
+</ul>
+<p>Always review these documents when designing AI-enhanced materials or policies.</p>
+</section>
+<section id="data-privacy-and-protection">
+<h3>4.7 Data Privacy and Protection<a class="headerlink" href="#data-privacy-and-protection" title="Link to this heading">#</a></h3>
+<p>Using AI tools in teaching must align with privacy regulations and safeguard student information.</p>
+<ul class="simple">
+<li><p><strong>Do not upload personally identifiable student information (PII)</strong>, such as names, email addresses, student IDs, grades, demographic data, or identifiable excerpts of student work, into external AI tools unless they are institutionally approved and FERPA-compliant.</p></li>
+<li><p>When using AI for grading or feedback generation, <strong>anonymize all student work</strong>, removing names, references, metadata, or contextual details that could reveal identity.</p></li>
+<li><p><strong>Prefer institutionally licensed AI platforms</strong> when handling any content related to student learning or performance.</p></li>
+<li><p>Inform students if any of their anonymized work will be used with AI tools, and provide alternatives for those who prefer not to engage with third-party systems.</p></li>
+<li><p>Avoid requiring students to create accounts on external AI platforms unless approved by the institution.</p></li>
+<li><p>Always follow the institutional policies and legal guidelines on data protection when integrating AI into your teaching workflow.</p></li>
+</ul>
+</section>
+</section>
+<section id="how-to-use-this-jupyter-book">
+<h2>5. How to Use This Jupyter Book<a class="headerlink" href="#how-to-use-this-jupyter-book" title="Link to this heading">#</a></h2>
+<p><em>A workflow-oriented guide for navigating the Teaching with AI program</em></p>
+<p>This Jupyter Book is designed not as a linear textbook, but as an <strong>interactive, modular, and artifact-generating environment</strong> that accompanies the Teaching with AI program. It functions as your reference manual, prompt library, workspace guide, and teaching-development companion throughout Modules 1–8.</p>
+<p>To help you get the most out of it, this section explains how to navigate the book, how to integrate it with your AI Workspace and Personalized Assistant, and how to use it as part of your ongoing teaching practice.</p>
+<section id="the-jupyter-book-as-a-living-reference">
+<h3>5.1 The Jupyter Book as a Living Reference<a class="headerlink" href="#the-jupyter-book-as-a-living-reference" title="Link to this heading">#</a></h3>
+<p>This book is intentionally structured to be:</p>
+<ul class="simple">
+<li><p><strong>Modular</strong> – each chapter (module) mirrors one phase of the AI-Enhanced Teaching Process Framework.</p></li>
+<li><p><strong>Prompt-rich</strong> – every section includes ready-to-use prompt templates tailored to higher education.</p></li>
+<li><p><strong>Tool-agnostic</strong> – prompts and workflows are compatible with various foundational and general-purpose models.</p></li>
+<li><p><strong>Cross-referenced</strong> – prompts and workflows point back to earlier modules, ensuring continuity.</p></li>
+<li><p><strong>Evolving</strong> – you can export, copy, remix, or upload content to your AI Workspace over time.</p></li>
+</ul>
+<p>Each module includes:</p>
+<ul class="simple">
+<li><p>Conceptual overview</p></li>
+<li><p>Prompt templates</p></li>
+<li><p>Tool demonstrations</p></li>
+<li><p>Updates to your AI Workspace and PA</p></li>
+<li><p>Exercises</p></li>
+<li><p>Reflection questions</p></li>
+</ul>
+<p>This allows you to move seamlessly from <strong>learning → doing → integrating → improving</strong>.</p>
+</section>
+<section id="how-to-navigate-the-book">
+<h3>5.2 How to Navigate the Book<a class="headerlink" href="#how-to-navigate-the-book" title="Link to this heading">#</a></h3>
+<p>Use the <strong>sidebar</strong> to jump between modules:</p>
+<ul class="simple">
+<li><p><strong>Modules 1–8</strong> cover the core workflow (planning to reflection).</p></li>
+<li><p><strong>Tools &amp; References sections</strong> list multimodal GenAI tools with use cases.</p></li>
+<li><p><strong>Examples and activities</strong> give you ready-to-use teaching components.</p></li>
+</ul>
+<p>At the top of each page, look for:</p>
+<ul class="simple">
+<li><p><strong>Download options</strong> → export to <code class="docutils literal notranslate"><span class="pre">.md</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>, or copy text into your Workspace.</p></li>
+<li><p><strong>Section headings</strong> → each major workflow task is marked with a clear subsection.</p></li>
+<li><p><strong>Prompt Blocks</strong> → all prompts are copy-ready for use in any LLM.</p></li>
+</ul>
+</section>
+<section id="how-to-integrate-the-book-with-your-ai-workspace-and-pa">
+<h3>5.3 How to Integrate the Book With Your AI Workspace and PA<a class="headerlink" href="#how-to-integrate-the-book-with-your-ai-workspace-and-pa" title="Link to this heading">#</a></h3>
+<p>The Jupyter Book works best when paired with your <strong>AI Workspace (Project)</strong> to be created in Module 1. The book contains numerous <strong>student-facing prompts</strong> designed specifically for your PA. Whenever you see simplified rubrics, assignment explanations, study strategies, self-assessment checklists, flashcards, and FAQs, these can be copy-pasted into your PA’s instruction block or provided directly to students.</p>
+<p><strong>Important:</strong><br />
+Workspace = instructor-facing design space<br />
+PA = student-facing guidance tool<br />
+Never upload instructor-only materials into the PA. The Jupyter Book points out exactly which components can safely be shared with students.</p>
+</section>
+<section id="using-the-prompts-effectively">
+<h3>5.4 Using the Prompts Effectively<a class="headerlink" href="#using-the-prompts-effectively" title="Link to this heading">#</a></h3>
+<p>Each module includes a set of prompts which requires some best practices:</p>
+<ul class="simple">
+<li><p>Always adapt placeholders (e.g., [Course Title], [Topic], [Paste Assignment]).</p></li>
+<li><p>When possible, ground prompts in uploaded files.</p></li>
+<li><p>Ask for variations to compare outputs.</p></li>
+<li><p>Use revision loops: draft → audit → improve → finalize.</p></li>
+</ul>
+</section>
+<section id="using-the-exercises-as-production-tasks">
+<h3>5.5 Using the Exercises as Production Tasks<a class="headerlink" href="#using-the-exercises-as-production-tasks" title="Link to this heading">#</a></h3>
+<p>Every module ends with production-oriented exercises. These are not generic activities—they are <strong>designed to produce real components</strong> for your actual course.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Module 2 → generate learning outcomes and a syllabus draft</p></li>
+<li><p>Module 3 → produce a 90-minute class plan and slide deck</p></li>
+<li><p>Module 4 → create a case study, rubric, and multimodal assignment</p></li>
+<li><p>Module 5 → build active-learning activities with AI augmentation</p></li>
+<li><p>Module 6 → design study guides and PA workflows</p></li>
+<li><p>Module 7 → generate rubric-based assessments and feedback</p></li>
+<li><p>Module 8 → design SPoI forms and reflective improvement plans</p></li>
+</ul>
+</section>
+</section>
+<section id="human-centered-teaching-with-ai">
+<h2>6. Human-Centered Teaching with AI<a class="headerlink" href="#human-centered-teaching-with-ai" title="Link to this heading">#</a></h2>
+<blockquote>
+<div><p>AI supports teaching, it does not replace teachers.</p>
+</div></blockquote>
+<p>Educators maintain responsibility for content validity, rigor, transparency, and ethics.</p>
+</section>
+<section id="genai-tools-to-be-studied">
+<h2>7. GenAI Tools to be Studied<a class="headerlink" href="#genai-tools-to-be-studied" title="Link to this heading">#</a></h2>
+<section id="chatgpt">
+<h3>ChatGPT<a class="headerlink" href="#chatgpt" title="Link to this heading">#</a></h3>
+<p>ChatGPT is a versatile AI language model developed by OpenAI, capable of interpreting natural language, performing various statistical analyses, coding in Python, and generating data visualizations such as bar charts, pie charts, scatter plots, and histograms. It supports data uploads in formats like CSV, XLSX, PDF, and JSON (up to 50MB) and can integrate with cloud storage like Google Drive and OneDrive. ChatGPT excels in broad AI capabilities including data analysis, summarization, and storytelling. It requires web browsing for real-time data updates.
+Access ChatGPT here: [<a class="reference external" href="https://chat.openai.com/">https://chat.openai.com/</a>]</p>
+</section>
+<section id="claude">
+<h3>Claude<a class="headerlink" href="#claude" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="http://Claude.ai">Claude.ai</a> is an AI assistant with strong natural language processing capabilities and expanding tools for data analysis. It supports data uploads and can process data using JavaScript within its Analysis Tool. <a class="reference external" href="http://Claude.ai">Claude.ai</a> can perform complex calculations, data manipulation, and create visualizations through its Analysis Tool and Artifacts feature. It primarily analyzes uploaded data and does not rely on real-time web browsing.
+Access <a class="reference external" href="http://Claude.ai">Claude.ai</a> here: [<a class="reference external" href="https://claude.ai/">https://claude.ai/</a>]</p>
+</section>
+<section id="perplexity">
+<h3>Perplexity<a class="headerlink" href="#perplexity" title="Link to this heading">#</a></h3>
+<p>Perplexity is a research-focused AI platform emphasizing data-driven insights and real-time web search integration. It allows file uploads for analysis and uses coding capabilities within its Deep Research mode to identify patterns, trends, and anomalies. Perplexity integrates web search for broader context and is particularly strong in providing current data and research-backed answers.
+Access Perplexity here: [<a class="reference external" href="https://www.perplexity.ai">https://www.perplexity.ai</a>]</p>
+</section>
+<section id="grok">
+<h3>Grok<a class="headerlink" href="#grok" title="Link to this heading">#</a></h3>
+<p>Grok is a conversational AI developed by Elon Musk’s xAI, designed to provide witty, insightful, and real-time responses. Integrated with X (formerly Twitter), Grok emphasizes reasoning and humor, offering a more personality-driven interaction style. It supports real-time data access and is positioned as a competitor to ChatGPT and Gemini. Access Grok here: [<a class="reference external" href="https://x.ai">https://x.ai</a>]</p>
+</section>
+<section id="meta-ai">
+<h3>Meta AI<a class="headerlink" href="#meta-ai" title="Link to this heading">#</a></h3>
+<p>Meta AI is Meta’s suite of generative AI tools embedded across Facebook, Instagram, WhatsApp, and Messenger. It offers multimodal capabilities including text, image, and video generation, and supports real-time chat, creative content generation, and productivity tasks. Meta AI is powered by the Llama 4 model and is accessible via Meta’s apps and a standalone assistant. Access Meta AI here: [<a class="reference external" href="https://www.meta.ai">https://www.meta.ai</a>]</p>
+</section>
+<section id="copilot">
+<h3>Copilot<a class="headerlink" href="#copilot" title="Link to this heading">#</a></h3>
+<p>Copilot is Microsoft’s AI assistant integrated across tools like Word, Excel, PowerPoint, Outlook, and Teams. It leverages large language models to help users draft content, analyze data, summarize meetings, and automate workflows. In Excel, it can generate formulas, create charts, and explain data trends. In Word and PowerPoint, it assists with writing, editing, and designing presentations. Copilot is deeply embedded in Microsoft 365, enhancing productivity through natural language commands. Access Copilot here: [<a class="reference external" href="https://copilot.microsoft.com">https://copilot.microsoft.com</a>]</p>
+</section>
+<section id="gemini">
+<h3>Gemini<a class="headerlink" href="#gemini" title="Link to this heading">#</a></h3>
+<p>Gemini is Google’s family of multimodal AI models integrated into Google Workspace and available via the Gemini web app. It assists users in drafting, summarizing, brainstorming, analyzing documents, and generating code. Within Docs, Gmail, and Sheets, Gemini enhances productivity by offering smart suggestions, data insights, and content generation. It also supports image understanding and code interpretation through its advanced model versions. Access Gemini here: [<a class="reference external" href="https://gemini.google.com">https://gemini.google.com</a>]</p>
+</section>
+<section id="notebooklm">
+<h3>NotebookLM<a class="headerlink" href="#notebooklm" title="Link to this heading">#</a></h3>
+<p>NotebookLM is a personalized AI research assistant from Google designed to help users work with their own documents. It can summarize large texts, generate FAQs, suggest outlines, timelines, and even podcast scripts. Unlike general-purpose chatbots, NotebookLM focuses on grounded responses based solely on the sources provided by the user, making it ideal for academic, legal, and research-based tasks.
+Access NotebookLM here: [<a class="reference external" href="https://notebooklm.google">https://notebooklm.google</a>]</p>
+</section>
+<section id="napkin">
+<h3>Napkin<a class="headerlink" href="#napkin" title="Link to this heading">#</a></h3>
+<p>Napkin is a visual storytelling AI tool that transforms plain text into professional diagrams, infographics, and flowcharts. It is ideal for business presentations, educational content, and social media visuals. Users can customize visuals with icons, connectors, and themes, and export them in formats like PNG, PDF, and SVG. Access Napkin here: [<a class="reference external" href="https://www.napkin.ai">https://www.napkin.ai</a>]</p>
+</section>
+<section id="gamma">
+<h3>Gamma<a class="headerlink" href="#gamma" title="Link to this heading">#</a></h3>
+<p>Gamma is an AI-powered content creation platform for building presentations, documents, and websites. It uses natural language prompts to generate scrollable, interactive content with modern design. Gamma is ideal for pitch decks, proposals, and educational materials, and supports real-time collaboration and publishing. Access Gamma here: [<a class="reference external" href="https://gamma.app">https://gamma.app</a>]</p>
+</section>
+<section id="ai-studio">
+<h3>AI Studio<a class="headerlink" href="#ai-studio" title="Link to this heading">#</a></h3>
+<p>Google AI Studio is a development platform for building with Gemini, Google’s multimodal AI models. It supports chat, code execution, file analysis, and video generation. Designed for both beginners and developers, AI Studio enables rapid prototyping and integration of AI into applications with a user-friendly interface. Access AI Studio here: [<a class="reference external" href="https://aistudio.google.com">https://aistudio.google.com</a>]</p>
+</section>
+<section id="scispace">
+<h3>SciSpace<a class="headerlink" href="#scispace" title="Link to this heading">#</a></h3>
+<p>SciSpace is an AI research assistant tailored for academic reading, comprehension, and exploration of scientific literature. It allows users to upload PDFs of scholarly articles and interact with them through a chat-based interface that explains complex concepts, defines technical terms, and summarizes content section-by-section. SciSpace is particularly strong in STEM fields and integrates citation tracing, question generation, and concept mapping. It is ideal for literature review, paper comprehension, and academic study.
+Access SciSpace here: [<a class="reference external" href="https://scispace.com/">https://scispace.com/</a>]</p>
+</section>
+<section id="cograder">
+<h3>CoGrader<a class="headerlink" href="#cograder" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="http://CoGrader.com">CoGrader.com</a> is an AI-powered grading assistant designed to streamline the evaluation of student work, especially in assignments requiring written or rubric-based feedback. Educators can upload student responses along with custom rubrics, and CoGrader generates consistent, criterion-based scores and feedback. It supports batch processing of submissions and exports results in spreadsheet-friendly formats. CoGrader is ideal for scaling assessment in large classes while maintaining feedback quality.
+Access CoGrader here: [<a class="reference external" href="https://www.cograder.com">https://www.cograder.com</a>]</p>
+</section>
+<section id="essaygrader">
+<h3>EssayGrader<a class="headerlink" href="#essaygrader" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="http://EssayGrader.ai">EssayGrader.ai</a> is an AI tool focused on evaluating academic writing and generating detailed, rubric-aligned feedback. Users can paste essays or upload files, define assessment criteria, and receive structured evaluations across areas such as organization, argument quality, grammar, and originality. <a class="reference external" href="http://EssayGrader.ai">EssayGrader.ai</a> aims to support formative feedback and can assist in both summative grading and student revision. It emphasizes clarity, consistency, and transparency in AI-assisted writing assessment.
+Access <a class="reference external" href="http://EssayGrader.ai">EssayGrader.ai</a> here: [<a class="reference external" href="https://www.essaygrader.ai">https://www.essaygrader.ai</a>]</p>
+</section>
+<section id="gradescope">
+<h3>Gradescope<a class="headerlink" href="#gradescope" title="Link to this heading">#</a></h3>
+<p>Gradescope is an AI-enhanced grading platform designed to streamline assessment workflows for assignments, quizzes, exams, and coding tasks. It supports handwritten submissions, scanned PDFs, code files, and digital assignments. Gradescope uses AI-assisted grouping to cluster similar student answers, enabling faster and more consistent grading of open-response questions. Rubrics can be modified on the fly, with changes automatically propagating to all graded submissions.
+Access Gradescope here: [<a class="reference external" href="https://www.gradescope.com/">https://www.gradescope.com/</a>]</p>
+</section>
+<section id="turnitin">
+<h3>Turnitin<a class="headerlink" href="#turnitin" title="Link to this heading">#</a></h3>
+<p>Turnitin is an academic integrity and originality-checking system widely used in higher education. It analyzes uploaded student work against a massive corpus of academic publications, internet sources, prior submissions, and commercial databases. Turnitin includes advanced AI-writing detection indicators, similarity scoring, and detailed originality reports highlighting matches and potential plagiarism risks. It integrates seamlessly with major LMS platforms.
+Access Turnitin here: [<a class="reference external" href="https://www.turnitin.com/">https://www.turnitin.com/</a>]</p>
+</section>
+<section id="stargrader">
+<h3>Stargrader<a class="headerlink" href="#stargrader" title="Link to this heading">#</a></h3>
+<p>Stargrader is an AI-powered auto-grading platform designed primarily for structured, rubric-based evaluations, especially in computer science, engineering, and math. It supports automated grading of coding assignments, proofs, quantitative exercises, and short structured answers. Stargrader can generate consistency checks, provide rubric-aligned feedback, and export grade data for LMS integration.
+Access Stargrader here: [<a class="reference external" href="https://stargrader.com/">https://stargrader.com/</a>]</p>
+</section>
+<section id="canva-magic-studio">
+<h3>Canva Magic Studio<a class="headerlink" href="#canva-magic-studio" title="Link to this heading">#</a></h3>
+<p>Canva Magic Studio is an AI-enhanced design suite embedded within Canva that generates presentations, documents, posters, diagrams, and videos from natural language prompts. It supports Magic Design for layout generation, Magic Write for content drafting, and Magic Expand/Edit for image manipulation. Canva integrates text, images, icons, and audio seamlessly into high-quality visuals suitable for teaching materials.
+Access Canva Magic Studio here: [<a class="reference external" href="https://www.canva.com/magic-studio/">https://www.canva.com/magic-studio/</a>]</p>
+</section>
+<section id="elevenlabs">
+<h3>ElevenLabs<a class="headerlink" href="#elevenlabs" title="Link to this heading">#</a></h3>
+<p>ElevenLabs is an advanced AI voice-generation and text-to-speech platform capable of producing natural-sounding narration in multiple languages. It supports voice cloning, custom voice creation, and high-fidelity audio suitable for lectures, podcasts, accessibility materials, and instructional videos. ElevenLabs excels in generating expressive, human-like voiceovers from scripts or uploaded text.
+Access ElevenLabs here: [<a class="reference external" href="https://elevenlabs.io/">https://elevenlabs.io/</a>]</p>
+</section>
+<section id="heygen">
+<h3>HeyGen<a class="headerlink" href="#heygen" title="Link to this heading">#</a></h3>
+<p>HeyGen is an AI video generation platform that produces talking-head videos using realistic avatars. Users can create instructional videos by uploading a script or audio and selecting an AI presenter. HeyGen supports multilingual lip-syncing, custom avatars, screen recordings, and scenario-based video creation, making it ideal for course introductions, microlectures, and announcements.
+Access HeyGen here: [<a class="reference external" href="https://www.heygen.com/">https://www.heygen.com/</a>]</p>
+</section>
+<section id="synthesia">
+<h3>Synthesia<a class="headerlink" href="#synthesia" title="Link to this heading">#</a></h3>
+<p>Synthesia is an AI-powered video creation platform that generates professional-quality instructional videos using digital avatars and text-to-video workflows. It supports brand customization, multilingual narration, screen overlays, and template-based video structuring. Synthesia is particularly useful for creating microlearning modules, course introductions, training simulations, and consistent instructor videos at scale.
+Access Synthesia here: [<a class="reference external" href="https://www.synthesia.io/">https://www.synthesia.io/</a>]</p>
+</section>
+<section id="consensus">
+<h3>Consensus<a class="headerlink" href="#consensus" title="Link to this heading">#</a></h3>
+<p>Consensus is an AI-based scientific search engine that synthesizes evidence directly from peer-reviewed research. Users ask natural-language questions, and the platform retrieves and summarizes findings from academic papers, highlighting areas of agreement, disagreement, and methodological strength. It is ideal for evidence-based teaching, literature reviews, and research-driven content creation.
+Access Consensus here: [<a class="reference external" href="https://consensus.app/">https://consensus.app/</a>]</p>
+</section>
+<section id="semantic-scholar-ai">
+<h3>Semantic Scholar AI<a class="headerlink" href="#semantic-scholar-ai" title="Link to this heading">#</a></h3>
+<p>Semantic Scholar AI is an academic search engine enhanced with AI-powered features such as citation tracing, topic mapping, and paper similarity analysis. While it provides highly accurate scientific search and metadata, it does not support prompt-based generative responses. Instead, it excels at identifying key papers, influential authors, and research trends across disciplines.
+Access Semantic Scholar AI here: [<a class="reference external" href="https://www.semanticscholar.org/">https://www.semanticscholar.org/</a>]</p>
+</section>
+<section id="explainpaper">
+<h3>ExplainPaper<a class="headerlink" href="#explainpaper" title="Link to this heading">#</a></h3>
+<p>ExplainPaper is an AI tool designed to simplify and clarify complex research articles. Users upload a PDF, highlight challenging passages, and receive plain-language explanations grounded in the document. It is particularly useful for teaching students how to understand dense academic writing and for instructors preparing accessible summaries and examples.
+Access ExplainPaper here: [<a class="reference external" href="https://www.explainpaper.com/">https://www.explainpaper.com/</a>]</p>
+</section>
+<section id="eduaide">
+<h3>Eduaide<a class="headerlink" href="#eduaide" title="Link to this heading">#</a></h3>
+<p>Eduaide is an AI-powered teaching assistant designed specifically for educators. It generates lesson plans, worksheets, quizzes, rubrics, writing prompts, and differentiation strategies based on grade level and subject. Eduaide also supports accommodation-friendly versions of materials and integrates with multiple pedagogical approaches, including inquiry-based learning and Bloom’s Taxonomy.
+Access Eduaide here: [<a class="reference external" href="https://www.eduaide.ai/">https://www.eduaide.ai/</a>]</p>
+</section>
+<section id="khanmigo">
+<h3>Khanmigo<a class="headerlink" href="#khanmigo" title="Link to this heading">#</a></h3>
+<p>Khanmigo is Khan Academy’s AI tutor and teaching assistant built on top of GPT models. It offers guided problem-solving, Socratic questioning, and interactive tutoring experiences across K–12 and introductory college subjects. Khanmigo maintains strong controls for academic integrity and provides teacher dashboards for monitoring student progress.
+Access Khanmigo here: [<a class="reference external" href="https://www.khanacademy.org/khan-labs">https://www.khanacademy.org/khan-labs</a>]</p>
+</section>
+<section id="elicit">
+<h3>Elicit<a class="headerlink" href="#elicit" title="Link to this heading">#</a></h3>
+<p>Elicit is an AI research assistant designed to support literature reviews and research synthesis. It identifies relevant academic papers, extracts key findings, produces summary tables, and supports comparison across studies. Elicit focuses on structured evidence extraction rather than general-purpose generation, making it valuable for preparing literature reviews and teaching research methods.
+Access Elicit here: [<a class="reference external" href="https://elicit.com/">https://elicit.com/</a>]</p>
+</section>
+<section id="scite">
+<h3>Scite<a class="headerlink" href="#scite" title="Link to this heading">#</a></h3>
+<p>Scite is an AI-enhanced citation analysis platform that classifies how scientific papers cite each other—as supporting, contrasting, or mentioning. It provides “Smart Citations” that reveal the context and sentiment behind citations, helping instructors and students evaluate the quality and reliability of research evidence.
+Access Scite here: [<a class="reference external" href="https://scite.ai/">https://scite.ai/</a>]</p>
+</section>
+<section id="research-rabbit">
+<h3>Research Rabbit<a class="headerlink" href="#research-rabbit" title="Link to this heading">#</a></h3>
+<p>Research Rabbit is a visual research discovery tool that maps relationships between papers, authors, and research clusters. It generates interactive citation networks, co-authorship graphs, and thematic maps, enabling users to explore scientific domains visually. It is particularly helpful for literature reviews, identifying research gaps, and building reading lists.
+Access Research Rabbit here: [<a class="reference external" href="https://www.researchrabbit.ai/">https://www.researchrabbit.ai/</a>]</p>
+</section>
+</section>
+<section id="about-the-instructor-dr-leandro-nunes-de-castro">
+<h2>8. About the Instructor – Dr. Leandro Nunes de Castro<a class="headerlink" href="#about-the-instructor-dr-leandro-nunes-de-castro" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Professor in the <strong>Department of Computing and Software Engineering</strong>, U.A. Whitaker College of Engineering, FGCU.</p></li>
+<li><p>Ph.D. in Computer Engineering with 30 years of experience in <strong>Artificial Intelligence, Data Science, and Natural Computing</strong>.</p></li>
+<li><p>Director of the <strong>Dendritic Institute for Artificial Intelligence and Data Science</strong> at FGCU.</p></li>
+<li><p>Author of various AI and Data Science books and papers, and recognized among the <strong>Top 2% most influential researchers in Computer Science worldwide</strong>.</p></li>
+<li><p>Experienced entrepreneur, researcher, and educator with a focus on applying AI for innovation, business, and societal impact.</p></li>
+<li><p>Active mentor and collaborator with international academic and industry partners.</p></li>
+</ul>
+</section>
+<section id="acknowledgements">
+<h2>🧾 Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">#</a></h2>
+<p>Developed by <strong>Dr. Leandro Nunes de Castro</strong>©️ for the <strong>Dendritic Institute for Human-Centered AI &amp; Data Science</strong>, within the <strong>U.A. Whitaker College of Engineering at Florida Gulf Coast University</strong>.</p>
+<p>Content curated by the team, with support from large language models such as ChatGPT, Claude, Gemini, Perplexity, <a class="reference external" href="http://Gamma.ai">Gamma.ai</a>, Napkin, and CoPilot, following ethical and pedagogical review.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="Module1_TLFramework.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">1. The Teaching with AI Framework</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disclaimer">Disclaimer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-goals">1. Program Goals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">2. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-and-approach">3. Structure and Approach</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-process-based-end-to-end-framework">3.1 A Process-Based, End-to-End Framework</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-multimodal-multi-tool-ecosystem-approach">3.2 A Multimodal, Multi-Tool Ecosystem Approach</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#progressive-building-of-two-core-ai-systems">3.3 Progressive Building of Two Core AI Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-the-ai-workspace-project"><strong>A. The AI Workspace (Project)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-the-personalized-assistant-pa"><strong>B. The Personalized Assistant (PA)</strong></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-programs-instructional-approach">3.4 The Program’s Instructional Approach</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-improvement-versioning">3.5 Continuous Improvement &amp; Versioning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-makes-this-program-unique">3.6 What Makes This Program Unique?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operational-integration">3.7 Operational Integration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsible-and-ethical-ai-use-in-teaching">4. Responsible and Ethical AI Use in Teaching</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transparency">4.1 Transparency</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-integrity">4.2 Academic Integrity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-and-verification">4.3 Accuracy and Verification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equity-and-accessibility">4.4 Equity and Accessibility</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#human-judgment-leads">4.5 Human Judgment Leads</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#follow-institutional-policies">4.6 Follow Institutional Policies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-privacy-and-protection">4.7 Data Privacy and Protection</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-jupyter-book">5. How to Use This Jupyter Book</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-jupyter-book-as-a-living-reference">5.1 The Jupyter Book as a Living Reference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-navigate-the-book">5.2 How to Navigate the Book</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-integrate-the-book-with-your-ai-workspace-and-pa">5.3 How to Integrate the Book With Your AI Workspace and PA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-prompts-effectively">5.4 Using the Prompts Effectively</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-exercises-as-production-tasks">5.5 Using the Exercises as Production Tasks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#human-centered-teaching-with-ai">6. Human-Centered Teaching with AI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#genai-tools-to-be-studied">7. GenAI Tools to be Studied</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt">ChatGPT</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#claude">Claude</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perplexity">Perplexity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grok">Grok</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meta-ai">Meta AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot">Copilot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gemini">Gemini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooklm">NotebookLM</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#napkin">Napkin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gamma">Gamma</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-studio">AI Studio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scispace">SciSpace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cograder">CoGrader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#essaygrader">EssayGrader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gradescope">Gradescope</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turnitin">Turnitin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stargrader">Stargrader</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#canva-magic-studio">Canva Magic Studio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elevenlabs">ElevenLabs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heygen">HeyGen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synthesia">Synthesia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#consensus">Consensus</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#semantic-scholar-ai">Semantic Scholar AI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explainpaper">ExplainPaper</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eduaide">Eduaide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#khanmigo">Khanmigo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elicit">Elicit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scite">Scite</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-rabbit">Research Rabbit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-instructor-dr-leandro-nunes-de-castro">8. About the Instructor – Dr. Leandro Nunes de Castro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">🧾 Acknowledgements</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

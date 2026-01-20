@@ -1,0 +1,1028 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. AI-Enhanced Class Design and Development &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module3_ClassDesign';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. AI-Enhanced Assignments and Exam Preparation" href="Module4_Assignments.html" />
+    <link rel="prev" title="2. AI-Enhanced Pedagogical-Didactic Planning" href="Module2_PedagogicalPlanning.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module3_ClassDesign.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module3_ClassDesign.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>3. AI-Enhanced Class Design and Development</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#break-down-content-into-modules-or-units">3.1 Break Down Content Into Modules or Units</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#design-and-create-a-class-session-objectives-contents-materials">3.2 Design and Create a Class Session (Objectives, Contents, Materials)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-direct-prompting-on-llms">A. Direct Prompting on LLMs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-prompting-the-ai-slide-generator">B. Prompting the AI Slide Generator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-integrating-scientific-literature">C. Integrating Scientific Literature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-tool-prompt">Cross-Tool Prompt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparative-table-of-ai-literature-tools">Comparative Table of AI Literature Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-generating-content-from-external-sources">D. Generating Content from External Sources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-learning-activities">3.3 Create Learning Activities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-and-prepare-learning-materials">3.4 Select and Prepare Learning Materials</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-search-for-and-generate-new-learning-materials">Task 1: Search for and generate new learning materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-select-and-validate-content-and-sources">Task 2: Select and validate content and sources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrate-discussion-and-reflection-elements">3.5 Integrate Discussion and Reflection Elements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-ai-powered-class-summary-generator">3.6 Create an AI-Powered Class Summary Generator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">3.7 Updates to Your AI Workspace and Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-updates-to-your-ai-workspace-project">A. Updates to Your AI Workspace (Project)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-updates-to-your-course-personalized-assistant-pa">B. Updates to Your Course Personalized Assistant (PA)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">3.8 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-break-down-your-course-into-modules">Exercise 1 — Break Down Your Course Into Modules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-design-a-complete-90-minute-class-session">Exercise 2 — Design a Complete 90-Minute Class Session</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-generate-learning-activities">Exercise 3 — Generate Learning Activities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-generate-and-validate-learning-materials">Exercise 4 — Generate and Validate Learning Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-create-a-class-summary-generator">Exercise 5 — Create a Class Summary Generator</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">3.9 Reflection</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ai-enhanced-class-design-and-development">
+<h1>3. AI-Enhanced Class Design and Development<a class="headerlink" href="#ai-enhanced-class-design-and-development" title="Link to this heading">#</a></h1>
+<p><em>Designing individual class sessions that align with course goals and engage participants with AI-enhanced learning experiences.</em></p>
+<p>This module is about structuring the learning experience for clarity, engagement, and progression. It involves breaking down content into modules or units, designing individual class sessions with defined objectives, contents, and materials, creating learning strategies, selecting and preparing learning materials, and integrating discussion and reflection elements. AI can be used here to help design session elements, find relevant scientific literature, generate content from sources, and create learning activities and materials.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Break down content into structured modules.</p></li>
+<li><p>Build session plans using prompt templates.</p></li>
+<li><p>Generate literature-informed content, examples, activities.</p></li>
+<li><p>Integrate multimodal AI-generated diagrams and artifacts.</p></li>
+<li><p>Create an AI-powered class summary generator.</p></li>
+</ul>
+<p><img alt="Class Design and Development" src="_images/M3LO.png" /></p>
+</section>
+<section id="break-down-content-into-modules-or-units">
+<h2>3.1 Break Down Content Into Modules or Units<a class="headerlink" href="#break-down-content-into-modules-or-units" title="Link to this heading">#</a></h2>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>Translate course-level goals and outcomes into a usable modular structure that drives session planning, scaffolding, and pacing.</p>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">instructional</span> <span class="n">designer</span> <span class="n">working</span> <span class="n">inside</span> <span class="n">the</span> <span class="p">[</span><span class="n">Workspace</span><span class="o">/</span><span class="n">Project</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span> 
+<span class="n">Break</span> <span class="n">down</span> <span class="n">the</span> <span class="n">course</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span> <span class="n">into</span> <span class="n">modules</span> <span class="ow">or</span> <span class="k">class</span><span class="w"> </span><span class="nc">sessions</span><span class="o">.</span> 
+<span class="n">For</span> <span class="n">each</span> <span class="n">module</span><span class="p">,</span> <span class="n">provide</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span> <span class="n">title</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="n">description</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="n">key</span> <span class="n">concepts</span><span class="p">,</span> 
+<span class="mi">4</span><span class="p">)</span> <span class="n">materials</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="n">applications</span><span class="p">,</span> <span class="ow">and</span> <span class="mi">6</span><span class="p">)</span> <span class="n">reflection</span><span class="o">.</span>
+<span class="n">Ground</span> <span class="n">your</span> <span class="n">proposal</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">uploaded</span> <span class="n">syllabus</span> <span class="ow">and</span> <span class="n">course</span> <span class="n">outcomes</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span> <span class="n">am</span> <span class="n">creating</span> <span class="n">a</span> <span class="n">modular</span> <span class="n">course</span> <span class="n">called</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span> <span class="k">for</span> <span class="n">higher</span> <span class="n">education</span> <span class="n">students</span><span class="o">.</span>
+<span class="n">Propose</span> <span class="n">a</span> <span class="n">structure</span> <span class="k">with</span> <span class="n">a</span> <span class="n">title</span> <span class="ow">and</span> <span class="n">description</span> <span class="k">for</span> <span class="n">each</span> <span class="n">module</span><span class="p">,</span> <span class="n">progressing</span> <span class="kn">from</span><span class="w"> </span><span class="nn">foundations</span> <span class="n">to</span> <span class="n">application</span> <span class="ow">and</span> <span class="n">reflection</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="design-and-create-a-class-session-objectives-contents-materials">
+<h2>3.2 Design and Create a Class Session (Objectives, Contents, Materials)<a class="headerlink" href="#design-and-create-a-class-session-objectives-contents-materials" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Purpose<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Develop structured, high‑quality class plans supported by AI: objectives, content, teaching strategies, timing, and required materials.</p>
+</section>
+<section id="a-direct-prompting-on-llms">
+<h3>A. Direct Prompting on LLMs<a class="headerlink" href="#a-direct-prompting-on-llms" title="Link to this heading">#</a></h3>
+<p><strong>Task:</strong>
+Use the content generated by <strong>any LLM</strong> of your choice to create a presentation in a slide generator, e.g. <strong>Gamma.app or Power Point</strong>, by pasting the resultant text from the prompt.</p>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">instructional</span> <span class="n">designer</span> <span class="n">working</span> <span class="n">on</span> <span class="n">the</span> <span class="n">course</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Design</span> <span class="n">a</span> <span class="mi">90</span><span class="o">-</span><span class="n">minute</span> <span class="n">session</span> <span class="k">for</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span> <span class="n">on</span> <span class="n">the</span> <span class="n">topic</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span> <span class="n">Include</span><span class="p">:</span> 
+<span class="o">-</span> <span class="n">Session</span> <span class="n">objectives</span> 
+<span class="o">-</span> <span class="n">Sequence</span> <span class="n">of</span> <span class="n">activities</span> <span class="k">with</span> <span class="n">time</span> <span class="n">estimates</span> 
+<span class="o">-</span> <span class="n">Key</span> <span class="n">content</span> <span class="n">outline</span> 
+<span class="o">-</span> <span class="n">Required</span> <span class="n">materials</span>  
+<span class="o">-</span> <span class="n">How</span> <span class="n">AI</span> <span class="n">will</span> <span class="n">be</span> <span class="n">used</span> <span class="n">during</span> <span class="n">the</span> <span class="n">session</span> 
+<span class="o">-</span> <span class="n">Optional</span> <span class="n">multimodal</span> <span class="n">artifacts</span> <span class="p">(</span><span class="n">slides</span><span class="p">,</span> <span class="n">diagrams</span><span class="p">,</span> <span class="n">examples</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="b-prompting-the-ai-slide-generator">
+<h3>B. Prompting the AI Slide Generator<a class="headerlink" href="#b-prompting-the-ai-slide-generator" title="Link to this heading">#</a></h3>
+<p><strong>Task:</strong>
+Accelerate production of professional-quality presentations and supporting visuals. Directly prompt the slides’ generator, e.g. <strong>Gamma.app, Canva, PowerPoint+Copilot, Scispace, Claude</strong>, check and refine the presentation produced.</p>
+<p><strong>Prompt Template — Slide Generator (Gamma, Canva, PPT+Copilot)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">a</span> <span class="n">visually</span><span class="o">-</span><span class="n">engaging</span> <span class="n">slide</span> <span class="n">deck</span> <span class="k">for</span> <span class="n">a</span> <span class="mi">90</span><span class="o">-</span><span class="n">minute</span> <span class="k">class</span><span class="w"> </span><span class="nc">titled</span> <span class="p">[</span><span class="n">Class</span> <span class="n">Title</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">objectives</span><span class="p">,</span> <span class="n">diagrams</span><span class="p">,</span> <span class="n">examples</span><span class="p">,</span> <span class="n">teaching</span> <span class="n">steps</span><span class="p">,</span> <span class="n">risks</span><span class="p">,</span> <span class="ow">and</span> <span class="n">interactive</span> <span class="n">elements</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt Template for <a class="reference external" href="http://Claude.ai">Claude.ai</a></strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">a</span> <span class="n">visually</span><span class="o">-</span><span class="n">engaging</span> <span class="n">slide</span> <span class="n">deck</span> <span class="k">for</span> <span class="n">a</span> <span class="mi">90</span><span class="o">-</span><span class="n">minute</span> <span class="k">class</span><span class="w"> </span><span class="nc">titled</span> <span class="p">[</span><span class="n">Class</span> <span class="n">Title</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">objectives</span><span class="p">,</span> <span class="n">diagrams</span><span class="p">,</span> <span class="n">examples</span><span class="p">,</span> <span class="n">teaching</span> <span class="n">steps</span><span class="p">,</span> <span class="n">risks</span><span class="p">,</span> <span class="ow">and</span> <span class="n">interactive</span> <span class="n">elements</span><span class="o">.</span>
+<span class="n">Create</span> <span class="n">an</span> <span class="n">interactive</span> <span class="n">artifact</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note 1:</strong> In <a class="reference external" href="http://Claude.ai">Claude.ai</a> you could have chosen <em>Artifact -&gt; New Artifact</em> and selected one specific type, for example, <em>Apps and websites</em> to have an online presentation available for the students. <p>
+<strong>Note 2:</strong> In Copilot you can use menu <em>Create -&gt; Create a presentation</em>.</p>
+</div></blockquote>
+</section>
+<section id="c-integrating-scientific-literature">
+<h3>C. Integrating Scientific Literature<a class="headerlink" href="#c-integrating-scientific-literature" title="Link to this heading">#</a></h3>
+<p><strong>Task:</strong>
+Ground class content in peer‑reviewed research and provide academically reliable framing. Specific tools to be used:</p>
+<ul class="simple">
+<li><p><strong>SciSpace Literature Review</strong> (<a class="reference external" href="https://scispace.com/search">https://scispace.com/search</a>)</p></li>
+<li><p><strong>Perplexity Academic</strong> (<a class="reference external" href="https://www.perplexity.ai/academic">https://www.perplexity.ai/academic</a>)</p></li>
+<li><p><strong>Consensus.app</strong> (<a class="reference external" href="https://consensus.app/">https://consensus.app/</a>)</p></li>
+<li><p><strong>Google Scholar Labs</strong> (<a class="reference external" href="https://scholar.google.com/scholar_labs/search">https://scholar.google.com/scholar_labs/search</a>)</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Note 1:</strong> Other relevant tools for this task include Elicit (<a class="reference external" href="http://elicit.com">elicit.com</a>), Scite (<a class="reference external" href="http://scite.ai">scite.ai</a>), and Research Rabbit (<a class="reference external" href="http://researchrabitt.ai">researchrabitt.ai</a>). <p>
+<strong>Note 2:</strong> There are various search engines focused on technical or scientific content, such as <strong>Semantic Scholar</strong> and the standard <strong>Google Scholar</strong>, which are useful but do not offer the AI prompt capabilities of the tools presented above.</p>
+</div></blockquote>
+<p><strong>C.1 SciSpace — Literature Review Mode</strong> <p>
+SciSpace works best with short, topic‑driven prompts and automatically generates summaries and many other information, including results, methods, limitations, objectives, datasets, and more.</p>
+<p><strong>Prompt — Topic Overview</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">For</span> <span class="n">the</span> <span class="n">topic</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]:</span> <span class="n">summarize</span> <span class="n">the</span> <span class="n">state</span> <span class="n">of</span> <span class="n">the</span> <span class="n">literature</span><span class="p">,</span> <span class="n">identify</span> <span class="n">leading</span> <span class="n">authors</span><span class="p">,</span> <span class="ow">and</span> <span class="nb">list</span> <span class="n">the</span> <span class="n">five</span> <span class="n">most</span> <span class="n">cited</span> <span class="n">papers</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>C.2 Perplexity — Academic Mode</strong> <p>
+Perplexity Academic produces fully cited syntheses and is strong for deep, research‑grade output.</p>
+<p><strong>Prompt 1 — Literature Synthesis</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Synthesize</span> <span class="n">the</span> <span class="n">peer</span><span class="o">-</span><span class="n">reviewed</span> <span class="n">literature</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span> <span class="n">Include</span> <span class="n">citations</span> <span class="ow">and</span> <span class="n">identify</span> <span class="n">the</span> <span class="n">most</span> <span class="n">robust</span> <span class="n">evidence</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 2 — Annotated Bibliography</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">an</span> <span class="n">annotated</span> <span class="n">bibliography</span> <span class="n">of</span> <span class="n">the</span> <span class="mi">10</span> <span class="n">most</span> <span class="n">relevant</span> <span class="n">academic</span> <span class="n">papers</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span> <span class="n">Include</span> <span class="n">summaries</span><span class="p">,</span> <span class="n">strengths</span><span class="p">,</span> <span class="n">limitations</span><span class="p">,</span> <span class="ow">and</span> <span class="n">relevance</span> <span class="k">for</span> <span class="k">class</span><span class="w"> </span><span class="nc">design</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 3 — Research Gaps</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Identify</span> <span class="n">three</span> <span class="n">major</span> <span class="n">gaps</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">literature</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 4 — Teaching Application Extraction</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">From</span> <span class="n">the</span> <span class="n">best</span> <span class="n">available</span> <span class="n">research</span><span class="p">,</span> <span class="n">extract</span> <span class="n">practical</span> <span class="n">teaching</span> <span class="n">applications</span> <span class="n">of</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">],</span> <span class="n">including</span> <span class="n">activity</span> <span class="n">examples</span> <span class="ow">and</span> <span class="n">risks</span> <span class="n">instructors</span> <span class="n">should</span> <span class="n">consider</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>C.3 Consensus.app — Research Summaries</strong> <p>
+Consensus is a research engine that generates synthesized, evidence-based answers directly from peer-reviewed papers. It can also perform deep search, draft an outline, and create a table.</p>
+<p><strong>Prompt 1 — Summary</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>What does the research say about [Topic Name]?
+</pre></div>
+</div>
+<p><strong>Prompt 2 — Extract Conclusions</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Summarize</span> <span class="n">the</span> <span class="n">strongest</span> <span class="n">conclusions</span> <span class="kn">from</span><span class="w"> </span><span class="nn">peer</span><span class="o">-</span><span class="n">reviewed</span> <span class="n">studies</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 3 — Compare Outcomes</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compare</span> <span class="n">learning</span> <span class="n">outcomes</span> <span class="n">reported</span> <span class="ow">in</span> <span class="n">studies</span> <span class="n">using</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 4 — Practical Implications</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">research</span> <span class="n">findings</span><span class="p">,</span> <span class="nb">list</span> <span class="n">the</span> <span class="n">practical</span> <span class="n">implications</span> <span class="n">of</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>C.4 Google Scholar Labs — Research Overview</strong> <p>
+Google Scholar Labs is ideal for fast, concise academic summaries and trend detection.</p>
+<p><strong>Prompt 1 — Quick Overview</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Provide</span> <span class="n">a</span> <span class="n">concise</span> <span class="n">overview</span> <span class="n">of</span> <span class="n">the</span> <span class="n">academic</span> <span class="n">literature</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 2 — Key Papers Summary</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="n">the</span> <span class="n">foundational</span> <span class="n">papers</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span> <span class="ow">and</span> <span class="n">explain</span> <span class="n">the</span> <span class="n">contribution</span> <span class="n">of</span> <span class="n">each</span> <span class="ow">in</span> <span class="n">one</span> <span class="n">sentence</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 3 — Trend Identification</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Identify</span> <span class="n">recent</span> <span class="n">trends</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span> <span class="n">based</span> <span class="n">on</span> <span class="n">highly</span> <span class="n">cited</span> <span class="n">papers</span> <span class="n">since</span> <span class="mf">2020.</span>
+</pre></div>
+</div>
+<p><strong>Prompt 4 — Rapid Instructor Summary</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Summarize</span> <span class="n">what</span> <span class="n">instructors</span> <span class="n">should</span> <span class="n">know</span> <span class="n">about</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">],</span> <span class="n">grounded</span> <span class="ow">in</span> <span class="n">recent</span> <span class="n">academic</span> <span class="n">research</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="cross-tool-prompt">
+<h3>Cross-Tool Prompt<a class="headerlink" href="#cross-tool-prompt" title="Link to this heading">#</a></h3>
+<p>A universal prompt usable across tools:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">current</span> <span class="n">peer</span><span class="o">-</span><span class="n">reviewed</span> <span class="n">research</span><span class="p">,</span> <span class="n">explain</span> <span class="n">how</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span> <span class="n">can</span> <span class="n">be</span> <span class="n">integrated</span> <span class="n">into</span> <span class="n">a</span> <span class="mi">90</span><span class="o">-</span><span class="n">minute</span> <span class="n">higher</span> <span class="n">education</span> <span class="k">class</span><span class="w"> </span><span class="nc">session</span><span class="o">.</span>
+<span class="n">Include</span><span class="p">:</span> <span class="n">summary</span><span class="p">,</span> <span class="n">benefits</span><span class="p">,</span> <span class="n">risks</span><span class="p">,</span> <span class="n">best</span> <span class="n">practices</span><span class="p">,</span> <span class="ow">and</span> <span class="n">citation</span><span class="o">-</span><span class="n">backed</span> <span class="n">recommendations</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="comparative-table-of-ai-literature-tools">
+<h3>Comparative Table of AI Literature Tools<a class="headerlink" href="#comparative-table-of-ai-literature-tools" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tool</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Best For</p></th>
+<th class="head"><p>Strengths</p></th>
+<th class="head"><p>Limitations</p></th>
+<th class="head"><p>Ideal Use in Module 3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>SciSpace</strong></p></td>
+<td><p>AI literature analysis</p></td>
+<td><p>Literature reviews &amp; concept mapping</p></td>
+<td><p>Visual concept maps, citation tracing, theme extraction</p></td>
+<td><p>Needs short, topic-based queries</p></td>
+<td><p>Building conceptual diagrams &amp; evidence maps</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Perplexity Academic</strong></p></td>
+<td><p>LLM + search</p></td>
+<td><p>Deep research synthesis</p></td>
+<td><p>Cited responses, robust summaries, strong reasoning</p></td>
+<td><p>May over‑aggregate sources</p></td>
+<td><p>Generating lecture content grounded in research</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Consensus.app</strong></p></td>
+<td><p>Evidence summarizer</p></td>
+<td><p>Quick synthesis of research findings</p></td>
+<td><p>Direct conclusions from papers, comparisons, consistency analysis</p></td>
+<td><p>Limited to indexed papers</p></td>
+<td><p>Rapid evidence summaries for teaching decisions</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Google Scholar Labs</strong></p></td>
+<td><p>Search + AI summaries</p></td>
+<td><p>Rapid literature overview</p></td>
+<td><p>Fast topic summaries, trend detection</p></td>
+<td><p>Less detailed synthesis</p></td>
+<td><p>Quick background reading &amp; preparation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="d-generating-content-from-external-sources">
+<h3>D. Generating Content from External Sources<a class="headerlink" href="#d-generating-content-from-external-sources" title="Link to this heading">#</a></h3>
+<p><strong>Task:</strong>
+Use a generative model like <strong>Perplexity, NotebookLM, or SciSpace</strong>, to analyze some pre-selected sources of reference and create content from them. As example, you can use the papers below as your source material if needed or some of the papers you saved from your previous searches. <br></p>
+<p>Example contents (papers) for a [Course on Teaching with AI] and the topic of [AI for Assessment and Feedback]: <p>
+<a class="reference download internal" download="" href="_downloads/4cc16e8447d649e0c4e65ec0e45481fb/AIforAssessmentandFeedback.pdf"><span class="xref download myst">Paper_1:</span></a> Artificial intelligence for assessment and feedback to enhance student success in higher education. (<em>Open Access</em>) <br>
+<a class="reference download internal" download="" href="_downloads/fe46ddd9c796dc6e3e930d0ca6f3694a/Feedbacksourcesinessaywriting.pdf"><span class="xref download myst">Paper_2:</span></a> Feedback sources in essay writing: peer-generated or AI-generated feedback? (<em>Open Access</em>) <br></p>
+<!--
+[Paper_3:](./Data/Assessingstudentperceptions.pdf) Assessing student perceptions and use of instructor versus AI‐generated feedback. <br>
+-->
+<p><em>Step 1:</em> Preferably upload this material in your AI Workspace, but you can also create a new Notebook in NotebookLM or Library in SciSpace and title it “AI for Assessment and Feedback”. <br>
+<em>Step 2:</em> Upload your sources of reference (see files above) into the LLM. <br>
+<em>Step 3:</em> Prompt the LLM. <br></p>
+<p><strong>Prompt Template - Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">the</span> <span class="n">attached</span> <span class="n">material</span><span class="p">,</span> <span class="n">design</span> <span class="n">a</span> <span class="mi">90</span><span class="o">-</span><span class="n">minute</span> <span class="n">session</span> <span class="k">for</span> <span class="n">the</span> <span class="n">course</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">topic</span> <span class="ow">is</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">session</span> <span class="n">objectives</span> <span class="ow">and</span> <span class="n">sequence</span> <span class="n">of</span> <span class="n">activities</span> <span class="k">with</span> <span class="n">time</span> <span class="n">estimates</span> <span class="ow">and</span> <span class="n">main</span> <span class="n">contents</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> After generating your content from your sources, you can use it to create the slides as explained previously.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="create-learning-activities">
+<h2>3.3 Create Learning Activities<a class="headerlink" href="#create-learning-activities" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Purpose<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Use AI to design active learning activities that promote practical engagement with generative AI tools.</p>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">a</span> <span class="n">faculty</span> <span class="n">developer</span> <span class="n">facilitating</span> <span class="n">a</span> <span class="n">session</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span> 
+<span class="n">Suggest</span> <span class="n">three</span> <span class="n">learning</span> <span class="n">activities</span> <span class="n">that</span> <span class="n">help</span> <span class="n">participants</span> <span class="n">understand</span> <span class="n">this</span> <span class="n">topic</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">instructions</span><span class="p">,</span> <span class="n">timing</span><span class="p">,</span> <span class="ow">and</span> <span class="n">required</span> <span class="n">tools</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note 1:</strong> If you already know the learning activities you are going to use, you can always employ an LLM to check, improve, provide ideas and create specific activities for you.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Note 2:</strong> Some LLMs offer features and artifacts that can be directly used to create learning activities. For example, <a class="reference external" href="http://Claude.ai">Claude.ai</a> allows you to create (interactive) artifacts (e.g., apps and websites, documents and templates, games, creative projects, quiz or survey) that can be used as learning activities by the students.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="select-and-prepare-learning-materials">
+<h2>3.4 Select and Prepare Learning Materials<a class="headerlink" href="#select-and-prepare-learning-materials" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>Purpose<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Identify, generate, transform, and validate materials needed for class delivery.</p>
+</section>
+<section id="task-1-search-for-and-generate-new-learning-materials">
+<h3>Task 1: Search for and generate new learning materials<a class="headerlink" href="#task-1-search-for-and-generate-new-learning-materials" title="Link to this heading">#</a></h3>
+<p><strong>Prompt Template</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Suggest</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">materials</span> <span class="k">for</span> <span class="n">a</span> <span class="k">class</span><span class="w"> </span><span class="nc">on</span> <span class="p">[</span><span class="n">Class</span> <span class="n">Topic</span><span class="p">]:</span> 
+<span class="n">Include</span> <span class="mi">1</span> <span class="n">reading</span><span class="p">,</span> <span class="mi">1</span> <span class="n">hands</span><span class="o">-</span><span class="n">on</span> <span class="n">tool</span><span class="p">,</span> <span class="mi">1</span> <span class="n">AI</span><span class="o">-</span><span class="n">generated</span> <span class="n">example</span><span class="p">,</span> 
+<span class="ow">and</span> <span class="mi">1</span> <span class="n">multimodal</span> <span class="n">artifact</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="task-2-select-and-validate-content-and-sources">
+<h3>Task 2: Select and validate content and sources<a class="headerlink" href="#task-2-select-and-validate-content-and-sources" title="Link to this heading">#</a></h3>
+<p>From all the materials generated in the previous steps, identify and validate those that can be used as part of your teaching component.</p>
+<blockquote>
+<div><p><strong>Note:</strong> The GenAI models should be used as assistants to support you in the process of planning, designing, and creating your course, but you must ensure everything is accurate and ready to be presented in class. The scientific content retrieved and analyzed in Section 3.2C may be particularly relevant to become part of the content for your course.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="integrate-discussion-and-reflection-elements">
+<h2>3.5 Integrate Discussion and Reflection Elements<a class="headerlink" href="#integrate-discussion-and-reflection-elements" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Purpose<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Use AI to generate reflective questions and discussion points that deepen understanding.</p>
+<p><strong>Prompt Template — Few Shot</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Examples of reflective questions:
+1. What are the potential benefits and risks of using AI-generated feedback?
+2. How would you explain the role of AI to your students?
+
+Generate 3 reflection questions that promote critical thinking about [Course Topic].
+</pre></div>
+</div>
+</section>
+</section>
+<section id="create-an-ai-powered-class-summary-generator">
+<h2>3.6 Create an AI-Powered Class Summary Generator<a class="headerlink" href="#create-an-ai-powered-class-summary-generator" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Purpose<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Automate class closing reflections using AI-generated summaries.</p>
+<p><strong>Prompt Template — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Write</span> <span class="n">a</span> <span class="mi">1</span><span class="o">-</span><span class="n">paragraph</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">key</span> <span class="n">takeaways</span> <span class="kn">from</span><span class="w"> </span><span class="nn">today</span><span class="s1">&#39;s class using the notes or transcript provided.</span>
+<span class="n">Include</span> <span class="n">the</span> <span class="n">main</span> <span class="n">concepts</span><span class="p">,</span> <span class="n">examples</span><span class="p">,</span> <span class="n">tools</span> <span class="n">used</span><span class="p">,</span> <span class="ow">and</span> <span class="nb">next</span> <span class="n">steps</span> <span class="k">for</span> <span class="n">students</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Meta-Prompting</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Write</span> <span class="n">a</span> <span class="n">prompt</span> <span class="n">I</span> <span class="n">can</span> <span class="n">give</span> <span class="n">to</span> <span class="n">an</span> <span class="n">LLM</span> <span class="n">at</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">each</span> <span class="k">class</span><span class="w"> </span><span class="nc">to</span> <span class="n">generate</span> <span class="n">a</span> <span class="mi">1</span><span class="o">-</span><span class="n">paragraph</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">key</span> <span class="n">takeaways</span> <span class="n">based</span> <span class="n">on</span> <span class="n">notes</span> <span class="ow">or</span> <span class="n">transcripts</span> <span class="kn">from</span><span class="w"> </span><span class="nn">a</span> <span class="n">session</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="updates-to-your-ai-workspace-and-personalized-assistant">
+<h2>3.7 Updates to Your AI Workspace and Personalized Assistant<a class="headerlink" href="#updates-to-your-ai-workspace-and-personalized-assistant" title="Link to this heading">#</a></h2>
+<p>This section summarizes the main updates to your AI Workspace (Project) and Course Personalized Assistant (PA) to ensure both tools evolve consistently as you progress in this program.</p>
+<section id="a-updates-to-your-ai-workspace-project">
+<h3>A. Updates to Your AI Workspace (Project)<a class="headerlink" href="#a-updates-to-your-ai-workspace-project" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Upload New Files to the Workspace Knowledge Base:</strong> all materials (e.g., modules, class sessions, slides) generated or selected in this module.</p></li>
+<li><p><strong>Update Workspace Instructions:</strong> modify the Project’s instruction block to reflect new responsibilities.</p></li>
+</ol>
+<p>Add under <strong>Capabilities</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Structured</span> <span class="n">session</span> <span class="n">plan</span> <span class="n">generation</span>  
+<span class="o">-</span> <span class="n">Learning</span> <span class="n">material</span> <span class="n">creation</span>  
+<span class="o">-</span> <span class="n">Multimodal</span> <span class="n">artifact</span> <span class="n">generation</span>  
+<span class="o">-</span> <span class="n">Literature</span><span class="o">-</span><span class="n">grounded</span> <span class="n">content</span> <span class="n">synthesis</span>  
+</pre></div>
+</div>
+<p>Add under <strong>Behaviors</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Validate</span> <span class="n">accuracy</span> <span class="n">of</span> <span class="n">AI</span><span class="o">-</span><span class="n">generated</span> <span class="n">materials</span>  
+<span class="o">-</span> <span class="n">Flag</span> <span class="n">inconsistencies</span> <span class="ow">or</span> <span class="n">missing</span> <span class="n">content</span>  
+</pre></div>
+</div>
+</section>
+<section id="b-updates-to-your-course-personalized-assistant-pa">
+<h3>B. Updates to Your Course Personalized Assistant (PA)<a class="headerlink" href="#b-updates-to-your-course-personalized-assistant-pa" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Upload New Files to the PA Knowledge Base:</strong> all content and learning materials generated or selected in this module.</p></li>
+<li><p><strong>Update PA Instructions:</strong></p></li>
+</ol>
+<p>Add under <strong>Capabilities</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Explain</span> <span class="k">class</span><span class="w"> </span><span class="nc">concepts</span> <span class="n">at</span> <span class="n">multiple</span> <span class="n">difficulty</span> <span class="n">levels</span>  
+<span class="o">-</span> <span class="n">Generate</span> <span class="n">practice</span> <span class="n">questions</span> <span class="n">based</span> <span class="n">on</span> <span class="n">session</span> <span class="n">materials</span>  
+</pre></div>
+</div>
+<p>Add under <strong>Safety &amp; Boundaries</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Avoid</span> <span class="n">generating</span> <span class="n">full</span> <span class="n">solutions</span> <span class="k">for</span> <span class="n">graded</span> <span class="n">assignments</span>  
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> Have a look at Section 2.7C for instructions on workflow adjustments going forward each module.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="exercises">
+<h2>3.8 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-break-down-your-course-into-modules">
+<h3>Exercise 1 — Break Down Your Course Into Modules<a class="headerlink" href="#exercise-1-break-down-your-course-into-modules" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Structure your course into modules or sessions.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Paste your syllabus or course description into the Workspace.</p></li>
+<li><p>Use the module‑creation prompt.</p></li>
+<li><p>Review the proposed modules.</p></li>
+<li><p>Request alternative versions (basic, standard, advanced).</p></li>
+</ol>
+<p><strong>Prompt:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Break</span> <span class="n">the</span> <span class="n">course</span> <span class="n">into</span> <span class="n">modules</span> <span class="k">with</span> <span class="n">titles</span><span class="p">,</span> <span class="n">descriptions</span><span class="p">,</span> <span class="ow">and</span> <span class="n">key</span> <span class="n">concepts</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-2-design-a-complete-90-minute-class-session">
+<h3>Exercise 2 — Design a Complete 90-Minute Class Session<a class="headerlink" href="#exercise-2-design-a-complete-90-minute-class-session" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Produce a structured lesson plan using generative AI.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Select one module from Exercise 1.</p></li>
+<li><p>Use the session‑design prompt.</p></li>
+<li><p>Request two more variants (online, hybrid).</p></li>
+<li><p>Ask the model to create a slide deck outline.</p></li>
+</ol>
+<p><strong>Prompt:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Design</span> <span class="n">a</span> <span class="mi">90</span><span class="o">-</span><span class="n">minute</span> <span class="k">class</span><span class="w"> </span><span class="nc">session</span> <span class="k">with</span> <span class="n">objectives</span><span class="p">,</span> <span class="n">activities</span><span class="p">,</span> <span class="ow">and</span> <span class="n">materials</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-3-generate-learning-activities">
+<h3>Exercise 3 — Generate Learning Activities<a class="headerlink" href="#exercise-3-generate-learning-activities" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Create AI-supported activity plans that promote active learning.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Choose a class topic.</p></li>
+<li><p>Use the activity-generation prompt.</p></li>
+<li><p>Request variations for different complexity levels.</p></li>
+</ol>
+</section>
+<section id="exercise-4-generate-and-validate-learning-materials">
+<h3>Exercise 4 — Generate and Validate Learning Materials<a class="headerlink" href="#exercise-4-generate-and-validate-learning-materials" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Use AI to produce readings, examples, tools, and teaching aids.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Run the materials prompt.</p></li>
+<li><p>Request multiple formats (summary, table, example, visual).</p></li>
+<li><p>Validate outputs manually for accuracy.</p></li>
+</ol>
+</section>
+<section id="exercise-5-create-a-class-summary-generator">
+<h3>Exercise 5 — Create a Class Summary Generator<a class="headerlink" href="#exercise-5-create-a-class-summary-generator" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Build a reusable summary generator prompt.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Copy the summary prompt.</p></li>
+<li><p>Run it on an example transcript or your own notes.</p></li>
+<li><p>Ask for three versions: bullet list, student-friendly, expert-level.</p></li>
+</ol>
+</section>
+</section>
+<section id="reflection">
+<h2>3.9 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Which class-design tasks benefited most from AI?</p></li>
+<li><p>Where did human oversight become essential?</p></li>
+<li><p>How could multimodal AI tools enrich the learning experience?</p></li>
+<li><p>What tasks should remain strictly human-led?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module2_PedagogicalPlanning.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2. AI-Enhanced Pedagogical-Didactic Planning</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module4_Assignments.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">4. AI-Enhanced Assignments and Exam Preparation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#break-down-content-into-modules-or-units">3.1 Break Down Content Into Modules or Units</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#design-and-create-a-class-session-objectives-contents-materials">3.2 Design and Create a Class Session (Objectives, Contents, Materials)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-direct-prompting-on-llms">A. Direct Prompting on LLMs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-prompting-the-ai-slide-generator">B. Prompting the AI Slide Generator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-integrating-scientific-literature">C. Integrating Scientific Literature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-tool-prompt">Cross-Tool Prompt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparative-table-of-ai-literature-tools">Comparative Table of AI Literature Tools</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-generating-content-from-external-sources">D. Generating Content from External Sources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-learning-activities">3.3 Create Learning Activities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-and-prepare-learning-materials">3.4 Select and Prepare Learning Materials</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-search-for-and-generate-new-learning-materials">Task 1: Search for and generate new learning materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-select-and-validate-content-and-sources">Task 2: Select and validate content and sources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrate-discussion-and-reflection-elements">3.5 Integrate Discussion and Reflection Elements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-ai-powered-class-summary-generator">3.6 Create an AI-Powered Class Summary Generator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">3.7 Updates to Your AI Workspace and Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-updates-to-your-ai-workspace-project">A. Updates to Your AI Workspace (Project)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-updates-to-your-course-personalized-assistant-pa">B. Updates to Your Course Personalized Assistant (PA)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">3.8 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-break-down-your-course-into-modules">Exercise 1 — Break Down Your Course Into Modules</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-design-a-complete-90-minute-class-session">Exercise 2 — Design a Complete 90-Minute Class Session</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-generate-learning-activities">Exercise 3 — Generate Learning Activities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-generate-and-validate-learning-materials">Exercise 4 — Generate and Validate Learning Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-create-a-class-summary-generator">Exercise 5 — Create a Class Summary Generator</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">3.9 Reflection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

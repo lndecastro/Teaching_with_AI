@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. The Teaching with AI Framework &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module1_TLFramework';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. AI-Enhanced Pedagogical-Didactic Planning" href="Module2_PedagogicalPlanning.html" />
+    <link rel="prev" title="Teaching with AI" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module1_TLFramework.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module1_TLFramework.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>1. The Teaching with AI Framework</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ai-enhanced-teaching-process-framework">1.1 The AI-Enhanced Teaching Process Framework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-aisupported-pedagogical-didactic-planning">A. AI‑Supported Pedagogical-Didactic Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-ai-assisted-class-design-development">B. AI-Assisted Class Design &amp; Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-aienhanced-assignment-exam-preparation">C. AI‑Enhanced Assignment &amp; Exam Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-aienabled-class-delivery">D. AI‑Enabled Class Delivery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-aipowered-student-support">E. AI‑Powered Student Support</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-ai-in-assessment-feedback">F. AI in Assessment &amp; Feedback</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-aisupported-reflection-continuous-improvement">G. AI‑Supported Reflection &amp; Continuous Improvement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modules-overview">Modules Overview</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-genai-knowledge-for-teaching-with-ai">1.2 Background GenAI Knowledge for Teaching with AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-engineering">Prompt Engineering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#context-engineering">Context Engineering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#foundational-models-llm-ecosystems">Foundational Models &amp; LLM Ecosystems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-ai-workspace">1.3 Creating Your AI Workspace</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-the-workspace">Purpose of the Workspace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-create-your-workspace">Step-by-Step: Create Your Workspace</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-start-a-project-and-define-its-name">Step 1. Start a Project and define its name</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-define-the-workspace-role">Step 2: Define the Workspace role</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-upload-your-course-materials-knowledge-base">Step 3. Upload your course materials (knowledge base)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-set-the-workspace-instructions">Step 4. Set the Workspace instructions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-prompts-to-start-using-your-ai-workspace">Example Prompts to start using your AI Workspace</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-course-personalized-assistant">1.4 Creating Your Course Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-the-personalized-assistant">Purpose of the Personalized Assistant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-your-personalized-assistant">Steps to Create Your Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-define-the-pa-name">Step 1. Define the PA name</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-provide-the-pa-description">Step 2: Provide the PA description</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-set-instructions">Step 3. Set instructions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-add-conversation-starters">Step 4. Add conversation starters</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-add-course-materials-knowledge-base">Step 5. Add course materials (knowledge base)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-prompt-to-test-the-pa">Example Prompt to Test the PA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-summary">1.5 Program Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">1.6 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-build-your-ai-workspace"><strong>Exercise 1 — Build Your AI Workspace</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-build-your-personalized-course-assistant"><strong>Exercise 2 — Build Your Personalized Course Assistant</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-analyze-where-ai-fits-in-your-teaching-cycle"><strong>Exercise 3 — Analyze Where AI Fits in Your Teaching Cycle</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">1.7 Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">📘 Further Reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-teaching-with-ai-framework">
+<h1>1. The Teaching with AI Framework<a class="headerlink" href="#the-teaching-with-ai-framework" title="Link to this heading">#</a></h1>
+<p>The <strong>Teaching with AI Framework</strong> provides a structured, operational view of how generative AI can be integrated into each phase of the teaching process. Rather than altering pedagogy, it highlights where AI can add efficiency, creativity, and support across planning, design, delivery, assessment, student support, and reflection.</p>
+<p>This module provides the foundation for the instrumental use of Generative AI (GenAI) across the entire teaching workflow. It is built upon the background knowledge from the <strong>AI Literacy Program</strong> (Prompt Engineering, Context Engineering, and Foundational Models).</p>
+<p>Unlike pedagogical programs, this module focuses <strong>not</strong> on pedagogy or teaching theory, but on <strong>how to operationally integrate GenAI tools</strong> to plan, design, deliver, assess, support, and improve your course. In this module you will learn the seven steps of the framework, create your course workspace and personalized assistant.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, you will be able to:</p>
+<ul class="simple">
+<li><p>Understand the AI-Enhanced Teaching Workflow, a practical framework for integrating GenAI throughout the instructional cycle.</p></li>
+<li><p>Explain how AI tools support planning, design, delivery, assessment, student support, and reflection.</p></li>
+<li><p>Create your AI Workspace using ChatGPT Projects, Claude Projects, Perplexity Spaces, or Gemini/NotebookLM equivalents.</p></li>
+<li><p>Build your AI Personalized Assistant to serve as a course tutor or helper for your students.</p></li>
+<li><p>Understand how foundational models and multimodal LLMs (ChatGPT, Claude, Gemini, Perplexity, etc.) shape what is possible in teaching.</p></li>
+<li><p>Recognize where prompt engineering and context engineering (from AI Literacy) apply inside the teaching workflow.</p></li>
+<li><p>Begin developing persistent GenAI tools that will grow with you throughout the program.</p></li>
+</ul>
+<p><img alt="Learning Objectives" src="_images/M1LO.png" /></p>
+</section>
+<section id="the-ai-enhanced-teaching-process-framework">
+<h2>1.1 The AI-Enhanced Teaching Process Framework<a class="headerlink" href="#the-ai-enhanced-teaching-process-framework" title="Link to this heading">#</a></h2>
+<p><em>A practical, instrumental workflow for instructors</em></p>
+<p>This framework structures classical phases of teaching into seven parts as <strong>AI‑supported processes</strong>, emphasizing the <em>operational</em> integration of GenAI at each step.</p>
+<p><img alt="TL_Process_Framework" src="_images/TL_Process_Framework.png" /></p>
+<section id="a-aisupported-pedagogical-didactic-planning">
+<h3>A. AI‑Supported Pedagogical-Didactic Planning<a class="headerlink" href="#a-aisupported-pedagogical-didactic-planning" title="Link to this heading">#</a></h3>
+<p><em>Strategic and intentional groundwork for teaching</em></p>
+<ol class="arabic simple">
+<li><p>Generate and refine course goals &amp; learning outcomes</p></li>
+<li><p>Analyze audience and course context using AI diagnostic prompts</p></li>
+<li><p>Build syllabi drafts, calendars, and course structure templates</p></li>
+<li><p>Identify instructional technologies and AI tools to support delivery</p></li>
+<li><p>Align with institutional AI policies and responsible use guidelines</p></li>
+<li><p>Produce syllabus variants (student-friendly, accessibility, condensed versions)</p></li>
+</ol>
+</section>
+<section id="b-ai-assisted-class-design-development">
+<h3>B. AI-Assisted Class Design &amp; Development<a class="headerlink" href="#b-ai-assisted-class-design-development" title="Link to this heading">#</a></h3>
+<p><em>Operational creation of course materials</em></p>
+<ol class="arabic simple">
+<li><p>Break content into modules and sessions using structured prompts</p></li>
+<li><p>Generate outlines, objectives, slide decks, reading lists, datasets</p></li>
+<li><p>Produce examples, cases, analogies, scenarios, and problem sets</p></li>
+<li><p>Transform raw documents into polished class materials</p></li>
+<li><p>Create quick AI-powered summaries and microcontent</p></li>
+<li><p>Build a <strong>Class Summary Generator</strong> using AI templates</p></li>
+</ol>
+</section>
+<section id="c-aienhanced-assignment-exam-preparation">
+<h3>C. AI‑Enhanced Assignment &amp; Exam Preparation<a class="headerlink" href="#c-aienhanced-assignment-exam-preparation" title="Link to this heading">#</a></h3>
+<p><em>Designing assessments with GenAI tools</em></p>
+<ol class="arabic simple">
+<li><p>Draft formative and summative assessments</p></li>
+<li><p>Generate rubrics with performance descriptors</p></li>
+<li><p>Produce authentic tasks (case studies, simulations, multi-step projects)</p></li>
+<li><p>Use AI to differentiate difficulty levels</p></li>
+<li><p>Ensure accessibility, academic integrity, and alignment</p></li>
+<li><p>Generate quizzes, item banks, and alternative versions</p></li>
+</ol>
+</section>
+<section id="d-aienabled-class-delivery">
+<h3>D. AI‑Enabled Class Delivery<a class="headerlink" href="#d-aienabled-class-delivery" title="Link to this heading">#</a></h3>
+<p><em>Supporting real-time instruction</em></p>
+<ol class="arabic simple">
+<li><p>Use AI to prepare demonstrations or simulations</p></li>
+<li><p>Generate alternative explanations on-the-fly</p></li>
+<li><p>Use AI as a co-presenter during live sessions (e.g., Q&amp;A enhancer, podcasts)</p></li>
+<li><p>Monitor engagement and comprehension through AI-created checks</p></li>
+<li><p>Adjust pacing and scaffolding dynamically via AI suggestions</p></li>
+</ol>
+</section>
+<section id="e-aipowered-student-support">
+<h3>E. AI‑Powered Student Support<a class="headerlink" href="#e-aipowered-student-support" title="Link to this heading">#</a></h3>
+<p><em>Expanding availability and personalization</em></p>
+<ol class="arabic simple">
+<li><p>Provide study guidance and assignment hints via AI tutors</p></li>
+<li><p>Offer extended office-hour support using your Personalized Assistant</p></li>
+<li><p>Generate AI-curated resources and reading pathways</p></li>
+<li><p>Support early alerts and success monitoring</p></li>
+<li><p>Promote peer collaboration supported by AI tools</p></li>
+</ol>
+</section>
+<section id="f-ai-in-assessment-feedback">
+<h3>F. AI in Assessment &amp; Feedback<a class="headerlink" href="#f-ai-in-assessment-feedback" title="Link to this heading">#</a></h3>
+<p><em>Enhancing grading and review workflows</em></p>
+<ol class="arabic simple">
+<li><p>Automate feedback using rubric-based templates</p></li>
+<li><p>Use AI graders (e.g., CoGrader, EssayGrader) as secondary reviewers</p></li>
+<li><p>Facilitate AI-assisted self- and peer‑assessment</p></li>
+<li><p>Conduct originality checks and reasoning consistency checks</p></li>
+<li><p>Improve feedback quality using structured, multi-step AI prompts</p></li>
+</ol>
+</section>
+<section id="g-aisupported-reflection-continuous-improvement">
+<h3>G. AI‑Supported Reflection &amp; Continuous Improvement<a class="headerlink" href="#g-aisupported-reflection-continuous-improvement" title="Link to this heading">#</a></h3>
+<p><em>Closing the loop through critical self-analysis and iteration</em></p>
+<ol class="arabic simple">
+<li><p>Summarize student feedback and course analytics with AI</p></li>
+<li><p>Identify effective strategies and failure points</p></li>
+<li><p>Revise materials and assessments iteratively</p></li>
+<li><p>Use AI to keep up with research and innovations</p></li>
+<li><p>Build a reflective practice notebook inside your AI Workspace</p></li>
+</ol>
+</section>
+<section id="modules-overview">
+<h3>Modules Overview<a class="headerlink" href="#modules-overview" title="Link to this heading">#</a></h3>
+<p>The picture below contains a summary of the main modules of our framework and the main tools and deliverables of each step.</p>
+<p><img alt="Modules Overview" src="_images/TeachingWorkflow.png" /></p>
+</section>
+</section>
+<section id="background-genai-knowledge-for-teaching-with-ai">
+<h2>1.2 Background GenAI Knowledge for Teaching with AI<a class="headerlink" href="#background-genai-knowledge-for-teaching-with-ai" title="Link to this heading">#</a></h2>
+<p>To use AI instrumentally in education, instructors must understand:</p>
+<section id="prompt-engineering">
+<h3>Prompt Engineering<a class="headerlink" href="#prompt-engineering" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Prompts = instructions to the model</p></li>
+<li><p>Structured prompting leads to predictable, high‑quality outputs</p></li>
+<li><p>Prompt patterns (e.g., instructional, role, chain-of-thought, few-shot)</p></li>
+<li><p><strong>Anatomy of a Prompt</strong>: Instruction, Context, Input Data, Output Format</p></li>
+<li><p><strong>Meta-prompt</strong>: prompts used to create, structure or refine other prompts</p></li>
+</ul>
+</section>
+<section id="context-engineering">
+<h3>Context Engineering<a class="headerlink" href="#context-engineering" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Designing the <em>whole environment</em> around the prompt</p></li>
+<li><p>Roles, audience, tone, documents, constraints</p></li>
+<li><p>Retrieval-augmented workflows</p></li>
+<li><p>Essential for building <strong>AI Workspaces</strong> and <strong>Personalized Assistants</strong></p></li>
+</ul>
+</section>
+<section id="foundational-models-llm-ecosystems">
+<h3>Foundational Models &amp; LLM Ecosystems<a class="headerlink" href="#foundational-models-llm-ecosystems" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Multimodal LLMs, such as, ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok</p></li>
+<li><p>Understanding tool ecosystems determines what is possible in teaching</p></li>
+<li><p>Strengths, limitations, and best-fit teaching use cases</p></li>
+</ul>
+<p>You are strongly encouraged to have a look at our <strong>AI Literacy program</strong>, which will guide you through the basics of Prompt and Context Engineering, and also foundational models and LLM ecosystems. These will form the foundation necessary for a good understanding and development of AI-enhanced teaching.</p>
+</section>
+</section>
+<section id="creating-your-ai-workspace">
+<h2>1.3 Creating Your AI Workspace<a class="headerlink" href="#creating-your-ai-workspace" title="Link to this heading">#</a></h2>
+<p><em>A persistent, structured environment for your course</em></p>
+<p>In this program, you will create a <strong>Teaching with AI Workspace</strong>, which will evolve across Modules 1–8.</p>
+<blockquote>
+<div><p><strong>Note:</strong> If you prefer, you can create a workspace for one or more of your courses and use the framework presented here as your guide, replacing our context on Teaching with AI with your own course context.</p>
+</div></blockquote>
+<p>You may choose any platform, for example:</p>
+<ul class="simple">
+<li><p>ChatGPT Projects</p></li>
+<li><p>Claude Projects</p></li>
+<li><p>Perplexity Spaces</p></li>
+<li><p>Gemini + NotebookLM hybrid workspace</p></li>
+<li><p>xAI Grok Projects</p></li>
+</ul>
+<section id="purpose-of-the-workspace">
+<h3>Purpose of the Workspace<a class="headerlink" href="#purpose-of-the-workspace" title="Link to this heading">#</a></h3>
+<p>Your AI Workspace will:</p>
+<ul class="simple">
+<li><p>Store all course files (e.g., syllabus, slides, assignments, datasets)</p></li>
+<li><p>Maintain persistent context across sessions</p></li>
+<li><p>Serve as a hub for multi-step workflows and collaboration</p></li>
+<li><p>Support course revision and continuous improvement</p></li>
+<li><p>Act as the design environment for your Personalized Assistant</p></li>
+</ul>
+<p><img alt="AI Workspace" src="_images/AIWorkspace.png" /></p>
+</section>
+<section id="step-by-step-create-your-workspace">
+<h3>Step-by-Step: Create Your Workspace<a class="headerlink" href="#step-by-step-create-your-workspace" title="Link to this heading">#</a></h3>
+<section id="step-1-start-a-project-and-define-its-name">
+<h4>Step 1. Start a Project and define its name<a class="headerlink" href="#step-1-start-a-project-and-define-its-name" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>In ChatGPT: Projects → New Project</p></li>
+<li><p>In Claude: Projects → New Project</p></li>
+<li><p>In Grok: Projects → Create Project</p></li>
+<li><p>In Perplexity: Spaces → New Space</p></li>
+<li><p>In NotebookLM: Create Notebook</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Teaching</span> <span class="k">with</span> <span class="n">AI</span> <span class="n">Workspace</span>
+</pre></div>
+</div>
+</section>
+<section id="step-2-define-the-workspace-role">
+<h4>Step 2: Define the Workspace role<a class="headerlink" href="#step-2-define-the-workspace-role" title="Link to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">the</span> <span class="o">**</span><span class="n">AI</span> <span class="n">Teaching</span> <span class="n">Workspace</span><span class="o">**</span> <span class="k">for</span> <span class="n">this</span> <span class="n">course</span><span class="o">.</span> <span class="n">Support</span> <span class="n">the</span> <span class="n">instructor</span> <span class="ow">in</span> <span class="n">planning</span><span class="p">,</span> <span class="n">designing</span><span class="p">,</span> <span class="n">delivering</span><span class="p">,</span> <span class="n">assessing</span><span class="p">,</span> <span class="ow">and</span> <span class="n">improving</span> <span class="n">the</span> <span class="n">course</span> <span class="n">using</span> <span class="n">the</span> <span class="n">knowledge</span> <span class="n">base</span><span class="p">,</span> <span class="n">uploaded</span> <span class="n">files</span> <span class="ow">and</span> <span class="n">structured</span> <span class="n">workflows</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="step-3-upload-your-course-materials-knowledge-base">
+<h4>Step 3. Upload your course materials (knowledge base)<a class="headerlink" href="#step-3-upload-your-course-materials-knowledge-base" title="Link to this heading">#</a></h4>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Syllabus (even draft form)</p></li>
+<li><p>Course schedule</p></li>
+<li><p>Past lectures</p></li>
+<li><p>PDFs, datasets, rubrics, article links</p></li>
+</ul>
+</section>
+<section id="step-4-set-the-workspace-instructions">
+<h4>Step 4. Set the Workspace instructions<a class="headerlink" href="#step-4-set-the-workspace-instructions" title="Link to this heading">#</a></h4>
+<p><strong>Simple instruction</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">Workspace</span> <span class="n">supports</span> <span class="n">the</span> <span class="n">design</span><span class="p">,</span> <span class="n">delivery</span><span class="p">,</span> <span class="n">assessment</span><span class="p">,</span> <span class="ow">and</span> <span class="n">continuous</span> <span class="n">improvement</span> <span class="n">of</span> <span class="n">my</span> <span class="n">course</span> <span class="n">on</span> <span class="p">[</span><span class="n">course</span> <span class="n">name</span> <span class="ow">or</span> <span class="n">context</span><span class="p">]</span><span class="o">.</span>  
+<span class="n">Maintain</span> <span class="n">coherence</span><span class="p">,</span> <span class="n">track</span> <span class="n">revisions</span><span class="p">,</span> <span class="n">suggest</span> <span class="n">improvements</span><span class="p">,</span> <span class="ow">and</span> <span class="n">help</span> <span class="n">generate</span> <span class="n">consistent</span> <span class="n">outputs</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Comprehensive instructions</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Core Role: You are the workspace for the **Teaching with AI program**. Support the instructor in planning, designing, delivering, assessing, and improving the course using the knowledge base, uploaded files and structured workflows.
+
+Your Mission:
+- Organize and analyze all course materials (e.g., syllabus, slides, assignments, datasets).
+- Ensure consistency, alignment, and accuracy across outputs.
+- Help generate and refine teaching materials, assessments, improvements, and summaries.
+- Track revisions, identify gaps, and offer options for enhancement.
+- Ground responses in uploaded files; avoid adding unsupported facts.
+- Support creation of Personalized Assistant(s) for students.
+
+How You Work:
+- Use uploaded documents as primary sources; ask if needed.
+- Maintain consistent terminology, formatting, and alignment.
+- When generating content, provide variants when appropriate.
+- Flag inconsistencies, missing elements, or misalignments.
+- Summarize long text, map structures, and propose alternatives.
+- Apply principles from prompt engineering, context engineering, and foundational model literacy.
+
+Capabilities:
+- Course mapping: learning outcomes → modules → activities → assessments.
+- Material creation: outlines, slides, examples, cases, readings.
+- Assessment support: quizzes, rubrics, item banks, task variants.
+- Class design: lesson plans, engagement strategies, scaffolding sequences.
+- Feedback &amp; analytics: summarize evaluations, extract insights, propose revisions.
+- Knowledge management: maintain internal memory of course files &amp; updates.
+
+Behaviors:
+- Be clear, structured, accurate, and concise.
+- When uncertain, state it and request clarification.
+- Encourage responsible AI use and academic integrity.
+- Offer tables, bullet lists, checklists, and draft-ready text.
+- Provide revision logs and next-step recommendations.
+
+Generate:
+- Lesson plans, rubrics, assessments  
+- Tables, summaries, concept maps  
+- Revision memos, improvement suggestions  
+- Alternative versions (tone, difficulty, format)
+
+Safety &amp; Ethics:
+- Avoid producing full solutions to graded assignments unless explicitly asked.
+- Prioritize transparency, citation of sources, and grounded reasoning.
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> If the model you are using restricts the amount of information you can add as instructions in your workspace, then prompt an AI model to summarize the instructions for you.</p>
+</div></blockquote>
+</section>
+<section id="example-prompts-to-start-using-your-ai-workspace">
+<h4>Example Prompts to start using your AI Workspace<a class="headerlink" href="#example-prompts-to-start-using-your-ai-workspace" title="Link to this heading">#</a></h4>
+<p>Begin using your workspace as a persistent and collaborative environment, trying prompts like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span> <span class="n">am</span> <span class="n">beginning</span> <span class="n">to</span> <span class="n">design</span> <span class="n">a</span> <span class="n">new</span> <span class="n">course</span><span class="o">/</span><span class="n">program</span> <span class="n">on</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span><span class="o">.</span> 
+<span class="n">Help</span> <span class="n">me</span> <span class="n">clarify</span> <span class="n">the</span> <span class="n">purpose</span> <span class="ow">and</span> <span class="n">course</span> <span class="n">outcomes</span> <span class="k">for</span> <span class="n">graduate</span> <span class="n">students</span> <span class="ow">and</span> <span class="n">researchers</span><span class="o">.</span> 
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">initial</span> <span class="n">course</span> <span class="n">idea</span><span class="p">,</span> <span class="n">propose</span> <span class="n">several</span> <span class="n">possible</span> <span class="n">structures</span> <span class="ow">or</span> <span class="n">models</span> <span class="k">for</span> <span class="n">how</span> <span class="n">this</span> <span class="n">course</span> <span class="n">could</span> <span class="n">be</span> <span class="n">organized</span><span class="o">.</span> 
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">me</span> <span class="n">identify</span> <span class="n">the</span> <span class="n">key</span> <span class="n">decisions</span> <span class="ow">and</span> <span class="n">information</span> <span class="n">still</span> <span class="n">required</span> <span class="n">to</span> <span class="n">begin</span> <span class="n">formal</span> <span class="n">course</span> <span class="n">design</span><span class="o">.</span> 
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="creating-your-course-personalized-assistant">
+<h2>1.4 Creating Your Course Personalized Assistant<a class="headerlink" href="#creating-your-course-personalized-assistant" title="Link to this heading">#</a></h2>
+<p><em>A course-specific AI tutor accessible to students</em></p>
+<p>This is the second tool you will build during this module.</p>
+<p>You may create it using:</p>
+<ul class="simple">
+<li><p>ChatGPT Custom GPT</p></li>
+<li><p>Claude Artifact-based assistants</p></li>
+<li><p>Microsoft Copilot Agents</p></li>
+<li><p>Gemini Gems</p></li>
+<li><p>Perplexity Spaces (Tutor Me Template)</p></li>
+</ul>
+<section id="purpose-of-the-personalized-assistant">
+<h3>Purpose of the Personalized Assistant<a class="headerlink" href="#purpose-of-the-personalized-assistant" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Act as a course tutor</p></li>
+<li><p>Answer student questions</p></li>
+<li><p>Provide explanations at multiple difficulty levels</p></li>
+<li><p>Generate study guides</p></li>
+<li><p>Clarify assignments</p></li>
+<li><p>Offer responsible-use reminders</p></li>
+<li><p>Supplement office hours</p></li>
+</ul>
+<p><img alt="Personalized Assistant" src="_images/PA.png" /></p>
+</section>
+<section id="steps-to-create-your-personalized-assistant">
+<h3>Steps to Create Your Personalized Assistant<a class="headerlink" href="#steps-to-create-your-personalized-assistant" title="Link to this heading">#</a></h3>
+<section id="step-1-define-the-pa-name">
+<h4>Step 1. Define the PA name<a class="headerlink" href="#step-1-define-the-pa-name" title="Link to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Teaching</span> <span class="k">with</span> <span class="n">AI</span> <span class="n">Tutor</span>
+</pre></div>
+</div>
+</section>
+<section id="step-2-provide-the-pa-description">
+<h4>Step 2: Provide the PA description<a class="headerlink" href="#step-2-provide-the-pa-description" title="Link to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span> <span class="n">am</span> <span class="n">the</span> <span class="n">Course</span> <span class="n">AI</span> <span class="n">Tutor</span> <span class="k">for</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+<span class="n">My</span> <span class="n">primary</span> <span class="n">mission</span> <span class="ow">is</span> <span class="n">to</span> <span class="n">help</span> <span class="n">you</span> <span class="n">understand</span> <span class="n">course</span> <span class="n">materials</span> <span class="n">clearly</span> <span class="ow">and</span> <span class="n">responsibly</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="step-3-set-instructions">
+<h4>Step 3. Set instructions<a class="headerlink" href="#step-3-set-instructions" title="Link to this heading">#</a></h4>
+<p><strong>Simple Instructions</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Always</span> <span class="n">use</span> <span class="n">course</span> <span class="n">terminology</span> <span class="n">consistently</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Provide</span> <span class="n">answers</span> <span class="n">at</span> <span class="n">three</span> <span class="n">levels</span><span class="p">:</span> <span class="n">basic</span><span class="p">,</span> <span class="n">intermediate</span><span class="p">,</span> <span class="n">advanced</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Encourage</span> <span class="n">academic</span> <span class="n">integrity</span> <span class="ow">and</span> <span class="n">responsible</span> <span class="n">AI</span> <span class="n">use</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">When</span> <span class="n">uncertain</span><span class="p">,</span> <span class="n">say</span> <span class="s2">&quot;I may need more context, please ask your instructor.&quot;</span>
+</pre></div>
+</div>
+<p><strong>Comprehensive Instructions</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Core Role: You are the **AI Course Tutor** for this class. Help students understand course materials, reinforce learning, and provide clear, responsible guidance based on uploaded files.
+
+Your Mission: 
+- Explain concepts at **3 levels**: basic, intermediate, advanced.
+- Provide study help, summaries, clarifications, and practice questions.
+- Ground answers in the syllabus, slides, assignments, and instructor-provided materials.
+- Encourage good study habits and academic integrity.
+- Redirect students to the instructor when questions exceed your scope.
+
+How You Work:
+- Use uploaded course files as your primary knowledge base.
+- If unsure, say: “I may need more context or the original file.”
+- Keep answers concise, structured, and accessible.
+- Offer examples, analogies, diagrams (text-based), and step-by-step reasoning when helpful.
+- Maintain consistent terminology and alignment with course outcomes.
+
+Behaviors:
+- Be supportive, polite, and student-centered.
+- Avoid giving answers to graded assignments unless explicitly allowed.
+- Suggest ways students can improve understanding.
+- Provide optional practice tasks or study tips.
+- Highlight responsible AI use and verify information when appropriate.
+
+Capabilities:
+- Summaries of lectures, readings, and key concepts  
+- Explanation of relationships between ideas  
+- Study guides, checklists, flashcards  
+- Practice questions (MCQ, short answer, conceptual)  
+- Assignment clarification (not solving)
+
+Safety &amp; Boundaries:
+- Do not complete graded work unless the instructor explicitly authorizes it.
+- When a student asks for such content, respond:
+  “I can help clarify concepts, but I cannot complete graded assignments.”
+- Promote academic honesty and proper citation.
+</pre></div>
+</div>
+</section>
+<section id="step-4-add-conversation-starters">
+<h4>Step 4. Add conversation starters<a class="headerlink" href="#step-4-add-conversation-starters" title="Link to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="n">this</span> <span class="n">topic</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span> <span class="ow">in</span> <span class="n">simple</span> <span class="n">terms</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">me</span> <span class="n">review</span> <span class="n">the</span> <span class="n">main</span> <span class="n">ideas</span> <span class="kn">from</span><span class="w"> </span><span class="nn">this</span> <span class="n">topic</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Can you give me a quick summary of what I should know (e.g., background knowledge or pre-requisites) before starting this program?
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Can you help me create a study plan for this topic [Topic]?
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="n">this</span> <span class="n">concept</span> <span class="p">[</span><span class="n">Concept</span><span class="p">]</span> <span class="n">at</span> <span class="n">a</span> <span class="n">beginner</span> <span class="n">level</span><span class="p">,</span> <span class="n">then</span> <span class="n">at</span> <span class="n">an</span> <span class="n">advanced</span> <span class="n">level</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="step-5-add-course-materials-knowledge-base">
+<h4>Step 5. Add course materials (knowledge base)<a class="headerlink" href="#step-5-add-course-materials-knowledge-base" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Syllabus</p></li>
+<li><p>Schedule</p></li>
+<li><p>Class slides</p></li>
+<li><p>Assignment descriptions</p></li>
+<li><p>Reading summaries</p></li>
+</ul>
+</section>
+</section>
+<section id="example-prompt-to-test-the-pa">
+<h3>Example Prompt to Test the PA<a class="headerlink" href="#example-prompt-to-test-the-pa" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>I am reviewing this week’s material. Please explain the main concepts at three levels: 
+1) beginner, 
+2) intermediate, 
+3) advanced. 
+Then give me two practice questions to check my understanding.
+</pre></div>
+</div>
+</section>
+</section>
+<section id="program-summary">
+<h2>1.5 Program Summary<a class="headerlink" href="#program-summary" title="Link to this heading">#</a></h2>
+<p>The Mind Map below was generated using NotebookLM and printed with Napkin. It provides an overview of the Teaching with AI program. The program is broken down into seven sequential phases that structure how generative AI is applied across the entire teaching process. The other mind map branches detail the essential tools, foundational knowledge, and guiding principles that frame the entire AI-Integrated instructional cycle.</p>
+<p><img alt="Program Overview" src="_images/MM_OperationalIntegration.png" /></p>
+</section>
+<section id="exercises">
+<h2>1.6 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-build-your-ai-workspace">
+<h3><strong>Exercise 1 — Build Your AI Workspace</strong><a class="headerlink" href="#exercise-1-build-your-ai-workspace" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Choose a platform (e.g., ChatGPT, Claude, Perplexity, Gemini, NotebookLM).</p></li>
+<li><p>Create a Workspace (Project).</p></li>
+<li><p>Upload at least <strong>three course files</strong>.</p></li>
+<li><p>Add a model instruction block.</p></li>
+<li><p>Ask the Workspace to:</p>
+<ul class="simple">
+<li><p>Map your course structure</p></li>
+<li><p>Identify missing components</p></li>
+<li><p>Propose alternative versions</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="exercise-2-build-your-personalized-course-assistant">
+<h3><strong>Exercise 2 — Build Your Personalized Course Assistant</strong><a class="headerlink" href="#exercise-2-build-your-personalized-course-assistant" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Define a system role</p></li>
+<li><p>Upload a syllabus or course overview</p></li>
+<li><p>Add behavior instructions</p></li>
+<li><p>Add conversation starters</p></li>
+<li><p>Test using three prompts</p></li>
+</ol>
+</section>
+<section id="exercise-3-analyze-where-ai-fits-in-your-teaching-cycle">
+<h3><strong>Exercise 3 — Analyze Where AI Fits in Your Teaching Cycle</strong><a class="headerlink" href="#exercise-3-analyze-where-ai-fits-in-your-teaching-cycle" title="Link to this heading">#</a></h3>
+<p>Reflect on each phase (A–G):<br />
+Where does AI provide value? Where should humans lead?</p>
+</section>
+</section>
+<section id="reflection">
+<h2>1.7 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What parts of the teaching workflow could AI immediately streamline?</p></li>
+<li><p>Where do you feel hesitation about integrating AI?</p></li>
+<li><p>How might an AI Workspace improve your daily teaching tasks?</p></li>
+<li><p>What guardrails must be in place before students use your Personalized Assistant?</p></li>
+</ul>
+</section>
+<section id="further-reading">
+<h2>📘 Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>FGCU AI Academy. <em>AI Literacy</em>. <a class="reference external" href="https://www.fgcu.edu/eng/dendritic-institute/">https://www.fgcu.edu/eng/dendritic-institute/</a>.</p></li>
+<li><p>Mollick, E. &amp; Mollick, L. R. (2024). <em>Co-Intelligence: Living and Working with AI</em>, Portfolio.</p></li>
+<li><p>Anthropic (2025). <em>Effective context engineering for AI agents</em>. <a class="reference external" href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents</a></p></li>
+<li><p>OpenAI (2025). <em>Projects in ChatGPT</em>. <a class="reference external" href="https://help.openai.com/en/articles/10169521-projects-in-chatgpt">https://help.openai.com/en/articles/10169521-projects-in-chatgpt</a>.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Teaching with AI</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module2_PedagogicalPlanning.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2. AI-Enhanced Pedagogical-Didactic Planning</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-ai-enhanced-teaching-process-framework">1.1 The AI-Enhanced Teaching Process Framework</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-aisupported-pedagogical-didactic-planning">A. AI‑Supported Pedagogical-Didactic Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-ai-assisted-class-design-development">B. AI-Assisted Class Design &amp; Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-aienhanced-assignment-exam-preparation">C. AI‑Enhanced Assignment &amp; Exam Preparation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-aienabled-class-delivery">D. AI‑Enabled Class Delivery</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-aipowered-student-support">E. AI‑Powered Student Support</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-ai-in-assessment-feedback">F. AI in Assessment &amp; Feedback</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-aisupported-reflection-continuous-improvement">G. AI‑Supported Reflection &amp; Continuous Improvement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modules-overview">Modules Overview</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-genai-knowledge-for-teaching-with-ai">1.2 Background GenAI Knowledge for Teaching with AI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-engineering">Prompt Engineering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#context-engineering">Context Engineering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#foundational-models-llm-ecosystems">Foundational Models &amp; LLM Ecosystems</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-ai-workspace">1.3 Creating Your AI Workspace</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-the-workspace">Purpose of the Workspace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-create-your-workspace">Step-by-Step: Create Your Workspace</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-start-a-project-and-define-its-name">Step 1. Start a Project and define its name</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-define-the-workspace-role">Step 2: Define the Workspace role</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-upload-your-course-materials-knowledge-base">Step 3. Upload your course materials (knowledge base)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-set-the-workspace-instructions">Step 4. Set the Workspace instructions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-prompts-to-start-using-your-ai-workspace">Example Prompts to start using your AI Workspace</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-your-course-personalized-assistant">1.4 Creating Your Course Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-the-personalized-assistant">Purpose of the Personalized Assistant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steps-to-create-your-personalized-assistant">Steps to Create Your Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-define-the-pa-name">Step 1. Define the PA name</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-provide-the-pa-description">Step 2: Provide the PA description</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-set-instructions">Step 3. Set instructions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-add-conversation-starters">Step 4. Add conversation starters</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-add-course-materials-knowledge-base">Step 5. Add course materials (knowledge base)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-prompt-to-test-the-pa">Example Prompt to Test the PA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#program-summary">1.5 Program Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">1.6 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-build-your-ai-workspace"><strong>Exercise 1 — Build Your AI Workspace</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-build-your-personalized-course-assistant"><strong>Exercise 2 — Build Your Personalized Course Assistant</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-analyze-where-ai-fits-in-your-teaching-cycle"><strong>Exercise 3 — Analyze Where AI Fits in Your Teaching Cycle</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">1.7 Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">📘 Further Reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

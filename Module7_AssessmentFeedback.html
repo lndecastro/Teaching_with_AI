@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7. AI in Assessment and Feedback &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module7_AssessmentFeedback';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="8. AI-Supported Reflection and Improvement" href="Module8_ReflectionImprovement.html" />
+    <link rel="prev" title="6. AI‑Powered Student Support" href="Module6_StudentSupport.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module7_AssessmentFeedback.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module7_AssessmentFeedback.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>7. AI in Assessment and Feedback</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduct-assessments-using-existing-assignment-types">7.1 Conduct Assessments Using Existing Assignment Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-illustration">Sample Illustration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-recommended-tools">Additional Recommended Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-rubric-based-constructive-feedback">7.2 Generate Rubric-Based, Constructive Feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-output-structure">Sample Output Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-enhancements">Optional Enhancements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-ai-assisted-self-and-peer-assessment">7.3 Use AI-Assisted Self- and Peer-Assessment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-ai-for-feedback-grading-and-academic-integrity">7.4 Use AI for Feedback, Grading, and Academic Integrity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-grading-and-academic-integrity-tools">Identify Grading and Academic Integrity Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools">Sample Tools</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-grade-ai-generated-quiz-responses">Auto-grade AI-generated Quiz Responses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-rubric-based-feedback-for-student-case-studies">Generate Rubric-Based Feedback for Student Case Studies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detect-ai-generated-plagiarism-in-teaching-project-submissions">Detect AI-generated Plagiarism in Teaching Project Submissions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-a-single-prompt-to-perform-multiple-gradings-essay-case-study-and-project">Use a Single Prompt to Perform Multiple Gradings (Essay, Case Study, and Project)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multimodal-assessment">Multimodal Assessment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-specific-tools">Using Specific Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-1-cograder-com-or-essaygrader-ai-essay-grading">Tool 1: Cograder.com or EssayGrader.ai (Essay Grading)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-2-scispace">Tool 2: SciSpace</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">7.5 Updates to Your AI Workspace and Personalized Assistant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">7.6 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-create-three-assessment-variants">Exercise 1 — Create Three Assessment Variants</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-rubric-based-feedback-generation">Exercise 2 — Rubric-Based Feedback Generation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-self-and-peer-assessment-workflow">Exercise 3 — Self- and Peer-Assessment Workflow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-originality-consistency-screening">Exercise 4 — Originality &amp; Consistency Screening</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-classwide-insights">Exercise 5 — Classwide Insights</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">7.7 Reflection</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ai-in-assessment-and-feedback">
+<h1>7. AI in Assessment and Feedback<a class="headerlink" href="#ai-in-assessment-and-feedback" title="Link to this heading">#</a></h1>
+<p><em>Measuring learning, guiding improvement, and supporting integrity</em></p>
+<p>This step integrates previously designed assignments and rubrics with generative AI to enhance assessment strategies and feedback mechanisms. You will learn how to conduct assessments using existing assignment types with AI support, generate rubric-based constructive feedback, use AI-assisted self- and peer-assessment, and leverage AI for tasks like feedback generation, grading, and originality verification. The module also explores various AI tools and techniques for these tasks.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Conduct assessments using AI-supported workflows grounded in existing assignment types.</p></li>
+<li><p>Generate rubric-based, constructive feedback using structured AI prompting.</p></li>
+<li><p>Facilitate AI-assisted self-assessment and peer-assessment.</p></li>
+<li><p>Use AI responsibly for grading support, feedback generation, and originality verification.</p></li>
+<li><p>Apply multimodal and research-driven GenAI tools to enhance assessment processes.</p></li>
+<li><p>Integrate AI into formative analytics to detect patterns, misconceptions, and progress.</p></li>
+<li><p>Update the AI Workspace and the Course Personalized Assistant to support ongoing assessment tasks.</p></li>
+</ul>
+<p><img alt="Learning Objectives" src="_images/M7LO.png" /></p>
+</section>
+<section id="conduct-assessments-using-existing-assignment-types">
+<h2>7.1 Conduct Assessments Using Existing Assignment Types<a class="headerlink" href="#conduct-assessments-using-existing-assignment-types" title="Link to this heading">#</a></h2>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>Use GenAI to support assessment workflows across quizzes, case studies, projects, presentations, and multimodal tasks, maintaining alignment with rubrics and learning outcomes.</p>
+<p><strong>Prompt Template — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">For</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">assignments</span> <span class="n">describe</span> <span class="n">how</span> <span class="n">generative</span> <span class="n">AI</span> <span class="n">can</span> <span class="n">support</span> <span class="n">their</span> <span class="n">administration</span> <span class="ow">and</span> <span class="n">analysis</span><span class="o">.</span> 
+<span class="n">Include</span> <span class="n">one</span> <span class="n">example</span> <span class="n">AI</span><span class="o">-</span><span class="n">supported</span> <span class="n">workflow</span> <span class="k">for</span> <span class="n">each</span> <span class="n">assignment</span> <span class="nb">type</span><span class="o">.</span> 
+<span class="p">[</span><span class="n">Attach</span> <span class="ow">or</span> <span class="n">reference</span> <span class="n">your</span> <span class="n">assignments</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="sample-illustration">
+<h3>Sample Illustration<a class="headerlink" href="#sample-illustration" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Assignment Type</p></th>
+<th class="head"><p>AI-Supported Workflow</p></th>
+<th class="head"><p>Example Prompt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Quiz</p></td>
+<td><p>Auto-generate variants, reasoning checks</p></td>
+<td><p>“Find misconceptions in these quiz answers.”</p></td>
+</tr>
+<tr class="row-odd"><td><p>Case Study</p></td>
+<td><p>Generate guiding questions, draft feedback</p></td>
+<td><p>“Analyze this case using rubric criteria.”</p></td>
+</tr>
+<tr class="row-even"><td><p>Project</p></td>
+<td><p>Provide milestone feedback, structure mapping</p></td>
+<td><p>“List 5 risks or gaps in this project proposal.”</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="additional-recommended-tools">
+<h3>Additional Recommended Tools<a class="headerlink" href="#additional-recommended-tools" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>NotebookLM or Claude Quiz Generator</strong> – grounded MCQs from course materials</p></li>
+<li><p><strong>AI Workspaces</strong> – persistent assignment evaluators</p></li>
+</ul>
+</section>
+</section>
+<section id="generate-rubric-based-constructive-feedback">
+<h2>7.2 Generate Rubric-Based, Constructive Feedback<a class="headerlink" href="#generate-rubric-based-constructive-feedback" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Purpose<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Accelerate high-quality, criterion-based feedback while ensuring human oversight and student-centered language.</p>
+<p><strong>Prompt Template — Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are an AI tutor grading a student’s [Assignment Type]. 
+Using the rubric provided, give criterion-level feedback with:
+- Score or level
+- Strengths
+- Specific improvements
+[Attach rubric]
+[Attach student work]
+</pre></div>
+</div>
+</section>
+<section id="sample-output-structure">
+<h3>Sample Output Structure<a class="headerlink" href="#sample-output-structure" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criterion</p></th>
+<th class="head"><p>Score</p></th>
+<th class="head"><p>Feedback</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pedagogical Soundness</p></td>
+<td><p>4/5</p></td>
+<td><p>Clear rationale, but missing examples…</p></td>
+</tr>
+<tr class="row-odd"><td><p>AI Integration</p></td>
+<td><p>3/5</p></td>
+<td><p>Good attempt; ensure transparency of tool use…</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="optional-enhancements">
+<h3>Optional Enhancements<a class="headerlink" href="#optional-enhancements" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Language-level variants</strong>: beginner / intermediate / advanced</p></li>
+<li><p><strong>Bias audit of the rubric</strong>: check for clarity, bias, ambiguity</p></li>
+<li><p><strong>Accessibility transformations</strong>: simplify language, add examples</p></li>
+</ul>
+</section>
+</section>
+<section id="use-ai-assisted-self-and-peer-assessment">
+<h2>7.3 Use AI-Assisted Self- and Peer-Assessment<a class="headerlink" href="#use-ai-assisted-self-and-peer-assessment" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Purpose<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>AI supports metacognition by generating checklists, guiding questions, and reflection prompts.</p>
+<p><strong>Prompt Template — Instructional + Role-Based (When the Rubric is Available)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are an instructional assistant helping students reflect on their work.
+
+Using the rubric provided below, generate:
+
+1) A self-assessment checklist that students can use before submitting their work.
+   - Include 6–10 items.
+   - Each item should be phrased as a yes/no or short-answer prompt.
+   - Focus on clarity, completeness, use of AI (if applicable), and alignment with rubric criteria.
+
+2) Three peer-review prompts that guide students in giving constructive feedback to a classmate.
+   - Each prompt should ask reviewers to: 
+       a) identify strengths, 
+       b) note one area for improvement, 
+       c) give a specific suggestion based on the rubric.
+
+Here is the rubric to use:
+[Paste rubric here]
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Instructional + Role-Based (When the Rubric is NOT Available)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are an instructional assistant helping students reflect on their work.
+
+The instructor has not provided a rubric.
+
+Using ONLY the assignment description below, perform the following:
+
+1) Derive 3–5 key evaluation criteria implied by the assignment.
+   - Name each criterion.
+   - Briefly explain how it relates to the assignment requirements.
+
+2) Create a self-assessment checklist (6–10 items) aligned with the criteria you identified.
+
+3) Generate three peer-review prompts that guide reviewers to:
+      - describe what the student did well,
+      - identify one improvement,
+      - give one actionable suggestion.
+
+Here is the assignment description:
+[Paste assignment here]
+</pre></div>
+</div>
+</section>
+</section>
+<section id="use-ai-for-feedback-grading-and-academic-integrity">
+<h2>7.4 Use AI for Feedback, Grading, and Academic Integrity<a class="headerlink" href="#use-ai-for-feedback-grading-and-academic-integrity" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>Purpose<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Use AI as a <em>supportive</em> grader, not as a replacement, to increase consistency, quality, and turnaround time.</p>
+</section>
+<section id="identify-grading-and-academic-integrity-tools">
+<h3>Identify Grading and Academic Integrity Tools<a class="headerlink" href="#identify-grading-and-academic-integrity-tools" title="Link to this heading">#</a></h3>
+<p><strong>Prompt Template — Zero-Shot</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="ow">and</span> <span class="n">briefly</span> <span class="n">explain</span> <span class="mi">5</span><span class="o">-</span><span class="mi">8</span> <span class="n">tools</span> <span class="n">that</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Auto</span><span class="o">-</span><span class="n">grade</span> <span class="n">quiz</span> <span class="n">responses</span>
+<span class="o">-</span> <span class="n">Generate</span> <span class="n">rubric</span><span class="o">-</span><span class="n">based</span> <span class="n">feedback</span>
+<span class="o">-</span> <span class="n">Detect</span> <span class="n">AI</span><span class="o">-</span><span class="n">generated</span> <span class="n">plagiarism</span> <span class="p">(</span><span class="n">academic</span> <span class="n">integrity</span><span class="p">)</span>
+<span class="n">Include</span> <span class="n">benefits</span> <span class="ow">and</span> <span class="n">limitations</span><span class="p">,</span> <span class="ow">and</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">table</span> <span class="n">comparing</span> <span class="n">them</span><span class="o">.</span>
+</pre></div>
+</div>
+<section id="sample-tools">
+<h4>Sample Tools<a class="headerlink" href="#sample-tools" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>CoGrader</strong> (<a class="reference external" href="http://cograder.com">cograder.com</a>)</p></li>
+<li><p><strong>Stargrader</strong> (<a class="reference external" href="http://stargrader.com">stargrader.com</a>)</p></li>
+<li><p><strong>EssayGrader</strong> (<a class="reference external" href="http://essaygrader.ai">essaygrader.ai</a>)</p></li>
+<li><p><strong>Gradescope</strong> (<a class="reference external" href="http://gradescope.com">gradescope.com</a>)</p></li>
+<li><p><strong>Turnitin Academic Integrity</strong> (<a class="reference external" href="http://turnitin.com/solutions/academic-integrity">turnitin.com/solutions/academic-integrity</a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="auto-grade-ai-generated-quiz-responses">
+<h3>Auto-grade AI-generated Quiz Responses<a class="headerlink" href="#auto-grade-ai-generated-quiz-responses" title="Link to this heading">#</a></h3>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are an expert educator, specifically an experienced grader for [Subject Name] at the [Grade Level].
+Your task is to evaluate a student&#39;s answer to a quiz question.
+
+Here is the quiz question:
+[Quiz Question Text]
+
+Here is the expected correct answer (or key concepts to be included):
+[Expected Answer / Key Concepts / Rubric for scoring specific elements]
+
+Here is the student&#39;s response:
+[Student&#39;s Response Text]
+
+Evaluate the student&#39;s response based on the following criteria and provide a score out of 5, along with a brief justification.
+- **Accuracy:** How factually correct is the student&#39;s response?
+- **Completeness:** Does the response cover all the essential points from the expected answer?
+- **Clarity:** Is the response easy to understand and well-articulated?
+</pre></div>
+</div>
+</section>
+<section id="generate-rubric-based-feedback-for-student-case-studies">
+<h3>Generate Rubric-Based Feedback for Student Case Studies<a class="headerlink" href="#generate-rubric-based-feedback-for-student-case-studies" title="Link to this heading">#</a></h3>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">expert</span> <span class="n">academic</span> <span class="n">evaluator</span> <span class="k">for</span> <span class="p">[</span><span class="n">Subject</span> <span class="n">Name</span><span class="p">],</span> <span class="n">specializing</span> <span class="ow">in</span> <span class="n">providing</span> <span class="n">detailed</span><span class="p">,</span> <span class="n">rubric</span><span class="o">-</span><span class="n">based</span> <span class="n">feedback</span> <span class="k">for</span> <span class="n">student</span> <span class="n">case</span> <span class="n">study</span> <span class="n">analyses</span><span class="o">.</span>
+
+<span class="n">Here</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">case</span> <span class="n">study</span> <span class="n">prompt</span><span class="o">/</span><span class="n">assignment</span> <span class="n">description</span><span class="p">:</span>
+<span class="p">[</span><span class="n">Case</span> <span class="n">Study</span> <span class="n">Prompt</span><span class="o">/</span><span class="n">Assignment</span> <span class="n">Description</span> <span class="n">Text</span><span class="p">]</span>
+
+<span class="n">Here</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">student</span><span class="s1">&#39;s case study submission:</span>
+<span class="p">[</span><span class="n">Student</span><span class="s1">&#39;s Full Case Study Submission Text]</span>
+
+<span class="n">Here</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">grading</span> <span class="n">rubric</span><span class="p">:</span>
+<span class="p">[</span><span class="n">Detailed</span> <span class="n">Rubric</span> <span class="o">-</span> <span class="n">Paste</span> <span class="n">the</span> <span class="n">full</span> <span class="n">rubric</span> <span class="n">here</span><span class="o">.</span> <span class="n">Include</span> <span class="n">criteria</span><span class="p">,</span> <span class="n">performance</span> <span class="n">levels</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">Excellent</span><span class="p">,</span> <span class="n">Good</span><span class="p">,</span> <span class="n">Developing</span><span class="p">,</span> <span class="n">Beginning</span><span class="p">),</span> <span class="ow">and</span> <span class="n">their</span> <span class="n">descriptions</span><span class="o">.</span><span class="p">]</span>
+
+<span class="n">Your</span> <span class="n">task</span> <span class="ow">is</span> <span class="n">to</span><span class="p">:</span>
+<span class="mf">1.</span>  <span class="o">**</span><span class="n">Evaluate</span> <span class="n">the</span> <span class="n">student</span><span class="s1">&#39;s submission against each criterion in the rubric.**</span>
+<span class="mf">2.</span>  <span class="o">**</span><span class="n">Assign</span> <span class="n">a</span> <span class="n">performance</span> <span class="n">level</span><span class="o">/</span><span class="n">score</span> <span class="k">for</span> <span class="n">each</span> <span class="n">criterion</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">rubric</span><span class="s1">&#39;s descriptors.**</span>
+<span class="mf">3.</span>  <span class="o">**</span><span class="n">Generate</span> <span class="n">specific</span><span class="p">,</span> <span class="n">actionable</span> <span class="n">feedback</span> <span class="k">for</span> <span class="n">each</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">explaining</span> <span class="o">*</span><span class="n">why</span><span class="o">*</span> <span class="n">the</span> <span class="n">student</span> <span class="n">received</span> <span class="n">that</span> <span class="n">score</span> <span class="ow">and</span> <span class="n">providing</span> <span class="n">concrete</span> <span class="n">suggestions</span> <span class="k">for</span> <span class="n">improvement</span><span class="o">.**</span>
+<span class="mf">4.</span>  <span class="o">**</span><span class="n">Provide</span> <span class="n">an</span> <span class="n">overall</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">strengths</span> <span class="ow">and</span> <span class="n">areas</span> <span class="k">for</span> <span class="n">development</span><span class="o">.**</span>
+<span class="mf">5.</span>  <span class="o">**</span><span class="n">Calculate</span> <span class="n">the</span> <span class="n">total</span> <span class="n">score</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">rubric</span><span class="s1">&#39;s point values.**</span>
+
+<span class="n">Provide</span> <span class="n">your</span> <span class="n">output</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">structured</span> <span class="nb">format</span><span class="p">,</span> <span class="n">similar</span> <span class="n">to</span> <span class="n">a</span> <span class="n">feedback</span> <span class="n">report</span><span class="p">:</span>
+
+<span class="c1">## Feedback Report for Case Study Analysis</span>
+
+<span class="o">**</span><span class="n">Student</span> <span class="n">Name</span><span class="p">:</span><span class="o">**</span> <span class="p">[</span><span class="n">Leave</span> <span class="n">Blank</span> <span class="o">/</span> <span class="n">Student</span> <span class="n">ID</span> <span class="k">if</span> <span class="n">known</span><span class="p">]</span>
+<span class="o">**</span><span class="n">Assignment</span><span class="p">:</span><span class="o">**</span> <span class="n">Case</span> <span class="n">Study</span> <span class="n">Analysis</span><span class="p">:</span> <span class="p">[</span><span class="n">Case</span> <span class="n">Study</span> <span class="n">Title</span><span class="p">]</span>
+
+<span class="c1">### Rubric Evaluation:</span>
+
+<span class="o">**</span><span class="n">Criterion</span> <span class="mi">1</span><span class="p">:</span> <span class="p">[</span><span class="n">Criterion</span> <span class="n">Name</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Rubric</span><span class="p">]</span><span class="o">**</span>
+<span class="o">*</span> <span class="o">**</span><span class="n">Score</span><span class="o">/</span><span class="n">Level</span><span class="p">:</span><span class="o">**</span> <span class="p">[</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="mi">4</span><span class="o">/</span><span class="mi">5</span> <span class="o">-</span> <span class="s2">&quot;Good&quot;</span> <span class="o">/</span> <span class="s2">&quot;Developing&quot;</span><span class="p">]</span>
+<span class="o">*</span> <span class="o">**</span><span class="n">Feedback</span><span class="p">:</span><span class="o">**</span> <span class="p">[</span><span class="n">Specific</span> <span class="n">feedback</span> <span class="n">relating</span> <span class="n">student</span><span class="s1">&#39;s submission to this criterion&#39;</span><span class="n">s</span> <span class="n">descriptors</span><span class="o">.</span> <span class="n">Explain</span> <span class="n">what</span> <span class="n">they</span> <span class="n">did</span> <span class="n">well</span> <span class="ow">and</span> <span class="n">where</span> <span class="n">they</span> <span class="n">could</span> <span class="n">improve</span><span class="p">,</span> <span class="n">using</span> <span class="n">examples</span> <span class="kn">from</span><span class="w"> </span><span class="nn">their</span> <span class="n">text</span> <span class="k">if</span> <span class="n">possible</span><span class="o">.</span><span class="p">]</span>
+
+<span class="o">**</span><span class="n">Criterion</span> <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="n">Criterion</span> <span class="n">Name</span> <span class="kn">from</span><span class="w"> </span><span class="nn">Rubric</span><span class="p">]</span><span class="o">**</span>
+<span class="o">*</span> <span class="o">**</span><span class="n">Score</span><span class="o">/</span><span class="n">Level</span><span class="p">:</span><span class="o">**</span> <span class="p">[</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">5</span> <span class="o">-</span> <span class="s2">&quot;Developing&quot;</span><span class="p">]</span>
+<span class="o">*</span> <span class="o">**</span><span class="n">Feedback</span><span class="p">:</span><span class="o">**</span> <span class="p">[</span><span class="n">Specific</span> <span class="n">feedback</span><span class="p">]</span>
+
+<span class="o">...</span> <span class="p">(</span><span class="n">Repeat</span> <span class="k">for</span> <span class="nb">all</span> <span class="n">criteria</span><span class="p">)</span> <span class="o">...</span>
+
+<span class="c1">### Overall Summary:</span>
+<span class="o">**</span><span class="n">Strengths</span><span class="p">:</span><span class="o">**</span>
+<span class="p">[</span><span class="n">Summarize</span> <span class="n">overall</span> <span class="n">strengths</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">feedback</span> <span class="n">above</span><span class="o">.</span><span class="p">]</span>
+
+<span class="o">**</span><span class="n">Areas</span> <span class="k">for</span> <span class="n">Development</span><span class="p">:</span><span class="o">**</span>
+<span class="p">[</span><span class="n">Summarize</span> <span class="n">overall</span> <span class="n">areas</span> <span class="k">for</span> <span class="n">improvement</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">feedback</span> <span class="n">above</span><span class="o">.</span><span class="p">]</span>
+
+<span class="o">**</span><span class="n">Total</span> <span class="n">Score</span><span class="p">:</span><span class="o">**</span> <span class="p">[</span><span class="n">Calculated</span> <span class="n">Total</span> <span class="n">Score</span><span class="p">]</span> <span class="o">/</span> <span class="p">[</span><span class="n">Maximum</span> <span class="n">Possible</span> <span class="n">Score</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="detect-ai-generated-plagiarism-in-teaching-project-submissions">
+<h3>Detect AI-generated Plagiarism in Teaching Project Submissions<a class="headerlink" href="#detect-ai-generated-plagiarism-in-teaching-project-submissions" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p><strong>Note:</strong> Detecting AI-generated plagiarism with a general LLM is a trickier and less reliable task than dedicated tools like Turnitin (<a class="reference external" href="http://turnitin.com/solutions/academic-integrity">turnitin.com/solutions/academic-integrity</a>) or GPTZero (<a class="reference external" href="http://gptzero.me">gptzero.me</a>). While an LLM can analyze text for patterns, it lacks the specific training and sophisticated algorithms of specialized detectors. It is best used as a signal for human review, not as a definitive judgment.</p>
+</div></blockquote>
+<p><strong>Prompt Template — Role-based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are an expert text analyst specializing in identifying characteristics of human-written versus AI-generated content.
+You understand that AI-generated text often exhibits patterns like:
+- High predictability (low perplexity)
+- Uniform sentence structure and vocabulary
+- Lack of distinct personal voice or anecdotes
+- Repetitive phrasing or transition words (e.g., &quot;deep dive&quot;, &quot;furthermore,&quot; &quot;in conclusion,&quot; &quot;however&quot;)
+- Grammatically perfect but bland language
+- Potential factual inaccuracies or &quot;hallucinations&quot; if the AI wasn&#39;t grounded in specific sources.
+
+Here is a student&#39;s project submission:
+[Student&#39;s Project Submission Text]
+
+Analyze the text and provide an assessment of whether it exhibits characteristics commonly associated with AI-generated content. Do NOT make a definitive judgment, but highlight specific elements that *suggest* it might be AI-generated, or that it appears to be human-written.
+
+Focus your analysis on:
+1.  **Perplexity and Burstiness:** Does the text feel highly predictable, or does it have natural variations in sentence length and complexity?
+2.  **Voice and Personality:** Is there a distinct student voice, personal reflection, or anecdotal evidence?
+3.  **Vocabulary and Structure:** Is the language overly formal or repetitive? Are sentence structures varied?
+4.  **Content Nuance:** Does the content demonstrate deep understanding, critical thinking, and original insights, or does it feel generic and surface-level?
+
+Provide your analysis in a clear, bulleted list, followed by an overall assessment.
+
+**Example of Analysis Format:**
+
+-   **Perplexity/Burstiness:** [Comment on predictability/variation]
+-   **Voice/Personality:** [Comment on presence/absence of unique voice]
+-   **Vocabulary/Structure:** [Comment on word choice and sentence construction]
+-   **Content Nuance:** [Comment on depth of understanding and originality]
+
+**Overall Assessment:** [Summarize likelihood of AI generation based on observations, e.g., &quot;The text exhibits several characteristics consistent with AI generation, such as...&quot;, or &quot;The text appears to be human-written, showing a distinct voice and varied sentence structures.&quot;]
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> To make these gradings more streamlined in standard LLMs, it is possible to create a specific <strong>AI Workspace</strong> only for grading, as they are designed for more structured, long-term, or collaborative work with the AI.</p>
+</div></blockquote>
+</section>
+<section id="use-a-single-prompt-to-perform-multiple-gradings-essay-case-study-and-project">
+<h3>Use a Single Prompt to Perform Multiple Gradings (Essay, Case Study, and Project)<a class="headerlink" href="#use-a-single-prompt-to-perform-multiple-gradings-essay-case-study-and-project" title="Link to this heading">#</a></h3>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prompt to Grade Essays</span>
+
+<span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">educational</span> <span class="n">assistant</span> <span class="n">tasked</span> <span class="k">with</span> <span class="n">grading</span> <span class="n">essays</span><span class="o">.</span>
+<span class="n">Perform</span> <span class="n">the</span> <span class="n">following</span> <span class="n">tasks</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">],</span> <span class="n">using</span> <span class="n">student</span> <span class="n">submissions</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">tasks</span> <span class="n">are</span><span class="p">:</span> <span class="n">auto</span><span class="o">-</span><span class="n">grading</span> <span class="n">quiz</span> <span class="n">responses</span><span class="p">,</span> <span class="n">generating</span> <span class="n">rubric</span><span class="o">-</span><span class="n">based</span> <span class="n">feedback</span> <span class="k">for</span> <span class="n">student</span> <span class="n">case</span> <span class="n">studies</span><span class="p">,</span> <span class="ow">and</span> <span class="n">detecting</span> <span class="n">AI</span><span class="o">-</span><span class="n">generated</span> <span class="n">plagiarism</span> <span class="ow">in</span> <span class="n">teaching</span> <span class="n">project</span> <span class="n">submissions</span><span class="o">.</span>
+<span class="n">Follow</span> <span class="n">the</span> <span class="n">instructions</span> <span class="k">for</span> <span class="n">each</span> <span class="n">task</span><span class="p">,</span> <span class="n">ensuring</span> <span class="n">consistency</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="ow">and</span> <span class="n">actionable</span> <span class="n">feedback</span><span class="o">.</span>
+
+<span class="c1">## Task 1: Auto-Grade Quiz Responses</span>
+<span class="o">**</span><span class="n">Objective</span><span class="o">**</span><span class="p">:</span> <span class="n">Grade</span> <span class="n">quiz</span> <span class="n">responses</span><span class="p">,</span> <span class="n">including</span> <span class="n">those</span> <span class="n">potentially</span> <span class="n">generated</span> <span class="n">by</span> <span class="n">AI</span><span class="p">,</span> <span class="n">using</span> <span class="n">a</span> <span class="n">provided</span> <span class="n">rubric</span><span class="o">.</span>
+<span class="o">**</span><span class="n">Inputs</span><span class="o">**</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Quiz</span> <span class="n">Question</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span> <span class="n">Questions</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Sample</span> <span class="n">Responses</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span> <span class="n">Responses</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Rubric</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">Content</span> <span class="n">Accuracy</span> <span class="p">(</span><span class="mi">50</span><span class="o">%</span><span class="p">):</span> <span class="n">Correctness</span> <span class="n">of</span> <span class="n">concepts</span><span class="o">.</span>
+  <span class="o">-</span> <span class="n">Clarity</span> <span class="p">(</span><span class="mi">30</span><span class="o">%</span><span class="p">):</span> <span class="n">Logical</span> <span class="n">flow</span> <span class="ow">and</span> <span class="n">readability</span><span class="o">.</span>
+  <span class="o">-</span> <span class="n">Completeness</span> <span class="p">(</span><span class="mi">20</span><span class="o">%</span><span class="p">):</span> <span class="n">Addresses</span> <span class="nb">all</span> <span class="n">parts</span> <span class="n">of</span> <span class="n">the</span> <span class="n">question</span><span class="o">.</span>
+
+<span class="o">**</span><span class="n">Instructions</span><span class="o">**</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Evaluate</span> <span class="n">each</span> <span class="n">response</span> <span class="n">against</span> <span class="n">the</span> <span class="n">rubric</span><span class="o">.</span>
+<span class="mf">2.</span> <span class="n">Assign</span> <span class="n">a</span> <span class="n">score</span> <span class="p">(</span><span class="mi">0</span><span class="o">-</span><span class="mi">100</span><span class="p">)</span> <span class="k">with</span> <span class="n">a</span> <span class="n">breakdown</span><span class="o">.</span>
+<span class="mf">3.</span> <span class="n">Provide</span> <span class="mi">1</span><span class="o">-</span><span class="mi">2</span> <span class="n">sentences</span> <span class="n">of</span> <span class="n">feedback</span> <span class="k">with</span> <span class="n">improvement</span> <span class="n">suggestions</span><span class="o">.</span>
+<span class="mf">4.</span> <span class="n">Return</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">table</span> <span class="nb">format</span><span class="p">:</span>
+   <span class="o">|</span> <span class="n">Response</span> <span class="o">|</span> <span class="n">Content</span> <span class="n">Accuracy</span> <span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="o">|</span> <span class="n">Clarity</span> <span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="o">|</span> <span class="n">Completeness</span> <span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="o">|</span> <span class="n">Total</span> <span class="n">Score</span> <span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">|</span> <span class="n">Feedback</span> <span class="o">|</span>
+
+<span class="c1">## Task 2: Generate Rubric-Based Feedback for Student Case Studies</span>
+<span class="o">**</span><span class="n">Objective</span><span class="o">**</span><span class="p">:</span> <span class="n">Provide</span> <span class="n">detailed</span> <span class="n">feedback</span> <span class="n">on</span> <span class="n">a</span> <span class="n">case</span> <span class="n">study</span> <span class="n">submission</span> <span class="n">using</span> <span class="n">a</span> <span class="n">rubric</span><span class="o">.</span>
+<span class="o">**</span><span class="n">Inputs</span><span class="o">**</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Case</span> <span class="n">Study</span> <span class="n">Submission</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span> <span class="n">Submission</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Rubric</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">Relevance</span> <span class="p">(</span><span class="mi">40</span><span class="o">%</span><span class="p">):</span> 
+  <span class="o">-</span> <span class="n">Depth</span> <span class="n">of</span> <span class="n">Analysis</span> <span class="p">(</span><span class="mi">30</span><span class="o">%</span><span class="p">):</span> 
+  <span class="o">-</span> <span class="n">Presentation</span> <span class="p">(</span><span class="mi">20</span><span class="o">%</span><span class="p">):</span> 
+  <span class="o">-</span> <span class="n">Innovation</span> <span class="p">(</span><span class="mi">10</span><span class="o">%</span><span class="p">):</span> 
+
+<span class="o">**</span><span class="n">Instructions</span><span class="o">**</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Assess</span> <span class="n">the</span> <span class="n">submission</span> <span class="n">against</span> <span class="n">each</span> <span class="n">rubric</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">assigning</span> <span class="n">scores</span> <span class="n">out</span> <span class="n">of</span> <span class="mi">100</span> <span class="k">for</span> <span class="n">each</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">Relevance</span><span class="p">:</span> <span class="mi">60</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span>
+<span class="mf">2.</span> <span class="n">Calculate</span> <span class="n">a</span> <span class="n">total</span> <span class="n">score</span> <span class="k">as</span> <span class="n">a</span> <span class="n">weighted</span> <span class="n">average</span><span class="o">.</span>
+<span class="mf">3.</span> <span class="n">Provide</span> <span class="mi">2</span><span class="o">-</span><span class="mi">3</span> <span class="n">sentences</span> <span class="n">of</span> <span class="n">feedback</span><span class="p">,</span> <span class="n">including</span> <span class="n">strengths</span><span class="p">,</span> <span class="n">weaknesses</span><span class="p">,</span> <span class="ow">and</span> <span class="n">suggestions</span><span class="o">.</span>
+<span class="mf">4.</span> <span class="n">Format</span> <span class="n">the</span> <span class="n">output</span> <span class="k">as</span> <span class="n">a</span> <span class="n">table</span> <span class="k">with</span> <span class="n">scores</span> <span class="ow">and</span> <span class="n">feedback</span><span class="p">:</span>
+   <span class="o">|</span> <span class="n">Criterion</span> <span class="o">|</span> <span class="n">Score</span> <span class="p">(</span><span class="n">out</span> <span class="n">of</span> <span class="mi">100</span><span class="p">)</span> <span class="o">|</span> <span class="n">Feedback</span> <span class="o">|</span>
+   <span class="o">|</span> <span class="n">Total</span> <span class="n">Score</span> <span class="o">|</span> <span class="p">[</span><span class="n">Calculated</span><span class="p">]</span> <span class="o">|</span>
+
+<span class="c1">## Task 3: Detect AI-Generated Plagiarism in Teaching Project Submissions</span>
+<span class="o">**</span><span class="n">Objective</span><span class="o">**</span><span class="p">:</span> <span class="n">Identify</span> <span class="n">potential</span> <span class="n">AI</span><span class="o">-</span><span class="n">generated</span> <span class="n">content</span> <span class="ow">in</span> <span class="n">project</span> <span class="n">submissions</span><span class="o">.</span>
+<span class="o">**</span><span class="n">Inputs</span><span class="o">**</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">Project</span> <span class="n">Submission</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span> <span class="n">Submission</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Detection</span> <span class="n">Criteria</span><span class="p">:</span> <span class="n">Look</span> <span class="k">for</span> <span class="n">signs</span> <span class="n">of</span> <span class="n">AI</span> <span class="n">generation</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">overly</span> <span class="n">polished</span> <span class="n">phrasing</span><span class="p">,</span> <span class="n">generic</span> <span class="n">language</span><span class="p">,</span> <span class="n">lack</span> <span class="n">of</span> <span class="n">personal</span> <span class="n">voice</span><span class="p">,</span> <span class="n">uniform</span> <span class="n">structure</span><span class="p">)</span><span class="o">.</span>
+
+<span class="o">**</span><span class="n">Instructions</span><span class="o">**</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Analyze</span> <span class="n">the</span> <span class="n">submission</span> <span class="k">for</span> <span class="n">signs</span> <span class="n">of</span> <span class="n">AI</span> <span class="n">generation</span><span class="o">.</span>
+<span class="mf">2.</span> <span class="n">Assign</span> <span class="n">a</span> <span class="n">confidence</span> <span class="n">score</span> <span class="p">(</span><span class="mi">0</span><span class="o">-</span><span class="mi">100</span><span class="o">%</span><span class="p">)</span> <span class="n">indicating</span> <span class="n">the</span> <span class="n">likelihood</span> <span class="n">of</span> <span class="n">AI</span> <span class="n">generation</span><span class="o">.</span>
+<span class="mf">3.</span> <span class="n">Provide</span> <span class="mi">1</span><span class="o">-</span><span class="mi">2</span> <span class="n">sentences</span> <span class="n">explaining</span> <span class="n">your</span> <span class="n">assessment</span> <span class="ow">and</span> <span class="n">suggest</span> <span class="nb">next</span> <span class="n">steps</span> <span class="k">if</span> <span class="n">plagiarism</span> <span class="ow">is</span> <span class="n">suspected</span><span class="o">.</span>
+<span class="mf">4.</span> <span class="n">Return</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">table</span> <span class="nb">format</span><span class="p">:</span>
+   <span class="o">|</span> <span class="n">Submission</span> <span class="o">|</span> <span class="n">Confidence</span> <span class="n">Score</span> <span class="p">(</span><span class="n">AI</span><span class="o">-</span><span class="n">Generated</span><span class="p">)</span> <span class="o">|</span> <span class="n">Assessment</span> <span class="ow">and</span> <span class="n">Next</span> <span class="n">Steps</span> <span class="o">|</span>
+
+<span class="c1">## Additional Notes</span>
+<span class="o">-</span> <span class="n">Use</span> <span class="n">course</span> <span class="n">context</span> <span class="n">where</span> <span class="n">applicable</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Ensure</span> <span class="n">feedback</span> <span class="ow">is</span> <span class="n">constructive</span> <span class="ow">and</span> <span class="n">aligned</span> <span class="k">with</span> <span class="n">educational</span> <span class="n">goals</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">improving</span> <span class="n">student</span> <span class="n">understanding</span> <span class="n">of</span> <span class="n">the</span> <span class="n">topic</span><span class="p">)</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">For</span> <span class="n">Task</span> <span class="mi">3</span><span class="p">,</span> <span class="k">if</span> <span class="n">the</span> <span class="n">confidence</span> <span class="n">score</span> <span class="ow">is</span> <span class="n">high</span> <span class="p">(</span><span class="o">&gt;</span><span class="mi">70</span><span class="o">%</span><span class="p">),</span> <span class="n">recommend</span> <span class="n">actions</span> <span class="n">like</span> <span class="n">requesting</span> <span class="n">a</span> <span class="n">revision</span> <span class="ow">or</span> <span class="n">draft</span> <span class="n">history</span> <span class="n">by</span> <span class="n">a</span> <span class="n">specific</span> <span class="n">date</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Identify</span> <span class="n">performance</span> <span class="n">trends</span> <span class="ow">and</span> <span class="n">misconceptions</span> <span class="n">across</span> <span class="n">students</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Summarize</span> <span class="n">this</span> <span class="n">data</span> <span class="n">to</span> <span class="n">prepare</span> <span class="n">a</span> <span class="n">follow</span><span class="o">-</span><span class="n">up</span> <span class="n">review</span> <span class="n">session</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="multimodal-assessment">
+<h3>Multimodal Assessment<a class="headerlink" href="#multimodal-assessment" title="Link to this heading">#</a></h3>
+<p>AI can help evaluate:</p>
+<ul class="simple">
+<li><p>video presentations</p></li>
+<li><p>diagrams or concept maps</p></li>
+<li><p>podcasts or audio submissions</p></li>
+<li><p>multimodal learning artifacts</p></li>
+</ul>
+<p><strong>Prompt Template — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Analyze</span> <span class="n">this</span> <span class="n">student</span> <span class="p">[</span><span class="n">Assignment</span> <span class="n">Delivered</span><span class="p">]</span> <span class="n">using</span> <span class="n">the</span> <span class="n">rubric</span> <span class="n">below</span><span class="o">.</span> 
+<span class="n">Identify</span> <span class="n">strengths</span> <span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">delivery</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span> <span class="ow">and</span> <span class="n">actionable</span> <span class="n">improvements</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="using-specific-tools">
+<h3>Using Specific Tools<a class="headerlink" href="#using-specific-tools" title="Link to this heading">#</a></h3>
+<section id="tool-1-cograder-com-or-essaygrader-ai-essay-grading">
+<h4>Tool 1: <a class="reference external" href="http://Cograder.com">Cograder.com</a> or <a class="reference external" href="http://EssayGrader.ai">EssayGrader.ai</a> (Essay Grading)<a class="headerlink" href="#tool-1-cograder-com-or-essaygrader-ai-essay-grading" title="Link to this heading">#</a></h4>
+<p><a class="reference external" href="http://Cograder.com">Cograder.com</a> and <a class="reference external" href="http://EssayGrader.ai">EssayGrader.ai</a> are AI tools designed to grade essays and help teachers to provide quality feedback in less time.</p>
+<p>To learn how Cograder or EssaGrader work try them by selecting the <em>Fill in with sample</em> in CoGrader (or copying this sample into EssayGrader) and analyze the output.
+If you have the case study delivered by a student, import or create the rubric into one of the tools to assess the assignment.</p>
+</section>
+<section id="tool-2-scispace">
+<h4>Tool 2: SciSpace<a class="headerlink" href="#tool-2-scispace" title="Link to this heading">#</a></h4>
+<p>Using function <em>AI Detector</em> input the text or upload the PDF file with the content to be checked for originality.</p>
+</section>
+</section>
+</section>
+<section id="updates-to-your-ai-workspace-and-personalized-assistant">
+<h2>7.5 Updates to Your AI Workspace and Personalized Assistant<a class="headerlink" href="#updates-to-your-ai-workspace-and-personalized-assistant" title="Link to this heading">#</a></h2>
+<p>Similarly to Module 6, this module does <strong>not</strong> require major structural updates to either the Workspace or the Personalized Assistant. Only <em>minimal updates</em> are recommended to integrate the new assessment-related materials created in Module 7.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Update Needed?</p></th>
+<th class="head"><p>Actions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Workspace</strong></p></td>
+<td><p>Minimal</p></td>
+<td><p>Upload new Module 7 materials only</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Workspace Instructions</strong></p></td>
+<td><p>No</p></td>
+<td><p>No structural or behavioral updates</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PA Knowledge Base</strong></p></td>
+<td><p>Minimal</p></td>
+<td><p>Upload student‑safe versions only</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PA Instructions</strong></p></td>
+<td><p>No</p></td>
+<td><p>No changes needed to role, behavior, or boundaries</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Module 7 primarily adds <em>content</em> rather than <em>new capabilities</em>. The existing Workspace and PA structures already support assessment workflows effectively.</p>
+<blockquote>
+<div><p><strong>Note:</strong> Do <em>not</em> upload instructor versions of rubrics, detailed feedback templates, grading keys, or analytic summaries to the PA.</p>
+</div></blockquote>
+</section>
+<section id="exercises">
+<h2>7.6 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-create-three-assessment-variants">
+<h3>Exercise 1 — Create Three Assessment Variants<a class="headerlink" href="#exercise-1-create-three-assessment-variants" title="Link to this heading">#</a></h3>
+<p>Use the Workspace to generate:</p>
+<ul class="simple">
+<li><p>one formative quiz</p></li>
+<li><p>one case study</p></li>
+<li><p>one multimodal project task</p></li>
+</ul>
+</section>
+<section id="exercise-2-rubric-based-feedback-generation">
+<h3>Exercise 2 — Rubric-Based Feedback Generation<a class="headerlink" href="#exercise-2-rubric-based-feedback-generation" title="Link to this heading">#</a></h3>
+<p>Upload a student submission; use a rubric-based feedback prompt; compare versions.</p>
+</section>
+<section id="exercise-3-self-and-peer-assessment-workflow">
+<h3>Exercise 3 — Self- and Peer-Assessment Workflow<a class="headerlink" href="#exercise-3-self-and-peer-assessment-workflow" title="Link to this heading">#</a></h3>
+<p>Generate checklists and peer prompts using your course rubric.</p>
+</section>
+<section id="exercise-4-originality-consistency-screening">
+<h3>Exercise 4 — Originality &amp; Consistency Screening<a class="headerlink" href="#exercise-4-originality-consistency-screening" title="Link to this heading">#</a></h3>
+<p>Upload anonymized samples and run the reasoning-consistency analysis prompts.</p>
+</section>
+<section id="exercise-5-classwide-insights">
+<h3>Exercise 5 — Classwide Insights<a class="headerlink" href="#exercise-5-classwide-insights" title="Link to this heading">#</a></h3>
+<p>Upload a batch of student answers and generate a misconception matrix and reteaching plan.</p>
+</section>
+</section>
+<section id="reflection">
+<h2>7.7 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>How did AI enhance clarity, efficiency, or depth in your assessment processes?</p></li>
+<li><p>Which feedback or grading tasks still require full human oversight?</p></li>
+<li><p>How will you integrate AI-supported rubric workflows in future assignments?</p></li>
+<li><p>How can responsible AI use strengthen fairness, transparency, and student growth?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module6_StudentSupport.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">6. AI‑Powered Student Support</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module8_ReflectionImprovement.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">8. AI-Supported Reflection and Improvement</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conduct-assessments-using-existing-assignment-types">7.1 Conduct Assessments Using Existing Assignment Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-illustration">Sample Illustration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-recommended-tools">Additional Recommended Tools</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-rubric-based-constructive-feedback">7.2 Generate Rubric-Based, Constructive Feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-output-structure">Sample Output Structure</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-enhancements">Optional Enhancements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-ai-assisted-self-and-peer-assessment">7.3 Use AI-Assisted Self- and Peer-Assessment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-ai-for-feedback-grading-and-academic-integrity">7.4 Use AI for Feedback, Grading, and Academic Integrity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-grading-and-academic-integrity-tools">Identify Grading and Academic Integrity Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-tools">Sample Tools</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-grade-ai-generated-quiz-responses">Auto-grade AI-generated Quiz Responses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-rubric-based-feedback-for-student-case-studies">Generate Rubric-Based Feedback for Student Case Studies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detect-ai-generated-plagiarism-in-teaching-project-submissions">Detect AI-generated Plagiarism in Teaching Project Submissions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-a-single-prompt-to-perform-multiple-gradings-essay-case-study-and-project">Use a Single Prompt to Perform Multiple Gradings (Essay, Case Study, and Project)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multimodal-assessment">Multimodal Assessment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-specific-tools">Using Specific Tools</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-1-cograder-com-or-essaygrader-ai-essay-grading">Tool 1: Cograder.com or EssayGrader.ai (Essay Grading)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-2-scispace">Tool 2: SciSpace</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">7.5 Updates to Your AI Workspace and Personalized Assistant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">7.6 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-create-three-assessment-variants">Exercise 1 — Create Three Assessment Variants</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-rubric-based-feedback-generation">Exercise 2 — Rubric-Based Feedback Generation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-self-and-peer-assessment-workflow">Exercise 3 — Self- and Peer-Assessment Workflow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-originality-consistency-screening">Exercise 4 — Originality &amp; Consistency Screening</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-classwide-insights">Exercise 5 — Classwide Insights</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">7.7 Reflection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

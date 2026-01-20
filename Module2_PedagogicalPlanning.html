@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2. AI-Enhanced Pedagogical-Didactic Planning &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module2_PedagogicalPlanning';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. AI-Enhanced Class Design and Development" href="Module3_ClassDesign.html" />
+    <link rel="prev" title="1. The Teaching with AI Framework" href="Module1_TLFramework.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module2_PedagogicalPlanning.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module2_PedagogicalPlanning.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2. AI-Enhanced Pedagogical-Didactic Planning</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-course-goals-and-learning-outcomes">2.1 Define Course Goals and Learning Outcomes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-audience-and-context">2.2 Identify Audience and Context</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-pedagogical-approach-es">2.3 Select Pedagogical Approach(es)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-tools-and-technologies">2.4 Choose Tools and Technologies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-with-institutional-and-ethical-guidelines">2.5 Align with Institutional and Ethical Guidelines</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#institutional-policies">Institutional Policies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-course-syllabus">2.6 Create the Course Syllabus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">2.7 Updates to Your AI Workspace and Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-updates-to-your-ai-workspace-project">A. Updates to Your AI Workspace (Project)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-updates-to-your-course-personalized-assistant-pa">B. Updates to Your Course Personalized Assistant (PA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-workflow-adjustments-going-forward">C. Workflow Adjustments Going Forward</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-summary-table-of-required-updates">D. Summary Table of Required Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">2.4 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-generate-and-map-learning-outcomes">Exercise 1 — Generate and Map Learning Outcomes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-create-a-learner-profile">Exercise 2 — Create a Learner Profile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-select-pedagogical-models">Exercise 3 — Select Pedagogical Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-draft-ai-use-policies">Exercise 4 — Draft AI Use Policies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-produce-a-syllabus-draft">Exercise 5 — Produce a Syllabus Draft</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">2.5 Reflection</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ai-enhanced-pedagogical-didactic-planning">
+<h1>2. AI-Enhanced Pedagogical-Didactic Planning<a class="headerlink" href="#ai-enhanced-pedagogical-didactic-planning" title="Link to this heading">#</a></h1>
+<p><em>Strategic and intentional groundwork for teaching</em></p>
+<p>This module focuses on the strategic and intentional groundwork for teaching. It involves defining course goals and learning outcomes, identifying the audience and context, selecting appropriate pedagogical approaches, choosing educational technologies and AI-enhanced tools, aligning with institutional and ethical guidelines, and creating the course syllabus. You will explore how generative AI can assist with tasks like drafting learning outcomes using frameworks such as Bloom’s Taxonomy and generating draft policies. <p></p>
+<blockquote>
+<div><p><strong>Note:</strong> All prompts that you use from this module onwards should be made within your AI Workspace, because this will ensure that you build upon the project you created and all developments are consistent with the instructions provided and knowledge base uploaded.</p>
+</div></blockquote>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Draft and refine course goals and measurable learning outcomes using Bloom’s Taxonomy.</p></li>
+<li><p>Generate learner profiles, identify audience and context.</p></li>
+<li><p>Select pedagogical approaches aligned with outcomes and AI-enhanced teaching strategies.</p></li>
+<li><p>Choose appropriate AI tools and technologies for planning, delivery, and assessment.</p></li>
+<li><p>Align course elements with institutional and ethical guidelines.</p></li>
+<li><p>Use AI to draft, audit, and refine complete syllabus documents.</p></li>
+<li><p>Integrate prompt engineering and context engineering in planning workflows.</p></li>
+</ul>
+<p><img alt="AI-Enhanced Process" src="_images/M2LO.png" /></p>
+</section>
+<section id="define-course-goals-and-learning-outcomes">
+<h2>2.1 Define Course Goals and Learning Outcomes<a class="headerlink" href="#define-course-goals-and-learning-outcomes" title="Link to this heading">#</a></h2>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>Use AI to generate, refine, align, and audit learning outcomes across cognitive levels.</p>
+<p><strong>Prompt Template — Instructional + Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>You are a higher-education instructional designer. 
+Propose the course goals and generate 4–6 measurable learning outcomes for a course titled [Course Name].
+Use Bloom’s taxonomy across different levels and focus on skills related to [insert skills].
+Present results in a table: Outcome | Bloom Level | Example Assessment.
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> In the prompt above you can add or attach a course description or materials to guide the model in the creation of the learning outcomes. These contents could alternatively be added as files in your workspace (project).</p>
+</div></blockquote>
+<p><strong>Additional Prompt Variant — Alignment Check</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Check whether the learning outcomes below align with Bloom’s taxonomy levels.
+Identify any non-measurable verbs and suggest revisions.
+
+[Type or paste the LO here]
+</pre></div>
+</div>
+<p>Click on the link below to see the <em>Bloom’s Taxonomy &amp; GenAI Teaching Practices</em> artifact generated by <a class="reference external" href="http://Claude.ai">Claude.ai</a>. Click on any level of Bloom’s Taxonomy to explore specific GenAI teaching practices and tools that support learning at that cognitive level. Each practice is designed to enhance student engagement and deepen understanding through AI-assisted instruction. <br>
+<a class="reference external" href="https://claude.ai/public/artifacts/b64d5dd0-17b7-40b4-81c4-67041fbf8810">https://claude.ai/public/artifacts/b64d5dd0-17b7-40b4-81c4-67041fbf8810</a> <br></p>
+<p><strong>Instructional Prompt Used in <a class="reference external" href="http://Claude.ai">Claude.ai</a> to create the Interactive Artifact above</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Teaching and Learning with AI. Create a diagram of Bloom’s Taxonomy pyramid with example verbs for each level (Remember → Create), linking each level to potential GenAI teaching practices.
+</pre></div>
+</div>
+<p><img alt="Blooms_Taxonomy" src="_images/Blooms_Taxonomy.png" /></p>
+</section>
+</section>
+<section id="identify-audience-and-context">
+<h2>2.2 Identify Audience and Context<a class="headerlink" href="#identify-audience-and-context" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Purpose<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>AI supports instructors in developing learner personas that guide pedagogical decisions.</p>
+<p><strong>Prompt Template — Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">an</span> <span class="n">instructional</span> <span class="n">designer</span><span class="o">.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">learner</span> <span class="n">profile</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">subject</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Include</span><span class="p">:</span> <span class="n">background</span> <span class="n">knowledge</span><span class="p">,</span> <span class="n">experience</span><span class="p">,</span> <span class="n">motivations</span><span class="p">,</span> <span class="n">tech</span> <span class="n">comfort</span> <span class="n">level</span><span class="p">,</span> <span class="n">possible</span> <span class="n">challenges</span><span class="p">,</span> <span class="ow">and</span> <span class="n">accessibility</span> <span class="n">considerations</span><span class="o">.</span>
+<span class="n">Present</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">table</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Multiple Profiles</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">three</span> <span class="n">learner</span> <span class="n">personas</span> <span class="k">for</span> <span class="n">a</span> <span class="n">course</span> <span class="n">on</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]:</span> <span class="n">beginner</span><span class="p">,</span> <span class="n">mixed</span><span class="o">-</span><span class="n">background</span><span class="p">,</span> <span class="ow">and</span> <span class="n">advanced</span><span class="o">.</span>
+<span class="n">Describe</span> <span class="n">needs</span><span class="p">,</span> <span class="n">risks</span><span class="p">,</span> <span class="ow">and</span> <span class="n">recommended</span> <span class="n">adaptations</span> <span class="k">for</span> <span class="n">each</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="select-pedagogical-approach-es">
+<h2>2.3 Select Pedagogical Approach(es)<a class="headerlink" href="#select-pedagogical-approach-es" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Purpose<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Match learning outcomes and student profiles with effective pedagogical models.</p>
+<p><strong>Prompt Template — Chain-of-Thought</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Given</span> <span class="n">the</span> <span class="n">learning</span> <span class="n">outcomes</span> <span class="ow">and</span> <span class="n">audience</span> <span class="n">profile</span> <span class="n">below</span><span class="p">,</span>
+<span class="n">identify</span> <span class="n">three</span> <span class="n">pedagogical</span> <span class="n">models</span> <span class="n">that</span> <span class="n">fit</span> <span class="n">this</span> <span class="n">course</span><span class="o">.</span> 
+<span class="n">For</span> <span class="n">each</span><span class="p">,</span> <span class="n">reason</span> <span class="n">step</span><span class="o">-</span><span class="n">by</span><span class="o">-</span><span class="n">step</span> <span class="n">how</span> <span class="n">it</span> <span class="n">supports</span> <span class="n">the</span> <span class="n">outcomes</span><span class="p">,</span> 
+<span class="ow">and</span> <span class="n">give</span> <span class="n">two</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">how</span> <span class="n">AI</span> <span class="n">can</span> <span class="n">enhance</span> <span class="n">activities</span> <span class="ow">in</span> <span class="n">that</span> <span class="n">model</span><span class="o">.</span>
+
+<span class="p">[</span><span class="n">Paste</span> <span class="n">the</span> <span class="n">learning</span> <span class="n">outcomes</span> <span class="ow">and</span> <span class="n">profile</span> <span class="n">here</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Activity Generator</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="mi">4</span> <span class="n">AI</span><span class="o">-</span><span class="n">enhanced</span> <span class="n">sample</span> <span class="n">activities</span> <span class="n">using</span> <span class="n">the</span> <span class="n">selected</span> <span class="n">pedagogical</span> <span class="n">model</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">Bloom</span> <span class="n">level</span><span class="p">,</span> <span class="n">estimated</span> <span class="n">time</span><span class="p">,</span> <span class="ow">and</span> <span class="n">resources</span> <span class="n">needed</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="choose-tools-and-technologies">
+<h2>2.4 Choose Tools and Technologies<a class="headerlink" href="#choose-tools-and-technologies" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>Purpose<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>AI helps instructors curate tools aligned with course goals and teaching modality.</p>
+<p><strong>Prompt Template — Zero-Shot</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">List</span> <span class="mi">5</span> <span class="n">generative</span> <span class="n">AI</span> <span class="n">tools</span> <span class="n">most</span> <span class="n">suitable</span> <span class="k">for</span> <span class="n">teaching</span> <span class="n">the</span> <span class="n">course</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span><span class="o">.</span> 
+<span class="n">For</span> <span class="n">each</span><span class="p">,</span> <span class="n">describe</span> <span class="n">one</span> <span class="n">educational</span> <span class="n">use</span> <span class="ow">and</span> <span class="n">one</span> <span class="n">limitation</span> <span class="ow">or</span> <span class="n">risk</span><span class="o">.</span>
+<span class="n">Present</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">table</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Matching Tools to Activities</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Given</span> <span class="n">these</span> <span class="n">planned</span> <span class="n">learning</span> <span class="n">activities</span> <span class="p">[</span><span class="n">paste</span><span class="p">],</span>
+<span class="n">suggest</span> <span class="n">the</span> <span class="n">best</span> <span class="n">AI</span> <span class="n">tool</span> <span class="k">for</span> <span class="n">each</span> <span class="n">one</span> <span class="n">of</span> <span class="n">them</span> <span class="ow">and</span> <span class="n">explain</span> <span class="n">how</span> <span class="n">each</span> <span class="n">tool</span> <span class="n">supports</span> <span class="n">the</span> <span class="n">task</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="align-with-institutional-and-ethical-guidelines">
+<h2>2.5 Align with Institutional and Ethical Guidelines<a class="headerlink" href="#align-with-institutional-and-ethical-guidelines" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Purpose<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>AI assists in drafting course policies grounded in the institutional regulations.</p>
+</section>
+<section id="institutional-policies">
+<h3>Institutional Policies<a class="headerlink" href="#institutional-policies" title="Link to this heading">#</a></h3>
+<p>The general FGCU AI use policies are available at the link below:
+<a class="reference external" href="https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai">https://www.fgcu.edu/about/leadership/officeoftheprovost/generative-ai</a></p>
+<p>The following files contain the general FGCU policies for GenAI use. Download them and use as the institutional policies for GenAI use. <br>
+<a class="reference download internal" download="" href="_downloads/3f1f7b1b0979b4ca99e12e2fcc0dd8d4/Regulation4002_Student_Code_of_Conduct.pdf"><span class="xref download myst">Student_Code_of_Conduct</span></a> <br>
+<a class="reference download internal" download="" href="_downloads/4b17f0d19b5f108a283e62b9780fdc7e/GenerativeAIandFGCUTeachingandLearning.pdf"><span class="xref download myst">General_FGCU_GenAI_Policies</span></a> <br>
+<a class="reference download internal" download="" href="_downloads/9452435373e7aced23bdd693d3f7e2b3/CoreSyllabusPolicyStatements.pdf"><span class="xref download myst">Core_Syllabus_Policies_Statements</span></a> <br></p>
+<blockquote>
+<div><p><strong>Note:</strong> These documents should be added to the course personalized assistant and workspace (project) so that they become part of the knowledge base to be used in future interactions and developments.</p>
+</div></blockquote>
+<p><strong>Prompt Template — Few-Shot + Document Grounding</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Using the AI use policy examples below and the institutional policy documents attached,
+draft an “AI Use Policy” for the course [Course Title] that incorporates transparency, accountability, and fairness.
+
+Examples of AI use policies for learning:
+1. Submitting the work of another person or entity as your own is not permitted. “Entity” includes Generative AI tools such as ChatGPT.
+2. Receiving assistance that has not been authorized by the course instructor is not permitted. This includes assistance from Generative AI tools.
+3. Students should not use sources that go beyond those authorized by the instructor. This includes using Generative AI tools as a source.
+
+Include:
+1. Intro paragraph explaining what AI is and contextualizing its use.
+2. Acceptable uses.
+3. Unacceptable uses.
+4. Citation requirements and examples.
+5. Requirement to list prompts used.
+6. Summary table of allowed / restricted / prohibited uses.
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Student-Friendly Version</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Rewrite</span> <span class="n">the</span> <span class="n">AI</span> <span class="n">Use</span> <span class="n">Policy</span> <span class="n">above</span> <span class="ow">in</span> <span class="n">student</span><span class="o">-</span><span class="n">friendly</span> <span class="n">language</span> <span class="n">at</span> <span class="n">a</span> <span class="mi">9</span><span class="n">th</span><span class="o">-</span><span class="n">grade</span> <span class="n">readability</span> <span class="n">level</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="create-the-course-syllabus">
+<h2>2.6 Create the Course Syllabus<a class="headerlink" href="#create-the-course-syllabus" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Purpose<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Leverage AI to generate a complete syllabus or alternative syllabus versions.</p>
+<p><strong>Prompt Template 1 — Instructional with syllabus template attached</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">the</span> <span class="n">structure</span> <span class="n">of</span> <span class="n">the</span> <span class="n">provided</span> <span class="n">syllabus</span> <span class="n">template</span><span class="p">,</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">complete</span> <span class="n">syllabus</span> 
+<span class="k">for</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Title</span><span class="p">]</span><span class="o">.</span> <span class="n">Maintain</span> <span class="nb">all</span> <span class="n">required</span> <span class="n">sections</span> <span class="ow">and</span> <span class="n">ensure</span> <span class="n">alignment</span> 
+<span class="k">with</span> <span class="n">the</span> <span class="n">institutional</span> <span class="n">policy</span> <span class="n">documents</span><span class="o">.</span> <span class="n">Include</span> <span class="n">a</span> <span class="n">detailed</span> <span class="n">weekly</span> <span class="n">schedule</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Prompt Template 2 — Instructional with syllabus included in the prompt</strong></p>
+<blockquote>
+<div><p><strong>Note:</strong> To run the prompt below you will have to add the specific information of your course. Part of the information can be added as background knowledge to your AI workspace, for example, your professional data.</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Use</span> <span class="n">the</span> <span class="n">structure</span> <span class="ow">and</span> <span class="n">style</span> <span class="n">of</span> <span class="n">the</span> <span class="n">provided</span> <span class="n">example</span> <span class="n">syllabus</span><span class="p">,</span> <span class="n">including</span> <span class="n">sections</span> <span class="k">for</span> <span class="n">course</span> <span class="n">information</span><span class="p">,</span> <span class="n">professor</span> <span class="n">information</span><span class="p">,</span> <span class="n">course</span> <span class="n">description</span><span class="p">,</span> <span class="n">course</span> <span class="n">program</span><span class="p">,</span> <span class="n">bibliography</span><span class="p">,</span> <span class="n">student</span> <span class="n">learning</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">instructional</span> <span class="n">method</span><span class="p">,</span> <span class="n">evaluation</span> <span class="ow">and</span> <span class="n">grade</span> <span class="n">assignments</span><span class="p">,</span> <span class="n">assignments</span><span class="p">,</span> <span class="n">final</span> <span class="n">exam</span><span class="p">,</span> <span class="n">attendance</span> <span class="n">policy</span><span class="p">,</span> <span class="n">student</span> <span class="n">contact</span> <span class="n">information</span><span class="p">,</span> <span class="n">notes</span><span class="p">,</span> <span class="n">core</span> <span class="n">syllabus</span> <span class="n">policies</span><span class="p">,</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">tentative</span> <span class="n">weekly</span> <span class="n">schedule</span><span class="o">.</span>
+<span class="n">Fill</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">placeholders</span> <span class="k">with</span> <span class="n">the</span> <span class="n">relevant</span> <span class="n">information</span> <span class="k">for</span> <span class="n">your</span> <span class="n">course</span><span class="o">.</span>
+
+<span class="mf">1.</span> <span class="n">Course</span> <span class="n">Information</span>
+<span class="o">-</span> <span class="n">Course</span> <span class="n">Number</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">course</span> <span class="n">number</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Course</span> <span class="n">Title</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">course</span> <span class="n">title</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Semester</span><span class="o">/</span><span class="n">Year</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">semester</span> <span class="ow">and</span> <span class="n">year</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Offering</span> <span class="n">College</span><span class="o">/</span><span class="n">Department</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">college</span> <span class="ow">and</span> <span class="n">department</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Credit</span> <span class="n">Hours</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">credit</span> <span class="n">hours</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Meeting</span> <span class="n">Times</span><span class="o">/</span><span class="n">Location</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">meeting</span> <span class="n">times</span> <span class="ow">and</span> <span class="n">location</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">M</span><span class="o">/</span><span class="n">W</span> <span class="mi">13</span><span class="n">h30</span> <span class="o">-</span> <span class="mi">14</span><span class="n">h45</span><span class="p">,</span> <span class="n">HE</span> <span class="mi">202</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Method</span> <span class="n">of</span> <span class="n">Delivery</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">delivery</span> <span class="n">method</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">Face</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">face</span> <span class="n">class</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Course</span> <span class="n">URL</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">course</span> <span class="n">URL</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Prerequisites</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">prerequisites</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">Not</span> <span class="n">applicable</span><span class="p">]</span>
+
+<span class="mf">2.</span> <span class="n">Professor</span> <span class="n">Information</span>
+<span class="o">-</span> <span class="n">Instructor</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">instructor</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">title</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Office</span> <span class="n">Address</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">office</span> <span class="n">address</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Office</span> <span class="n">Phone</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">office</span> <span class="n">phone</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">E</span><span class="o">-</span><span class="n">mail</span> <span class="n">Address</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">email</span> <span class="n">address</span><span class="p">]</span>
+<span class="o">-</span> <span class="n">Office</span> <span class="n">Hours</span><span class="p">:</span> <span class="p">[</span><span class="n">Enter</span> <span class="n">office</span> <span class="n">hours</span><span class="p">]</span>
+
+<span class="mf">3.</span> <span class="n">Course</span> <span class="n">Description</span>
+<span class="p">[</span><span class="n">Provide</span> <span class="n">a</span> <span class="n">brief</span> <span class="n">description</span> <span class="n">of</span> <span class="n">the</span> <span class="n">course</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">4.</span> <span class="n">Course</span> <span class="n">Program</span>
+<span class="p">[</span><span class="n">List</span> <span class="n">the</span> <span class="n">main</span> <span class="n">topics</span> <span class="ow">or</span> <span class="n">modules</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">5.</span> <span class="n">Bibliography</span>
+<span class="p">[</span><span class="n">List</span> <span class="n">recommended</span> <span class="ow">or</span> <span class="n">required</span> <span class="n">texts</span> <span class="ow">in</span> <span class="n">the</span> <span class="nb">format</span> <span class="p">[</span><span class="n">Author</span><span class="p">],</span> <span class="p">[</span><span class="n">Title</span><span class="p">],</span> <span class="p">[</span><span class="n">Edition</span><span class="p">],</span> <span class="p">[</span><span class="n">Publisher</span><span class="p">],</span> <span class="p">[</span><span class="n">Year</span><span class="p">]</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">6.</span> <span class="n">Student</span> <span class="n">Learning</span> <span class="n">Outcomes</span>
+<span class="p">[</span><span class="n">Specify</span> <span class="n">learning</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">Upon</span> <span class="n">successful</span> <span class="n">completion</span> <span class="n">of</span> <span class="n">this</span> <span class="n">course</span><span class="p">,</span> <span class="n">the</span> <span class="n">student</span> <span class="n">will</span> <span class="n">be</span> <span class="n">able</span> <span class="n">to</span><span class="p">:]</span>
+
+<span class="mf">7.</span> <span class="n">Instructional</span> <span class="n">Method</span>
+<span class="p">[</span><span class="n">Describe</span> <span class="n">the</span> <span class="n">teaching</span> <span class="n">approach</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">8.</span> <span class="n">Evaluation</span> <span class="ow">and</span> <span class="n">Grade</span> <span class="n">Assignments</span>
+<span class="p">[</span><span class="n">Describe</span> <span class="n">assessment</span> <span class="n">instruments</span> <span class="ow">and</span> <span class="n">grading</span> <span class="n">policy</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">9.</span> <span class="n">Assignments</span>
+<span class="p">[</span><span class="n">Describe</span> <span class="n">assignment</span> <span class="n">policies</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">10.</span> <span class="n">Final</span> <span class="n">Exam</span>
+<span class="p">[</span><span class="n">Describe</span> <span class="n">final</span> <span class="n">exam</span> <span class="n">policy</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">11.</span> <span class="n">Attendance</span> <span class="n">Policy</span>
+<span class="p">[</span><span class="n">Describe</span> <span class="n">attendance</span> <span class="n">policy</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">12.</span> <span class="n">Student</span> <span class="n">Contact</span> <span class="n">Information</span>
+<span class="p">[</span><span class="n">Describe</span> <span class="n">communication</span> <span class="n">policy</span><span class="o">.</span><span class="p">]</span>
+
+<span class="mf">13.</span> <span class="n">GenAI</span> <span class="n">Use</span> <span class="n">Policies</span>
+<span class="n">Taking</span> <span class="n">into</span> <span class="n">account</span> <span class="n">the</span> <span class="n">institutional</span> <span class="n">AI</span> <span class="n">Policies</span> <span class="n">uploaded</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">project</span> <span class="n">workspace</span><span class="p">,</span> <span class="n">propose</span> <span class="n">core</span> <span class="n">GenAI</span> <span class="n">use</span> <span class="n">policies</span> <span class="n">adequate</span> <span class="k">for</span> <span class="n">this</span> <span class="n">course</span><span class="o">.</span>
+
+<span class="mf">14.</span> <span class="n">Tentative</span> <span class="n">Weekly</span> <span class="n">Schedule</span>
+<span class="n">Provide</span> <span class="n">a</span> <span class="n">tentative</span> <span class="n">schedule</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span>
+<span class="o">|</span> <span class="n">Week</span> <span class="o">|</span> <span class="n">Date</span> <span class="o">|</span> <span class="n">Topic</span> <span class="o">|</span> <span class="n">Chapter</span> <span class="o">|</span>
+<span class="o">|------|------|-------|---------|</span>
+<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span> <span class="p">[</span><span class="n">Date</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Date</span> <span class="mi">2</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Topic</span> <span class="mi">1</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">1</span><span class="p">]</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">2</span> <span class="o">|</span> <span class="p">[</span><span class="n">Date</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Date</span> <span class="mi">2</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Topic</span> <span class="mi">2</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">2</span><span class="p">]</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">3</span> <span class="o">|</span> <span class="p">[</span><span class="n">Date</span> <span class="mi">1</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Topic</span> <span class="mi">3</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">3</span><span class="p">]</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">...</span> <span class="o">|</span> <span class="o">...</span> <span class="o">|</span> <span class="o">...</span> <span class="o">|</span> <span class="o">...</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">16</span> <span class="o">|</span> <span class="p">[</span><span class="n">Date</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Topic</span> <span class="mi">16</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="n">Chapter</span> <span class="mi">16</span><span class="p">]</span> <span class="o">|</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Alternative Formats</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">three</span> <span class="n">syllabus</span> <span class="n">variants</span><span class="p">:</span> 
+<span class="mi">1</span><span class="p">)</span> <span class="n">detailed</span> <span class="n">instructor</span> <span class="n">version</span><span class="p">,</span> 
+<span class="mi">2</span><span class="p">)</span> <span class="n">one</span><span class="o">-</span><span class="n">page</span> <span class="n">quick</span> <span class="n">student</span> <span class="n">guide</span><span class="p">,</span> 
+<span class="mi">3</span><span class="p">)</span> <span class="n">accessibility</span><span class="o">-</span><span class="n">friendly</span> <span class="n">version</span> <span class="p">(</span><span class="n">WCAG</span><span class="p">)</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="updates-to-your-ai-workspace-and-personalized-assistant">
+<h2>2.7 Updates to Your AI Workspace and Personalized Assistant<a class="headerlink" href="#updates-to-your-ai-workspace-and-personalized-assistant" title="Link to this heading">#</a></h2>
+<p>This section summarizes the main updates to your <strong>AI Workspace (Project)</strong> and <strong>Course Personalized Assistant (PA)</strong> to ensure both tools evolve consistently as you progress in this program.</p>
+<section id="a-updates-to-your-ai-workspace-project">
+<h3>A. Updates to Your AI Workspace (Project)<a class="headerlink" href="#a-updates-to-your-ai-workspace-project" title="Link to this heading">#</a></h3>
+<p>Your Workspace is the persistent memory environment that stores course materials, policies, templates, prompts, and all artifacts created during this program. After completing Module 2, apply the updates below.</p>
+<ol class="arabic simple">
+<li><p><strong>Upload New Files to the Workspace Knowledge Base:</strong> institutional AI policies, course syllabus, optional additional materials (e.g., accreditation requirements, reading lists, etc.)</p></li>
+<li><p><strong>Update Workspace Instructions:</strong> modify the Project’s instruction block to reflect new responsibilities.</p></li>
+</ol>
+<p>Add under <strong>How You Work</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Use uploaded institutional GenAI policies as primary references for all policy‑related outputs.
+- Ensure alignment between learning outcomes, activities, pedagogical approaches, and assessments.
+- Audit syllabi for internal consistency across dates, expectations, and learning outcomes.
+</pre></div>
+</div>
+<p>Add under <strong>Capabilities</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Learning outcome alignment checks
+- Pedagogical model recommendations
+- Syllabus generation, auditing, and refinement
+- Policy drafting grounded in institutional documents
+- Mapping outcomes → activities → assessments
+</pre></div>
+</div>
+<p>Add under <strong>Behaviors</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Flag</span> <span class="n">inconsistencies</span> <span class="ow">or</span> <span class="n">missing</span> <span class="n">elements</span> <span class="ow">and</span> <span class="n">suggest</span> <span class="n">revisions</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Reflect</span> <span class="n">the</span> <span class="n">institution</span> <span class="n">GenAI</span> <span class="n">policies</span> <span class="n">when</span> <span class="n">generating</span> <span class="ow">or</span> <span class="n">updating</span> <span class="n">course</span> <span class="n">materials</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> If the model you are using restricts the amount of information you can add as instructions in your workspace, then prompt an AI model to summarize the instructions for you.</p>
+</div></blockquote>
+</section>
+<section id="b-updates-to-your-course-personalized-assistant-pa">
+<h3>B. Updates to Your Course Personalized Assistant (PA)<a class="headerlink" href="#b-updates-to-your-course-personalized-assistant-pa" title="Link to this heading">#</a></h3>
+<p>Your PA becomes a more accurate and responsible tutor by integrating new materials and constraints.</p>
+<ol class="arabic simple">
+<li><p><strong>Upload New Files to the PA Knowledge Base:</strong> syllabus, approved GenAI Use Policy, course learning outcomes, weekly schedule, institutional GenAI policy documents.</p></li>
+<li><p><strong>Update PA Instructions:</strong></p></li>
+</ol>
+<p>Add under <strong>Core Role / Mission</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Use</span> <span class="n">only</span> <span class="n">uploaded</span> <span class="n">course</span> <span class="n">materials</span> <span class="n">when</span> <span class="n">answering</span> <span class="n">student</span> <span class="n">questions</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Reference</span> <span class="n">the</span> <span class="n">GenAI</span> <span class="n">Use</span> <span class="n">Policy</span> <span class="n">whenever</span> <span class="n">students</span> <span class="n">ask</span> <span class="n">about</span> <span class="n">AI</span> <span class="n">usage</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Add under <strong>Behaviors</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Cite relevant sections of the syllabus when responding to student questions.
+- If the question touches academic integrity or unclear areas, respond:  
+  ‘I may need more context or the original file. Please refer to the syllabus or ask your instructor.’
+</pre></div>
+</div>
+<p>Add under <strong>Safety &amp; Boundaries</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Never</span> <span class="n">provide</span> <span class="n">answers</span> <span class="n">to</span> <span class="n">graded</span> <span class="n">assignments</span> <span class="ow">or</span> <span class="n">exams</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Redirect</span> <span class="n">users</span> <span class="n">to</span> <span class="n">the</span> <span class="n">instructor</span> <span class="k">if</span> <span class="n">they</span> <span class="n">seek</span> <span class="n">prohibited</span> <span class="n">support</span><span class="o">.</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Add New Conversation Starters for Students:</strong></p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="n">the</span> <span class="n">learning</span> <span class="n">outcomes</span> <span class="n">of</span> <span class="n">this</span> <span class="n">course</span> <span class="n">at</span> <span class="n">beginner</span> <span class="ow">and</span> <span class="n">advanced</span> <span class="n">levels</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Summarize</span> <span class="n">the</span> <span class="n">policies</span> <span class="n">on</span> <span class="n">how</span> <span class="n">AI</span> <span class="n">may</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">course</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>How do the learning outcomes connect to our assignments?
+</pre></div>
+</div>
+</section>
+<section id="c-workflow-adjustments-going-forward">
+<h3>C. Workflow Adjustments Going Forward<a class="headerlink" href="#c-workflow-adjustments-going-forward" title="Link to this heading">#</a></h3>
+<p><strong>1. All Module 2+ prompts must be issued inside the Workspace</strong>
+To ensure:</p>
+<ul class="simple">
+<li><p>Document grounding</p></li>
+<li><p>Consistency across versions</p></li>
+<li><p>Accurate policy integration</p></li>
+<li><p>Alignment across modules</p></li>
+</ul>
+<p><strong>2. Build incremental outputs instead of isolated chats (each chat should represent one specific set of actions)</strong>
+Examples:</p>
+<ul class="simple">
+<li><p>Draft → revise → audit → finalize</p></li>
+<li><p>Outcomes → pedagogy → assessments → syllabus integration</p></li>
+</ul>
+<p><strong>3. Use the PA strictly for student‑facing support</strong> <p>
+Workspace = design environment <p>
+PA = learning support environment</p>
+<p><strong>4. Update both tools continuously</strong>
+As you progress through Modules 3–8, upload:</p>
+<ul class="simple">
+<li><p>Slides</p></li>
+<li><p>Assignments</p></li>
+<li><p>Activity plans</p></li>
+<li><p>Updated schedules</p></li>
+<li><p>Assessment rubrics</p></li>
+<li><p>Course feedback summaries</p></li>
+</ul>
+</section>
+<section id="d-summary-table-of-required-updates">
+<h3>D. Summary Table of Required Updates<a class="headerlink" href="#d-summary-table-of-required-updates" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Required Update</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Workspace Knowledge Base</strong></p></td>
+<td><p>Upload policies, syllabus drafts, LOs, learner profiles, pedagogical mappings</p></td>
+<td><p>Grounded, consistent outputs</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Workspace Instructions</strong></p></td>
+<td><p>Add alignment, auditing, and policy‑compliance behaviors</p></td>
+<td><p>Improve quality and coherence</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PA Knowledge Base</strong></p></td>
+<td><p>Add syllabus, policies, LOs, schedule</p></td>
+<td><p>Accurate student guidance</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PA Instructions</strong></p></td>
+<td><p>Add boundaries, policy references</p></td>
+<td><p>Responsible and safe use</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Conversation Starters</strong></p></td>
+<td><p>Add LO, policy, and schedule prompts</p></td>
+<td><p>Direct student guidance</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Workflow</strong></p></td>
+<td><p>Use Workspace for all prompts</p></td>
+<td><p>Preserve continuity and alignment</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="exercises">
+<h2>2.4 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-generate-and-map-learning-outcomes">
+<h3>Exercise 1 — Generate and Map Learning Outcomes<a class="headerlink" href="#exercise-1-generate-and-map-learning-outcomes" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Use AI to create measurable, aligned learning outcomes.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Paste your course description.</p></li>
+<li><p>Use the LO generation prompt.</p></li>
+<li><p>Choose the best outcomes.</p></li>
+<li><p>Ask AI to map each outcome to:</p>
+<ul class="simple">
+<li><p>activities</p></li>
+<li><p>assessments</p></li>
+<li><p>Bloom level</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Prompt:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Map</span> <span class="n">each</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">learning</span> <span class="n">outcomes</span> <span class="n">to</span><span class="p">:</span> 
+<span class="mi">1</span><span class="p">)</span> <span class="n">teaching</span> <span class="n">activities</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="n">assessment</span> <span class="n">examples</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="n">Bloom</span> <span class="n">level</span><span class="o">.</span> 
+<span class="n">Present</span> <span class="n">results</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">table</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-2-create-a-learner-profile">
+<h3>Exercise 2 — Create a Learner Profile<a class="headerlink" href="#exercise-2-create-a-learner-profile" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Develop an AI-assisted learner persona.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Paste course context.</p></li>
+<li><p>Use the profile prompt.</p></li>
+<li><p>Request two persona variants.</p></li>
+<li><p>Compare adaptations needed.</p></li>
+</ol>
+</section>
+<section id="exercise-3-select-pedagogical-models">
+<h3>Exercise 3 — Select Pedagogical Models<a class="headerlink" href="#exercise-3-select-pedagogical-models" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Identify pedagogical models aligned with outcomes and audience.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Provide learning outcomes and personas.</p></li>
+<li><p>Use the chain-of-thought prompt.</p></li>
+<li><p>Select one model and refine it with:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="mi">3</span> <span class="n">learning</span> <span class="n">activities</span> <span class="n">aligned</span> <span class="k">with</span> <span class="n">this</span> <span class="n">model</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">outcomes</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="exercise-4-draft-ai-use-policies">
+<h3>Exercise 4 — Draft AI Use Policies<a class="headerlink" href="#exercise-4-draft-ai-use-policies" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Produce a policy aligned with the institution guidelines.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Load the institution policy documents.</p></li>
+<li><p>Use the few-shot policy prompt.</p></li>
+<li><p>Request:</p>
+<ul class="simple">
+<li><p>strict version</p></li>
+<li><p>moderate version</p></li>
+<li><p>flexible version</p></li>
+</ul>
+</li>
+<li><p>Choose one to include in syllabus.</p></li>
+</ol>
+</section>
+<section id="exercise-5-produce-a-syllabus-draft">
+<h3>Exercise 5 — Produce a Syllabus Draft<a class="headerlink" href="#exercise-5-produce-a-syllabus-draft" title="Link to this heading">#</a></h3>
+<p><strong>Goal:</strong> Create a complete syllabus using the course template.</p>
+<p><strong>Steps:</strong></p>
+<ol class="arabic simple">
+<li><p>Paste the long syllabus prompt.</p></li>
+<li><p>Provide course-specific information.</p></li>
+<li><p>Request:</p>
+<ul class="simple">
+<li><p>full syllabus</p></li>
+<li><p>1-page summary</p></li>
+<li><p>weekly schedule</p></li>
+</ul>
+</li>
+<li><p>Run consistency audit:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Audit</span> <span class="n">this</span> <span class="n">syllabus</span> <span class="k">for</span> <span class="n">inconsistencies</span><span class="p">,</span> <span class="n">missing</span> <span class="n">elements</span><span class="p">,</span> 
+<span class="ow">and</span> <span class="n">misaligned</span> <span class="n">learning</span> <span class="n">outcomes</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="reflection">
+<h2>2.5 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Which planning tasks benefited most from AI?</p></li>
+<li><p>Where was human expertise essential?</p></li>
+<li><p>Did AI propose improvements you had not considered?</p></li>
+<li><p>How will this module influence your next course redesign?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module1_TLFramework.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1. The Teaching with AI Framework</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module3_ClassDesign.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">3. AI-Enhanced Class Design and Development</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#define-course-goals-and-learning-outcomes">2.1 Define Course Goals and Learning Outcomes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-audience-and-context">2.2 Identify Audience and Context</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-pedagogical-approach-es">2.3 Select Pedagogical Approach(es)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-tools-and-technologies">2.4 Choose Tools and Technologies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#align-with-institutional-and-ethical-guidelines">2.5 Align with Institutional and Ethical Guidelines</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#institutional-policies">Institutional Policies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-the-course-syllabus">2.6 Create the Course Syllabus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-and-personalized-assistant">2.7 Updates to Your AI Workspace and Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-updates-to-your-ai-workspace-project">A. Updates to Your AI Workspace (Project)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-updates-to-your-course-personalized-assistant-pa">B. Updates to Your Course Personalized Assistant (PA)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-workflow-adjustments-going-forward">C. Workflow Adjustments Going Forward</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-summary-table-of-required-updates">D. Summary Table of Required Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">2.4 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-generate-and-map-learning-outcomes">Exercise 1 — Generate and Map Learning Outcomes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-create-a-learner-profile">Exercise 2 — Create a Learner Profile</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-select-pedagogical-models">Exercise 3 — Select Pedagogical Models</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-draft-ai-use-policies">Exercise 4 — Draft AI Use Policies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-produce-a-syllabus-draft">Exercise 5 — Produce a Syllabus Draft</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">2.5 Reflection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

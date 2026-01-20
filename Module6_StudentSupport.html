@@ -1,0 +1,1217 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>6. AI‑Powered Student Support &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module6_StudentSupport';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. AI in Assessment and Feedback" href="Module7_AssessmentFeedback.html" />
+    <link rel="prev" title="5. AI-Enabled Class Delivery" href="Module5_ClassDelivery.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <script>document.write(`<img src="_static/dendritic_logo.png" class="logo__image only-dark" alt="Teaching and Learning with AI - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module6_StudentSupport.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module6_StudentSupport.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>6. AI‑Powered Student Support</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-course-personalized-assistant-as-the-core-support-hub">6.1 The Course Personalized Assistant as the Core Support Hub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pa-can-do-student-facing">What the PA Can Do (Student-Facing)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pa-should-not-do">What the PA Should Not Do</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-the-pa">Updates to the PA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extend-office-hours-and-provide-timely-responses">6.2 Extend Office Hours and Provide Timely Responses</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-tool-1-general-purpose-llms-e-g-chatgpt-copilot-gemini-grok-etc">Alternative Tool 1: General-Purpose LLMs (e.g., ChatGPT, Copilot, Gemini, Grok, etc.)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-tool-2-notebooklm">Alternative Tool 2: NotebookLM</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-notebooklm-as-a-student-support-tool">How to Use NotebookLM as a Student Support Tool</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-notebooklm-for-student-learning">Benefits of NotebookLM for Student Learning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-templates-for-students-using-notebooklm">Prompt Templates for Students Using NotebookLM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-guidance-study-strategies">6.3 Assignment Guidance &amp; Study Strategies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-tool-the-course-personalized-assistant">Primary Tool: The Course Personalized Assistant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pa-will-generate">What the PA will generate:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-should-students-use-the-pa-for-assignments">When Should Students Use the PA for Assignments?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-add-on-paassisted-study-planning">Optional Add-On: PA‑Assisted Study Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-tool-1-general-purpose-llms">Alternative Tool 1: General-Purpose LLMs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Alternative Tool 2: NotebookLM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-student-success">6.4 Monitor Student Success</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-ai-curated-resources">6.5 Provide AI-Curated Resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-resources-generated-in-previous-modules">Using Resources Generated in Previous Modules</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encourage-peer-collaboration-and-support-networks">6.6 Encourage Peer Collaboration and Support Networks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-1-initiating-collaboration-group-formation">Use Case 1: Initiating Collaboration &amp; Group Formation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-2-collaborative-icebreaker-goal-setting">Use Case 2: Collaborative Icebreaker &amp; Goal Setting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-3-scenario-based-team-formation">Use Case 3: Scenario-Based Team Formation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-4-fostering-support-networks-reflection">Use Case 4: Fostering Support Networks &amp; Reflection</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-pa-extensions-real-time-multimodal-ai-tutors">6.7 Advanced PA Extensions: Real-Time &amp; Multimodal AI Tutors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-setup">Tools &amp; Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-1-interacting-with-the-physical-environment">Use Case 1: Interacting with the Physical Environment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-students-learn">What students learn:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-2-navigating-the-digital-workspace">Use Case 2: Navigating the Digital Workspace</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Scenario</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-personalized-assistant">6.8 Updates to Your AI Workspace &amp; Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workspace-updates">Workspace Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pa-updates">PA Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">6.9 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-centralize-student-support-in-your-pa">Exercise 1 — Centralize Student Support in Your PA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-early-alert-check-in">Exercise 2 — Early Alert Check-In</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-build-a-multimodal-study-guide">Exercise 3 — Build a Multimodal Study Guide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-peer-collaboration-setup">Exercise 4 — Peer Collaboration Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-real-time-tutoring-test">Exercise 5 — Real-Time Tutoring Test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">6.10 Reflection</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aipowered-student-support">
+<h1>6. AI‑Powered Student Support<a class="headerlink" href="#aipowered-student-support" title="Link to this heading">#</a></h1>
+<p><em>Centering the Personalized Assistant (PA) as the Core Student Support Tool</em></p>
+<p>Generative AI enables instructors to expand availability, personalize guidance, and deliver timely academic support. In this module, the <strong>Course Personalized Assistant (PA)</strong>, built progressively from the start of this program, becomes the central hub of all student support workflows. The PA supplements office hours, answers questions, provides study strategies, generates resources, supports peer collaboration, offers early alerts, and interacts multimodally. Other AI tools remain valuable, but the PA becomes the <em>student-facing anchor</em> that integrates them into a coherent support ecosystem.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Supplement office hours with AI-generated FAQs and persistent support channels.</p></li>
+<li><p>Offer personalized assignment guidance and study strategies using AI.</p></li>
+<li><p>Monitor student success using structured analytics and AI‑assisted early alerts.</p></li>
+<li><p>Generate AI‑curated study resources, tutoring suggestions, and multimodal aids.</p></li>
+<li><p>Facilitate peer collaboration and social learning through AI‑supported workflows.</p></li>
+<li><p>Explore AI tutors, including real‑time camera- and screen‑aware AI agents.</p></li>
+</ul>
+<p><img alt="Learning Objectives" src="_images/M6LO.png" /></p>
+</section>
+<section id="the-course-personalized-assistant-as-the-core-support-hub">
+<h2>6.1 The Course Personalized Assistant as the Core Support Hub<a class="headerlink" href="#the-course-personalized-assistant-as-the-core-support-hub" title="Link to this heading">#</a></h2>
+<section id="purpose">
+<h3>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h3>
+<p>Place the <strong>Course PA</strong> at the center of support: a consistent, persistent tutor accessible 24/7, deeply grounded in course files, policies, learning outcomes, assignments, and weekly materials.</p>
+</section>
+<section id="what-the-pa-can-do-student-facing">
+<h3>What the PA Can Do (Student-Facing)<a class="headerlink" href="#what-the-pa-can-do-student-facing" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Provide multiple level explanations</p></li>
+<li><p>Clarify assignments and expectations (without completing graded work)</p></li>
+<li><p>Offer study plans, study strategies, revision pathways</p></li>
+<li><p>Produce summaries, flashcards, diagrams, examples</p></li>
+<li><p>Suggest peer collaboration strategies</p></li>
+<li><p>Provide responsible-AI reminders</p></li>
+<li><p>Offer nudges, pacing suggestions, and self-assessment tools</p></li>
+</ul>
+</section>
+<section id="what-the-pa-should-not-do">
+<h3>What the PA Should Not Do<a class="headerlink" href="#what-the-pa-should-not-do" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Provide answers or solutions to graded work</p></li>
+<li><p>Misrepresent institutional or syllabus policies</p></li>
+<li><p>Override instructor judgment</p></li>
+<li><p>Replace office hours or interpersonal communication</p></li>
+</ul>
+</section>
+<section id="updates-to-the-pa">
+<h3>Updates to the PA<a class="headerlink" href="#updates-to-the-pa" title="Link to this heading">#</a></h3>
+<p>Where necessary, update your existing PA by adding:</p>
+<ul class="simple">
+<li><p>New core responsibilities for student support</p></li>
+<li><p>New behaviors and capabilities for study guidance, early alerts, and collaboration</p></li>
+<li><p>Tightened safety &amp; boundary rules for academic integrity</p></li>
+<li><p>New conversation starters</p></li>
+<li><p>Uploading all student-oriented course materials created since Module 1</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Note:</strong> Test if your PA refuses to complete graded work by prompting it to do so. If it does not refuse, then you should revise the <em>core role</em> or the <em>safety &amp; boundary</em> section within the instructions.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="extend-office-hours-and-provide-timely-responses">
+<h2>6.2 Extend Office Hours and Provide Timely Responses<a class="headerlink" href="#extend-office-hours-and-provide-timely-responses" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Purpose<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Extend the instructor’s presence beyond scheduled hours by using AI to generate consistent, accurate responses to common student questions. Although multiple tools can generate FAQs or office-hour support, the PA is still the official 24/7 student-facing channel.</p>
+</section>
+<section id="alternative-tool-1-general-purpose-llms-e-g-chatgpt-copilot-gemini-grok-etc">
+<h3>Alternative Tool 1: General-Purpose LLMs (e.g., ChatGPT, Copilot, Gemini, Grok, etc.)<a class="headerlink" href="#alternative-tool-1-general-purpose-llms-e-g-chatgpt-copilot-gemini-grok-etc" title="Link to this heading">#</a></h3>
+<p>Upload your course materials and prompt the LLM to generate an FAQ or any other support resources desired.</p>
+<p><strong>Prompt Template - Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Read</span> <span class="n">the</span> <span class="n">attached</span> <span class="n">PDF</span> <span class="n">file</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">and</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">structured</span> <span class="n">FAQ</span> <span class="n">section</span> <span class="n">that</span> <span class="n">summarizes</span> <span class="n">the</span> <span class="n">key</span> <span class="n">aspects</span> <span class="n">of</span> <span class="n">the</span> <span class="n">material</span><span class="o">.</span> 
+<span class="n">Ensure</span> <span class="n">each</span> <span class="n">FAQ</span> <span class="n">includes</span> <span class="n">a</span> <span class="n">clear</span> <span class="n">question</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">concise</span><span class="p">,</span> <span class="n">informative</span> <span class="n">answer</span><span class="p">,</span> <span class="n">grouped</span> <span class="n">into</span> <span class="n">thematic</span> <span class="n">categories</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> If you are working within your AI workspace, then the course material will already be uploaded in the model and you only need to prompt it to generate the new support material. Also, in Modules 3 and 5 you created various course materials which may serve as student support.</p>
+</div></blockquote>
+</section>
+<section id="alternative-tool-2-notebooklm">
+<h3>Alternative Tool 2: NotebookLM<a class="headerlink" href="#alternative-tool-2-notebooklm" title="Link to this heading">#</a></h3>
+<p>The goal here is to create a shared, student-facing Notebook for course study support.</p>
+<p>NotebookLM can serve as a powerful <strong>secondary support tool</strong> for students, complementing the PA. The instructor creates a <strong>shared NotebookLM workspace</strong> by uploading <em>only student-facing materials</em> and granting students access to explore the full range of NotebookLM features.</p>
+<p>Unlike the PA—which offers structured, policy-aligned guidance, NotebookLM empowers students to explore course materials independently through grounded, multimodal interactions.</p>
+<section id="how-to-use-notebooklm-as-a-student-support-tool">
+<h4>How to Use NotebookLM as a Student Support Tool<a class="headerlink" href="#how-to-use-notebooklm-as-a-student-support-tool" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Create a new NotebookLM</strong> dedicated to the course.</p></li>
+<li><p><strong>Upload only materials intended for students</strong>, such as:</p>
+<ul class="simple">
+<li><p>syllabus</p></li>
+<li><p>lecture slides or summaries</p></li>
+<li><p>weekly notes</p></li>
+<li><p>assignment instructions (without solutions)</p></li>
+<li><p>public readings or open-access articles</p></li>
+<li><p>videos, URLs, transcripts, and multimedia resources</p></li>
+</ul>
+</li>
+<li><p>Because NotebookLM shares all uploaded materials with its users, <strong>do NOT upload any instructor-only content</strong>, including:</p>
+<ul class="simple">
+<li><p>grading rubrics with detailed criteria</p></li>
+<li><p>answer keys or model solutions</p></li>
+<li><p>teaching notes or internal planning</p></li>
+<li><p>test/question banks</p></li>
+</ul>
+</li>
+<li><p>Share the NotebookLM link with students so they can freely explore every feature.</p></li>
+</ol>
+</section>
+<section id="benefits-of-notebooklm-for-student-learning">
+<h4>Benefits of NotebookLM for Student Learning<a class="headerlink" href="#benefits-of-notebooklm-for-student-learning" title="Link to this heading">#</a></h4>
+<p>NotebookLM supports learning through <strong>multimodal, source-grounded interactions</strong>:</p>
+<ul class="simple">
+<li><p><strong>Document-based accuracy</strong> — All answers come only from uploaded course materials.</p></li>
+<li><p><strong>Multimodal sources</strong> — Students learn from text, PDFs, images, URLs, and video content.</p></li>
+<li><p><strong>Audio Overviews (Podcasts)</strong> — AI-generated audio explanations students can listen to.</p></li>
+<li><p><strong>Video Overviews</strong> — Narrated AI-generated presentations students can watch.</p></li>
+<li><p><strong>Mind maps</strong> — Visual connections extracted across multiple documents.</p></li>
+<li><p><strong>Reports</strong> — Customizable document that synthesizes information from uploaded sources.</p></li>
+<li><p><strong>Flashcards</strong> — Automatic retrieval practice for key concepts.</p></li>
+<li><p><strong>Quiz</strong> — Test to check knowledge acquisition.</p></li>
+<li><p><strong>Infographics</strong> — Helps students with a visual summary of uploaded sources.</p></li>
+<li><p><strong>Slide deck</strong> — Set of slides summarizing the content of the uploaded sources.</p></li>
+</ul>
+<p>This creates a transparent, student-owned workspace for meaningful engagement with the course content.</p>
+</section>
+<section id="prompt-templates-for-students-using-notebooklm">
+<h4>Prompt Templates for Students Using NotebookLM<a class="headerlink" href="#prompt-templates-for-students-using-notebooklm" title="Link to this heading">#</a></h4>
+<p>Give these prompt templates to students within the shared Notebook:</p>
+<p><strong>1. Understanding Assignments</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="n">the</span> <span class="n">assignment</span> <span class="n">on</span> <span class="p">[</span><span class="n">Assignment</span> <span class="n">Name</span><span class="p">]</span> <span class="n">using</span> <span class="n">only</span> <span class="n">the</span> <span class="n">materials</span> <span class="n">uploaded</span> <span class="n">here</span><span class="o">.</span>
+<span class="n">Summarize</span> <span class="n">its</span> <span class="n">purpose</span><span class="p">,</span> <span class="n">main</span> <span class="n">tasks</span><span class="p">,</span> <span class="ow">and</span> <span class="n">key</span> <span class="n">concepts</span><span class="o">.</span>
+<span class="n">Do</span> <span class="ow">not</span> <span class="n">produce</span> <span class="n">the</span> <span class="n">solution</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>2. Study Guide Generation</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">a</span> <span class="n">study</span> <span class="n">guide</span> <span class="k">for</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span> <span class="n">using</span> <span class="n">the</span> <span class="n">resources</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">notebook</span><span class="o">.</span>
+<span class="n">Include</span> <span class="n">key</span> <span class="n">ideas</span><span class="p">,</span> <span class="n">definitions</span><span class="p">,</span> <span class="n">diagrams</span><span class="p">,</span> <span class="n">examples</span><span class="p">,</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">short</span> <span class="bp">self</span><span class="o">-</span><span class="n">check</span> <span class="n">quiz</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>3. Video or Multimedia Summary</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Summarize the key points from the video or multimedia source titled “[Title]”
+using bullet points and a short paragraph explanation.
+</pre></div>
+</div>
+<p><strong>4. Comparing Sources</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Compare</span> <span class="n">how</span> <span class="p">[</span><span class="n">Topic</span><span class="p">]</span> <span class="ow">is</span> <span class="n">presented</span> <span class="n">across</span> <span class="n">the</span> <span class="n">documents</span> <span class="n">uploaded</span> <span class="n">here</span><span class="o">.</span>
+<span class="n">Highlight</span> <span class="n">similarities</span><span class="p">,</span> <span class="n">differences</span><span class="p">,</span> <span class="ow">and</span> <span class="n">important</span> <span class="n">insights</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>5. Pre‑Class Preparation</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Generate a pre-class preparation guide for this week’s materials.
+List what I should read, watch, or review.
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="assignment-guidance-study-strategies">
+<h2>6.3 Assignment Guidance &amp; Study Strategies<a class="headerlink" href="#assignment-guidance-study-strategies" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Purpose<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Help students approach assignments with clarity, confidence, and strategy.</p>
+<p>While generative AI tools can assist with assignment interpretation and study planning, <strong>the Course Personalized Assistant (PA)</strong> remains the <em>primary student-facing tool</em> for guiding academic tasks, providing structured breakdowns, study strategies, and self‑assessment prompts without completing graded work.</p>
+</section>
+<section id="primary-tool-the-course-personalized-assistant">
+<h3>Primary Tool: The Course Personalized Assistant<a class="headerlink" href="#primary-tool-the-course-personalized-assistant" title="Link to this heading">#</a></h3>
+<p>Your PA is responsible for:</p>
+<ul class="simple">
+<li><p>Clarifying assignment descriptions and expectations (without producing solutions)</p></li>
+<li><p>Breaking down complex tasks into manageable steps</p></li>
+<li><p>Suggesting prerequisite knowledge or skills to review</p></li>
+<li><p>Providing study strategies tailored to the task type</p></li>
+<li><p>Offering revision pathways, self-check questions, and pacing guidance</p></li>
+<li><p>Helping students identify misconceptions or knowledge gaps</p></li>
+<li><p>Encouraging responsible AI use while working on assignments</p></li>
+</ul>
+<p>Because the PA is grounded in the syllabus, assignments, rubrics, and course policies, its guidance is <em>contextualized</em>, <em>consistent</em>, and <em>aligned with your teaching intent</em>.</p>
+<p><strong>Sample PA Prompt for the Students</strong>
+Students may use this prompt directly with the PA:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Help me understand how to approach [Assignment Name]. 
+Explain the task in your own words, break it into clear steps, 
+suggest study strategies or prerequisite concepts I should review, 
+and provide 3–5 self-check questions to confirm my understanding.
+Do not give me any part of the solution.
+</pre></div>
+</div>
+</section>
+<section id="what-the-pa-will-generate">
+<h3>What the PA will generate:<a class="headerlink" href="#what-the-pa-will-generate" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>A simplified explanation of the assignment</p></li>
+<li><p>A structured approach (step-by-step)</p></li>
+<li><p>A recommended study plan (daily/weekly)</p></li>
+<li><p>Suggested tools or resources (if allowed)</p></li>
+<li><p>A list of self-check or reflection questions</p></li>
+<li><p>A reminder about responsible AI use</p></li>
+<li><p>Warnings to avoid using AI to generate prohibited content</p></li>
+</ul>
+</section>
+<section id="when-should-students-use-the-pa-for-assignments">
+<h3>When Should Students Use the PA for Assignments?<a class="headerlink" href="#when-should-students-use-the-pa-for-assignments" title="Link to this heading">#</a></h3>
+<p>Encourage students to contact the PA when they:</p>
+<ul class="simple">
+<li><p>are unsure how to start an assignment</p></li>
+<li><p>need examples of <em>approach</em>, not <em>answers</em></p></li>
+<li><p>want a study plan</p></li>
+<li><p>need help interpreting rubrics</p></li>
+<li><p>want help identifying what they already know vs. what they must review</p></li>
+<li><p>need guidance on preparing for group work or collaborative responsibilities</p></li>
+</ul>
+</section>
+<section id="optional-add-on-paassisted-study-planning">
+<h3>Optional Add-On: PA‑Assisted Study Planning<a class="headerlink" href="#optional-add-on-paassisted-study-planning" title="Link to this heading">#</a></h3>
+<p>Your PA can generate personalized study plans based on the course schedule.</p>
+<p><strong>Sample Prompt for the Students</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Create a 7-day study plan to help me prepare for [Assignment Name], 
+considering the course pacing and major concepts we’ve covered. 
+Suggest checkpoints and ways to evaluate my progress.
+</pre></div>
+</div>
+</section>
+<section id="alternative-tool-1-general-purpose-llms">
+<h3>Alternative Tool 1: General-Purpose LLMs<a class="headerlink" href="#alternative-tool-1-general-purpose-llms" title="Link to this heading">#</a></h3>
+<p>Instructors may use additional AI tools to produce resources to students.
+Use general LLMs to create:</p>
+<ul class="simple">
+<li><p>reading summaries</p></li>
+<li><p>sample study plans</p></li>
+<li><p>diagrams or concept maps</p></li>
+<li><p>lists of common misconceptions</p></li>
+</ul>
+<p><strong>Sample Instructor Prompt (Workspace or private LLM):</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">attached</span> <span class="n">assignment</span> <span class="ow">and</span> <span class="n">rubric</span><span class="p">,</span> <span class="n">create</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">common</span> <span class="n">misconceptions</span> <span class="n">students</span> <span class="n">may</span> <span class="n">have</span> <span class="ow">and</span> <span class="n">suggest</span> <span class="n">study</span> <span class="n">strategies</span> <span class="k">for</span> <span class="n">each</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>Alternative Tool 2: NotebookLM<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>NotebookLM can generate grounded resources that can be later distributed:</p>
+<ul class="simple">
+<li><p>document-grounded summaries</p></li>
+<li><p>flashcards on assignment-relevant concepts</p></li>
+<li><p>video and/or audio explainers</p></li>
+<li><p>step‑by‑step walkthroughs of prerequisite topics</p></li>
+<li><p>mindmaps</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Note 1:</strong> Use NotebookLM to produce structured learning aids <em>based solely on your uploaded readings</em>, then make them available for student support. <p>
+<strong>Note 2:</strong> If you have created the shared Student Notebook, then the students will be able to use it also as their <em>assignment assistant environment</em>.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="monitor-student-success">
+<h2>6.4 Monitor Student Success<a class="headerlink" href="#monitor-student-success" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Purpose<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Use engagement data or AI-generated insights to detect patterns that indicate a need for support.</p>
+<p><strong>Prompt Template - Design a Student Success Table</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">I</span> <span class="n">am</span> <span class="n">the</span> <span class="n">instructional</span> <span class="n">designer</span> <span class="n">of</span> <span class="n">the</span> <span class="n">course</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Name</span><span class="p">]</span> <span class="ow">and</span> <span class="n">want</span> <span class="n">to</span> <span class="n">design</span> <span class="n">a</span> <span class="n">table</span> <span class="n">to</span> <span class="n">collect</span> <span class="n">student</span> <span class="n">information</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">course</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">goal</span> <span class="ow">is</span> <span class="n">to</span> <span class="n">use</span> <span class="n">the</span> <span class="n">data</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">a</span> <span class="s2">&quot;Student Success Score&quot;</span><span class="o">.</span> 
+
+<span class="mf">1.</span> <span class="n">Propose</span> <span class="n">a</span> <span class="n">matrix</span> <span class="k">with</span> <span class="n">at</span> <span class="n">least</span> <span class="mi">5</span> <span class="n">student</span> <span class="n">variables</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">attendance</span><span class="p">,</span> <span class="n">assignment</span> <span class="n">completion</span><span class="p">,</span> <span class="n">grades</span><span class="p">,</span> <span class="n">engagement</span><span class="p">,</span> <span class="bp">self</span><span class="o">-</span><span class="n">assessments</span><span class="p">)</span><span class="o">.</span>
+<span class="mf">2.</span> <span class="n">For</span> <span class="n">each</span> <span class="n">variable</span><span class="p">,</span> <span class="n">define</span><span class="p">:</span>
+   <span class="o">-</span> <span class="n">Data</span> <span class="nb">type</span> <span class="p">(</span><span class="n">numeric</span><span class="p">,</span> <span class="n">categorical</span><span class="p">)</span>
+   <span class="o">-</span> <span class="n">Measurement</span> <span class="n">method</span>
+   <span class="o">-</span> <span class="n">Weight</span> <span class="ow">or</span> <span class="n">influence</span> <span class="n">on</span> <span class="n">success</span>
+
+<span class="mf">3.</span> <span class="n">Propose</span> <span class="n">a</span> <span class="n">formula</span> <span class="n">to</span> <span class="n">compute</span> <span class="n">a</span> <span class="n">success</span> <span class="n">score</span> <span class="kn">from</span><span class="w"> </span><span class="nn">these</span> <span class="n">variables</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="n">weighted</span> <span class="n">average</span> <span class="ow">or</span> <span class="n">custom</span> <span class="n">equation</span><span class="p">)</span><span class="o">.</span>
+<span class="mf">4.</span> <span class="n">Explain</span> <span class="n">how</span> <span class="n">this</span> <span class="n">score</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">monitor</span> <span class="ow">or</span> <span class="n">support</span> <span class="n">students</span> <span class="n">throughout</span> <span class="n">the</span> <span class="n">course</span><span class="o">.</span>
+<span class="mf">5.</span> <span class="n">Save</span> <span class="n">this</span> <span class="n">matrix</span> <span class="k">as</span> <span class="n">a</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">XLSX</span><span class="p">,</span> <span class="n">CSV</span><span class="p">,</span> <span class="ow">or</span> <span class="n">Google</span> <span class="n">Spreadsheet</span> <span class="nb">format</span><span class="o">.</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Note:</strong> Not all models will be able to generate the output in the specific format you prompted. In such cases, choose another format or try a different model.</p>
+</div></blockquote>
+<p><strong>Additional Prompt Variant - Using a Pre-Specified Score Matrix</strong>
+Provide the following details to create a matrix or table for collecting student information and calculating a success score.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Create a table for calculating anonymized student success indicators.  
+Do NOT use or request any personally identifiable information (PII).  
+Use anonymous labels such as **Student 01, Student 02**, etc.
+
+### Learning Indicators (All Non-PII)
+Use only the following non-identifying metrics:
+
+- Anonymous Student ID  
+- Attendance Rate (%)  
+- Assignment Completion Rate (%)  
+- Quiz Average Score (%)  
+- Discussion Participation (# posts)  
+- LMS Engagement (Hours/Week)
+
+## Table Structure
+
+| Student ID | Attendance (%) | Assignment Completion (%) | Quiz Avg (%) | Discussion Posts (#) | LMS Engagement (Hours/Week) | Success Score |
+|------------|----------------|----------------------------|--------------|------------------------|------------------------------|---------------|
+| Student 01 | [Value]        | [Value]                    | [Value]      | [Value]                | [Value]                      | [Calculated]  |
+| Student 02 | [Value]        | [Value]                    | [Value]      | [Value]                | [Value]                      | [Calculated]  |
+
+Ensure the table includes a column for the Success Score, which will be calculated.
+
+## Success Score Equation
+Success Score =
+(0.2 × Attendance Rate) +
+(0.3 × Assignment Completion Rate) +
+(0.3 × Quiz Average Score) +
+(0.1 × Normalized Discussion Participation) +
+(0.1 × Normalized LMS Engagement)
+
+### Weight Explanation
+- Attendance Rate: **20%**
+- Assignment Completion: **30%**
+- Quiz Average Score: **30%**
+- Discussion Participation: **10%**
+- LMS Engagement: **10%**
+
+## Normalization
+- Normalized Discussion Participation = (Posts / Max Expected Posts) × 100  
+- Normalized LMS Engagement = (Hours / Max Expected Hours) × 100  
+
+## Score Interpretation
+- **80–100:** Strong performance  
+- **60–79:** Moderate performance  
+- **Below 60:** Needs intervention  
+
+Additional Notes:
+- Ensure all percentages are on a 0-100 scale for consistency.
+- The Success Score should range from 0 to 100, with higher scores indicating greater likelihood of success.
+- Include a brief explanation of how to interpret the score (e.g., “Scores above 80 indicate strong performance, 60-79 suggest moderate success with room for improvement, below 60 indicate a need for intervention”).
+
+## Output Requirements
+1. Generate the anonymized table  
+2. Export as XLSX or CSV  
+3. Create a normalized bar chart per learner (green/yellow/red for interpretation)
+
+## Privacy Constraints (Strict)
+- Never include PII  
+- Never attempt to infer identity  
+- Ensure FERPA compliance at all times  
+</pre></div>
+</div>
+</section>
+</section>
+<section id="provide-ai-curated-resources">
+<h2>6.5 Provide AI-Curated Resources<a class="headerlink" href="#provide-ai-curated-resources" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Purpose<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Integrate resources created accross modules, enabling students to access high-quality, consistent, and multimodal study resources. The PA continues to be the primary AI assistant and the shared NotebookLM operates as a complementary, student-facing workspace for resource sharing and exploration.</p>
+</section>
+<section id="using-resources-generated-in-previous-modules">
+<h3>Using Resources Generated in Previous Modules<a class="headerlink" href="#using-resources-generated-in-previous-modules" title="Link to this heading">#</a></h3>
+<p>Across the program modules, you created:</p>
+<ul class="simple">
+<li><p>FAQs and reading summaries</p></li>
+<li><p>Notes and concept explanations</p></li>
+<li><p>Scaffolded reasoning sequences</p></li>
+<li><p>Diagrams and conceptual maps</p></li>
+<li><p>Study guides, FAQs and flashcards</p></li>
+<li><p>Glossaries and micro‑lectures</p></li>
+<li><p>Case study materials</p></li>
+<li><p>Multimodal content (audio, images, diagrams, video scripts, etc.)</p></li>
+</ul>
+<p>If not yet, these can now be:</p>
+<ol class="arabic simple">
+<li><p><strong>Uploaded into the PA</strong> to anchor its support capabilities</p></li>
+<li><p><strong>Included in NotebookLM</strong> (student‑safe versions only)</p></li>
+<li><p><strong>Distributed via the LMS</strong> as downloadable study packs</p></li>
+<li><p><strong>Used to generate new, updated resources</strong> for students</p></li>
+</ol>
+<p>This creates a unified and coherent study‑support ecosystem.</p>
+</section>
+</section>
+<section id="encourage-peer-collaboration-and-support-networks">
+<h2>6.6 Encourage Peer Collaboration and Support Networks<a class="headerlink" href="#encourage-peer-collaboration-and-support-networks" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h3>Purpose<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Design AI-assisted prompts and activities that build peer learning environments.</p>
+</section>
+<section id="use-case-1-initiating-collaboration-group-formation">
+<h3>Use Case 1: Initiating Collaboration &amp; Group Formation<a class="headerlink" href="#use-case-1-initiating-collaboration-group-formation" title="Link to this heading">#</a></h3>
+<p>Help students find common ground, form groups, and define initial collaborative tasks.</p>
+<p><strong>Prompt Template — Role-Based</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Act</span> <span class="k">as</span> <span class="n">a</span> <span class="n">matchmaker</span><span class="o">.</span>
+<span class="n">Given</span> <span class="n">the</span> <span class="n">following</span> <span class="n">student</span> <span class="n">responses</span> <span class="n">about</span> <span class="n">their</span> <span class="n">biggest</span> <span class="n">challenges</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Topic</span><span class="p">]</span> <span class="ow">and</span> <span class="n">their</span> <span class="n">areas</span> <span class="n">of</span> <span class="n">interest</span><span class="p">,</span> <span class="n">suggest</span> <span class="mi">3</span><span class="o">-</span><span class="mi">5</span> <span class="n">potential</span> <span class="n">peer</span> <span class="n">learning</span> <span class="n">groups</span><span class="o">.</span>
+<span class="n">For</span> <span class="n">each</span> <span class="n">group</span><span class="p">,</span> <span class="n">briefly</span> <span class="n">explain</span> <span class="n">the</span> <span class="n">common</span> <span class="n">thread</span> <span class="n">that</span> <span class="n">connects</span> <span class="n">them</span> <span class="ow">and</span> <span class="n">suggest</span> <span class="n">an</span> <span class="n">initial</span> <span class="n">discussion</span> <span class="n">topic</span><span class="o">.</span>
+<span class="n">Student</span> <span class="mi">1</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span><span class="p">:</span> <span class="s1">&#39;Struggles with [Course Topic], interested in [Topic].&#39;</span><span class="p">]</span>
+<span class="n">Student</span> <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span><span class="p">:</span> <span class="s1">&#39;Finds [Course Topic] confusing, good at explaining [Topic].&#39;</span><span class="p">]</span>
+<span class="n">Student</span> <span class="mi">3</span><span class="p">:</span> <span class="p">[</span><span class="n">Input</span><span class="p">:</span> <span class="s1">&#39;Wants to apply [Course Topic] to real-world cases, enjoys problem-solving.&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Given the following student self-descriptions, propose 3–5 learning groups 
+and explain the common thread connecting members.
+</pre></div>
+</div>
+</section>
+<section id="use-case-2-collaborative-icebreaker-goal-setting">
+<h3>Use Case 2: Collaborative Icebreaker &amp; Goal Setting<a class="headerlink" href="#use-case-2-collaborative-icebreaker-goal-setting" title="Link to this heading">#</a></h3>
+<p>Help students feel comfortable with one another, the instructor, and the learning environment.</p>
+<p><strong>Prompt Template — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Generate</span> <span class="n">an</span> <span class="n">icebreaker</span> <span class="n">activity</span> <span class="k">for</span> <span class="n">a</span> <span class="n">new</span> <span class="n">peer</span> <span class="n">learning</span> <span class="n">group</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Name</span><span class="p">]</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">activity</span> <span class="n">should</span> <span class="n">encourage</span> <span class="n">members</span> <span class="n">to</span> <span class="n">share</span> <span class="n">a</span> <span class="n">personal</span> <span class="n">learning</span> <span class="n">goal</span> <span class="k">for</span> <span class="n">the</span> <span class="n">upcoming</span> <span class="n">module</span> <span class="ow">and</span> <span class="n">one</span> <span class="n">strength</span> <span class="n">they</span> <span class="n">bring</span> <span class="n">to</span> <span class="n">the</span> <span class="n">group</span><span class="o">.</span>
+<span class="n">After</span> <span class="n">the</span> <span class="n">icebreaker</span><span class="p">,</span> <span class="n">provide</span> <span class="mi">3</span> <span class="n">guiding</span> <span class="n">questions</span> <span class="k">for</span> <span class="n">them</span> <span class="n">to</span> <span class="n">collaboratively</span> <span class="n">define</span> <span class="n">their</span> <span class="n">group</span><span class="s1">&#39;s learning objectives for the week.</span>
+</pre></div>
+</div>
+</section>
+<section id="use-case-3-scenario-based-team-formation">
+<h3>Use Case 3: Scenario-Based Team Formation<a class="headerlink" href="#use-case-3-scenario-based-team-formation" title="Link to this heading">#</a></h3>
+<p>Help students build teams under a specific context (scenario).</p>
+<p><strong>Prompt Template — Instructional</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">are</span> <span class="n">designing</span> <span class="n">a</span> <span class="n">collaborative</span> <span class="n">project</span> <span class="k">for</span> <span class="p">[</span><span class="n">Course</span> <span class="n">Name</span><span class="p">]</span> <span class="n">focusing</span> <span class="n">on</span> <span class="p">[</span><span class="n">Specific</span> <span class="n">Topic</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Create</span> <span class="mi">3</span><span class="o">-</span><span class="mi">4</span> <span class="n">diverse</span> <span class="n">roles</span> <span class="n">within</span> <span class="n">a</span> <span class="n">team</span><span class="o">.</span>
+<span class="n">For</span> <span class="n">each</span> <span class="n">role</span><span class="p">,</span> <span class="n">describe</span> <span class="n">the</span> <span class="n">primary</span> <span class="n">responsibilities</span> <span class="ow">and</span> <span class="n">the</span> <span class="nb">type</span> <span class="n">of</span> <span class="n">skills</span> <span class="n">that</span> <span class="n">would</span> <span class="n">be</span> <span class="n">best</span> <span class="n">suited</span> <span class="k">for</span> <span class="n">it</span><span class="o">.</span>
+<span class="n">Then</span><span class="p">,</span> <span class="n">generate</span> <span class="n">a</span> <span class="n">short</span> <span class="s1">&#39;team charter&#39;</span> <span class="n">template</span> <span class="n">that</span> <span class="n">groups</span> <span class="n">can</span> <span class="n">fill</span> <span class="n">out</span> <span class="n">to</span> <span class="n">define</span> <span class="n">their</span> <span class="n">internal</span> <span class="n">roles</span> <span class="ow">and</span> <span class="n">communication</span> <span class="n">norms</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="use-case-4-fostering-support-networks-reflection">
+<h3>Use Case 4: Fostering Support Networks &amp; Reflection<a class="headerlink" href="#use-case-4-fostering-support-networks-reflection" title="Link to this heading">#</a></h3>
+<p>Encourage students to offer and seek help, reflect on the benefits of collaboration, and build a sense of community.</p>
+<p><strong>Prompt Template — Role-Based Prompt</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Act</span> <span class="k">as</span> <span class="n">a</span> <span class="n">student</span> <span class="n">struggling</span> <span class="k">with</span> <span class="p">[</span><span class="n">Specific</span> <span class="n">Skill</span><span class="o">/</span><span class="n">Concept</span><span class="p">]</span><span class="o">.</span>
+<span class="n">Write</span> <span class="mi">3</span> <span class="n">different</span> <span class="n">ways</span> <span class="n">to</span> <span class="n">ask</span> <span class="k">for</span> <span class="n">help</span> <span class="kn">from</span><span class="w"> </span><span class="nn">a</span> <span class="n">peer</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">peer</span> <span class="n">learning</span> <span class="n">group</span><span class="p">,</span> <span class="n">varying</span> <span class="n">the</span> <span class="n">level</span> <span class="n">of</span> <span class="n">detail</span> <span class="ow">or</span> <span class="n">formality</span><span class="o">.</span>
+<span class="n">Ensure</span> <span class="n">the</span> <span class="n">prompts</span> <span class="n">are</span> <span class="n">empathetic</span> <span class="ow">and</span> <span class="n">clear</span> <span class="n">about</span> <span class="n">the</span> <span class="n">challenge</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="advanced-pa-extensions-real-time-multimodal-ai-tutors">
+<h2>6.7 Advanced PA Extensions: Real-Time &amp; Multimodal AI Tutors<a class="headerlink" href="#advanced-pa-extensions-real-time-multimodal-ai-tutors" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>Purpose<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Explore the use of AI assistants in dynamic, real-world contexts using <strong>Google AI Studio</strong> with the <strong>Live function</strong> enabled. The focus is on interacting with your environment through a <strong>background camera</strong> or <strong>screen capture</strong>. This powerful setup brings AI into your personal or digital workspace, enhancing observation, navigation, and learning experience.</p>
+</section>
+<section id="tools-setup">
+<h3>Tools &amp; Setup<a class="headerlink" href="#tools-setup" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Platform</strong>: Google AI Studio (<a class="reference external" href="https://aistudio.google.com/live">https://aistudio.google.com/live</a>)</p></li>
+<li><p><strong>Key Feature</strong>: Live Stream</p></li>
+<li><p><strong>Capabilities Used</strong>:</p>
+<ul>
+<li><p>Background Camera</p></li>
+<li><p>Screen Capture</p></li>
+<li><p>Real-Time AI Interaction</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>Ensure the <strong>Stream</strong> function is enabled and permissions for camera and screen sharing are granted.</p>
+</div></blockquote>
+</section>
+<section id="use-case-1-interacting-with-the-physical-environment">
+<h3>Use Case 1: Interacting with the Physical Environment<a class="headerlink" href="#use-case-1-interacting-with-the-physical-environment" title="Link to this heading">#</a></h3>
+<section id="scenario">
+<h4>Scenario<a class="headerlink" href="#scenario" title="Link to this heading">#</a></h4>
+<p>The participant activates their <strong>background camera</strong> and points it toward their environment (e.g., desk, classroom, lab, objects).</p>
+<p><strong>Prompt Template — Instructional + Role-Based (Voice Prompt)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Observe</span> <span class="n">my</span> <span class="n">environment</span> <span class="ow">and</span> <span class="n">describe</span> <span class="n">what</span> <span class="n">you</span> <span class="n">see</span><span class="o">.</span>
+<span class="n">Focus</span> <span class="n">on</span> <span class="n">identifying</span> <span class="n">objects</span> <span class="ow">and</span> <span class="n">their</span> <span class="n">likely</span> <span class="n">purpose</span> <span class="ow">or</span> <span class="n">function</span><span class="o">.</span>
+<span class="n">Then</span> <span class="n">suggest</span> <span class="n">one</span> <span class="ow">or</span> <span class="n">two</span> <span class="n">ideas</span> <span class="k">for</span> <span class="n">organizing</span> <span class="ow">or</span> <span class="n">improving</span> <span class="n">this</span> <span class="n">workspace</span> <span class="k">for</span> <span class="n">productivity</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Instructional + Role-Based (Voice Prompt)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Act</span> <span class="k">as</span> <span class="n">a</span> <span class="n">tutor</span><span class="o">.</span> <span class="n">I</span> <span class="n">am</span> <span class="n">pointing</span> <span class="n">my</span> <span class="n">camera</span> <span class="n">at</span> <span class="n">an</span> <span class="nb">object</span><span class="o">.</span> <span class="n">Explain</span> <span class="n">what</span> <span class="n">you</span> <span class="n">are</span> <span class="n">seeing</span><span class="o">.</span>
+<span class="p">[</span><span class="n">Select</span> <span class="n">the</span> <span class="nb">object</span> <span class="ow">or</span> <span class="n">context</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="what-students-learn">
+<h4>What students learn:<a class="headerlink" href="#what-students-learn" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>How to direct the AI’s visual attention</p></li>
+<li><p>How to formulate prompts to extract meaningful insights from real-time observations</p></li>
+</ul>
+</section>
+</section>
+<section id="use-case-2-navigating-the-digital-workspace">
+<h3>Use Case 2: Navigating the Digital Workspace<a class="headerlink" href="#use-case-2-navigating-the-digital-workspace" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h4>Scenario<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<p>The participant shares their <strong>screen</strong> (e.g., browser, application, workspace, spreadsheet), and the AI assistant provides support.</p>
+<p><strong>Prompt Template — Chain-of-Thought + Instructional (Voice Prompt)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Watch</span> <span class="n">my</span> <span class="n">screen</span> <span class="k">as</span> <span class="n">I</span> <span class="n">navigate</span> <span class="n">my</span> <span class="n">email</span> <span class="n">inbox</span><span class="o">.</span> <span class="n">Help</span> <span class="n">me</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Identify</span> <span class="n">unread</span> <span class="n">messages</span> <span class="ow">and</span> <span class="n">group</span> <span class="n">them</span> <span class="n">by</span> <span class="n">priority</span>
+<span class="mf">2.</span> <span class="n">Draft</span> <span class="n">responses</span> <span class="n">to</span> <span class="n">the</span> <span class="n">top</span> <span class="n">three</span> <span class="n">messages</span>
+<span class="mf">3.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">task</span> <span class="nb">list</span> <span class="n">based</span> <span class="n">on</span> <span class="n">action</span> <span class="n">items</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">emails</span>
+</pre></div>
+</div>
+<p><strong>Additional Prompt Variant — Course-Focused Study Support (Voice Prompt)</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Watch my screen as I review materials for my course [Course Name] (syllabus, slides, LMS, notes). 
+Help me:
+1) Identify the most important topics I should focus on for this week,
+2) Suggest a 3–5 step study plan using these resources (including any AI tools or summaries we developed in this program),
+3) Generate 5 self-check questions to test my understanding of the key topics.
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="updates-to-your-ai-workspace-personalized-assistant">
+<h2>6.8 Updates to Your AI Workspace &amp; Personalized Assistant<a class="headerlink" href="#updates-to-your-ai-workspace-personalized-assistant" title="Link to this heading">#</a></h2>
+<p>Only minimal updates are needed after completing this module. The primary change is to add any new student-facing resources generated here to both the Workspace and the PA (when appropriate).</p>
+<section id="workspace-updates">
+<h3>Workspace Updates<a class="headerlink" href="#workspace-updates" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Upload any new <em>student-safe</em> materials created in this module (study guides, summaries, diagrams, flashcards, FAQs).</p></li>
+<li><p>No structural or behavioral updates are required.</p></li>
+</ul>
+</section>
+<section id="pa-updates">
+<h3>PA Updates<a class="headerlink" href="#pa-updates" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add newly created student support materials to the PA’s knowledge base (if applicable).</p></li>
+<li><p>No changes are needed to the PA’s role, capabilities, or boundaries beyond what was already updated at the previous modules.</p></li>
+</ul>
+</section>
+</section>
+<section id="exercises">
+<h2>6.9 Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-1-centralize-student-support-in-your-pa">
+<h3>Exercise 1 — Centralize Student Support in Your PA<a class="headerlink" href="#exercise-1-centralize-student-support-in-your-pa" title="Link to this heading">#</a></h3>
+<p>Upload new assignment sheets and ask your PA to generate:</p>
+<ul class="simple">
+<li><p>FAQs</p></li>
+<li><p>study strategies</p></li>
+<li><p>misconceptions list</p></li>
+</ul>
+</section>
+<section id="exercise-2-early-alert-check-in">
+<h3>Exercise 2 — Early Alert Check-In<a class="headerlink" href="#exercise-2-early-alert-check-in" title="Link to this heading">#</a></h3>
+<p>Use the success-score matrix to design an AI-powered self-assessment check-in.</p>
+</section>
+<section id="exercise-3-build-a-multimodal-study-guide">
+<h3>Exercise 3 — Build a Multimodal Study Guide<a class="headerlink" href="#exercise-3-build-a-multimodal-study-guide" title="Link to this heading">#</a></h3>
+<p>Produce a study guide for a difficult topic using multimodal tools, then upload it to the PA.</p>
+</section>
+<section id="exercise-4-peer-collaboration-setup">
+<h3>Exercise 4 — Peer Collaboration Setup<a class="headerlink" href="#exercise-4-peer-collaboration-setup" title="Link to this heading">#</a></h3>
+<p>Give the PA a set of hypothetical student profiles; ask it to form groups.</p>
+</section>
+<section id="exercise-5-real-time-tutoring-test">
+<h3>Exercise 5 — Real-Time Tutoring Test<a class="headerlink" href="#exercise-5-real-time-tutoring-test" title="Link to this heading">#</a></h3>
+<p>Use Google AI Studio Stream to perform a live tutoring interaction.</p>
+</section>
+</section>
+<section id="reflection">
+<h2>6.10 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>How does placing the PA at the center of student support improve accessibility and consistency?</p></li>
+<li><p>Which tasks are best automated through the PA, and which require human oversight?</p></li>
+<li><p>How can the PA strengthen student autonomy, metacognition, and self-regulation?</p></li>
+<li><p>How will you refine your PA after real interactions with students?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module5_ClassDelivery.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">5. AI-Enabled Class Delivery</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module7_AssessmentFeedback.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">7. AI in Assessment and Feedback</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-course-personalized-assistant-as-the-core-support-hub">6.1 The Course Personalized Assistant as the Core Support Hub</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pa-can-do-student-facing">What the PA Can Do (Student-Facing)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pa-should-not-do">What the PA Should Not Do</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-the-pa">Updates to the PA</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extend-office-hours-and-provide-timely-responses">6.2 Extend Office Hours and Provide Timely Responses</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-tool-1-general-purpose-llms-e-g-chatgpt-copilot-gemini-grok-etc">Alternative Tool 1: General-Purpose LLMs (e.g., ChatGPT, Copilot, Gemini, Grok, etc.)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-tool-2-notebooklm">Alternative Tool 2: NotebookLM</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-notebooklm-as-a-student-support-tool">How to Use NotebookLM as a Student Support Tool</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-of-notebooklm-for-student-learning">Benefits of NotebookLM for Student Learning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prompt-templates-for-students-using-notebooklm">Prompt Templates for Students Using NotebookLM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-guidance-study-strategies">6.3 Assignment Guidance &amp; Study Strategies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#primary-tool-the-course-personalized-assistant">Primary Tool: The Course Personalized Assistant</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-pa-will-generate">What the PA will generate:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-should-students-use-the-pa-for-assignments">When Should Students Use the PA for Assignments?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optional-add-on-paassisted-study-planning">Optional Add-On: PA‑Assisted Study Planning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#alternative-tool-1-general-purpose-llms">Alternative Tool 1: General-Purpose LLMs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Alternative Tool 2: NotebookLM</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-student-success">6.4 Monitor Student Success</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Purpose</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#provide-ai-curated-resources">6.5 Provide AI-Curated Resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-resources-generated-in-previous-modules">Using Resources Generated in Previous Modules</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encourage-peer-collaboration-and-support-networks">6.6 Encourage Peer Collaboration and Support Networks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-1-initiating-collaboration-group-formation">Use Case 1: Initiating Collaboration &amp; Group Formation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-2-collaborative-icebreaker-goal-setting">Use Case 2: Collaborative Icebreaker &amp; Goal Setting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-3-scenario-based-team-formation">Use Case 3: Scenario-Based Team Formation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-4-fostering-support-networks-reflection">Use Case 4: Fostering Support Networks &amp; Reflection</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-pa-extensions-real-time-multimodal-ai-tutors">6.7 Advanced PA Extensions: Real-Time &amp; Multimodal AI Tutors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Purpose</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-setup">Tools &amp; Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-1-interacting-with-the-physical-environment">Use Case 1: Interacting with the Physical Environment</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario">Scenario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-students-learn">What students learn:</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#use-case-2-navigating-the-digital-workspace">Use Case 2: Navigating the Digital Workspace</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Scenario</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates-to-your-ai-workspace-personalized-assistant">6.8 Updates to Your AI Workspace &amp; Personalized Assistant</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workspace-updates">Workspace Updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pa-updates">PA Updates</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">6.9 Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-centralize-student-support-in-your-pa">Exercise 1 — Centralize Student Support in Your PA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-early-alert-check-in">Exercise 2 — Early Alert Check-In</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-build-a-multimodal-study-guide">Exercise 3 — Build a Multimodal Study Guide</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-peer-collaboration-setup">Exercise 4 — Peer Collaboration Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-real-time-tutoring-test">Exercise 5 — Real-Time Tutoring Test</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">6.10 Reflection</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
