@@ -273,19 +273,39 @@ The following modules examine how AI can support different stages of the teachin
 
 In each stage of the workflow, instructors apply the principles introduced in this module to ensure that AI use **enhances learning while maintaining academic rigor and responsibility**.
 
-### Reflection Activity
-
-Reflect on the following questions:
-1.  Which of the seven principles do you already apply?
-2.  Which will require the most adjustment?
-3.  How might AI change how students demonstrate understanding in your
-    field?
-
-Write a short reflection summarizing your answers.
-
 ## 0.5 Key Takeaways
 
 -   Teaching with AI requires both **pedagogical integration** and **instrumental augmentation**.
 -   AI‑augmented learning places human reasoning at the center of the educational experience.
 -   The **seven pedagogical principles** help instructors design meaningful AI‑supported learning activities.
 -   These principles guide the practical teaching strategies explored in the rest of the course.
+
+## 0.6 Reflection
+
+Before proceeding to the operational modules of this course, take a moment to reflect on how the pedagogical principles presented in this module relate to your current teaching practices. Consider the following questions:
+1. **Current Practice**  
+   Which of the seven pedagogical principles do you already apply, either intentionally or implicitly, in your teaching?
+2. **AI Integration Readiness**  
+   In your discipline, which types of learning activities could benefit most from AI-augmented learning?
+3. **Challenges and Risks**  
+   What potential risks do you foresee when students use AI tools in your course (e.g., overreliance, reduced effort, misinformation)?
+4. **Design Opportunities**  
+   How might you redesign one existing activity in your course to incorporate the principles of:
+   - productive friction  
+   - verification-first learning  
+   - hybrid assessment
+5. **Instructor Role**  
+   How might the role of the instructor change in AI-augmented learning environments?
+
+Write a short reflection (1–2 paragraphs) summarizing how the pedagogical principles introduced in this module may influence the design of your course.
+
+> **Note:** Throughout Modules 1–8 you will revisit these ideas and translate them into concrete teaching practices.
+
+## 📘 Further Reading
+
+- Holmes, W., Bialik, M., & Fadel, C. (2019). *Artificial Intelligence in Education: Promises and Implications for Teaching and Learning.* Boston: Center for Curriculum Redesign.
+- Luckin, R. (2018). *Machine Learning and Human Intelligence: The Future of Education for the 21st Century.* UCL Institute of Education Press.
+- Mollick, E., & Mollick, L. (2023). *Assigning AI: Seven Approaches for Students with ChatGPT.* The Wharton School Research Paper SSRN. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4475995# 
+- Kasneci, E., et al. (2023). *ChatGPT for Good? On Opportunities and Challenges of Large Language Models for Education.* Learning and Individual Differences, 103, 102274, https://doi.org/10.1016/j.lindif.2023.102274.
+- Biggs, J., & Tang, C. (2011). *Teaching for Quality Learning at University.*, Open UNiversity Press.
+- Ambrose, S., et al. (2010). *How Learning Works: Seven Research-Based Principles for Smart Teaching.*, Jossey-Bass.
