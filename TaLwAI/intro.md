@@ -1,6 +1,8 @@
 # Teaching with AI
 
-Welcome to the **Teaching with AI Program**, part of the FGCU AI Academy led by the Dendritic Institute for Human-Centered AI & Data Science at Florida Gulf Coast University. This program is designed for faculty and instructors seeking **practical, hands-on methods for integrating Generative AI tools throughout the teaching and learning cycle**. Unlike pedagogical or learning-science programs, which are covered separately in the Academy, **this training focuses on the instrumental and operational use of AI**.
+Welcome to the **Teaching with AI Program**, part of the FGCU AI Academy led by the Dendritic Institute for Human-Centered AI & Data Science at Florida Gulf Coast University. This program is designed for faculty and instructors seeking **practical, hands-on methods for integrating Generative AI tools throughout the teaching and learning cycle**. This program introduces a structured approach known as **Teaching with AI**, which integrates pedagogical design principles with AI-powered computational tools to support effective and responsible teaching in the age of artificial intelligence.
+
+The goal is not simply to use AI tools, but to design learning environments where AI **supports deeper understanding, critical thinking, and student development**.
 
 ## Disclaimer
 This training is intended to demonstrate the capabilities of generative AI tools in educational contexts. It is not an endorsement of using AI-generated content without human expertise, oversight, or academic judgment, nor is it a prescriptive guide for its use. Instructors remain fully responsible for:
@@ -29,6 +31,7 @@ For current FGCU policies on generative AI, please refer to:
 
 The goal of this program is to equip instructors with practical, immediately applicable skills for using GenAI across:
 
+- The pedagogical integration of AI in the classroom
 - Strategic planning 
 - Class and course design  
 - Class delivery  
@@ -53,10 +56,66 @@ By the end of this program, participants should be able to:
 
 ![Teaching with AI Learning Objectives](./Data/TwAILO.png)
 
-## 3. Structure and Approach
+## 3. Structure and Approach: The Dual Pillar Framework
 *A multi-layered, workflow-driven program for operational AI integration in higher education*  
 
-The **Teaching with AI Program** is built as a *practical, operational, and iterative system* for integrating generative AI into every phase of the teaching and learning cycle. Unlike pedagogical theory–oriented programs, this course focuses on how instructors actually use AI tools systematically, responsibly, and efficiently within real teaching workflows.
+The **Teaching with AI Program** is built as a *practical, operational, and iterative system* for integrating generative AI into every phase of the teaching and learning cycle. The program starts with the basic pillars of the pedagogical integration of AI in teaching and learning, and then focuses on how instructors actually use AI tools systematically, responsibly, and efficiently within real teaching workflows.
+
+The Teaching with AI framework organizes AI integration into **two complementary pillars**: pedagogical integration and instrumental augmentation.
+
+![The Dual Pillar Framework](./Data/The_Dual_Pillar_Framework.png)
+
+### Pedagogical Integration
+
+Pedagogical integration focuses on **how learning is designed** when AI systems are present.
+
+Key questions include:
+-   What role should AI play in learning activities?
+-   When should students use AI?
+-   When should students work without AI?
+-   How can assignments ensure authentic learning?
+-   How should assessment adapt to AI‑enabled environments?
+
+Pedagogical integration ensures that AI **supports learning goals rather than undermining them**. This is described in Module 0 (Pedagogical Foundations for Teaching with AI), which introduces the pedagogical principles that guide the integration of AI into teaching and learning, including:
+- intentional role definition
+- progressive integration
+- productive friction
+- prompt literacy
+- verification-first learning
+- hybrid assessment
+- transparency and ethical AI use
+
+These principles provide the conceptual foundation for the rest of the course.
+
+### Instrumental Augmentation
+
+Instrumental augmentation focuses on **how AI tools support the instructional workflow**.
+
+AI can assist instructors in:
+-   course planning
+-   material preparation
+-   activity design
+-   assignment development
+-   feedback generation
+-   student support
+-   course reflection and improvement
+
+The remaining modules explore how AI can support different stages of the instructional workflow:
+
+| Module | Topic |
+|------|------|
+| Module 1 | The Instrumental Augmentation Process |
+| Module 2 | Pedagogical Planning |
+| Module 3 | Class Design |
+| Module 4 | Assignment Design |
+| Module 5 | Class Delivery |
+| Module 6 | Student Support |
+| Module 7 | Assessment and Feedback |
+| Module 8 | Reflection and Continuous Improvement |
+
+Each module presents practical strategies for integrating AI tools into teaching while maintaining strong pedagogical alignment with learning outcomes.
+
+### Core Instructional Tools
 
 Across eight modules, instructors progressively build two persistent tools:
 
@@ -73,6 +132,7 @@ The program is structured around the **AI-Enhanced Teaching Workflow** containin
 
 | Module | AI-Enhanced Teaching Phase | Main Instructional Focus | Core Artifacts Produced | Workspace / PA Updates | Key GenAI Tools |
 |--------|-----------------------------|---------------------------|--------------------------|------------------------|------------------|
+| **0. Pedagogical Foundations for Teaching with AI** | **Foundational Layer — Pedagogical Integration** | AI-Augmented Learning, dual-pillar framework, seven pedagogical principles, responsible AI learning design | Principle map, AI-augmented learning model, instructional AI philosophy, course AI usage guidelines | Establish pedagogical guardrails; define AI roles, verification expectations, transparency policies | ChatGPT, Claude, Gemini, NotebookLM |
 | **1. Introduction to Teaching with AI** | Foundations for AI-Enhanced Teaching | Framework, responsible use, institutional policies, prompt & context engineering | AI Workspace created; PA created; initial instructions & guardrails | Initialize Workspace/PA; upload policies; set core capabilities & boundaries | ChatGPT Projects, Claude Projects, Perplexity Spaces, NotebookLM, Gemini |
 | **2. AI-Enhanced Pedagogical & Didactic Planning** | **Phase A — Planning** | Learning outcomes, audience analysis, pedagogical models, syllabus creation, AI use policies | LO table, learner personas, pedagogy map, syllabus drafts, AI policy | Upload syllabus, policies, LO; add alignment & auditing behaviors | Perplexity Academic, Consensus, SciSpace, Google Scholar Labs, Elicit, Scite |
 | **3. AI-Assisted Class Design & Development** | **Phase B — Class Design** | Session planning, slide decks, examples, literature grounding, multimodal content | 90-min plans, slides, readings, activities, diagrams, concept maps | Upload class materials; add content-generation & literature-grounding capabilities | Gamma, Canva Magic Studio, Claude Artifacts, Napkin.ai, NotebookLM |
@@ -335,7 +395,7 @@ Examples:
 
 Educators maintain responsibility for content validity, rigor, transparency, and ethics.
 
-## 7. GenAI Tools to be Studied
+## 7. Main GenAI Tools to be Studied
 
 ### ChatGPT
 ChatGPT is a versatile AI language model developed by OpenAI, capable of interpreting natural language, performing various statistical analyses, coding in Python, and generating data visualizations such as bar charts, pie charts, scatter plots, and histograms. It supports data uploads in formats like CSV, XLSX, PDF, and JSON (up to 50MB) and can integrate with cloud storage like Google Drive and OneDrive. ChatGPT excels in broad AI capabilities including data analysis, summarization, and storytelling. It requires web browsing for real-time data updates.
@@ -415,7 +475,6 @@ Synthesia is an AI-powered video creation platform that generates professional-q
 Access Synthesia here: [https://www.synthesia.io/]
 
 ### Consensus
-
 Consensus is an AI-based scientific search engine that synthesizes evidence directly from peer-reviewed research. Users ask natural-language questions, and the platform retrieves and summarizes findings from academic papers, highlighting areas of agreement, disagreement, and methodological strength. It is ideal for evidence-based teaching, literature reviews, and research-driven content creation.
 Access Consensus here: [https://consensus.app/]
 
