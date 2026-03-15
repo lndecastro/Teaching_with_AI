@@ -2,6 +2,9 @@
 *Centering the Personalized Assistant (PA) as the Core Student Support Tool*
 
 Generative AI enables instructors to expand availability, personalize guidance, and deliver timely academic support. In this module, the **Course Personalized Assistant (PA)**, built progressively from the start of this program, becomes the central hub of all student support workflows. The PA supplements office hours, answers questions, provides study strategies, generates resources, supports peer collaboration, offers early alerts, and interacts multimodally. Other AI tools remain valuable, but the PA becomes the *student-facing anchor* that integrates them into a coherent support ecosystem.
+
+> **Pedagogical Note:**
+> The Course PA should operate within the pedagogical boundaries defined in Module 0, particularly the principle of **intentional role definition**. The assistant supports learning but must not replace student effort or complete graded work.
  
 ## Learning Objectives
 After completing this module, participants will be able to:
@@ -48,6 +51,9 @@ Where necessary, update your existing PA by adding:
 
 ### Purpose
 Extend the instructor’s presence beyond scheduled hours by using AI to generate consistent, accurate responses to common student questions. Although multiple tools can generate FAQs or office-hour support, the PA is still the official 24/7 student-facing channel.
+
+> **Pedagogical Note:**  
+> Student support tools should reinforce **verification-first learning**, encouraging students to confirm information rather than relying solely on AI-generated explanations.
 
 ### Alternative Tool 1: General-Purpose LLMs (e.g., ChatGPT, Copilot, Gemini, Grok, etc.)
 Upload your course materials and prompt the LLM to generate an FAQ or any other support resources desired.
