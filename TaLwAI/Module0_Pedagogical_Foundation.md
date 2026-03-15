@@ -181,7 +181,7 @@ In this way, AI becomes a **thinking partner rather than an answer generator**.
 
 Students analyze an AI-generated solution containing a deliberate error and must identify and correct it.
 
-**Exercise 5**
+**Exercise 5: Productive friction**
 
 Prompt an AI system to solve a problem in your field and identify at least **one possible flaw** in the response.
 
@@ -195,7 +195,7 @@ Students must learn how to communicate effectively with AI systems. Prompt liter
 
 Prompt literacy is becoming an important **digital reasoning skill** for the AI era.
 
-**Exercise 6**
+**Exercise 6: Iterative prompt improvement**
 
 Iteratively improve a prompt three times and compare the responses.
 
@@ -211,7 +211,7 @@ Students must learn to **verify AI results** using:
 
 Verification‑first learning encourages students to treat AI outputs as **hypotheses rather than final answers**.
 
-**Exercise 7**
+**Exercise 7: Verification-first learning**
 
 Ask AI a question in your field and verify the answer using **two independent sources**.
 
