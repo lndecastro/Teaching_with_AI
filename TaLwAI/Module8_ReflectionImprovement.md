@@ -3,6 +3,9 @@
 
 Generative AI enhances your ability to evaluate, reflect on, and iteratively improve your teaching. In this final module, you will use GenAI to identify what worked and what did not, revise materials and strategies, stay updated with research and innovations, share reflective practices, and analyze student feedback using AI-assisted analytics. Across the Teaching with AI program, you have progressively built an AI Workspace and a Course Personalized Assistant. This module focuses on using these tools, and additional GenAI tools, to drive **evidence-based improvement**.
 
+> **Pedagogical Note:**
+> Reflection and course improvement should evaluate how effectively the pedagogical principles introduced in Module 0 were implemented throughout the course.
+
 ## Learning Objectives
 
 After completing this module, participants will be able to:
