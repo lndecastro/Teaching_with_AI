@@ -3,6 +3,9 @@
 
 This step integrates previously designed assignments and rubrics with generative AI to enhance assessment strategies and feedback mechanisms. You will learn how to conduct assessments using existing assignment types with AI support, generate rubric-based constructive feedback, use AI-assisted self- and peer-assessment, and leverage AI for tasks like feedback generation, grading, and originality verification. The module also explores various AI tools and techniques for these tasks. 
 
+> **Pedagogical Note:**
+> This module operationalizes the **hybrid assessment principle** introduced in Module 0. Effective AI-enabled assessment combines AI-assisted work with activities that demonstrate independent reasoning.
+
 ## Learning Objectives
 
 After completing this module, participants will be able to:
@@ -120,6 +123,9 @@ Here is the assignment description:
 
 ### Purpose  
 Use AI as a *supportive* grader, not as a replacement, to increase consistency, quality, and turnaround time.
+
+> **Pedagogical Note:**  
+> Feedback strategies should encourage students to explain how they verified or improved AI-generated outputs, reinforcing the **verification-first learning** principle.
 
 ### Identify Grading and Academic Integrity Tools 
 
