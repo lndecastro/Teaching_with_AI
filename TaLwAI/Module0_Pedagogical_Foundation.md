@@ -50,45 +50,7 @@ Teaching with AI therefore requires **intentional pedagogical design**, not simp
 
 ---
 
-# 0.2 The Dual‑Pillar Framework
-
-The Teaching with AI framework organizes AI integration into **two complementary pillars**: pedagogical integration and instrumental augmentation.
-
-![The Dual Pillar Framework](./Data/The_Dual_Pillar_Framework.png)
-
-## Pedagogical Integration
-
-Pedagogical integration focuses on **how learning is designed** when AI systems are present.
-
-Key questions include:
-
--   What role should AI play in learning activities?
--   When should students use AI?
--   When should students work without AI?
--   How can assignments ensure authentic learning?
--   How should assessment adapt to AI‑enabled environments?
-
-Pedagogical integration ensures that AI **supports learning goals rather than undermining them**.
-
-## Instrumental Augmentation
-
-Instrumental augmentation focuses on **how AI tools support the instructional workflow**.
-
-AI can assist instructors in:
-
--   course planning
--   material preparation
--   activity design
--   assignment development
--   feedback generation
--   student support
--   course reflection and improvement
-
-The remaining modules of this course focus on this **operational workflow**, but all of those practices are guided by the pedagogical principles introduced in this module.
-
----
-
-# 0.3 AI‑Augmented Learning
+# 0.2 AI‑Augmented Learning
 
 The concept of **AI‑Augmented Learning** refers to educational experiences in which:
 
@@ -108,7 +70,7 @@ The goal is not to replace thinking with AI, but to help students learn **how to
 
 ---
 
-# 0.4 The Seven Pedagogical Principles
+# 0.3 The Seven Pedagogical Principles
 
 Teaching with AI is guided by seven pedagogical principles that help instructors design meaningful and responsible learning experiences.
 
@@ -204,7 +166,7 @@ Responsible AI use is an essential component of **professional practice in the A
 
 ---
 
-# 0.5 Connecting Principles to the Teaching Workflow
+# 0.4 Connecting Principles to the Teaching Workflow
 
 The pedagogical principles introduced in this module guide the instructional practices explored in the rest of the course.
 
@@ -212,7 +174,7 @@ The following modules examine how AI can support different stages of the teachin
 
   Module     Focus
   ---------- ---------------------------------------
-  Module 1   Teaching and Learning Framework
+  Module 1   Instrumental Augmentation Process
   Module 2   Pedagogical Planning
   Module 3   Class Design
   Module 4   Assignment Design
