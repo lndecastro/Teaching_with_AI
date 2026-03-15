@@ -3,6 +3,9 @@
 
 This phase involves designing AI-assisted assessment strategies that align with learning goals while promoting authenticity, clarity, and integrity. Key tasks include designing formative and summative assessments, creating authentic tasks like case studies or AI-assisted projects, developing clear rubrics to define performance expectations, and ensuring accessibility and academic integrity. AI can assist in differentiating assessment types, designing real-world tasks, and drafting rubrics. 
 
+> **Pedagogical Note:**
+> Assessment design should reflect the pedagogical principles presented in Module 0, particularly **hybrid assessment**, **verification-first learning**, and **transparency** regarding AI use.
+
 ## Learning Objectives
 After completing this module, participants will be able to:
 
@@ -39,6 +42,9 @@ Based on the learning outcomes presented below, suggest one formative and one su
 
 ### Purpose  
 Design authentic assessments—textual, computational, creative, and multimodal—that mirror real-world professional tasks while leveraging GenAI tools to improve relevance, engagement, and depth of learning.
+
+> **Pedagogical Note:**  
+> Authentic assignments should create opportunities for **productive friction**, where students must evaluate and improve AI-generated outputs rather than simply reproduce them.
 
 **Prompt Template — Role‑Based + Instructional**
 ```
