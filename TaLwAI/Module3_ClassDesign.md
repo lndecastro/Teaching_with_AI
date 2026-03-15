@@ -3,6 +3,9 @@
 
 This module is about structuring the learning experience for clarity, engagement, and progression. It involves breaking down content into modules or units, designing individual class sessions with defined objectives, contents, and materials, creating learning strategies, selecting and preparing learning materials, and integrating discussion and reflection elements. AI can be used here to help design session elements, find relevant scientific literature, generate content from sources, and create learning activities and materials. 
 
+> **Pedagogical Note:**
+> When designing class sessions, instructors should intentionally incorporate **productive friction** and **prompt literacy**, two principles introduced in Module 0. Activities should require students to question, refine, and evaluate AI outputs rather than passively accept them.
+
 ## Learning Objectives
 
 After completing this module, participants will be able to:
@@ -38,6 +41,9 @@ Propose a structure with a title and description for each module, progressing fr
 
 ### Purpose
 Develop structured, high‑quality class plans supported by AI: objectives, content, teaching strategies, timing, and required materials.
+
+> **Pedagogical Note:**  
+> When planning AI-supported activities, instructors should consider how the task reinforces **verification-first learning**, ensuring students critically examine AI-generated information.
 
 ### A. Direct Prompting on LLMs
 **Task:**
