@@ -3,6 +3,8 @@ format: jb-book
 root: intro.md
 
 chapters:
+  - file: Module0_Pedagogical_Foundation.md
+    title: "Module 0: Pedagogical Foundation for the Teaching with AI Framework"
   - file: Module1_TLFramework.md
     title: "Module 1: The Teaching with AI Framework"
   - file: Module2_PedagogicalPlanning.md
