@@ -18,7 +18,6 @@ Module 0 focuses on the **first pillar: Pedagogical Integration**. It presents t
 After completing this module, participants will be able to:
 
 -   Explain why AI requires new pedagogical approaches in higher education.
--   Describe the **dual‑pillar framework for Teaching with AI**.
 -   Define the concept of **AI‑Augmented Learning**.
 -   Understand the **seven pedagogical principles** that guide the integration of AI in teaching.
 -   Recognize how these principles connect to the instructional workflow presented in the following modules.
