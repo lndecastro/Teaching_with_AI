@@ -37,6 +37,20 @@ I am creating a modular course called [Course Title] for higher education studen
 Propose a structure with a title and description for each module, progressing from foundations to application and reflection.
 ```
 
+### Exercise 1: Break Down Your Course Into Modules
+**Goal:** Structure your course into modules or sessions.
+
+**Steps:**
+1. Paste your syllabus or course description into the Workspace.
+2. Use the module‑creation prompt.
+3. Review the proposed modules.
+4. Request alternative versions (basic, standard, advanced).
+
+**Prompt:**
+```
+Break the course into modules with titles, descriptions, and key concepts.
+```
+
 ## 3.2 Design and Create a Class Session (Objectives, Contents, Materials)
 
 ### Purpose
@@ -210,6 +224,20 @@ Include session objectives and sequence of activities with time estimates and ma
 
 > **Note:** After generating your content from your sources, you can use it to create the slides as explained previously.
 
+### Exercise 2: Design a Complete 90-Minute Class Session
+**Goal:** Produce a structured lesson plan using generative AI.
+
+**Steps:**
+1. Select one module from Exercise 1.
+2. Use a session‑design prompt.
+3. Request two more variants (online, hybrid).
+4. Ask the model to create a slide deck outline.
+
+**Prompt:**
+```
+Design a 90-minute class session with objectives, activities, and materials.
+```
+
 ## 3.3 Create Learning Activities
 
 ### Purpose
@@ -225,6 +253,14 @@ Include instructions, timing, and required tools.
 > **Note 1:** If you already know the learning activities you are going to use, you can always employ an LLM to check, improve, provide ideas and create specific activities for you.
 
 > **Note 2:** Some LLMs offer features and artifacts that can be directly used to create learning activities. For example, Claude.ai allows you to create (interactive) artifacts (e.g., apps and websites, documents and templates, games, creative projects, quiz or survey) that can be used as learning activities by the students. 
+
+### Exercise 3: Generate Learning Activities
+**Goal:** Create AI-supported activity plans that promote active learning.
+
+**Steps:**
+1. Choose a class topic.
+2. Use the activity-generation prompt.
+3. Request variations for different complexity levels.
 
 ## 3.4 Select and Prepare Learning Materials
 
@@ -246,6 +282,14 @@ From all the materials generated in the previous steps, identify and validate th
 
 > **Note:** The GenAI models should be used as assistants to support you in the process of planning, designing, and creating your course, but you must ensure everything is accurate and ready to be presented in class. The scientific content retrieved and analyzed in Section 3.2C may be particularly relevant to become part of the content for your course.
 
+### Exercise 4: Generate and Validate Learning Materials
+**Goal:** Use AI to produce readings, examples, tools, and teaching aids.
+
+**Steps:**
+1. Run the materials prompt.
+2. Request multiple formats (summary, table, example, visual).
+3. Validate outputs manually for accuracy.
+
 ## 3.5 Integrate Discussion and Reflection Elements
 
 ### Purpose
@@ -259,6 +303,19 @@ Examples of reflective questions:
 
 Generate 3 reflection questions that promote critical thinking about [Course Topic].
 ```
+
+### Exercise 5: Generate Discussion and Reflection Questions
+**Goal:** Create a reusable prompt that generates discussion and reflection questions for your class sessions.
+
+**Steps:**
+1. Copy the reflection prompt template provided above.
+2. Replace **[Course Topic]** with a topic from your course (for example: regression analysis, climate change mitigation, ethical AI, market segmentation, etc.).
+3. Run the prompt in your preferred AI tool and generate **three reflection questions**.
+4. Ask the AI to generate **two additional discussion prompts** designed for small group discussion.
+5. Review the questions and revise them so that they:
+   - encourage **critical thinking**
+   - connect to **real-world situations**
+   - cannot be answered with a simple factual response.
 
 ## 3.6 Create an AI-Powered Class Summary Generator
 
@@ -275,6 +332,14 @@ Include the main concepts, examples, tools used, and next steps for students.
 ```
 Write a prompt I can give to an LLM at the end of each class to generate a 1-paragraph summary of key takeaways based on notes or transcripts from a session on [Course Topic].
 ```
+
+### Exercise 6: Create a Class Summary Generator
+**Goal:** Build a reusable summary generator prompt.
+
+**Steps:**
+1. Copy the summary prompt.
+2. Run it on an example transcript or your own notes.
+3. Ask for three versions: bullet list, student-friendly, expert-level.
 
 ## 3.7 Updates to Your AI Workspace and Personalized Assistant
 This section summarizes the main updates to your AI Workspace (Project) and Course Personalized Assistant (PA) to ensure both tools evolve consistently as you progress in this program.
@@ -316,61 +381,7 @@ Add under **Safety & Boundaries**:
 
 > **Note:** Have a look at Section 2.7C for instructions on workflow adjustments going forward each module.
 
-## 3.8 Exercises
-
-### Exercise 1 — Break Down Your Course Into Modules
-**Goal:** Structure your course into modules or sessions.
-
-**Steps:**
-1. Paste your syllabus or course description into the Workspace.
-2. Use the module‑creation prompt.
-3. Review the proposed modules.
-4. Request alternative versions (basic, standard, advanced).
-
-**Prompt:**
-```
-Break the course into modules with titles, descriptions, and key concepts.
-```
-
-### Exercise 2 — Design a Complete 90-Minute Class Session
-**Goal:** Produce a structured lesson plan using generative AI.
-
-**Steps:**
-1. Select one module from Exercise 1.
-2. Use the session‑design prompt.
-3. Request two more variants (online, hybrid).
-4. Ask the model to create a slide deck outline.
-
-**Prompt:**
-```
-Design a 90-minute class session with objectives, activities, and materials.
-```
-
-### Exercise 3 — Generate Learning Activities
-**Goal:** Create AI-supported activity plans that promote active learning.
-
-**Steps:**
-1. Choose a class topic.
-2. Use the activity-generation prompt.
-3. Request variations for different complexity levels.
-
-### Exercise 4 — Generate and Validate Learning Materials
-**Goal:** Use AI to produce readings, examples, tools, and teaching aids.
-
-**Steps:**
-1. Run the materials prompt.
-2. Request multiple formats (summary, table, example, visual).
-3. Validate outputs manually for accuracy.
-
-### Exercise 5 — Create a Class Summary Generator
-**Goal:** Build a reusable summary generator prompt.
-
-**Steps:**
-1. Copy the summary prompt.
-2. Run it on an example transcript or your own notes.
-3. Ask for three versions: bullet list, student-friendly, expert-level.
-
-## 3.9 Reflection
+## 3.8 Reflection
 - Which class-design tasks benefited most from AI?
 - Where did human oversight become essential?
 - How could multimodal AI tools enrich the learning experience?
