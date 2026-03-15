@@ -250,6 +250,20 @@ Based on the initial course idea, propose several possible structures or models 
 Help me identify the key decisions and information still required to begin formal course design. 
 ```
 
+### **Exercise 1 — Build Your AI Workspace**
+Based on the explanation presented, you are now going to create the AI Workspace for your new course or the course you plan to redesign. You may need to have the course name, its brief description, and some sample materials (slides, open access papers or books, etc.). Then, follow the steps below.
+
+1. Choose a platform (e.g., ChatGPT, Claude, Perplexity, NotebookLM).  
+2. Create a Workspace (Project or Space).  
+3. Upload some course files (contents).  
+4. Add a model instruction block (see examples provided and adjust accordingly).  
+5. Ask the Workspace to:  
+   - Map your course structure  
+   - Identify missing components  
+   - Propose alternative versions  
+
+> **Note**: Remember to create and rename prompt threads in such a way that is meaningful to your form of organizing the course.
+
 ## 1.4 Creating Your Course Personalized Assistant  
 *A course-specific AI tutor accessible to students*
 
@@ -372,26 +386,8 @@ I am reviewing this week’s material. Please explain the main concepts at three
 Then give me two practice questions to check my understanding.
 ```
 
-## 1.5 Program Summary
-
-The Mind Map below was generated using NotebookLM and printed with Napkin. It provides an overview of the Teaching with AI program. The program is broken down into seven sequential phases that structure how generative AI is applied across the entire teaching process. The other mind map branches detail the essential tools, foundational knowledge, and guiding principles that frame the entire AI-Integrated instructional cycle.
-
-![Program Overview](./Data/MM_OperationalIntegration.png)
-
-## 1.6 Exercises
-
-### **Exercise 1 — Build Your AI Workspace**
-
-1. Choose a platform (e.g., ChatGPT, Claude, Perplexity, Gemini, NotebookLM).  
-2. Create a Workspace (Project).  
-3. Upload at least **three course files**.  
-4. Add a model instruction block.  
-5. Ask the Workspace to:  
-   - Map your course structure  
-   - Identify missing components  
-   - Propose alternative versions  
-
 ### **Exercise 2 — Build Your Personalized Course Assistant**
+Based on the explanation presented, you are now going to create the AI Tutor for your new course or the course you plan to redesign. As with the AI Workspace, you may need to have the course name, its brief description, and some sample materials (slides, open access papers or books, etc.). Then, follow the steps below.
 
 1. Define a system role  
 2. Upload a syllabus or course overview  
@@ -399,12 +395,13 @@ The Mind Map below was generated using NotebookLM and printed with Napkin. It pr
 4. Add conversation starters  
 5. Test using three prompts
 
-### **Exercise 3 — Analyze Where AI Fits in Your Teaching Cycle**
+## 1.5 Program Summary
 
-Reflect on each phase (A–G):  
-Where does AI provide value? Where should humans lead?
+The Mind Map below was generated using NotebookLM and printed with Napkin. It provides an overview of the Teaching with AI program. The program is broken down into seven sequential phases that structure how generative AI is applied across the entire teaching process. The other mind map branches detail the essential tools, foundational knowledge, and guiding principles that frame the entire AI-Integrated instructional cycle.
 
-## 1.7 Reflection
+![Program Overview](./Data/MM_OperationalIntegration.png)
+
+## 1.6 Reflection
 
 - What parts of the teaching workflow could AI immediately streamline?  
 - Where do you feel hesitation about integrating AI?  
