@@ -5,6 +5,9 @@ This module focuses on the strategic and intentional groundwork for teaching. It
 
 > **Note:** All prompts that you use from this module onwards should be made within your AI Workspace, because this will ensure that you build upon the project you created and all developments are consistent with the instructions provided and knowledge base uploaded.
 
+> **Pedagogical Note:**
+> At the planning stage, instructors should consider the **Progressive Integration** principle introduced in Module 0. Early stages of a course may limit AI assistance to ensure conceptual understanding before students begin using AI as a support tool.
+
 ## Learning Objectives
 After completing this module, participants will be able to:
 
@@ -123,6 +126,9 @@ The following files contain the general FGCU policies for GenAI use. Download th
 [Core_Syllabus_Policies_Statements](./Data/CoreSyllabusPolicyStatements.pdf) <br>
 
 > **Note:** These documents should be added to the course personalized assistant and workspace (project) so that they become part of the knowledge base to be used in future interactions and developments.
+
+> **Pedagogical Note:**  
+> These policies support the pedagogical principle of **Transparency, Ethics, and Accountability** discussed in Module 0.
 
 **Prompt Template — Few-Shot + Document Grounding**
 ```
