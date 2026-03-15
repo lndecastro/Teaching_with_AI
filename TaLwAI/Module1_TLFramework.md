@@ -1,10 +1,10 @@
 # 1. The Teaching with AI Framework
 
-The **Teaching with AI Framework** provides a structured, operational view of how generative AI can be integrated into each phase of the teaching process. Rather than altering pedagogy, it highlights where AI can add efficiency, creativity, and support across planning, design, delivery, assessment, student support, and reflection.
+The **Teaching with AI Framework** provides a structured, operational view of how generative AI can be integrated into each phase of the teaching process. Making use of the pedagogical fonndation of Module 0, it highlights where AI can add efficiency, creativity, and support across planning, design, delivery, assessment, student support, and reflection.
 
 This module provides the foundation for the instrumental use of Generative AI (GenAI) across the entire teaching workflow. It is built upon the background knowledge from the **AI Literacy Program** (Prompt Engineering, Context Engineering, and Foundational Models).  
 
-Unlike pedagogical programs, this module focuses **not** on pedagogy or teaching theory, but on **how to operationally integrate GenAI tools** to plan, design, deliver, assess, support, and improve your course. In this module you will learn the seven steps of the framework, create your course workspace and personalized assistant.
+This module focuses on **how to operationally integrate GenAI tools** to plan, design, deliver, assess, support, and improve your course. In this module you will learn the seven steps of the framework, create your course workspace and personalized assistant.
 
 ## Learning Objectives
 
@@ -123,6 +123,9 @@ To use AI instrumentally in education, instructors must understand:
 - Strengths, limitations, and best-fit teaching use cases
 
 You are strongly encouraged to have a look at our **AI Literacy program**, which will guide you through the basics of Prompt and Context Engineering, and also foundational models and LLM ecosystems. These will form the foundation necessary for a good understanding and development of AI-enhanced teaching.
+
+> **Pedagogical Note:**
+> The AI tools and workflows introduced in this module should always be interpreted through the pedagogical principles presented in **Module 0**. In particular, the principles of **intentional role definition**, **progressive integration**, and **transparency** guide how instructors configure AI workspaces and personalized assistants.
 
 ## 1.3 Creating Your AI Workspace  
 *A persistent, structured environment for your course*
