@@ -187,7 +187,7 @@ In each stage of the workflow, instructors apply the principles introduced in th
 
 ---
 
-## Key Takeaways
+# Key Takeaways
 
 -   Teaching with AI requires both **pedagogical integration** and **instrumental augmentation**.
 -   AI‑augmented learning places human reasoning at the center of the educational experience.
