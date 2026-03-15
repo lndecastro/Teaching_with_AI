@@ -38,6 +38,12 @@ Based on the learning outcomes presented below, suggest one formative and one su
 
 > **Note 2:** If you know the type of assignment you want to create, you can prompt the model to create exactly that type of assignment.
 
+### Exercise 1: Generate Assessment Types
+Use your Workspace to generate:
+- 2 formative assessments  
+- 2 summative assessments  
+- A mapping table aligning each to learning outcomes  
+
 ## 4.2 Create Authentic Tasks (Quizzes, Exams, Case Studies, Projects, Multimodal Assignments)
 
 ### Purpose  
@@ -148,6 +154,76 @@ Include:
 
 > **Note:** Some foundational models and general-purpose LLMs contain features and tools that allow you to create specific types of assignments, such as *Artifacts -> Quiz* in Claude.ai and *Quiz* in NotebookLM. There are also AI tools designed exclusively to support teaching and learning activities, such as Eduaide (eduaide.ai) and Khanmigo (khanmigo.ai), that can support the development of assignments.
 
+### Exercise 2: Designing an Authentic AI-Supported Assignment
+
+**Goal:** Design a learning task that connects course concepts to a real-world context while incorporating AI in a meaningful and responsible way.
+
+Authentic tasks simulate the kinds of problems professionals face outside the classroom. These tasks often require students to analyze real data, evaluate trade-offs, justify decisions, or communicate insights to stakeholders.
+
+**Step 1** — Identify a Real-World Context
+Select a topic from your course and imagine a **real situation where professionals would apply this knowledge**.
+
+Examples:
+
+| Field | Example Context |
+|------|----------------|
+| Data Science | Analyzing customer data to improve product recommendations |
+| Business | Designing a market entry strategy for a new product |
+| Environmental Science | Evaluating policy options to reduce coastal pollution |
+| Education | Designing an AI-supported lesson plan |
+| Engineering | Assessing design trade-offs for a sustainable energy system |
+
+Write a short description of the professional scenario.
+
+**Step 2** — Define the Student Task
+Describe what students must produce. Examples:
+- policy brief  
+- technical analysis  
+- design proposal  
+- consulting report  
+- data analysis dashboard  
+- strategic recommendation memo
+
+Write **2–3 sentences** describing the task.
+
+**Step 3** — Define the Role of AI
+Decide **how AI will be used in the assignment**. Examples:
+- generating initial ideas
+- assisting with data analysis
+- drafting alternative explanations
+- identifying possible risks or limitations
+- simulating stakeholder perspectives
+
+Write a short description:
+
+> In this assignment, AI will function as a __________ while students remain responsible for __________.
+
+**Step 4** — Use AI to Expand the Assignment
+Ask an AI system to help refine the task. Example prompt:
+```
+I am designing an authentic assignment for a university course on [topic].
+The assignment context is: [describe the real-world scenario]
+Students will produce: [describe the task]
+Suggest:
+1. two additional constraints that make the task more realistic
+2. two potential challenges students might face
+3. one way AI could be used responsibly in this assignment.
+```
+
+**Step 5** — Evaluate and Refine
+Review the AI suggestions and decide:
+- Which suggestions improve the assignment?
+- Which suggestions should be rejected or modified?
+
+Revise your assignment description accordingly.
+
+**Deliverable**
+Write a **short authentic assignment description** including:
+- real-world context
+- student task
+- role of AI
+- expected learning outcome
+
 ## 4.3 Create Rubrics with GenAI
 
 ### Purpose  
@@ -205,6 +281,12 @@ The rubric should evaluate both independently and their integration.
 Create a rubric that includes a specific criterion assessing transparency in how students used AI during the assignment (e.g., listing prompts, describing AI contributions).
 ```
 
+### Exercise 3: Build a Full Rubric
+Use the Likert-based rubric prompt and refine it with:
+```
+Audit this rubric for clarity, redundancy, and alignment with learning outcomes.
+```
+
 ## 4.4 Ensure Accessibility and Academic Integrity
 
 ### Purpose  
@@ -221,6 +303,13 @@ Include examples of modifications.
 ```
 Suggest five ways to promote academic integrity in AI-assisted assignments.
 For each, include a strategy to monitor or mitigate misuse.
+```
+
+### Exercise 4: Accessibility & Integrity Review
+Ask:
+```
+Review this assignment for accessibility and integrity issues.
+Provide revisions and a checklist.
 ```
 
 ## 4.5 Updates to Your AI Workspace and Personalized Assistant
@@ -301,37 +390,7 @@ Add under **Safety & Boundaries**:
 > - All student questions go to the PA  
 > - Update both tools incrementally as new materials are created  
 
-## 4.6 Exercises
-
-### Exercise 1 — Generate Assessment Types
-Use your Workspace to generate:
-- 2 formative assessments  
-- 2 summative assessments  
-- A mapping table aligning each to learning outcomes  
-
-### Exercise 2 — Create an AI‑Enhanced Case Study
-Upload a reading or dataset into your Workspace and prompt:
-```
-Generate a case study with guiding questions based on this material.
-```
-
-### Exercise 3 — Build a Full Rubric
-Use the Likert-based rubric prompt and refine it with:
-```
-Audit this rubric for clarity, redundancy, and alignment with learning outcomes.
-```
-
-### Exercise 4 — Accessibility & Integrity Review
-Ask:
-```
-Review this assignment for accessibility and integrity issues.
-Provide revisions and a checklist.
-```
-
 ## 4.7 Reflection
 - Did AI help improve clarity or depth of assessment design?
 - Which tasks still require human oversight?
 - How will you integrate these workflows into your course assignments?
-
-
-
