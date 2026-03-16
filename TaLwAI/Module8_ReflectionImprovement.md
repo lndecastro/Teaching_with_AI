@@ -41,6 +41,9 @@ Include:
 - Evidence supporting each insight
 ```
 
+### Exercise 1: Pattern Analysis  
+Upload graded work and ask AI to identify learning patterns.
+
 ## 8.2 Revise Materials, Strategies, and Assessments for Future Iterations
 
 ### Purpose  
@@ -61,6 +64,9 @@ Your suggestions must improve:
 - alignment with learning outcomes
 ```
 
+### Exercise 2: Redesign Assignment  
+Select an assignment and ask AI for a revised version addressing identified gaps.
+
 ## 8.3 Stay Engaged with Research and Innovations
 
 ### Purpose  
@@ -79,6 +85,9 @@ Provide a curated list of the top 5 recent articles, reports, or tools related t
 Summarize each item, include citations, and propose one way it could influence future course iterations.
 ```
 
+### Exercise 3: Research Sprint  
+Use Consensus or Perplexity Academic to gather new evidence for course design.
+
 ## 8.4 Share Experiences to Foster Reflective Practice
 
 ### Purpose  
@@ -96,6 +105,9 @@ Examples of reflective statements:
 Based on my course [Course Name], generate a reflective blog post or discussion prompt 
 capturing my key insights, challenges, and improvements for next year.
 ```
+
+### Exercise 4: Peer-Reflection Post  
+Generate a short reflection and share it with peers.
 
 ## 8.5 Reflect on Teaching Effectiveness Using Feedback and Data
 
@@ -183,6 +195,9 @@ Generate:
 - A short narrative interpreting results
 ```
 
+### Exercise 5: SPoI Data Synthesis  
+Upload past SPoI results and generate a dashboard.
+
 ## 8.6 Updates to Your AI Workspace and Personalized Assistant  
 
 Minimal updates are needed beyond uploading new reflection materials.
@@ -214,24 +229,7 @@ Upload to PA:
 - simplified SPoI instructions (if you want students to complete them)  
 - reflection prompts for metacognition (if used as part of course activities)  
 
-## 8.7 Exercises  
-
-### Exercise 1 — Pattern Analysis  
-Upload graded work and ask AI to identify learning patterns.
-
-### Exercise 2 — Redesign Assignment  
-Select an assignment and ask AI for a revised version addressing identified gaps.
-
-### Exercise 3 — Research Sprint  
-Use Consensus or Perplexity Academic to gather new evidence for course design.
-
-### Exercise 4 — Peer-Reflection Post  
-Generate a short reflection and share it with a faculty community.
-
-### Exercise 5 — SPoI Data Synthesis  
-Upload past SPoI results and generate a dashboard.
-
-## 8.9 Reflection  
+## 8.7 Reflection  
 
 - What teaching strategies were most effective, according to AI-assisted analysis?  
 - Which parts of your course need redesign in the next iteration?  
