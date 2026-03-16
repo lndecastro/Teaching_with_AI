@@ -43,6 +43,12 @@ Include one example AI-supported workflow for each assignment type.
 - **NotebookLM or Claude Quiz Generator** – grounded MCQs from course materials  
 - **AI Workspaces** – persistent assignment evaluators  
 
+### Exercise 1: Create Three Assessment Variants  
+Use the Workspace to generate:
+- one formative quiz  
+- one case study  
+- one multimodal project task  
+
 ## 7.2 Generate Rubric-Based, Constructive Feedback
 
 ### Purpose
@@ -69,6 +75,9 @@ Using the rubric provided, give criterion-level feedback with:
 - **Language-level variants**: beginner / intermediate / advanced  
 - **Bias audit of the rubric**: check for clarity, bias, ambiguity  
 - **Accessibility transformations**: simplify language, add examples
+
+### Exercise 2: Rubric-Based Feedback Generation  
+Upload a student submission; use a rubric-based feedback prompt; analyze and validate the AI-generated feedback.
 
 ## 7.3 Use AI-Assisted Self- and Peer-Assessment
 
@@ -118,6 +127,9 @@ Using ONLY the assignment description below, perform the following:
 Here is the assignment description:
 [Paste assignment here]
 ```
+
+### Exercise 3: Self- and Peer-Assessment Workflow  
+Generate checklists and peer prompts using your course rubric.
 
 ## 7.4 Use AI for Feedback, Grading, and Academic Integrity
 
@@ -349,6 +361,12 @@ If you have the case study delivered by a student, import or create the rubric i
 #### Tool 2: SciSpace
 Using function *AI Detector* input the text or upload the PDF file with the content to be checked for originality.
 
+### Exercise 4: Originality & Consistency Screening  
+Upload anonymized samples and run the reasoning-consistency analysis prompts.
+
+### Exercise 5: Classwide Insights  
+Upload a batch of student answers and generate a misconception matrix and reteaching plan.
+
 ## 7.5 Updates to Your AI Workspace and Personalized Assistant
 
 Similarly to Module 6, this module does **not** require major structural updates to either the Workspace or the Personalized Assistant. Only *minimal updates* are recommended to integrate the new assessment-related materials created in Module 7.
@@ -364,27 +382,7 @@ Module 7 primarily adds *content* rather than *new capabilities*. The existing W
 
 > **Note:** Do *not* upload instructor versions of rubrics, detailed feedback templates, grading keys, or analytic summaries to the PA.
 
-## 7.6 Exercises
-
-### Exercise 1 — Create Three Assessment Variants  
-Use the Workspace to generate:
-- one formative quiz  
-- one case study  
-- one multimodal project task  
-
-### Exercise 2 — Rubric-Based Feedback Generation  
-Upload a student submission; use a rubric-based feedback prompt; compare versions.
-
-### Exercise 3 — Self- and Peer-Assessment Workflow  
-Generate checklists and peer prompts using your course rubric.
-
-### Exercise 4 — Originality & Consistency Screening  
-Upload anonymized samples and run the reasoning-consistency analysis prompts.
-
-### Exercise 5 — Classwide Insights  
-Upload a batch of student answers and generate a misconception matrix and reteaching plan.
-
-## 7.7 Reflection
+## 7.6 Reflection
 
 - How did AI enhance clarity, efficiency, or depth in your assessment processes?  
 - Which feedback or grading tasks still require full human oversight?  
