@@ -142,6 +142,36 @@ Generate a pre-class preparation guide for this week’s materials.
 List what I should read, watch, or review.
 ```
 
+### Exercise 1: Build an AI-Supported FAQ for Your Course
+**Goal:** Create a reusable FAQ resource that extends office hours.
+
+**Steps:**
+1. Collect **one course document**, such as:
+   - syllabus
+   - assignment instructions
+   - lecture slides
+   - course policies.
+2. Use the following prompt with an AI tool:
+```
+Read the attached course material and generate a structured FAQ section.
+Each FAQ must include:
+- a clear student question
+- a concise answer
+- grouping by topic (assignments, grading, logistics, concepts).
+```
+3. Generate **at least 8 questions** students might ask.
+4. Review the generated questions and:
+   - remove redundant items
+   - improve unclear responses
+   - ensure alignment with course policies.
+5. Save the FAQ as a **student support resource** in:
+   - your LMS
+   - your PA knowledge base
+   - your student NotebookLM.
+
+**Deliverable**
+Produce a **final FAQ document** with at least **8 questions and answers**.
+
 ## 6.3 Assignment Guidance & Study Strategies
 
 ### Purpose  
@@ -224,6 +254,36 @@ NotebookLM can generate grounded resources that can be later distributed:
 
 > **Note 1:** Use NotebookLM to produce structured learning aids *based solely on your uploaded readings*, then make them available for student support. <p>
 > **Note 2:** If you have created the shared Student Notebook, then the students will be able to use it also as their *assignment assistant environment*.
+
+### Exercise 3: Create an Assignment Guidance Prompt
+**Goal:** Design a reusable prompt that helps students approach assignments without generating answers.
+
+**Steps:**
+1. Choose one assignment from your course.
+2. Create a prompt that instructs the AI assistant to:
+   - explain the assignment
+   - break it into steps
+   - suggest prerequisite knowledge
+   - generate self-check questions.
+Example prompt:
+```
+Help me understand how to approach [Assignment Name].
+
+Explain the task in simple terms,
+break it into clear steps,
+suggest prerequisite concepts I should review,
+and generate 3–5 self-check questions.
+
+Do NOT provide any part of the solution.
+```
+3. Test the prompt using your PA or another AI tool.
+4. Evaluate the response and revise the prompt if the AI:
+   - provides answers
+   - reveals solutions
+   - ignores constraints.
+
+**Deliverable**
+Write your **final assignment guidance prompt** and save it in your **PA conversation starters**.
 
 ## 6.4 Monitor Student Success
 
@@ -315,6 +375,39 @@ Additional Notes:
 - Ensure FERPA compliance at all times  
 ```
 
+### Exercise 4: Design a Student Success Monitoring Matrix
+**Goal:** Design a simple framework for monitoring student progress using anonymized data.
+
+**Steps:**
+1. Identify **five indicators of student engagement**, such as:
+   - attendance
+   - assignment completion
+   - quiz performance
+   - discussion participation
+   - LMS engagement.
+2. Create a table structure including:
+| Variable | Data Type | Measurement Method | Weight |
+|---------|-----------|-------------------|-------|
+
+3. Ask an AI system to help propose a **success score formula** using these indicators.
+Example prompt:
+```
+I am designing a student success monitoring system for a university course.
+
+Using the following variables:
+[insert variables]
+
+Propose a formula for calculating a student success score,
+explain the weighting rationale,
+and suggest how instructors could use this score for early intervention.
+```
+
+4. Review the AI suggestions and refine the model.
+5. Ensure the system **does not include personally identifiable information (PII)**.
+
+**Deliverable**
+Produce a **Student Success Monitoring Table** and a short description of how it could support early intervention.
+
 ## 6.5 Provide AI-Curated Resources 
 
 ### Purpose
@@ -340,6 +433,42 @@ If not yet, these can now be:
 4. **Used to generate new, updated resources** for students  
 
 This creates a unified and coherent study‑support ecosystem.
+
+### Exercise 5: Create an AI-Curated Study Resource Pack
+**Goal:** Generate structured study materials students can use independently.
+
+**Steps:**
+1. Choose one topic from your course.
+2. Ask an AI system to generate a **study resource pack** using the following prompt:
+```
+Create a structured study resource pack for the topic [Topic].
+Include:
+- a concise explanation of the concept
+- a bullet-point summary
+- a diagram description
+5 flashcards
+3 self-test questions.
+```
+
+3. Review the output and verify:
+   - accuracy
+   - alignment with course materials
+   - clarity for students.
+4. Optionally ask the AI to generate:
+   - a concept map
+   - a short audio explanation
+   - a visual summary.
+5. Upload the final materials to:
+   - the Course PA
+   - the shared NotebookLM
+   - the LMS.
+
+**Deliverable**
+Produce a **mini study guide** containing:
+- explanation
+- summary
+- flashcards
+- self-test questions.
 
 ## 6.6 Encourage Peer Collaboration and Support Networks
 
@@ -468,27 +597,10 @@ Only minimal updates are needed after completing this module. The primary change
 - Add newly created student support materials to the PA’s knowledge base (if applicable).  
 - No changes are needed to the PA’s role, capabilities, or boundaries beyond what was already updated at the previous modules.
 
-## 6.9 Exercises
-
-### Exercise 1 — Centralize Student Support in Your PA
-Upload new assignment sheets and ask your PA to generate:
-- FAQs  
-- study strategies  
-- misconceptions list  
-
-### Exercise 2 — Early Alert Check-In
-Use the success-score matrix to design an AI-powered self-assessment check-in.
-
-### Exercise 3 — Build a Multimodal Study Guide
-Produce a study guide for a difficult topic using multimodal tools, then upload it to the PA.
-
-### Exercise 4 — Peer Collaboration Setup
-Give the PA a set of hypothetical student profiles; ask it to form groups.
-
-### Exercise 5 — Real-Time Tutoring Test
+### Exercise 6: Real-Time Tutoring Test
 Use Google AI Studio Stream to perform a live tutoring interaction.
 
-## 6.10 Reflection
+## 6.9 Reflection
 
 - How does placing the PA at the center of student support improve accessibility and consistency?  
 - Which tasks are best automated through the PA, and which require human oversight?  
