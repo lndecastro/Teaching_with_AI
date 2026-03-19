@@ -36,7 +36,7 @@ Present results in a table: Outcome | Bloom Level | Example Assessment.
 
 > **Note:** In the prompt above you can add or attach a course description or materials to guide the model in the creation of the learning outcomes. These contents could alternatively be added as files in your workspace (project).
 
-**Additional Prompt Variant — Alignment Check**
+**Additional Prompt — Alignment Check**
 ```
 Check whether the learning outcomes below align with Bloom’s taxonomy levels.
 Identify any non-measurable verbs and suggest revisions.
@@ -99,7 +99,7 @@ Describe needs, risks, and recommended adaptations for each.
 **Steps:**
 1. Paste course context.
 2. Use the profile prompt.
-3. Request two persona variants.
+3. Request persona variants.
 4. Compare adaptations needed.
 
 ## 2.3 Select Pedagogical Approach(es)
@@ -117,9 +117,9 @@ and give two examples of how AI can enhance activities in that model.
 [Paste the learning outcomes and profile here]
 ```
 
-**Additional Prompt Variant — Activity Generator**
+**Additional Prompt — Activity Generator**
 ```
-Generate 4 AI-enhanced sample activities using the selected pedagogical model.
+Generate 4 (AI-enhanced) sample activities using the selected pedagogical model.
 Include Bloom level, estimated time, and resources needed.
 ```
 
@@ -130,10 +130,7 @@ Include Bloom level, estimated time, and resources needed.
 **Steps:**
 1. Provide learning outcomes and personas.
 2. Use the chain-of-thought prompt.
-3. Select one model and refine it with:
-```
-Generate 3 learning activities aligned with this model and the outcomes.
-```
+3. Select one model and refine it with the additional prompt.
 
 ## 2.4 Choose Tools and Technologies
 
@@ -147,11 +144,22 @@ For each, describe one educational use and one limitation or risk.
 Present results in a table.
 ```
 
-**Additional Prompt Variant — Matching Tools to Activities**
+**Additional Prompt — Matching Tools to Activities**
 ```
-Given these planned learning activities [paste],
+Given the learning activities below,
 suggest the best AI tool for each one of them and explain how each tool supports the task.
+[Paste learning activities here]
 ```
+
+### Exercise 4: Select and Align AI Tools
+
+**Goal**: Identify and align AI tools with course goals, activities, and responsible use.
+
+**Steps**:
+1. Use the zero-shot prompt to generate a list of AI tools for your course.
+2. Review the tools and select 2–3 that best align with your learning outcomes.
+3. Paste one or more of your planned learning activities into the matching prompt.
+4. For each selected tool, define how you will ensure responsible use (e.g., verification, transparency).
 
 ## 2.5 Align with Institutional and Ethical Guidelines
 
@@ -191,12 +199,12 @@ Include:
 6. Summary table of allowed / restricted / prohibited uses.
 ```
 
-**Additional Prompt Variant — Student-Friendly Version**
+**Additional Prompt — Student-Friendly Version**
 ```
 Rewrite the AI Use Policy above in student-friendly language at a 9th-grade readability level.
 ```
 
-### Exercise 4: Draft AI Use Policies
+### Exercise 5: Draft AI Use Policies
 
 **Goal:** Produce a policy aligned with the institution guidelines.
 
@@ -299,7 +307,7 @@ Generate three syllabus variants:
 3) accessibility-friendly version (WCAG).
 ```
 
-### Exercise 5: Produce a Syllabus Draft
+### Exercise 6: Produce a Syllabus Draft
 
 **Goal:** Create a complete syllabus using the course template.
 
@@ -385,14 +393,14 @@ How do the learning outcomes connect to our assignments?
 
 ### C. Workflow Adjustments Going Forward
 
-**1. All Module 2+ prompts must be issued inside the Workspace**
+**1. All Module 2+ prompts must be issued inside the Workspace** <p>
 To ensure:
 - Document grounding  
 - Consistency across versions  
 - Accurate policy integration  
 - Alignment across modules  
 
-**2. Build incremental outputs instead of isolated chats (each chat should represent one specific set of actions)**
+**2. Build incremental outputs instead of isolated chats (each chat should represent one specific set of actions)** <p>
 Examples:
 - Draft → revise → audit → finalize  
 - Outcomes → pedagogy → assessments → syllabus integration  
@@ -401,7 +409,7 @@ Examples:
 Workspace = design environment <p> 
 PA = learning support environment  
 
-**4. Update both tools continuously**
+**4. Update both tools continuously** <p>
 As you progress through Modules 3–8, upload:
 - Slides  
 - Assignments  
