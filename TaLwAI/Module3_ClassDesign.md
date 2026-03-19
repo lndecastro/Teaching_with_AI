@@ -46,11 +46,6 @@ Propose a structure with a title and description for each module, progressing fr
 3. Review the proposed modules.
 4. Request alternative versions (basic, standard, advanced).
 
-**Prompt:**
-```
-Break the course into modules with titles, descriptions, and key concepts.
-```
-
 ## 3.2 Design and Create a Class Session (Objectives, Contents, Materials)
 
 ### Purpose
@@ -202,7 +197,7 @@ Include: summary, benefits, risks, best practices, and citation-backed recommend
 
 ### D. Generating Content from External Sources
 **Task:**
-Use a generative model like **Perplexity, NotebookLM, or SciSpace**, to analyze some pre-selected sources of reference and create content from them. As example, you can use the papers below as your source material if needed or some of the papers you saved from your previous searches. <br>
+Use a generative model like **Perplexity, NotebookLM, or SciSpace**, to analyze some pre-selected sources of reference and create content from them. As example, you can use the papers below as your source material if needed or some of the open access papers you saved from your previous searches. <br>
 
 Example contents (papers) for a [Course on Teaching with AI] and the topic of [AI for Assessment and Feedback]: <p>
 [Paper_1:](./Data/AIforAssessmentandFeedback.pdf) Artificial intelligence for assessment and feedback to enhance student success in higher education. (*Open Access*) <br>
@@ -232,11 +227,6 @@ Include session objectives and sequence of activities with time estimates and ma
 2. Use a session‑design prompt.
 3. Request two more variants (online, hybrid).
 4. Ask the model to create a slide deck outline.
-
-**Prompt:**
-```
-Design a 90-minute class session with objectives, activities, and materials.
-```
 
 ## 3.3 Create Learning Activities
 
