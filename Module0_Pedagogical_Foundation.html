@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>0. Pedagogical Foundations for Teaching with AI &#8212; Teaching and Learning with AI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module0_Pedagogical_Foundation';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. The Teaching with AI Framework" href="Module1_TLFramework.html" />
+    <link rel="prev" title="Teaching with AI" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/dendritic_logo.png" class="logo__image only-light" alt="Teaching and Learning with AI - Home"/>
+    <img src="_static/dendritic_logo.png" class="logo__image only-dark pst-js-only" alt="Teaching and Learning with AI - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Teaching with AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 0: Pedagogical Foundation for the Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module1_TLFramework.html">Module 1: The Teaching with AI Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module2_PedagogicalPlanning.html">Module 2: AI-Enhanced Pedagogical-Didactic Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module3_ClassDesign.html">Module 3: AI-Assisted Class Design and Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module4_Assignments.html">Module 4: AI-Enhanced Assignments and Exams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module5_ClassDelivery.html">Module 5: AI-Enabled Class Delivery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module6_StudentSupport.html">Module 6: AI-Powered Student Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module7_AssessmentFeedback.html">Module 7: AI in Assessment and Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module8_ReflectionImprovement.html">Module 8: AI-Supported Reflection and Improvement</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/lndecastro/Teaching_and_Learning_with_AI/edit/main/docs/Module0_Pedagogical_Foundation.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module0_Pedagogical_Foundation.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>0. Pedagogical Foundations for Teaching with AI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-ai-changes-learning">0.1 Why AI Changes Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-literature-course">Example: Literature Course</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-rethinking-a-learning-activity">Exercise 1: Rethinking a Learning Activity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aiaugmented-learning">0.2 AI‑Augmented Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-data-analysis-course">Example: Data Analysis Course</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-ai-as-a-thinking-partner">Exercise 2: AI as a Thinking Partner</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-seven-pedagogical-principles">0.3 The Seven Pedagogical Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-1-intentional-role-definition">Principle 1: Intentional Role Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-2-progressive-integration">Principle 2: Progressive Integration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-3-productive-friction">Principle 3: Productive Friction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-4-prompt-literacy">Principle 4: Prompt Literacy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-5-verificationfirst-learning">Principle 5: Verification‑First Learning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-6-hybrid-assessment">Principle 6: Hybrid Assessment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-7-transparency-ethics-and-accountability">Principle 7: Transparency, Ethics, and Accountability</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-principles-to-the-teaching-workflow">0.4 Connecting Principles to the Teaching Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways">0.5 Key Takeaways</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">0.6 Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">📘 Further Reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="pedagogical-foundations-for-teaching-with-ai">
+<h1>0. Pedagogical Foundations for Teaching with AI<a class="headerlink" href="#pedagogical-foundations-for-teaching-with-ai" title="Link to this heading">#</a></h1>
+<p>Artificial Intelligence is rapidly transforming how knowledge is created, accessed, and applied. In education, this transformation requires more than simply adopting new tools, it requires rethinking
+how learning is designed, guided, and assessed.</p>
+<p>This module introduces the <strong>pedagogical foundations for Teaching with AI</strong>, providing the conceptual grounding for the rest of the course. While later modules focus on the <strong>operational workflow of teaching with
+AI</strong>, this module establishes the principles that guide <strong>AI‑augmented learning</strong>.</p>
+<p>The central idea is that effective Teaching with AI rests on two complementary pillars:</p>
+<ul class="simple">
+<li><p><strong>Pedagogical Integration</strong>, aligning AI use with learning outcomes, instructional design, and assessment.</p></li>
+<li><p><strong>Instrumental Augmentation</strong>, using AI tools to enhance planning, teaching, feedback, and reflection.</p></li>
+</ul>
+<p>Module 0 focuses on the <strong>first pillar: Pedagogical Integration</strong>. It presents the key principles that ensure AI strengthens learning rather than replace it.</p>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<p>After completing this module, participants will be able to:</p>
+<ul class="simple">
+<li><p>Explain why AI requires new pedagogical approaches in higher education.</p></li>
+<li><p>Define the concept of <strong>AI‑Augmented Learning</strong>.</p></li>
+<li><p>Understand the <strong>seven pedagogical principles</strong> that guide the integration of AI in teaching.</p></li>
+<li><p>Recognize how these principles connect to the instructional workflow presented in the following modules.</p></li>
+</ul>
+</section>
+<section id="why-ai-changes-learning">
+<h2>0.1 Why AI Changes Learning<a class="headerlink" href="#why-ai-changes-learning" title="Link to this heading">#</a></h2>
+<p>Generative AI systems can now perform tasks that traditionally required significant cognitive effort, including:</p>
+<ul class="simple">
+<li><p>summarizing complex material</p></li>
+<li><p>generating explanations</p></li>
+<li><p>producing code</p></li>
+<li><p>drafting essays</p></li>
+<li><p>analyzing data</p></li>
+</ul>
+<p>Because these systems can perform tasks associated with <strong>knowledge production</strong>, they change the learning environment in fundamental ways.</p>
+<p>In traditional education, instructors could assume that most intellectual work performed by students reflected their own reasoning.
+With AI systems available, this assumption no longer holds.</p>
+<p>As a result, educators must redesign learning experiences to ensure that students:</p>
+<ul class="simple">
+<li><p>develop conceptual understanding</p></li>
+<li><p>practice reasoning and judgment</p></li>
+<li><p>learn how to work responsibly with intelligent systems</p></li>
+</ul>
+<p>Teaching with AI therefore requires <strong>intentional pedagogical design</strong>, not simply tool adoption.</p>
+<section id="example-literature-course">
+<h3>Example: Literature Course<a class="headerlink" href="#example-literature-course" title="Link to this heading">#</a></h3>
+<p>Students traditionally write essays analyzing literary themes. With AI available, students could easily generate an essay draft in seconds. Instead of banning AI, the instructor redesigns the activity:</p>
+<ol class="arabic simple">
+<li><p>Students analyze a passage and write an initial interpretation <strong>without AI</strong>.</p></li>
+<li><p>Students ask an AI system for an alternative interpretation.</p></li>
+<li><p>Students compare the two analyses.</p></li>
+<li><p>Students write a reflection explaining which interpretation is stronger and why, and how they could be merged into an even better essay.</p></li>
+</ol>
+<p>Learning now focuses on <strong>critical reasoning rather than text generation</strong>.</p>
+</section>
+<section id="exercise-1-rethinking-a-learning-activity">
+<h3>Exercise 1: Rethinking a Learning Activity<a class="headerlink" href="#exercise-1-rethinking-a-learning-activity" title="Link to this heading">#</a></h3>
+<p>Choose a learning activity you currently use in your course.</p>
+<ol class="arabic simple">
+<li><p>Describe the activity.</p></li>
+<li><p>Identify how students might use AI to complete the task.</p></li>
+<li><p>Redesign the activity so that AI supports <strong>thinking rather than replacing it</strong>.</p></li>
+</ol>
+<p>Write a short paragraph describing your redesigned activity.</p>
+</section>
+</section>
+<section id="aiaugmented-learning">
+<h2>0.2 AI‑Augmented Learning<a class="headerlink" href="#aiaugmented-learning" title="Link to this heading">#</a></h2>
+<p>The concept of <strong>AI‑Augmented Learning</strong> refers to educational experiences in which:</p>
+<ul class="simple">
+<li><p>students interact with AI tools</p></li>
+<li><p>instructors design activities that incorporate AI</p></li>
+<li><p>learning remains centered on human reasoning and understanding</p></li>
+</ul>
+<p>In AI‑augmented learning environments:</p>
+<ul class="simple">
+<li><p>AI can support exploration and explanation</p></li>
+<li><p>AI can accelerate routine tasks</p></li>
+<li><p>AI can help students test ideas</p></li>
+</ul>
+<p>However, <strong>students remain responsible for understanding, evaluating, and refining the outputs produced by AI systems</strong>.</p>
+<p>The goal is not to replace thinking with AI, but to help students learn <strong>how to think in an AI‑enabled world</strong>.</p>
+<section id="example-data-analysis-course">
+<h3>Example: Data Analysis Course<a class="headerlink" href="#example-data-analysis-course" title="Link to this heading">#</a></h3>
+<p>Students are asked to analyze a dataset. Instead of manually writing code from scratch, students may ask AI to generate initial code or even perform the whole analysis for them.</p>
+<p>However, the assignment requires students to:</p>
+<ul class="simple">
+<li><p>explain the analysis method</p></li>
+<li><p>validate the results</p></li>
+<li><p>interpret the findings</p></li>
+<li><p>critique the AI‑generated code</p></li>
+</ul>
+<p>The focus shifts from <strong>code generation to analytical reasoning</strong>.</p>
+</section>
+<section id="exercise-2-ai-as-a-thinking-partner">
+<h3>Exercise 2: AI as a Thinking Partner<a class="headerlink" href="#exercise-2-ai-as-a-thinking-partner" title="Link to this heading">#</a></h3>
+<p>Ask an AI system the following prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Explain</span> <span class="n">the</span> <span class="n">concept</span> <span class="n">of</span> <span class="n">feedback</span> <span class="n">loops</span> <span class="ow">in</span> <span class="n">learning</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Then:</p>
+<ol class="arabic simple">
+<li><p>Evaluate the explanation.</p></li>
+<li><p>Identify at least <strong>two strengths</strong>.</p></li>
+<li><p>Identify <strong>two possible weaknesses or limitations</strong>.</p></li>
+<li><p>Write an improved explanation.</p></li>
+</ol>
+</section>
+</section>
+<section id="the-seven-pedagogical-principles">
+<h2>0.3 The Seven Pedagogical Principles<a class="headerlink" href="#the-seven-pedagogical-principles" title="Link to this heading">#</a></h2>
+<p>Teaching with AI is guided by seven pedagogical principles that help instructors design meaningful and responsible learning experiences.</p>
+<p>These principles are not rigid rules; instead, they serve as <strong>design guidelines</strong> for integrating AI into teaching.</p>
+<p><img alt="The Seven Pillars" src="_images/AI_Integration_Pillars.png" /></p>
+<section id="principle-1-intentional-role-definition">
+<h3>Principle 1: Intentional Role Definition<a class="headerlink" href="#principle-1-intentional-role-definition" title="Link to this heading">#</a></h3>
+<p>AI should be assigned a <strong>clear role</strong> within learning activities. Possible roles include:</p>
+<ul class="simple">
+<li><p>tutor</p></li>
+<li><p>brainstorming partner</p></li>
+<li><p>coding assistant</p></li>
+<li><p>writing assistant</p></li>
+<li><p>simulation engine</p></li>
+</ul>
+<p>Students should understand:</p>
+<ul class="simple">
+<li><p>what AI is allowed to do</p></li>
+<li><p>what the student must do independently</p></li>
+<li><p>how AI outputs should be used</p></li>
+</ul>
+<p>Clear role definition helps prevent confusion about authorship, responsibility, and learning expectations.</p>
+<p><strong>Example</strong></p>
+<p>In a design course, AI acts as a brainstorming partner while students
+produce the final design and justify their decisions.</p>
+<p><strong>Exercise 3</strong></p>
+<p>Complete the statement:</p>
+<blockquote>
+<div><p>In this activity, AI will function as a __________ while
+students remain responsible for __________.</p>
+</div></blockquote>
+</section>
+<section id="principle-2-progressive-integration">
+<h3>Principle 2: Progressive Integration<a class="headerlink" href="#principle-2-progressive-integration" title="Link to this heading">#</a></h3>
+<p>AI should be introduced <strong>gradually across the learning process</strong>. A common progression may include:</p>
+<ul class="simple">
+<li><p><strong>Foundation Stage</strong> Students learn core concepts and skills with limited or no AI assistance.</p></li>
+<li><p><strong>Applied Stage</strong> Students begin using AI tools to support problem solving and exploration.</p></li>
+<li><p><strong>Extended Stage</strong> Students learn to critically evaluate and refine AI‑generated outputs.</p></li>
+</ul>
+<p>This progression ensures that AI <strong>supports skill development rather than replacing it</strong>.</p>
+<p><strong>Example</strong></p>
+<p>Statistics course:
+<strong>Foundation</strong>: students compute regression manually.<br />
+<strong>Applied</strong>: students use AI to generate regression code.<br />
+<strong>Extended</strong>: students evaluate whether the AI method was appropriate.</p>
+<p><strong>Exercise 4</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Stage</p></th>
+<th class="head"><p>Student Activity</p></th>
+<th class="head"><p>AI Role</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Foundation</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Applied</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Extended</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="principle-3-productive-friction">
+<h3>Principle 3: Productive Friction<a class="headerlink" href="#principle-3-productive-friction" title="Link to this heading">#</a></h3>
+<p>Learning often requires <strong>intellectual effort and struggle</strong>. If AI removes all difficulty from a task, students may lose opportunities to develop understanding.</p>
+<p>Productive friction means designing activities where students must:</p>
+<ul class="simple">
+<li><p>analyze AI responses</p></li>
+<li><p>detect errors</p></li>
+<li><p>refine prompts</p></li>
+<li><p>justify decisions</p></li>
+</ul>
+<p>In this way, AI becomes a <strong>thinking partner rather than an answer generator</strong>.</p>
+<p><strong>Example</strong></p>
+<p>Students analyze an AI-generated solution containing a deliberate error and must identify and correct it.</p>
+<p><strong>Exercise 5: Productive friction</strong></p>
+<p>Prompt an AI system to solve a problem in your field and identify at least <strong>one possible flaw</strong> in the response.</p>
+</section>
+<section id="principle-4-prompt-literacy">
+<h3>Principle 4: Prompt Literacy<a class="headerlink" href="#principle-4-prompt-literacy" title="Link to this heading">#</a></h3>
+<p>Students must learn how to communicate effectively with AI systems. Prompt literacy includes:</p>
+<ul class="simple">
+<li><p>formulating clear instructions</p></li>
+<li><p>refining prompts iteratively</p></li>
+<li><p>interpreting AI responses</p></li>
+<li><p>recognizing limitations of AI models</p></li>
+</ul>
+<p>Prompt literacy is becoming an important <strong>digital reasoning skill</strong> for the AI era.</p>
+<p><strong>Exercise 6: Iterative prompt improvement</strong></p>
+<p>Iteratively improve a prompt three times and compare the responses.</p>
+</section>
+<section id="principle-5-verificationfirst-learning">
+<h3>Principle 5: Verification‑First Learning<a class="headerlink" href="#principle-5-verificationfirst-learning" title="Link to this heading">#</a></h3>
+<p>AI systems can produce convincing but incorrect outputs.</p>
+<p>Students must learn to <strong>verify AI results</strong> using:</p>
+<ul class="simple">
+<li><p>evidence</p></li>
+<li><p>reasoning</p></li>
+<li><p>external sources</p></li>
+<li><p>domain knowledge</p></li>
+</ul>
+<p>Verification‑first learning encourages students to treat AI outputs as <strong>hypotheses rather than final answers</strong>.</p>
+<p><strong>Exercise 7: Verification-first learning</strong></p>
+<p>Ask AI a question in your field and verify the answer using <strong>two independent sources</strong>.</p>
+</section>
+<section id="principle-6-hybrid-assessment">
+<h3>Principle 6: Hybrid Assessment<a class="headerlink" href="#principle-6-hybrid-assessment" title="Link to this heading">#</a></h3>
+<p>Assessment strategies must adapt to AI‑enabled environments.</p>
+<p>Hybrid assessment combines multiple approaches, such as:</p>
+<ul class="simple">
+<li><p>AI‑assisted assignments</p></li>
+<li><p>AI‑restricted activities</p></li>
+<li><p>in‑class demonstrations of reasoning</p></li>
+<li><p>iterative project development</p></li>
+<li><p>reflective explanations of work</p></li>
+</ul>
+<p>This approach allows instructors to evaluate both <strong>process and understanding</strong>, not only final products.</p>
+<p><strong>Exercise 8</strong></p>
+<p>Design a hybrid assessment strategy for one assignment in your course.</p>
+<blockquote>
+<div><p><strong>Note</strong>: This will be explored further in Module 4 about assignment design.</p>
+</div></blockquote>
+</section>
+<section id="principle-7-transparency-ethics-and-accountability">
+<h3>Principle 7: Transparency, Ethics, and Accountability<a class="headerlink" href="#principle-7-transparency-ethics-and-accountability" title="Link to this heading">#</a></h3>
+<p>Students should be transparent about their use of AI. Courses should clearly communicate:</p>
+<ul class="simple">
+<li><p>when AI use is allowed</p></li>
+<li><p>when it is restricted</p></li>
+<li><p>how AI contributions should be acknowledged</p></li>
+</ul>
+<p>Ethical AI use also includes:</p>
+<ul class="simple">
+<li><p>respecting academic integrity</p></li>
+<li><p>protecting data privacy</p></li>
+<li><p>recognizing limitations and biases in AI systems</p></li>
+</ul>
+<p>Responsible AI use is an essential component of <strong>professional practice in the AI era</strong>.</p>
+<p><strong>Exercise 9</strong></p>
+<p>Write a short <strong>AI usage statement</strong> policy for your course.</p>
+<blockquote>
+<div><p><strong>Note</strong>: This will be explored further in Module 2 about pedagogical planning.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="connecting-principles-to-the-teaching-workflow">
+<h2>0.4 Connecting Principles to the Teaching Workflow<a class="headerlink" href="#connecting-principles-to-the-teaching-workflow" title="Link to this heading">#</a></h2>
+<p>The pedagogical principles introduced in this module guide the instructional practices explored in the rest of the course.</p>
+<p>The following modules examine how AI can support different stages of the teaching process:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Focus</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Module 1</p></td>
+<td><p>Instrumental Augmentation Process</p></td>
+</tr>
+<tr class="row-odd"><td><p>Module 2</p></td>
+<td><p>Pedagogical Planning</p></td>
+</tr>
+<tr class="row-even"><td><p>Module 3</p></td>
+<td><p>Class Design</p></td>
+</tr>
+<tr class="row-odd"><td><p>Module 4</p></td>
+<td><p>Assignment Design</p></td>
+</tr>
+<tr class="row-even"><td><p>Module 5</p></td>
+<td><p>Class Delivery</p></td>
+</tr>
+<tr class="row-odd"><td><p>Module 6</p></td>
+<td><p>Student Support</p></td>
+</tr>
+<tr class="row-even"><td><p>Module 7</p></td>
+<td><p>Assessment and Feedback</p></td>
+</tr>
+<tr class="row-odd"><td><p>Module 8</p></td>
+<td><p>Reflection and Continuous Improvement</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In each stage of the workflow, instructors apply the principles introduced in this module to ensure that AI use <strong>enhances learning while maintaining academic rigor and responsibility</strong>.</p>
+</section>
+<section id="key-takeaways">
+<h2>0.5 Key Takeaways<a class="headerlink" href="#key-takeaways" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Teaching with AI requires both <strong>pedagogical integration</strong> and <strong>instrumental augmentation</strong>.</p></li>
+<li><p>AI‑augmented learning places human reasoning at the center of the educational experience.</p></li>
+<li><p>The <strong>seven pedagogical principles</strong> help instructors design meaningful AI‑supported learning activities.</p></li>
+<li><p>These principles guide the practical teaching strategies explored in the rest of the course.</p></li>
+</ul>
+</section>
+<section id="reflection">
+<h2>0.6 Reflection<a class="headerlink" href="#reflection" title="Link to this heading">#</a></h2>
+<p>Before proceeding to the operational modules of this course, take a moment to reflect on how the pedagogical principles presented in this module relate to your current teaching practices. Consider the following questions:</p>
+<ol class="arabic simple">
+<li><p><strong>Current Practice</strong><br />
+Which of the seven pedagogical principles do you already apply, either intentionally or implicitly, in your teaching?</p></li>
+<li><p><strong>AI Integration Readiness</strong><br />
+In your discipline, which types of learning activities could benefit most from AI-augmented learning?</p></li>
+<li><p><strong>Challenges and Risks</strong><br />
+What potential risks do you foresee when students use AI tools in your course (e.g., overreliance, reduced effort, misinformation)?</p></li>
+<li><p><strong>Design Opportunities</strong><br />
+How might you redesign one existing activity in your course to incorporate the principles of:</p>
+<ul class="simple">
+<li><p>productive friction</p></li>
+<li><p>verification-first learning</p></li>
+<li><p>hybrid assessment</p></li>
+</ul>
+</li>
+<li><p><strong>Instructor Role</strong><br />
+How might the role of the instructor change in AI-augmented learning environments?</p></li>
+</ol>
+<p>Write a short reflection (1–2 paragraphs) summarizing how the pedagogical principles introduced in this module may influence the design of your course.</p>
+<blockquote>
+<div><p><strong>Note:</strong> Throughout Modules 1–8 you will revisit these ideas and translate them into concrete teaching practices.</p>
+</div></blockquote>
+</section>
+<section id="further-reading">
+<h2>📘 Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Holmes, W., Bialik, M., &amp; Fadel, C. (2019). <em>Artificial Intelligence in Education: Promises and Implications for Teaching and Learning.</em> Boston: Center for Curriculum Redesign.</p></li>
+<li><p>Luckin, R. (2018). <em>Machine Learning and Human Intelligence: The Future of Education for the 21st Century.</em> UCL Institute of Education Press.</p></li>
+<li><p>Mollick, E., &amp; Mollick, L. (2023). <em>Assigning AI: Seven Approaches for Students with ChatGPT.</em> The Wharton School Research Paper SSRN. <a class="reference external" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4475995#">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4475995#</a></p></li>
+<li><p>Kasneci, E., et al. (2023). <em>ChatGPT for Good? On Opportunities and Challenges of Large Language Models for Education.</em> Learning and Individual Differences, 103, 102274, <a class="reference external" href="https://doi.org/10.1016/j.lindif.2023.102274">https://doi.org/10.1016/j.lindif.2023.102274</a>.</p></li>
+<li><p>Biggs, J., &amp; Tang, C. (2011). <em>Teaching for Quality Learning at University.</em>, Open UNiversity Press.</p></li>
+<li><p>Ambrose, S., et al. (2010). <em>How Learning Works: Seven Research-Based Principles for Smart Teaching.</em>, Jossey-Bass.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Teaching with AI</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module1_TLFramework.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">1. The Teaching with AI Framework</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-ai-changes-learning">0.1 Why AI Changes Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-literature-course">Example: Literature Course</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-rethinking-a-learning-activity">Exercise 1: Rethinking a Learning Activity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aiaugmented-learning">0.2 AI‑Augmented Learning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-data-analysis-course">Example: Data Analysis Course</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-ai-as-a-thinking-partner">Exercise 2: AI as a Thinking Partner</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-seven-pedagogical-principles">0.3 The Seven Pedagogical Principles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-1-intentional-role-definition">Principle 1: Intentional Role Definition</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-2-progressive-integration">Principle 2: Progressive Integration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-3-productive-friction">Principle 3: Productive Friction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-4-prompt-literacy">Principle 4: Prompt Literacy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-5-verificationfirst-learning">Principle 5: Verification‑First Learning</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-6-hybrid-assessment">Principle 6: Hybrid Assessment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principle-7-transparency-ethics-and-accountability">Principle 7: Transparency, Ethics, and Accountability</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-principles-to-the-teaching-workflow">0.4 Connecting Principles to the Teaching Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaways">0.5 Key Takeaways</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection">0.6 Reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">📘 Further Reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Leandro Nunes de Castro, Ph.D.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
