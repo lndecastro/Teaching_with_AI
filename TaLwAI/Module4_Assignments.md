@@ -160,7 +160,7 @@ Include:
 
 Authentic tasks simulate the kinds of problems professionals face outside the classroom. These tasks often require students to analyze real data, evaluate trade-offs, justify decisions, or communicate insights to stakeholders.
 
-**Step 1** — Identify a Real-World Context
+**Step 1** — Identify a Real-World Context <p>
 Select a topic from your course and imagine a **real situation where professionals would apply this knowledge**.
 
 Examples:
@@ -175,7 +175,7 @@ Examples:
 
 Write a short description of the professional scenario.
 
-**Step 2** — Define the Student Task
+**Step 2** — Define the Student Task <p>
 Describe what students must produce. Examples:
 - policy brief  
 - technical analysis  
@@ -186,7 +186,7 @@ Describe what students must produce. Examples:
 
 Write **2–3 sentences** describing the task.
 
-**Step 3** — Define the Role of AI
+**Step 3** — Define the Role of AI <p>
 Decide **how AI will be used in the assignment**. Examples:
 - generating initial ideas
 - assisting with data analysis
@@ -198,7 +198,7 @@ Write a short description:
 
 > In this assignment, AI will function as a __________ while students remain responsible for __________.
 
-**Step 4** — Use AI to Expand the Assignment
+**Step 4** — Use AI to Expand the Assignment <p>
 Ask an AI system to help refine the task. Example prompt:
 ```
 I am designing an authentic assignment for a university course on [topic].
@@ -210,7 +210,7 @@ Suggest:
 3. one way AI could be used responsibly in this assignment.
 ```
 
-**Step 5** — Evaluate and Refine
+**Step 5** — Evaluate and Refine <p>
 Review the AI suggestions and decide:
 - Which suggestions improve the assignment?
 - Which suggestions should be rejected or modified?
